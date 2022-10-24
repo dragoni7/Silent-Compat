@@ -1,0 +1,169 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 2,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/night_iron"
+    }
+  },
+  "name": {
+    "translate": "material.silentcompat.night_iron"
+  },
+  "stats": {
+    "main": {
+      "durability": 250.0,
+      "armor_durability": 15.0,
+      "enchantability": 14.0,
+      "harvest_level": 2.0,
+      "harvest_speed": 6.0,
+      "melee_damage": 2.0,
+      "magic_damage": 1.0,
+      "attack_speed": 0.0,
+      "attack_speed/axe": -0.1,
+      "armor": 15.0,
+      "armor/helmet": 2.0,
+      "armor/chestplate": 6.0,
+      "armor/leggings": 5.0,
+      "armor/boots": 2.0,
+      "magic_armor": 6.0,
+      "ranged_damage": 1.0,
+      "ranged_speed": 0.1,
+      "projectile_speed": 1.0,
+      "projectile_accuracy": 1.1,
+      "rarity": 20.0,
+      "chargeability": 0.7
+    },
+    "rod": {
+      "durability": {
+        "mul2": 0.15
+      },
+      "enchantability": [
+        {
+          "add": -2.0
+        },
+        {
+          "mul2": -0.1
+        }
+      ],
+      "melee_damage": {
+        "mul2": 0.1
+      },
+      "rarity": 20.0
+    },
+    "tip": {
+      "durability": {
+        "add": 128.0
+      },
+      "armor_durability": {
+        "add": 4.0
+      },
+      "harvest_level": {
+        "max": 2.0
+      },
+      "harvest_speed": {
+        "add": 1.0
+      },
+      "melee_damage": {
+        "add": 1.0
+      },
+      "ranged_speed": {
+        "add": 0.2
+      },
+      "rarity": {
+        "add": 8.0
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:malleable",
+        "level": 3
+      },
+      {
+        "name": "silentcompat:diurnal",
+        "level": 1
+      },
+      {
+        "name": "silentgear:magnetic",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.66
+          }
+        ]
+      }
+    ],
+    "rod": [
+      {
+        "name": "silentgear:magnetic",
+        "level": 3,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      }
+    ],
+    "tip": [
+      {
+        "name": "silentgear:malleable",
+        "level": 2
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_lc",
+        "color": "#D8D8D8"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "silentgear:rod",
+        "color": "#D8D8D8"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ]
+  }
+}

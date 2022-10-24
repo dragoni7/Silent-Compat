@@ -1,0 +1,17 @@
+{
+  "type": "silentcompat:nocturnal",
+  "max_level": 1,
+  "cancels_with": ["silentcompat:diurnal"],
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "tool"
+    }
+  ],
+  "name": {
+    "translate": "trait.silentcompat.nocturnal"
+  },
+  "description": {
+    "translate": "trait.silentcompat.nocturnal.desc"
+  }
+}
