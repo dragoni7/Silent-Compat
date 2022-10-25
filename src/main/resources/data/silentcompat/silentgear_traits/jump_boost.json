@@ -1,0 +1,23 @@
+{
+  "type": "silentgear:wielder_effect",
+  "max_level": 2,
+  "name": {
+    "text": "Jump Boost"
+  },
+  "description": {
+    "text": "Grants Jump Boost"
+  },
+  "potion_effects": {
+    "armor": [
+      {
+        "type": "piece_count",
+        "effect": "minecraft:jump_boost",
+        "level": [
+          0,
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}

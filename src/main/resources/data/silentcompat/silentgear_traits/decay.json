@@ -1,0 +1,10 @@
+{
+    "type": "silentcompat:decay",
+    "max_level": 1,
+    "name": {
+      "translate": "trait.silentcompat.decay"
+    },
+    "description": {
+      "translate": "trait.silentcompat.decay.desc"
+    }
+  }

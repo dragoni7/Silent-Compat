@@ -1,8 +1,8 @@
 package com.github.dragoni7.data;
 
-import com.github.dragoni7.SilentCompat;
 import com.github.dragoni7.core.MaterialRegistry;
 import com.github.dragoni7.core.MaterialSet;
+import com.github.dragoni7.main.SilentCompat;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
@@ -21,6 +21,7 @@ public class AddBlockTags extends BlockTagsProvider {
 		addMaterialTags(MaterialRegistry.BUNNYSTEEL);
 		addMaterialTags(MaterialRegistry.DARKCHOCOLATE);
 		addMaterialTags(MaterialRegistry.SCULKALLOY);
+		addMaterialTags(MaterialRegistry.CAPSID_ALLOY);
 	}
 	
 	private void addMaterialTags(MaterialSet set) {

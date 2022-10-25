@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "silentcompat:item/dark_chocolate_ingot"
+  }
+}

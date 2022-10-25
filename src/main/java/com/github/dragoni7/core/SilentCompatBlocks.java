@@ -1,6 +1,6 @@
 package com.github.dragoni7.core;
 
-import com.github.dragoni7.SilentCompat;
+import com.github.dragoni7.main.SilentCompat;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.DeferredRegister;

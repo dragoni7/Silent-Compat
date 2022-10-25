@@ -1,0 +1,147 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "organic",
+        "cloth"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/capsid_alloy"
+      }
+    },
+    "name": {
+      "translate": "material.silentcompat.capsid_alloy"
+    },
+    "stats": {
+      "main": {
+        "durability": 512.0,
+        "armor_durability": 25.0,
+        "armor_durability/elytra": 25.0,
+        "enchantability": 25.0,
+        "rarity": 30.0,
+        "chargeability": 1.0,
+        "harvest_level": 2.0,
+        "harvest_speed": 8.0,
+        "melee_damage": 5.0,
+        "magic_damage": 3.0,
+        "attack_speed": 0.0,
+        "ranged_damage": 1.0,
+        "ranged_speed": 2.0,
+        "armor": 20.0,
+        "armor_toughness": 8.0,
+        "magic_armor": 11.0
+      },
+      "rod": {
+        "repair_efficiency": {
+          "mul1": 0.05
+        }
+      },
+      "grip": {
+        "repair_efficiency": {
+          "mul1": 0.15
+        },
+        "harvest_speed": {
+          "mul1": 0.15
+        },
+        "attack_speed": {
+          "add": 0.25
+        },
+        "rarity": {
+          "add": 10.0
+        }
+      },
+      "lining": {
+        "armor_durability": {
+          "add": 8.0
+        },
+        "repair_efficiency": {
+          "mul1": 0.15
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentcompat:jump_boost",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        },
+        {
+            "name": "silentcompat:ender_flu",
+            "level": 1,
+            "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.8
+                }
+            ]
+        }
+      ],
+      "grip": [
+        {
+          "name": "silentgear:ancient",
+          "level": 1
+        },
+        {
+            "name": "silentcompat:ender_flu",
+            "level": 1,
+            "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.8
+                }
+            ]
+        }
+      ],
+      "lining": [
+        {
+          "name": "silentcompat:jump_boost",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+      {
+        "texture": "silentgear:main_generic_lc",
+        "color": "#c76ad4"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:cloth",
+        "color": "#c76ad4"
+      }
+    ],
+    "grip/all": [
+      {
+        "texture": "silentgear:grip_wool",
+        "color": "#c76ad4"
+      }
+    ],
+    "grip/part": [
+      {
+        "texture": "silentgear:grip",
+        "color": "#c76ad4"
+      }
+    ],
+    "lining/part": [
+      {
+        "texture": "silentgear:lining_cloth",
+        "color": "#c76ad4"
+      }
+    ]
+    }
+  }

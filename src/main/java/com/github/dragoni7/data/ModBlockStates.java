@@ -22,6 +22,7 @@ public class ModBlockStates extends BlockStateProvider {
 		blocks.add(MaterialRegistry.BUNNYSTEEL.block.get());
 		blocks.add(MaterialRegistry.DARKCHOCOLATE.block.get());
 		blocks.add(MaterialRegistry.SCULKALLOY.block.get());
+		blocks.add(MaterialRegistry.CAPSID_ALLOY.block.get());
 		
 		for(Block b : blocks) {
 			simpleBlock(b);

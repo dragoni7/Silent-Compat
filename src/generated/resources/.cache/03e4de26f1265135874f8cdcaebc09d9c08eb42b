@@ -1,7 +1,21 @@
-// 1.19.2	2022-10-24T17:14:39.8710027	Tags for minecraft:item
-e30880267c5467648c97803789aed52eb4a72947 data/forge/tags/items/ingots.json
+// 1.19.2	2022-10-24T21:51:13.9495452	Tags for minecraft:item
+c17fcadceae8cd315ae6ce8e14d435c7d1308d43 data/forge/tags/items/ingots.json
+bbad18f5bc0090431cfbefa2d4e2b39f12ed61ea data/forge/tags/items/ingots/bunny_steel.json
+ef91d29103a5becf646e000aa558d686c6a24980 data/forge/tags/items/ingots/capsid_alloy.json
+a1ebf436a20f4d3568d68d057f99de4dd0adcb75 data/forge/tags/items/ingots/dark_chocolate.json
 e30880267c5467648c97803789aed52eb4a72947 data/forge/tags/items/ingots/midnight_iron.json
-de886a7d4490b02df79c4743dc394530db2757af data/forge/tags/items/nuggets.json
+21653d3b98f323ac31673e8679d234c2ee892876 data/forge/tags/items/ingots/sculk_alloy.json
+4ac6bae1220f8ae81adb96bee815f82d29027172 data/forge/tags/items/nuggets.json
+abbd2077ef601ae6d4622a2cf6b2b7e3923a6f3e data/forge/tags/items/nuggets/bunny_steel.json
+77685736843132d29a9a1b04f8d072d9aab36350 data/forge/tags/items/nuggets/capsid_alloy.json
+71a5d98b832edfad2be27137d26dfc15163d1be6 data/forge/tags/items/nuggets/dark_chocolate.json
 de886a7d4490b02df79c4743dc394530db2757af data/forge/tags/items/nuggets/midnight_iron.json
-d03905b78db259fe6c89460ea9f44bf4c6f230d0 data/forge/tags/items/storage_blocks.json
+c3ccf0700892c77f9d2930e554a8a14cc116dc6f data/forge/tags/items/nuggets/sculk_alloy.json
+a469f5cef41c2c3c130c1f5bc5f4485b933b338a data/forge/tags/items/storage_blocks.json
+959dc46856274767bfee466b0e11798a248ac8cf data/forge/tags/items/storage_blocks/bunny_steel.json
+ed26c199720ab08834c6ba84c3bd1326997867b7 data/forge/tags/items/storage_blocks/capsid_alloy.json
+74dac19fe684c3b04039e4744b223a1c75d0c9de data/forge/tags/items/storage_blocks/dark_chocolate.json
 d03905b78db259fe6c89460ea9f44bf4c6f230d0 data/forge/tags/items/storage_blocks/midnight_iron.json
+79e7721fe6a56d48a5e396469b1736da2827151f data/forge/tags/items/storage_blocks/sculk_alloy.json
+449a28d05a9b591317b69ead6caf08cfc34d9baf data/silentcompat/tags/items/bee_stinger.json
+8f3abf6ae267dd7706ea4cca5889126186b49bf5 data/silentcompat/tags/items/blast_proof_plating.json

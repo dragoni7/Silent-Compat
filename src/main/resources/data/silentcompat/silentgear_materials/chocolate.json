@@ -1,0 +1,81 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:chocolate"
+      }
+    },
+    "name": {
+      "text": "Chocolate"
+    },
+    "stats": {
+      "main": {
+        "durability": 40.0,
+        "armor_durability": 4.0,
+        "enchantability": 1.0,
+        "rarity": 1.0,
+        "chargeability": 1.0,
+        "harvest_level": 2.0,
+        "harvest_speed": 8.0,
+        "melee_damage": 0.5,
+        "magic_damage": 1.0,
+        "attack_speed": 0.0,
+        "ranged_damage": 0.0,
+        "ranged_speed": 0.0,
+        "armor": 4.0,
+        "armor_toughness": 0.0,
+        "magic_armor": 0.0
+      },
+      "rod": {
+      "durability": {
+        "mul2": -0.15
+      }
+    }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:soft",
+          "level": 3
+        },
+        {
+          "name": "silentgear:brittle",
+          "level": 2
+        }
+      ],
+      
+      "rod": [
+      	{
+          "name": "silentgear:soft",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#612304"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#612304"
+        }
+      ]
+    }
+  }

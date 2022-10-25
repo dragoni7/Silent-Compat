@@ -1,6 +1,7 @@
 package com.github.dragoni7.data;
 
-import com.github.dragoni7.SilentCompat;
+import com.github.dragoni7.main.SilentCompat;
+
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;

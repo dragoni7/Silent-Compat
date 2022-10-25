@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "silentcompat:block/capsid_alloy_block"
+    }
+  }
+}

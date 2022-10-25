@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "silentcompat:block/sculk_alloy_block"
+  }
+}

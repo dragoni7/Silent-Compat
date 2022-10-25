@@ -1,0 +1,62 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:bee_stinger"
+      }
+    },
+    "name": {
+      "translate": "Bee Stinger"
+    },
+    "stats": {
+      "tip": {
+        "durability": {
+          "add": 10.0
+        },
+        "melee_damage": {
+          "add": 1.0
+        },
+        "ranged_damage": {
+          "add": 1.0
+        }
+      }
+    },
+    "traits": {
+      "tip": [
+        {
+          "name": "silentgear:venom",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#1a1306"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#1a1306"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }

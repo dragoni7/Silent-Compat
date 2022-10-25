@@ -2,7 +2,7 @@ package com.github.dragoni7.traits;
 
 import java.util.Collection;
 
-import com.github.dragoni7.SilentCompat;
+import com.github.dragoni7.main.SilentCompat;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
@@ -16,6 +16,10 @@ public class NocturnalTrait extends SimpleTrait {
 	
 	public static final Serializer<NocturnalTrait> SERIALIZER = new Serializer<NocturnalTrait>(new ResourceLocation(SilentCompat.MODID, "nocturnal"), NocturnalTrait::new);
 
+	public NocturnalTrait(ResourceLocation id) {
+		super(id, SERIALIZER);
+	}
+	
 	@Override
 	public void onUpdate(TraitActionContext context, boolean isEquipped) {
 		Level world = context.getPlayer().getLevel();
@@ -48,9 +52,5 @@ public class NocturnalTrait extends SimpleTrait {
         ret.add("Deal increased damage at night time. Gear slowly repairs at night time");
         return ret;
     }
-	
-	public NocturnalTrait(ResourceLocation id) {
-		super(id, SERIALIZER);
-	}
 
 }

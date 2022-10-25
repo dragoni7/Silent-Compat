@@ -1,0 +1,99 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/necrathene"
+      }
+    },
+    "name": {
+      "text": "Necrathene"
+    },
+    "stats": {
+      "main": {
+        "durability": 1561.0,
+        "armor_durability": 39.0,
+        "enchantability": 15.0,
+        "rarity": 50.0,
+        "chargeability": 1.1,
+        "harvest_level": 3.0,
+        "harvest_speed": 9.0,
+        "melee_damage": 6.0,
+        "magic_damage": 3.0,
+        "attack_speed": 0.0,
+        "ranged_damage": 1.0,
+        "ranged_speed": 0.1,
+        "armor": 21.0,
+        "armor_toughness": 8.0,
+        "magic_armor": 6.0
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.10
+        },
+        "rarity": 50.0
+      },
+      "tip": {
+        "durability": {
+          "add": 400.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentcompat:decay",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        },
+        {
+          "name": "silentgear:ancient",
+          "level": 4,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        }
+      ],
+
+      "rod": [
+        {
+          "name": "silentgear:ancient",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#524a63"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#524a63"
+        }
+      ]
+    }
+  }

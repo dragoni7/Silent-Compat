@@ -1,8 +1,8 @@
 package com.github.dragoni7.data;
 
-import com.github.dragoni7.SilentCompat;
 import com.github.dragoni7.core.MaterialRegistry;
 import com.github.dragoni7.core.MaterialSet;
+import com.github.dragoni7.main.SilentCompat;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
@@ -23,6 +23,7 @@ public class ModItemModels extends ItemModelProvider {
 		registerMaterialSetItemModels(MaterialRegistry.BUNNYSTEEL);
 		registerMaterialSetItemModels(MaterialRegistry.DARKCHOCOLATE);
 		registerMaterialSetItemModels(MaterialRegistry.SCULKALLOY);
+		registerMaterialSetItemModels(MaterialRegistry.CAPSID_ALLOY);
 	}
 	
 	private void registerMaterialSetItemModels(MaterialSet set) {

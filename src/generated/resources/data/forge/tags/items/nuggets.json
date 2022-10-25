@@ -1,5 +1,9 @@
 {
   "values": [
-    "silentcompat:midnight_iron_nugget"
+    "silentcompat:midnight_iron_nugget",
+    "silentcompat:bunny_steel_nugget",
+    "silentcompat:dark_chocolate_nugget",
+    "silentcompat:sculk_alloy_nugget",
+    "silentcompat:capsid_alloy_nugget"
   ]
 }

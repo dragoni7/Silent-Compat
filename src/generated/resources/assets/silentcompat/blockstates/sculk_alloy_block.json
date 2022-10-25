@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "silentcompat:block/sculk_alloy_block"
+    }
+  }
+}

@@ -2,7 +2,7 @@ package com.github.dragoni7.traits;
 
 import java.util.Collection;
 
-import com.github.dragoni7.SilentCompat;
+import com.github.dragoni7.main.SilentCompat;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;

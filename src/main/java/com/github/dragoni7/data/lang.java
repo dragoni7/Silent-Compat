@@ -1,8 +1,8 @@
 package com.github.dragoni7.data;
 
-import com.github.dragoni7.SilentCompat;
 import com.github.dragoni7.core.MaterialRegistry;
 import com.github.dragoni7.core.MaterialSet;
+import com.github.dragoni7.main.SilentCompat;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
@@ -21,11 +21,16 @@ public class lang extends LanguageProvider {
 		translateMaterialSet(MaterialRegistry.BUNNYSTEEL, "Bunny Steel");
 		translateMaterialSet(MaterialRegistry.DARKCHOCOLATE, "Dark Chocolate");
 		translateMaterialSet(MaterialRegistry.SCULKALLOY, "Sculk Alloy");
+		translateMaterialSet(MaterialRegistry.CAPSID_ALLOY, "Capsid Alloy");
 		
 		add("trait.silentcompat.diurnal", "Diurnal");
 		add("trait.silentcompat.diurnal.desc", "Deal increased damage during the day. Gear slowly repairs during the day");
 		add("trait.silentcompat.nocturnal", "Diurnal");
 		add("trait.silentcompat.nocturnal.desc", "Deal increased damage at night. Gear slowly repairs at night");
+		add("trait.silentcompat.decay", "Decay");
+		add("trait.silentcompat.decay.desc", "Applies Decay to targets");
+		add("trait.silentcompat.ender_flu", "Ender Flu");
+		add("trait.silentcompat.ender_flu.desc", "Infects the target with Ender Flu");
 	}
 	
 	private void translateMaterialSet(MaterialSet set, String name) {

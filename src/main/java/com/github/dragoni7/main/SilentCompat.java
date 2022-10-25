@@ -1,9 +1,11 @@
-package com.github.dragoni7;
+package com.github.dragoni7.main;
 
 import com.github.dragoni7.core.MaterialRegistry;
 import com.github.dragoni7.core.SilentCompatBlocks;
 import com.github.dragoni7.core.SilentCompatItems;
+import com.github.dragoni7.traits.DecayTrait;
 import com.github.dragoni7.traits.DiurnalTrait;
+import com.github.dragoni7.traits.EnderFluTrait;
 import com.github.dragoni7.traits.NocturnalTrait;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,7 +22,7 @@ import org.slf4j.Logger;
 public class SilentCompat
 {
     public static final String MODID = "silentcompat";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public SilentCompat()
     {
@@ -35,6 +37,8 @@ public class SilentCompat
     public void registerTraits() {
     	GearApi.registerTraitSerializer(DiurnalTrait.SERIALIZER);
     	GearApi.registerTraitSerializer(NocturnalTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(DecayTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(EnderFluTrait.SERIALIZER);
     }
     
     public static final CreativeModeTab SilentCompatTab = (new CreativeModeTab("silentcompat")  {

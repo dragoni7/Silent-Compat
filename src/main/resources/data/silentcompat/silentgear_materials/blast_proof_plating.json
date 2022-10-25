@@ -1,0 +1,115 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:blast_proof_plating"
+      }
+    },
+    "name": {
+      "text": "Blast Proof Plate"
+    },
+    "stats": {
+      "main": {
+        "armor_durability": 15.0,
+        "enchantability": 10.0,
+        "armor": 15.0,
+        "armor_toughness": 4.0,
+        "magic_armor": 6.0,
+        "rarity": 10.0,
+        "chargeability": 0.8
+      },
+      "lining": {
+        "armor_durability": {
+          "add": 10.0
+        },
+        "armor_toughness": {
+          "add": 0.5
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:heavy",
+          "level": 1
+        },
+        {
+          "name": "silentgear:confetti",
+          "level": 1
+        },
+        {
+            "name": "silentgear:sturdy",
+            "level": 2
+        },
+        {
+          "name": "silentcompat:blast_resistant",
+          "level": 1
+        }
+      ],
+      "grip": [
+        {
+            "name": "silentgear:heavy",
+            "level": 1
+        }
+      ],
+      "lining": [
+        {
+            "name": "silentgear:heavy",
+            "level": 1
+        },
+        {
+            "name": "silentgear:sturdy",
+            "level": 1
+        },
+        {
+            "name": "silentcompat:blast_resistant",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#67ab3f"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#67ab3f"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#67ab3f"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#67ab3f"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#67ab3f"
+        }
+      ]
+    }
+  }
