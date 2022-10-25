@@ -40,7 +40,7 @@ public class SilentCompat
     public static final CreativeModeTab SilentCompatTab = (new CreativeModeTab("silentcompat")  {
 		@Override
 		public ItemStack makeIcon() {
-			return new ItemStack(MaterialRegistry.NIGHTIRON.ingot.get());
+			return new ItemStack(MaterialRegistry.MIDNIGHTIRON.ingot.get());
 		}
 	});
 }

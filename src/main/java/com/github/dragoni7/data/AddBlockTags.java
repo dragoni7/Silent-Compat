@@ -17,7 +17,7 @@ public class AddBlockTags extends BlockTagsProvider {
 	}
 	
 	protected void addTags() {
-		addMaterialTags(MaterialRegistry.NIGHTIRON);
+		addMaterialTags(MaterialRegistry.MIDNIGHTIRON);
 	}
 	
 	private void addMaterialTags(MaterialSet set) {

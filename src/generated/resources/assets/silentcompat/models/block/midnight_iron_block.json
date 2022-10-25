@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "silentcompat:block/night_iron_block"
+    "all": "silentcompat:block/midnight_iron_block"
   }
 }

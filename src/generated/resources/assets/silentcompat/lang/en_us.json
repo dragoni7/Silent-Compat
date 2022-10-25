@@ -1,11 +1,11 @@
 {
-  "block.silentcompat.night_iron_block": "Night Iron Block",
-  "item.silentcompat.night_iron_ingot": "Night Iron Ingot",
-  "item.silentcompat.night_iron_nugget": "Night Iron Nugget",
+  "block.silentcompat.midnight_iron_block": "Midnight Iron Block",
+  "item.silentcompat.midnight_iron_ingot": "Midnight Iron Ingot",
+  "item.silentcompat.midnight_iron_nugget": "Midnight Iron Nugget",
   "itemGroup.silentcompat": "SilentCompat",
-  "material.silentcompat.night_iron": "Night Iron",
+  "material.silentcompat.midnight_iron": "Midnight Iron",
   "trait.silentcompat.diurnal": "Diurnal",
-  "trait.silentcompat.diurnal.desc": "Increases damage dealt during the day",
+  "trait.silentcompat.diurnal.desc": "Deal increased damage during the day. Gear slowly repairs during the day",
   "trait.silentcompat.nocturnal": "Diurnal",
-  "trait.silentcompat.nocturnal.desc": "Increases damage dealt during the night"
+  "trait.silentcompat.nocturnal.desc": "Deal increased damage at night. Gear slowly repairs at night"
 }

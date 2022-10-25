@@ -1,7 +1,7 @@
-// 1.19.2	2022-10-24T12:44:34.1770535	Tags for minecraft:item
-75471afad42d124091cd74d1520aa21c438be14a data/forge/tags/items/ingots.json
-75471afad42d124091cd74d1520aa21c438be14a data/forge/tags/items/ingots/night_iron.json
-53d4dc8dcd8fcbdcfbc26b460e7ae45a334868e1 data/forge/tags/items/nuggets.json
-53d4dc8dcd8fcbdcfbc26b460e7ae45a334868e1 data/forge/tags/items/nuggets/night_iron.json
-f7e4cbe2e7b1ad91522d0c726e9b51d8bb55a2be data/forge/tags/items/storage_blocks.json
-f7e4cbe2e7b1ad91522d0c726e9b51d8bb55a2be data/forge/tags/items/storage_blocks/night_iron.json
+// 1.19.2	2022-10-24T17:14:39.8710027	Tags for minecraft:item
+e30880267c5467648c97803789aed52eb4a72947 data/forge/tags/items/ingots.json
+e30880267c5467648c97803789aed52eb4a72947 data/forge/tags/items/ingots/midnight_iron.json
+de886a7d4490b02df79c4743dc394530db2757af data/forge/tags/items/nuggets.json
+de886a7d4490b02df79c4743dc394530db2757af data/forge/tags/items/nuggets/midnight_iron.json
+d03905b78db259fe6c89460ea9f44bf4c6f230d0 data/forge/tags/items/storage_blocks.json
+d03905b78db259fe6c89460ea9f44bf4c6f230d0 data/forge/tags/items/storage_blocks/midnight_iron.json

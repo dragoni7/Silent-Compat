@@ -12,16 +12,16 @@
   },
   "crafting_items": {
     "main": {
-      "tag": "forge:ingots/night_iron"
+      "tag": "forge:ingots/midnight_iron"
     }
   },
   "name": {
-    "translate": "material.silentcompat.night_iron"
+    "translate": "material.silentcompat.midnight_iron"
   },
   "stats": {
     "main": {
-      "durability": 250.0,
-      "armor_durability": 15.0,
+      "durability": 260.0,
+      "armor_durability": 16.0,
       "enchantability": 14.0,
       "harvest_level": 2.0,
       "harvest_speed": 6.0,
@@ -90,7 +90,7 @@
         "level": 3
       },
       {
-        "name": "silentcompat:diurnal",
+        "name": "silentcompat:nocturnal",
         "level": 1
       },
       {

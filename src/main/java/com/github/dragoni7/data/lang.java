@@ -17,11 +17,11 @@ public class lang extends LanguageProvider {
 	protected void addTranslations() {
 		add("itemGroup." + SilentCompat.MODID, "SilentCompat");
 		
-		translateMaterialSet(MaterialRegistry.NIGHTIRON, "Night Iron");
+		translateMaterialSet(MaterialRegistry.MIDNIGHTIRON, "Midnight Iron");
 		add("trait.silentcompat.diurnal", "Diurnal");
-		add("trait.silentcompat.diurnal.desc", "Increases damage dealt during the day");
+		add("trait.silentcompat.diurnal.desc", "Deal increased damage during the day. Gear slowly repairs during the day");
 		add("trait.silentcompat.nocturnal", "Diurnal");
-		add("trait.silentcompat.nocturnal.desc", "Increases damage dealt during the night");
+		add("trait.silentcompat.nocturnal.desc", "Deal increased damage at night. Gear slowly repairs at night");
 	}
 	
 	private void translateMaterialSet(MaterialSet set, String name) {

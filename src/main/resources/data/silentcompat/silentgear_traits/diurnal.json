@@ -2,12 +2,6 @@
   "type": "silentcompat:diurnal",
   "max_level": 1,
   "cancels_with": ["silentcompat:nocturnal"],
-  "conditions": [
-    {
-      "type": "silentgear:gear_type",
-      "gear_type": "tool"
-    }
-  ],
   "name": {
     "translate": "trait.silentcompat.diurnal"
   },

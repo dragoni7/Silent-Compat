@@ -1,4 +1,4 @@
-// 1.19.2	2022-10-24T12:44:34.178054	Item Models: silentcompat
-a6d929b4e31ecb2189b3a87b9f6bdd5e4c452a3f assets/silentcompat/models/item/night_iron_block.json
-d672f3c2271b2af43b5566e57b1d9fdca32292f2 assets/silentcompat/models/item/night_iron_ingot.json
-c6987bb50a2c8ede3086481cc3576b6c5d8a4c7c assets/silentcompat/models/item/night_iron_nugget.json
+// 1.19.2	2022-10-24T17:14:39.873003	Item Models: silentcompat
+524aad38c3f33bfb543f589e5ed4bcf33fed5cd9 assets/silentcompat/models/item/midnight_iron_block.json
+79e3371fc4b25805e3a29edc645421c6aad06fab assets/silentcompat/models/item/midnight_iron_ingot.json
+abc5e73338c4d90561f6c8f96e5f08bb3a01f443 assets/silentcompat/models/item/midnight_iron_nugget.json

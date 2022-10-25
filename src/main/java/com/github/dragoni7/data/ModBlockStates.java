@@ -18,7 +18,7 @@ public class ModBlockStates extends BlockStateProvider {
 	@Override
 	protected void registerStatesAndModels() {
 		ArrayList<Block> blocks = new ArrayList<Block>();
-		blocks.add(MaterialRegistry.NIGHTIRON.block.get());
+		blocks.add(MaterialRegistry.MIDNIGHTIRON.block.get());
 		
 		for(Block b : blocks) {
 			simpleBlock(b);
