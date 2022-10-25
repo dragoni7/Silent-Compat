@@ -18,6 +18,10 @@ public class lang extends LanguageProvider {
 		add("itemGroup." + SilentCompat.MODID, "SilentCompat");
 		
 		translateMaterialSet(MaterialRegistry.MIDNIGHTIRON, "Midnight Iron");
+		translateMaterialSet(MaterialRegistry.BUNNYSTEEL, "Bunny Steel");
+		translateMaterialSet(MaterialRegistry.DARKCHOCOLATE, "Dark Chocolate");
+		translateMaterialSet(MaterialRegistry.SCULKALLOY, "Sculk Alloy");
+		
 		add("trait.silentcompat.diurnal", "Diurnal");
 		add("trait.silentcompat.diurnal.desc", "Deal increased damage during the day. Gear slowly repairs during the day");
 		add("trait.silentcompat.nocturnal", "Diurnal");

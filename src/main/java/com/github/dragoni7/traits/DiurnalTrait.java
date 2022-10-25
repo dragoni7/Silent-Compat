@@ -23,7 +23,7 @@ public class DiurnalTrait extends SimpleTrait {
 		long time = world.getDayTime() % 24000;
 		if (time < 13000) {
 			// repair during day
-			if (context.getPlayer().tickCount % 120 == 0) {
+			if (context.getPlayer().tickCount % 240 == 0) {
 				GearHelper.attemptDamage(context.getGear(), -1, context.getPlayer(), InteractionHand.MAIN_HAND);
 			}
 		}

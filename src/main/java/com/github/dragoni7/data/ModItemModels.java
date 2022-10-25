@@ -20,6 +20,9 @@ public class ModItemModels extends ItemModelProvider {
 	@Override
 	protected void registerModels() {
 		registerMaterialSetItemModels(MaterialRegistry.MIDNIGHTIRON);
+		registerMaterialSetItemModels(MaterialRegistry.BUNNYSTEEL);
+		registerMaterialSetItemModels(MaterialRegistry.DARKCHOCOLATE);
+		registerMaterialSetItemModels(MaterialRegistry.SCULKALLOY);
 	}
 	
 	private void registerMaterialSetItemModels(MaterialSet set) {

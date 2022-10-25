@@ -19,6 +19,9 @@ public class AddItemTags extends ItemTagsProvider {
 	@Override
 	protected void addTags() {
 		addMaterialTags(MaterialRegistry.MIDNIGHTIRON);
+		addMaterialTags(MaterialRegistry.BUNNYSTEEL);
+		addMaterialTags(MaterialRegistry.DARKCHOCOLATE);
+		addMaterialTags(MaterialRegistry.SCULKALLOY);
 	}
 	
 	private void addMaterialTags(MaterialSet set) {

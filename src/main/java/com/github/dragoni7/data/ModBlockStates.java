@@ -19,6 +19,9 @@ public class ModBlockStates extends BlockStateProvider {
 	protected void registerStatesAndModels() {
 		ArrayList<Block> blocks = new ArrayList<Block>();
 		blocks.add(MaterialRegistry.MIDNIGHTIRON.block.get());
+		blocks.add(MaterialRegistry.BUNNYSTEEL.block.get());
+		blocks.add(MaterialRegistry.DARKCHOCOLATE.block.get());
+		blocks.add(MaterialRegistry.SCULKALLOY.block.get());
 		
 		for(Block b : blocks) {
 			simpleBlock(b);
