@@ -1,0 +1,165 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingot/soul_steel"
+      }
+    },
+    "name": {
+      "translate": "Soul Steel"
+    },
+    "stats": {
+      "main": {
+        "durability": 350.0,
+        "armor_durability": 15.0,
+        "enchantment_value": 15.0,
+        "rarity": 20.0,
+        "charging_value": 0.8,
+        "harvest_level": 2.0,
+        "harvest_speed": 8.0,
+        "melee_damage": 3.5,
+        "magic_damage": 3.0,
+        "attack_speed": 0.0,
+        "attack_speed/axe": -0.1,
+        "ranged_damage": 1.0,
+        "ranged_speed": 0.1,
+        "projectile_speed": 1.0,
+        "projectile_accuracy": 1.1,
+        "armor": 19.0,
+        "armor/helmet": 3.0,
+        "armor/chestplate": 7.0,
+        "armor/leggings": 6.0,
+        "armor/boots": 3.0,
+        "magic_armor": 6.0
+      },
+      "rod": {},
+      "tip": {
+        "durability": {
+          "add": 228.0
+        },
+        "armor_durability": {
+          "add": 4.0
+        },
+        "harvest_level": {
+          "max": 2.0
+        },
+        "harvest_speed": {
+          "add": 2.0
+        },
+        "melee_damage": {
+          "add": 2.5
+        },
+        "ranged_speed": {
+          "add": 0.2
+        },
+        "rarity": {
+          "add": 8.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:flexible",
+          "level": 3
+        },
+        {
+          "name": "silentcompat:soul_steal",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:flexible",
+          "level": 2
+        },
+        {
+            "name": "silentgear:cursed",
+            "level": 1
+        },
+        {
+          "name": "silentcompat:soul_steal",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        }
+      ],
+      "tip": [
+        {
+          "name": "silentgear:flexible",
+          "level": 2
+        },
+        {
+            "name": "silentgear:cursed",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#3b6360"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#3b6360"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#3b6360"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#3b6360"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#3b6360"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#3b6360"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }

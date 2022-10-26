@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:bunny_steel_ingot"
+    },
+    {
+      "item": "silentcompat:bunny_steel_ingot"
+    },
+    {
+      "item": "silentcompat:bunny_steel_ingot"
+    },
+    {
+      "item": "silentcompat:bunny_steel_ingot"
+    },
+    {
+      "item": "silentcompat:bunny_steel_ingot"
+    },
+    {
+      "item": "silentcompat:bunny_steel_ingot"
+    },
+    {
+      "item": "silentcompat:bunny_steel_ingot"
+    },
+    {
+      "item": "silentcompat:bunny_steel_ingot"
+    },
+    {
+      "item": "silentcompat:bunny_steel_ingot"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:bunny_steel_block"
+  }
+}

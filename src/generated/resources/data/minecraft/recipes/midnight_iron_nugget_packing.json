@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:midnight_iron_nugget"
+    },
+    {
+      "item": "silentcompat:midnight_iron_nugget"
+    },
+    {
+      "item": "silentcompat:midnight_iron_nugget"
+    },
+    {
+      "item": "silentcompat:midnight_iron_nugget"
+    },
+    {
+      "item": "silentcompat:midnight_iron_nugget"
+    },
+    {
+      "item": "silentcompat:midnight_iron_nugget"
+    },
+    {
+      "item": "silentcompat:midnight_iron_nugget"
+    },
+    {
+      "item": "silentcompat:midnight_iron_nugget"
+    },
+    {
+      "item": "silentcompat:midnight_iron_nugget"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:midnight_iron_ingot"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 3,
+    "categories": [
+      "gem",
+      "organic"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:gems/carminite"
+    }
+  },
+  "name": {
+    "text": "Carminite"
+  },
+  "stats": {
+    "main": {
+      "durability": 512.0,
+      "armor_durability": 5.0,
+      "enchantment_value": 16.0,
+      "rarity": 50.0,
+      "charging_value": 1.0,
+      "repair_value": 0.25,
+      "harvest_level": 2.0,
+      "harvest_speed": 6.0,
+      "melee_damage": 2.0,
+      "magic_damage": 2.0,
+      "attack_speed": 0.0,
+      "ranged_damage": 1.0,
+      "ranged_speed": -0.1,
+      "projectile_speed": 1.1,
+      "projectile_accuracy": 0.9,
+      "armor": 7.0,
+      "armor_toughness": 4.0,
+      "magic_armor": 6.0
+    },
+    "coating": {
+      "durability": {
+        "mul2": 0.075
+      },
+      "armor_durability": {
+        "mul2": 0.075
+      },
+      "rarity": 50.0
+    },
+    "adornment": {}
+  },
+  "traits": {
+    "coating": [
+      {
+        "name": "silentgear:gold_digger",
+        "level": 4,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      }
+    ],
+    "adornment": [
+      {
+        "name": "silentgear:reach",
+        "level": 4,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#9e0303"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "coating/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#9e0303"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "coating/part": [
+      {
+        "texture": "silentgear:coating_material",
+        "color": "#9e0303"
+      },
+      {
+        "texture": "silentgear:coating_jar"
+      }
+    ],
+    "adornment/all": [
+      {
+        "texture": "silentgear:adornment_generic",
+        "color": "#9e0303"
+      },
+      {
+        "texture": "silentgear:adornment_highlight",
+        "color": "#9e0303"
+      }
+    ],
+    "adornment/part": [
+      {
+        "texture": "silentgear:adornment",
+        "color": "#9e0303"
+      },
+      {
+        "texture": "silentgear:adornment_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:dust",
+        "color": "#9e0303"
+      }
+    ]
+  }
+}

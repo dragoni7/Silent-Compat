@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:midnight_iron_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "silentcompat:midnight_iron_ingot"
+  }
+}

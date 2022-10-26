@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "silentcompat:dark_chocolate_block"
+        }
+      ],
+      "name": "dark_chocolate_block",
+      "rolls": 1.0
+    }
+  ]
+}

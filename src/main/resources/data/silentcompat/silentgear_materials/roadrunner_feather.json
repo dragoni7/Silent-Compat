@@ -1,0 +1,48 @@
+
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:roadrunner_feather"
+      }
+    },
+    "name": {
+      "translate": "Roadrunner Feather"
+    },
+    "stats": {
+      "fletching": {
+        "projectile_speed": 1.1,
+        "projectile_accuracy": 1.0
+      }
+    },
+    "model": {
+      "fletching/all": [
+        {
+          "texture": "silentgear:fletching_generic",
+          "color": "#25662c"
+        }
+      ],
+      "fletching/part": [
+        {
+          "texture": "silentgear:fletching",
+          "color": "#25662c"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#25662c"
+        }
+      ]
+    }
+  }

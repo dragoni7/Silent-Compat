@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "silentcompat:sculk_alloy_block"
+        }
+      ],
+      "name": "sculk_alloy_block",
+      "rolls": 1.0
+    }
+  ]
+}

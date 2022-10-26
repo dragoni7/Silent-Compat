@@ -1,0 +1,100 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 2,
+    "categories": [
+      "metal",
+      "organic"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/ironwood"
+    }
+  },
+  "name": {
+    "text": "Ironwood"
+  },
+  "stats": {
+    "main": {
+      "durability": 512.0,
+      "armor_durability": 20.0,
+      "enchantability": 16.0,
+      "harvest_level": 2.0,
+      "harvest_speed": 6.0,
+      "melee_damage": 6.0,
+      "magic_damage": 1.0,
+      "attack_speed": 0.1,
+      "armor": 16.0,
+      "magic_armor": 6.0,
+      "ranged_damage": 0.5,
+      "ranged_speed": 0.1,
+      "rarity": 40.0,
+      "chargeability": 1.0
+    },
+    "rod": {
+      "durability": {
+        "mul2": 0.1
+      },
+      "melee_damage": {
+        "mul2": 0.05
+      },
+      "rarity": 40.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:organic",
+        "level": 1
+      },
+      {
+        "name": "silentgear:malleable",
+        "level": 3
+      }
+    ],
+    "rod": [
+      {
+        "name": "silentgear:malleable",
+        "level": 3
+      },
+      {
+        "name": "silentgear:organic",
+        "level": 1
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#5B674C"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#5B674C"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_hc",
+        "color": "#5B674C"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "silentgear:rod",
+        "color": "#5B674C"
+      }
+    ]
+  }
+}

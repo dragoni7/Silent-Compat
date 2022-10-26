@@ -2,6 +2,7 @@ package com.github.dragoni7.traits;
 
 import java.util.Collection;
 
+import com.github.dragoni7.core.ModKeys;
 import com.github.dragoni7.main.SilentCompat;
 
 import net.minecraft.resources.ResourceLocation;
@@ -15,21 +16,25 @@ import net.silentchaos512.gear.gear.trait.SimpleTrait;
 public class EnderFluTrait extends SimpleTrait {
 	
 	public static final Serializer<EnderFluTrait> SERIALIZER = new Serializer<EnderFluTrait>(new ResourceLocation(SilentCompat.MODID, "enderflu"), EnderFluTrait::new);
-	private static final MobEffect ENDER_FLU = ForgeRegistries.MOB_EFFECTS.getValue(new ResourceLocation("alexsmobs", "ender_flu"));
+	private static MobEffect ender_flu = null;
 	
 	public EnderFluTrait(ResourceLocation id) {
 		super(id, SERIALIZER);
 	}
 	
 	@Override
+    public void onGearCrafted(TraitActionContext context) {
+		ender_flu = ForgeRegistries.MOB_EFFECTS.getValue(ModKeys.ENDER_FLU);
+    }
+	
+	@Override
 	public float onAttackEntity(TraitActionContext context, LivingEntity target, float baseValue) {
-		
-		if (ENDER_FLU != null) {
-			if (target.hasEffect(ENDER_FLU)) {
+		if (ender_flu != null) {
+			if (target.hasEffect(ender_flu)) {
 				return super.onAttackEntity(context, target, baseValue);
 			} 
 			else {
-				target.addEffect(new MobEffectInstance(ENDER_FLU, 180));
+				target.addEffect(new MobEffectInstance(ender_flu, 180));
 			}
 		}
 		
@@ -42,5 +47,4 @@ public class EnderFluTrait extends SimpleTrait {
         ret.add("Infects the target with Ender Flu");
         return ret;
     }
-
 }

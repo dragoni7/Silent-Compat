@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:bunny_steel_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "silentcompat:bunny_steel_nugget"
+  }
+}

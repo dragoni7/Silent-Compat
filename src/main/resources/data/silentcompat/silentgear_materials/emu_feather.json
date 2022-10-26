@@ -1,0 +1,48 @@
+
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:emu_feather"
+      }
+    },
+    "name": {
+      "translate": "Emu Feather"
+    },
+    "stats": {
+      "fletching": {
+        "projectile_speed": 0.8,
+        "projectile_accuracy": 1.2
+      }
+    },
+    "model": {
+      "fletching/all": [
+        {
+          "texture": "silentgear:fletching_generic",
+          "color": "#857e46"
+        }
+      ],
+      "fletching/part": [
+        {
+          "texture": "silentgear:fletching",
+          "color": "#857e46"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#857e46"
+        }
+      ]
+    }
+  }

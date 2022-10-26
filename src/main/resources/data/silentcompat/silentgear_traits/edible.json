@@ -1,0 +1,10 @@
+{
+    "type": "silentcompat:edible",
+    "max_level": 1,
+    "name": {
+      "translate": "trait.silentcompat.edible"
+    },
+    "description": {
+      "translate": "trait.silentcompat.edible.desc"
+    }
+  }

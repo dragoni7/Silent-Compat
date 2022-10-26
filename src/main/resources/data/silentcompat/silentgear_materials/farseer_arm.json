@@ -1,0 +1,60 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:farseer_arm"
+      }
+    },
+    "name": {
+      "translate": "Farseer Arm"
+    },
+    "stats": {
+      "rod": {
+        "melee_damage": {
+          "mul2": 0.25
+        },
+        "ranged_damage": {
+          "mul2": 0.15
+        },
+        "harvest_level": {
+            "max": 3.0
+        }
+      }
+    },
+    "traits": {
+      "rod": [
+        {
+          "name": "silentgear:flexible",
+          "level": 3
+        },
+        {
+            "name": "silentgear:rustic",
+            "level": 3
+        }
+      ]
+    },
+    "model": {
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#1f1924"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#1f1924"
+        }
+      ]
+    }
+  }

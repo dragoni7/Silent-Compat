@@ -2,6 +2,7 @@ package com.github.dragoni7.data;
 
 import com.github.dragoni7.core.MaterialRegistry;
 import com.github.dragoni7.core.MaterialSet;
+import com.github.dragoni7.core.SilentCompatItems;
 import com.github.dragoni7.main.SilentCompat;
 
 import net.minecraft.data.DataGenerator;
@@ -24,6 +25,8 @@ public class ModItemModels extends ItemModelProvider {
 		registerMaterialSetItemModels(MaterialRegistry.DARKCHOCOLATE);
 		registerMaterialSetItemModels(MaterialRegistry.SCULKALLOY);
 		registerMaterialSetItemModels(MaterialRegistry.CAPSID_ALLOY);
+		
+		singleTextureItemModel(SilentCompatItems.CHOCOLATECHIP, "item/chocolate_chip");
 	}
 	
 	private void registerMaterialSetItemModels(MaterialSet set) {

@@ -19,6 +19,8 @@ public class DataGenerators {
 		ExistingFileHelper fileHelper = event.getExistingFileHelper();
 		
 		if (event.includeServer()) {
+			generator.addProvider(true, new ModRecipes(generator));
+			generator.addProvider(true, new ModLootTables(generator));
 			BlockTagsProvider blocks = new BlockTagsProvider(generator, SilentCompat.MODID, fileHelper);
 			generator.addProvider(true, new AddBlockTags(generator, fileHelper));
 			generator.addProvider(true, new AddItemTags(generator, blocks, fileHelper));

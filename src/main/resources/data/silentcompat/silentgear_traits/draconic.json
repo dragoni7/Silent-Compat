@@ -1,0 +1,25 @@
+{
+    "type": "silentgear:wielder_effect",
+    "max_level": 5,
+    "name": {
+      "text": "Draconic"
+    },
+    "description": {
+      "text": "Grants Absorption"
+    },
+    "potion_effects": {
+      "curio": [
+        {
+          "type": "trait_level",
+          "effect": "minecraft:absorption",
+          "level": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    }
+  }

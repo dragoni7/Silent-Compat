@@ -1,0 +1,168 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/andesite_alloy"
+      }
+    },
+    "name": {
+      "translate": "Andesite Alloy"
+    },
+    "stats": {
+      "main": {
+        "durability": 160.0,
+        "armor_durability": 13.0,
+        "enchantability": 10.0,
+        "harvest_level": 2.0,
+        "harvest_speed": 6.0,
+        "melee_damage": 1.5,
+        "magic_damage": 1.0,
+        "attack_speed": 0.0,
+        "attack_speed/axe": -0.1,
+        "armor": 15.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 6.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 2.0,
+        "magic_armor": 6.0,
+        "ranged_damage": 1.0,
+        "ranged_speed": 0.1,
+        "projectile_speed": 1.0,
+        "projectile_accuracy": 1.0,
+        "rarity": 10.0,
+        "chargeability": 0.7
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.1
+        },
+        "enchantability": [
+          {
+            "add": -2.0
+          },
+          {
+            "mul2": -0.1
+          }
+        ],
+        "melee_damage": {
+          "mul2": 0.1
+        },
+        "rarity": 10.0
+      },
+      "tip": {
+        "durability": {
+          "add": 60.0
+        },
+        "armor_durability": {
+          "add": 4.0
+        },
+        "harvest_level": {
+          "max": 2.0
+        },
+        "harvest_speed": {
+          "add": 1.0
+        },
+        "melee_damage": {
+          "add": 1.0
+        },
+        "ranged_speed": {
+          "add": 0.2
+        },
+        "rarity": {
+          "add": 4.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+            "name": "silentcompat:diurnal",
+            "level": 1
+        },
+        {
+          "name": "silentgear:crude",
+          "level": 2
+        },
+        {
+          "name": "silentgear:magnetic",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        }
+      ],
+      "rod": [
+        {
+            "name": "silentgear:crude",
+            "level": 2
+        }
+      ],
+      "tip": [
+        {
+          "name": "silentgear:malleable",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#8b9995"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#8b9995"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#8b9995"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#8b9995"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#8b9995"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base",
+          "color": "#8b9995"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#8b9995"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,137 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 3,
+    "categories": [
+      "organic",
+      "cloth"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "silentcompat:alpha_yeti_fur"
+    }
+  },
+  "name": {
+    "text": "Alpha Yeti Fur"
+  },
+  "stats": {
+    "main": {
+      "durability": 640.0,
+      "armor_durability": 20.0,
+      "enchantability": 16.0,
+      "armor": 20.0,
+      "armor_toughness": 12.0,
+      "magic_armor": 6.0,
+      "rarity": 80.0,
+      "chargeability": 1.0
+    },
+    "grip": {
+      "durability": {
+        "add": 100.0
+      },
+      "attack_speed": {
+        "add": 0.3
+      },
+      "rarity": 80.0
+    },
+    "lining": {
+      "armor_durability": {
+        "add": 50.0
+      },
+      "knockback_resistance": {
+        "add": 0.2
+      },
+      "armor_toughness": {
+        "add": 1.0
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:flexible",
+        "level": 3
+      },
+      {
+        "name": "silentgear:soft",
+        "level": 1
+      },
+      {
+        "name": "silentcompat:yeti_strength",
+        "level": 1
+      }
+    ],
+    "grip": [
+      {
+        "name": "silentgear:flexible",
+        "level": 3
+      },
+      {
+        "name": "silentgear:soft",
+        "level": 1
+      }
+    ],
+    "lining": [
+      {
+        "name": "silentgear:flexible",
+        "level": 3
+      },
+      {
+        "name": "silentcompat:yeti_strength",
+        "level": 1
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#A5D4F3"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#A5D4F3"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_hc",
+        "color": "#A5D4F3"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "silentgear:rod",
+        "color": "#A5D4F3"
+      }
+    ],
+    "grip/all": [
+      {
+        "texture": "silentgear:grip_wool",
+        "color": "#A5D4F3"
+      }
+    ],
+    "grip/part": [
+      {
+        "texture": "silentgear:grip",
+        "color": "#A5D4F3"
+      }
+    ],
+    "lining/part": [
+      {
+        "texture": "silentgear:lining_cloth",
+        "color": "#A5D4F3"
+      }
+    ]
+  }
+}

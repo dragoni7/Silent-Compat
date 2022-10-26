@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:capsid_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:capsid_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:capsid_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:capsid_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:capsid_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:capsid_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:capsid_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:capsid_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:capsid_alloy_ingot"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:capsid_alloy_block"
+  }
+}

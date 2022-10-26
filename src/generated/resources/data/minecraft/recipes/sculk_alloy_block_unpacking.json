@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:sculk_alloy_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "silentcompat:sculk_alloy_ingot"
+  }
+}

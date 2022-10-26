@@ -1,0 +1,101 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/forgotten_metal"
+      }
+    },
+    "name": {
+      "translate": "Forgotten"
+    },
+    "stats": {
+      "main": {
+        "durability": 1867.0,
+        "armor_durability": 37.0,
+        "enchantment_value": 14.0,
+        "harvest_level": 3.0,
+        "harvest_speed": 12.0,
+        "melee_damage": 7.0,
+        "magic_damage": 6.0,
+        "attack_speed": -0.1,
+        "attack_speed/axe": -0.2,
+        "armor": 20.0,
+        "armor_toughness": 8.0,
+        "magic_armor": 12.0,
+        "ranged_damage": 1.0,
+        "ranged_speed": 0.0,
+        "rarity": 70.0,
+        "charging_value": 1.2
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.1
+        },
+        "repair_efficiency": {
+          "mul2": -0.1
+        },
+        "rarity": 70.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentcompat:fleet_footed",
+          "level": 1
+        },
+        {
+          "name": "silentgear:soft",
+          "level": 2
+        },
+        {
+          "name": "silentcompat:featherweight",
+          "level": 1
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:soft",
+          "level": 4
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#3ce856"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#3ce856"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#3ce856"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#3ce856"
+        }
+      ]
+    }
+  }

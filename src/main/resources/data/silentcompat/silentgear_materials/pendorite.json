@@ -1,0 +1,104 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/pendorite"
+      }
+    },
+    "name": {
+      "translate": "Pendorite"
+    },
+    "stats": {
+      "coating": {
+        "durability": [
+          {
+            "mul2": 0.5
+          },
+          {
+            "add": 2.0
+          }
+        ],
+        "armor_durability": {
+          "mul2": 0.5
+        },
+        "harvest_speed": {
+          "mul2": 0.125
+        },
+        "harvest_level": {
+          "max": 4.0
+        },
+        "melee_damage": [
+          {
+            "add": 1
+          },
+          {
+            "mul2": 0.33333334
+          }
+        ],
+        "magic_damage": {
+          "mul2": 0.33333334
+        },
+        "ranged_damage": [
+          {
+            "add": 1
+          },
+          {
+            "mul2": 0.33333334
+          }
+        ],
+        "armor_toughness": {
+          "add": 4.0
+        },
+        "knockback_resistance": {
+          "add": 1.0
+        },
+        "enchantment_value": {
+          "add": 5.0
+        }
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+            "name": "silentgear:crushing",
+            "level": 2
+        }
+      ]
+    },
+    "model": {
+        "coating/all": [
+            {
+              "texture": "silentgear:main_generic_hc",
+              "color": "#8170b5"
+            },
+            {
+              "texture": "silentgear:_highlight"
+            }
+          ],
+          "coating/part": [
+            {
+              "texture": "silentgear:coating_material",
+              "color": "#8170b5"
+            },
+            {
+              "texture": "silentgear:coating_jar"
+            }
+          ],
+          "main/fragment": [
+            {
+              "texture": "silentgear:dust",
+              "color": "#8170b5"
+            }
+          ]
+    }
+  }

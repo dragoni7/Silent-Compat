@@ -1,0 +1,149 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal",
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/sculk_alloy"
+      }
+    },
+    "name": {
+      "translate": "material.silentcompat.sculk_alloy"
+    },
+    "stats": {
+      "main": {
+        "durability": 2400.0,
+        "armor_durability": 48.0,
+        "repair_value": -0.2,
+        "enchantment_value": 20.0,
+        "harvest_level": 3.0,
+        "harvest_speed": 15.0,
+        "melee_damage": 10.0,
+        "magic_damage": 6.0,
+        "attack_speed": 0.1,
+        "armor": 30.0,
+        "armor/helmet": 5.0,
+        "armor/chestplate": 12.0,
+        "armor/leggings": 8.0,
+        "armor/boots": 5.0,
+        "armor_toughness": 8.0,
+        "magic_armor": 6.0,
+        "ranged_damage": 3.0,
+        "ranged_speed": 0.2,
+        "rarity": 60.0,
+        "charging_value": 0.8
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.24
+        },
+        "rarity": 60.0
+      },
+      "tip": {
+        "durability": {
+          "add": 500.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:ancient",
+          "level": 3
+        },
+        {
+          "name": "silentcompat:swift_sneak",
+          "level": 2
+        },
+        {
+          "name": "silentcompat:mending",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:malleable",
+          "level": 5
+        },
+        {
+            "name": "silentcompat:mending",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.5
+              }
+            ]
+        }
+      ],
+      "tip": [
+        {
+          "name": "silentgear:sturdy",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#05272e"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#05272e"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#05272e"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#05272e"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#05272e"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#05272e"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,77 @@
+
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic",
+        "cloth"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:tarantula_hawk_wing"
+      }
+    },
+    "name": {
+      "translate": "Tarantual Hawk Wing"
+    },
+    "stats": {
+      "fletching": {
+        "projectile_speed": 1.5,
+        "projectile_accuracy": 0.6
+      },
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 10.0,
+        "enchantability": 3.0,
+        "rarity": 15.0,
+        "chargeability": 0.5,
+        "armor_durability/elytra": 34.0,
+        "armor": 4.0,
+        "magic_armor": 1.0
+      }
+    },
+    "traits": {
+        "main": [
+          {
+            "name": "silentgear:flexible",
+            "level": 1
+          },
+          {
+            "name": "silentcompat:dodging",
+            "level": 1
+          }
+        ]
+      },
+    "model": {
+      "fletching/all": [
+        {
+          "texture": "silentgear:fletching_generic",
+          "color": "#e67220"
+        }
+      ],
+      "fletching/part": [
+        {
+          "texture": "silentgear:fletching",
+          "color": "#e67220"
+        }
+      ],
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#e67220"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#e67220"
+        }
+      ]
+    }
+  }

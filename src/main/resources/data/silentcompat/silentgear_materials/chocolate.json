@@ -1,6 +1,15 @@
 {
     "type": "silentgear:standard",
     "simple": true,
+    "conditions": [
+      {
+        "value": {
+          "tag": "forge:chocolate",
+          "type": "forge:tag_empty"
+        },
+        "type": "forge:not"
+      }
+    ],
     "availability": {
       "tier": 1,
       "categories": [
@@ -49,7 +58,11 @@
           "level": 3
         },
         {
-          "name": "silentgear:brittle",
+          "name": "silentcompat:edible",
+          "level": 1
+        },
+        {
+          "name": "silentgear:organic",
           "level": 2
         }
       ],

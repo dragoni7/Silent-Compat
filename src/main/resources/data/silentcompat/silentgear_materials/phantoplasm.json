@@ -1,0 +1,198 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "organic",
+        "cloth",
+        "fiber"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:phantoplasm"
+      }
+    },
+    "name": {
+      "text": "Phantoplasm"
+    },
+    "name_prefix": {
+      "translate": "Ethereal"
+    },
+    "stats": {
+      "grip": {
+        "harvest_speed": {
+          "mul1": 0.5
+        },
+        "attack_speed": {
+          "mul1": 0.2
+        },
+        "rarity": {
+          "add": 10.0
+        }
+      },
+      "lining": {
+        "armor_durability": {
+          "add": 5.0
+        },
+        "magic_armor": {
+          "add": 10.0
+        },
+        "rarity": {
+          "add": 10.0
+        }
+      },
+      "binding": {
+        "durability": {
+          "mul1": 0.1
+        },
+        "armor_durability": {
+          "mul1": 0.1
+        },
+        "magic_armor": {
+          "add": 10.0
+        },
+        "rarity": {
+          "add": 10.0
+        }
+      },
+      "cord": {
+        "durability": {
+          "mul1": 0.1
+        },
+        "ranged_damage": {
+          "mul1": 0.1
+        },
+        "rarity": {
+          "add": 10.0
+        },
+        "enchantability": {
+          "add": 10.0
+        }
+      },
+      "coating": {
+        "enchantability": {
+            "add": 15.0
+        },
+        "rarity": {
+          "add": 10.0
+        },
+        "melee_damage": {
+          "mul2": 0.1
+        },
+        "magic_damage": {
+          "mul2": 0.2
+        }
+      }
+    },
+    "traits": {
+      "grip": [
+        {
+            "name": "silentgear:flexible",
+            "level": 2
+        },
+        {
+            "name": "silentgear:soft",
+            "level": 3
+        }
+      ],
+      "lining": [
+        {
+            "name": "silentgear:flexible",
+            "level": 2
+        },
+        {
+            "name": "silentgear:soft",
+            "level": 3
+        },
+        {
+            "name": "silentgear:refractive",
+            "level": 1
+        }
+      ],
+      "cord": [
+        {
+            "name": "silentgear:flexible",
+            "level": 3
+        },
+        {
+            "name": "silentgear:soft",
+            "level": 3
+        },
+        {
+            "name": "silentgear:refractive",
+            "level": 1
+        }
+      ],
+      "binding": [
+        {
+            "name": "silentgear:flexible",
+            "level": 3
+        },
+        {
+            "name": "silentgear:soft",
+            "level": 3
+        }
+      ],
+      "coating": [
+        {
+            "name": "silentgear:reach",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "binding/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#6bffe9"
+        }
+      ],
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#6bffe9"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#6bffe9"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "cord/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#6bffe9"
+        }
+      ],
+      "grip/all": [
+        {
+          "texture": "silentgear:grip_wool",
+          "color": "#6bffe9"
+        }
+      ],
+      "grip/part": [
+        {
+          "texture": "silentgear:grip",
+          "color": "#6bffe9"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#6bffe9"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,171 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/cast_iron"
+      }
+    },
+    "name": {
+      "translate": "Cast Iron"
+    },
+    "stats": {
+      "main": {
+        "durability": 560.0,
+        "armor_durability": 18.0,
+        "enchantability": 14.0,
+        "harvest_level": 2.0,
+        "harvest_speed": 6.0,
+        "melee_damage": 3.0,
+        "magic_damage": 1.0,
+        "attack_speed": -0.05,
+        "attack_speed/axe": -0.1,
+        "armor": 19.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 6.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 2.0,
+        "magic_armor": 6.0,
+        "ranged_damage": 1.1,
+        "ranged_speed": 0.1,
+        "projectile_speed": 1.0,
+        "projectile_accuracy": 1.1,
+        "rarity": 20.0,
+        "chargeability": 0.7
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.2
+        },
+        "enchantability": [
+          {
+            "add": -2.0
+          },
+          {
+            "mul2": -0.1
+          }
+        ],
+        "melee_damage": {
+          "mul2": 0.11
+        },
+        "rarity": 20.0
+      },
+      "tip": {
+        "durability": {
+          "add": 228.0
+        },
+        "armor_durability": {
+          "add": 6.0
+        },
+        "harvest_level": {
+          "max": 2.0
+        },
+        "harvest_speed": {
+          "add": -0.01
+        },
+        "attack_speed": {
+            "add": -0.01
+        },
+        "melee_damage": {
+          "add": 1.5
+        },
+        "ranged_speed": {
+          "add": 0.1
+        },
+        "rarity": {
+          "add": 8.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentcompat:blast_resistant",
+          "level": 1
+        },
+        {
+          "name": "silentgear:hard",
+          "level": 1
+        },
+        {
+          "name": "silentgear:crushing",
+          "level": 2,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        }
+      ],
+      "rod": [
+        {
+            "name": "silentgear:hard",
+            "level": 1
+        }
+      ],
+      "tip": [
+        {
+            "name": "silentgear:hard",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#42413c"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#42413c"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#42413c"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#42413c"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#42413c"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base",
+          "color": "#42413c"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#42413c"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }

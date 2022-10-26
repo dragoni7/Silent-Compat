@@ -1,0 +1,84 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:centipede_legs"
+      }
+    },
+    "name": {
+      "text": "Centipede"
+    },
+    "stats": {
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 37.0,
+        "enchantability": 10.0,
+        "rarity": 30.0,
+        "chargeability": 0.8,
+        "armor": 20.0,
+        "armor_toughness": 6.0,
+        "magic_armor": 8.0
+      },
+      "lining": {
+        "armor_durability": {
+          "add": 2.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentcompat:nocturnal",
+          "level": 1
+        },
+        {
+            "name": "silentgear:organic",
+            "level": 3
+        },
+        {
+            "name": "silentgear:flexible",
+            "level": 2
+        }
+      ],
+      "lining": [
+        {
+          "name": "silentgear:flexible",
+          "level": 1
+        },
+        {
+            "name": "silentgear:organic",
+            "level": 3
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#e07236"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#e07236"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#e07236"
+        }
+      ]
+    }
+  }

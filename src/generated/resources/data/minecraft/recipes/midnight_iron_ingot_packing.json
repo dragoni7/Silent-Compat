@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:midnight_iron_ingot"
+    },
+    {
+      "item": "silentcompat:midnight_iron_ingot"
+    },
+    {
+      "item": "silentcompat:midnight_iron_ingot"
+    },
+    {
+      "item": "silentcompat:midnight_iron_ingot"
+    },
+    {
+      "item": "silentcompat:midnight_iron_ingot"
+    },
+    {
+      "item": "silentcompat:midnight_iron_ingot"
+    },
+    {
+      "item": "silentcompat:midnight_iron_ingot"
+    },
+    {
+      "item": "silentcompat:midnight_iron_ingot"
+    },
+    {
+      "item": "silentcompat:midnight_iron_ingot"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:midnight_iron_block"
+  }
+}

@@ -1,6 +1,15 @@
 {
     "type": "silentgear:standard",
     "simple": true,
+    "conditions": [
+      {
+        "value": {
+          "tag": "forge:pellets/animatter",
+          "type": "forge:tag_empty"
+        },
+        "type": "forge:not"
+      }
+    ],
     "availability": {
       "tier": 3,
       "categories": [
@@ -12,7 +21,7 @@
     },
     "crafting_items": {
       "main": {
-        "tag": "forge:pellts/animatter"
+        "tag": "forge:pellets/animatter"
       }
     },
     "name": {

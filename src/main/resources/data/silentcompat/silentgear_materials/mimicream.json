@@ -1,0 +1,62 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:mimicream"
+      }
+    },
+    "name": {
+      "translate": "MimiCream"
+    },
+    "stats": {
+      "coating": {
+        "melee_damage": {
+            "add": 3.0
+          },
+          "magic_damage": {
+            "add": 3.2
+          },
+          "ranged_damage": {
+            "add": 3.2
+          }
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentgear:synergistic",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#7e7785"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#7e7785"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ]
+    }
+  }

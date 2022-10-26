@@ -1,0 +1,138 @@
+{
+  "type": "silentgear:enchantment",
+  "max_level": 1,
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "all"
+    }
+  ],
+  "name": {
+    "text": "Steeleaf Magic"
+  },
+  "description": {
+    "text": "Grants unique enchants to gear"
+  },
+  "enchantments": {
+    "helmet": [
+      {
+        "enchantment": "minecraft:projectile_protection",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "chestplate": [
+      {
+        "enchantment": "minecraft:blast_protection",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "leggings": [
+      {
+        "enchantment": "minecraft:fire_protection",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "boots": [
+      {
+        "enchantment": "minecraft:feather_falling",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "sword": [
+      {
+        "enchantment": "minecraft:looting",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "katanna": [
+      {
+        "enchantment": "minecraft:looting",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "spear": [
+      {
+        "enchantment": "minecraft:looting",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "trident": [
+      {
+        "enchantment": "minecraft:looting",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "knife": [
+      {
+        "enchantment": "minecraft:looting",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "dagger": [
+      {
+        "enchantment": "minecraft:looting",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "shovel": [
+      {
+        "enchantment": "minecraft:efficiency",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "pickaxe": [
+      {
+        "enchantment": "minecraft:fortune",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "axe": [
+      {
+        "enchantment": "minecraft:efficiency",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "machete": [
+      {
+        "enchantment": "minecraft:efficiency",
+        "level": [
+          2
+        ]
+      }
+    ],
+    "mattock": [
+      {
+        "enchantment": "minecraft:efficiency",
+        "level": [
+          1
+        ]
+      }
+    ]
+  }
+}

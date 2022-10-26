@@ -1,0 +1,208 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "organic",
+        "cloth",
+        "fiber"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:fortunes_favor"
+      }
+    },
+    "name": {
+      "text": "Fortune's Favor"
+    },
+    "stats": {
+      "grip": {
+        "repair_efficiency": {
+          "mul1": 0.07
+        },
+        "harvest_speed": {
+          "mul1": 0.07
+        },
+        "attack_speed": {
+          "add": 0.07
+        },
+        "melee_damage": {
+          "mul2": 0.07
+        },
+        "rarity": {
+          "add": 7.0
+        }
+      },
+      "lining": {
+        "armor_durability": {
+          "add": 7.0
+        }
+      },
+      "binding": {
+        "durability": {
+          "mul1": 0.07
+        },
+        "armor_durability": {
+          "mul1": 0.07
+        },
+        "magic_armor": {
+          "add": 7.0
+        },
+        "rarity": {
+          "add": 7.0
+        },
+        "enchantability": {
+          "add": 7.0
+        }
+      },
+      "cord": {
+        "durability": {
+          "mul1": 0.07
+        },
+        "ranged_damage": {
+          "mul1": 0.07
+        },
+        "rarity": {
+          "add": 7.0
+        },
+        "enchantability": {
+          "add": 7.0
+        }
+      },
+      "coating": {
+        "enchantability": {
+          "add": 7.0
+        },
+        "rarity": {
+          "add": 7.0
+        },
+        "melee_damage": {
+          "mul2": 0.07
+        },
+        "magic_damage": {
+          "mul2": 0.07
+        }
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentgear:lucky",
+          "level": 3,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.8
+            }
+          ]
+        }
+      ],
+      "grip": [
+        {
+          "name": "silentgear:lucky",
+          "level": 3,
+          "conditions":
+          [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.8
+            }
+          ]
+        },
+        {
+            "name": "silentgear:flexible",
+            "level": 1
+        }
+      ],
+      "lining": [
+        {
+          "name": "silentgear:lucky",
+          "level": 3,
+          "conditions":
+          [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        }
+      ],
+      "cord": [
+        {
+          "name": "silentgear:lucky",
+          "level": 3,
+          "conditions":
+          [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        },
+        {
+            "name": "silentgear:flexible",
+            "level": 2
+        }
+      ],
+      "binding": [
+        {
+          "name": "silentgear:lucky",
+          "level": 3,
+          "conditions":
+          [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        },
+        {
+            "name": "silentgear:flexible",
+            "level": 2
+        }
+      ]
+    },
+    "model": {
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#cf1717"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#cf1717"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "grip/all": [
+        {
+          "texture": "silentgear:grip_wool",
+          "color": "#cf1717"
+        }
+      ],
+      "grip/part": [
+        {
+          "texture": "silentgear:grip",
+          "color": "#cf1717"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#cf1717"
+        }
+      ]
+    }
+  }

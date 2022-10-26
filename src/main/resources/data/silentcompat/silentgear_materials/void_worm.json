@@ -1,0 +1,147 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 5,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:void_worm_mandible"
+      }
+    },
+    "name": {
+      "translate": "Void Worm"
+    },
+    "stats": {
+      "coating": {
+        "durability": [
+          {
+            "mul2": 3.2
+          },
+          {
+            "add": 10.0
+          }
+        ],
+        "armor_durability": {
+          "mul2": 3.2
+        },
+        "harvest_speed": {
+          "mul2": 2.0
+        },
+        "harvest_level": {
+          "max": 5.0
+        },
+        "melee_damage": {
+          "mul2": 3.2
+        },
+        "magic_damage": {
+          "mul2": 3.2
+        },
+        "ranged_damage": {
+          "mul2": 3.2
+        },
+        "armor_toughness": {
+          "add": 8.0
+        },
+        "enchantability": {
+          "add": 10.0
+        },
+        "knockback_resistance": {
+          "add": 8.0
+        },
+        "rarity": {
+          "add": 50.0
+        }
+      },
+      "rod": {
+        "melee_damage": {
+          "mul2": 0.5
+        },
+        "durability": [
+          {
+            "mul2": 0.5
+          },
+          {
+            "add": 5.0
+          }
+        ],
+        "rarity": {
+          "add": 50.0
+        }
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentgear:sturdy",
+          "level": 5
+        },
+        {
+            "name": "silentgear:void_ward",
+            "level": 1
+        },
+        {
+            "name": "silentgear:adamant",
+            "level": 2
+        },
+        {
+          "name": "silentcompat:worm_protection",
+          "level": 1
+      }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:flexible",
+          "level": 2
+        },
+        {
+            "name": "silentgear:hard",
+            "level": 5,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.66
+              }
+            ]
+        }
+      ]
+    },
+    "model": {
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#526c80"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#526c80"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#526c80"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#526c80"
+        }
+      ]
+    }
+  }

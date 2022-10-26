@@ -1,0 +1,43 @@
+{
+  "type": "silentgear:wielder_effect",
+  "max_level": 2,
+  "name": {
+    "text": "Strengthened"
+  },
+  "description": {
+    "text": "Grants Strength"
+  },
+  "potion_effects": {
+    "armor": [
+      {
+        "type": "piece_count",
+        "effect": "minecraft:strength",
+        "level": [
+          0,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "tool": [
+      {
+        "type": "piece_count",
+        "effect": "minecraft:strength",
+        "level": [
+          1
+        ]
+      }
+    ],
+    "curio": [
+      {
+        "type": "piece_count",
+        "effect": "minecraft:strength",
+        "level": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "silentcompat:soul_steal",
+    "max_level": 1,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "tool"
+      }
+    ],
+    "name": {
+      "translate": "trait.silentcompat.soul_steal"
+    },
+    "description": {
+      "translate": "trait.silentcompat.soul_steal.desc"
+    }
+  }

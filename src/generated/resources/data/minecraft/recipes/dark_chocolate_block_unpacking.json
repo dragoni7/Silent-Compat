@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:dark_chocolate_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "silentcompat:dark_chocolate_ingot"
+  }
+}

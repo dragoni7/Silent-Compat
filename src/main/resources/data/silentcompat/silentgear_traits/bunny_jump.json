@@ -1,0 +1,21 @@
+{
+    "type": "silentgear:wielder_effect",
+    "max_level": 2,
+    "name": {
+      "text": "Bunny Jump"
+    },
+    "description": {
+      "text": "Grants High Jump Boost"
+    },
+    "potion_effects": {
+      "boots": [
+        {
+          "type": "piece_count",
+          "effect": "minecraft:jump_boost",
+          "level": [
+            2
+          ]
+        }
+      ]
+    }
+  }

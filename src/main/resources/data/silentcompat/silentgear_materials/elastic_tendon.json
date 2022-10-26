@@ -1,0 +1,87 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "organic",
+        "fiber"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:elastic_tendon"
+      }
+    },
+    "name": {
+      "text": "Elastic Tendon"
+    },
+    "stats": {
+      "binding": {
+        "repair_efficiency": {
+          "mul1": -0.05
+        }
+      },
+      "cord": {
+        "ranged_damage": {
+          "mul1": 0.3
+        }
+      }
+    },
+    "traits": {
+      "binding": [
+        {
+          "name": "silentgear:flexible",
+          "level": 5
+        },
+        {
+          "name": "silentgear:cursed",
+          "level": 2
+        }
+      ],
+      "cord": [
+        {
+          "name": "silentgear:flexible",
+          "level": 3
+        }
+      ]
+    },
+    "model": {
+      "binding/all": [
+        {
+          "texture": "silentgear:binding_generic",
+          "color": "#b0bf7a"
+        }
+      ],
+      "binding/part": [
+        {
+          "texture": "silentgear:binding",
+          "color": "#b0bf7a"
+        }
+      ],
+      "cord/all": [
+        {
+          "texture": "silentgear:bowstring_string",
+          "color": "#b0bf7a"
+        },
+        {
+          "texture": "silentgear:arrow"
+        }
+      ],
+      "cord/part": [
+        {
+          "texture": "silentgear:bowstring",
+          "color": "#b0bf7a"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#b0bf7a"
+        }
+      ]
+    }
+  }

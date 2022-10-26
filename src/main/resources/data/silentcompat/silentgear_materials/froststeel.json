@@ -1,0 +1,143 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/froststeel"
+      }
+    },
+    "name": {
+      "translate": "Froststeel"
+    },
+    "stats": {
+      "main": {
+        "durability": 575.0,
+        "armor_durability": 16.0,
+        "enchantment_value": 15.0,
+        "harvest_level": 3.0,
+        "harvest_speed": 6.0,
+        "melee_damage": 2.0,
+        "magic_damage": 1.0,
+        "attack_speed": 0.0,
+        "armor": 18.0,
+        "armor_toughness": 16.0,
+        "magic_armor": 4.0,
+        "ranged_damage": 1.0,
+        "ranged_speed": -0.3,
+        "rarity": 40.0,
+        "charging_value": 0.8,
+        "knockback_resistance": {
+          "add": 0.5
+        }
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.1
+        },
+        "rarity": 40.0
+      },
+      "lining": {
+        "durability": {
+          "mul2": 0.1
+        },
+        "armor_toughness": {
+          "add": 4.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:heavy",
+          "level": 2
+        },
+        {
+          "name": "silentgear:chilled",
+          "level": 5
+        },
+        {
+          "name": "silentcompat:freezing",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 3
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.35
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:hard",
+          "level": 1
+        },
+        {
+          "name": "silentgear:heavy",
+          "level": 2
+        }
+      ],
+      "lining": [
+        {
+          "name": "silentgear:hard",
+          "level": 1
+        },
+        {
+          "name": "silentgear:heavy",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#9fd6d0"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#9fd6d0"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#9fd6d0"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#9fd6d0"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#9fd6d0"
+        }
+      ]
+    }
+  }

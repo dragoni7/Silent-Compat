@@ -2,6 +2,7 @@ package com.github.dragoni7.traits;
 
 import java.util.Collection;
 
+import com.github.dragoni7.core.ModKeys;
 import com.github.dragoni7.main.SilentCompat;
 
 import net.minecraft.resources.ResourceLocation;
@@ -15,17 +16,21 @@ import net.silentchaos512.gear.gear.trait.SimpleTrait;
 public class DecayTrait extends SimpleTrait {
 	
 	public static final Serializer<DecayTrait> SERIALIZER = new Serializer<DecayTrait>(new ResourceLocation(SilentCompat.MODID, "decay"), DecayTrait::new);
-	private static final MobEffect DECAY_EFFECT = ForgeRegistries.MOB_EFFECTS.getValue(new ResourceLocation("dreamland", "decay"));
+	private static MobEffect decay = null;
+	
+	@Override
+    public void onGearCrafted(TraitActionContext context) {
+		decay = ForgeRegistries.MOB_EFFECTS.getValue(ModKeys.DECAY_EFFECT);
+    }
 	
 	@Override
 	public float onAttackEntity(TraitActionContext context, LivingEntity target, float baseValue) {
-		
-		if (DECAY_EFFECT != null) {
-			if (target.hasEffect(DECAY_EFFECT)) {
+		if (decay != null) {
+			if (target.hasEffect(decay)) {
 				return super.onAttackEntity(context, target, baseValue);
 			} 
 			else {
-				target.addEffect(new MobEffectInstance(DECAY_EFFECT, 100));
+				target.addEffect(new MobEffectInstance(decay, 100));
 			}
 		}
 		

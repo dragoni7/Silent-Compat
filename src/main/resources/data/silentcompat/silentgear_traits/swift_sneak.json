@@ -1,0 +1,36 @@
+{
+    "type": "silentgear:enchantment",
+    "max_level": 2,
+    "conditions": [
+        {
+          "type": "silentgear:or",
+          "values": [
+            {
+              "type": "silentgear:gear_type",
+              "gear_type": "boots"
+            },
+            {
+              "type": "silentgear:gear_type",
+              "gear_type": "curio"
+            }
+          ]
+        }
+    ],
+    "name": {
+      "text": "Swift Sneak"
+    },
+    "description": {
+      "text": "Applies Swift Sneak to boots"
+    },
+    "enchantments": {
+      "boots": [
+        {
+          "enchantment": "minecraft:swift_sneak",
+          "level": [
+            1,
+            2
+          ]
+        }
+      ]
+    }
+  }

@@ -1,0 +1,112 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 2,
+    "categories": [
+      "metal",
+      "organic"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/steeleaf"
+    }
+  },
+  "name": {
+    "text": "Steeleaf"
+  },
+  "stats": {
+    "main": {
+      "durability": 131.0,
+      "armor_durability": 10.0,
+      "enchantability": 17.0,
+      "harvest_level": 2.0,
+      "harvest_speed": 8.0,
+      "melee_damage": 3,
+      "magic_damage": 2.0,
+      "attack_speed": 0.2,
+      "armor": 20.0,
+      "magic_armor": 7.0,
+      "ranged_damage": 0.6,
+      "ranged_speed": 0.2,
+      "rarity": 40.0,
+      "chargeability": 1.2
+    },
+    "fletching": {
+      "projectile_speed": 1.2,
+      "projectile_accuracy": 1.1,
+      "rarity": 40.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:organic",
+        "level": 1
+      },
+      {
+        "name": "silentgear:malleable",
+        "level": 3
+      },
+      {
+        "name": "silentcompat:steeleaf_magic",
+        "level": 2,
+        "conditions": [
+          {
+            "type": "silentgear:or",
+            "values": [
+              {
+                "type": "silentgear:material_count",
+                "count": 3
+              },
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.35
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "fletching": [
+      {
+        "name": "silentgear:organic",
+        "level": 1
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#197C18"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#197C18"
+      }
+    ],
+
+    "fletching/all": [
+      {
+        "texture": "silentgear:fletching_generic",
+        "color": "#197C18"
+      }
+    ],
+    "fletching/part": [
+      {
+        "texture": "silentgear:fletching",
+        "color": "#197C18"
+      }
+    ]
+  }
+}

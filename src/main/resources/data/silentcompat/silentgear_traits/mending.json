@@ -1,0 +1,28 @@
+{
+    "type": "silentgear:enchantment",
+    "max_level": 1,
+    "name": {
+      "text": "Mending"
+    },
+    "description": {
+      "text": "Applies Mending"
+    },
+    "enchantments": {
+      "armor": [
+        {
+          "enchantment": "minecraft:mending",
+          "level": [
+            1
+          ]
+        }
+      ],
+      "tool": [
+        {
+          "enchantment": "minecraft:mending",
+          "level": [
+            1
+          ]
+        }
+      ]
+    }
+  }

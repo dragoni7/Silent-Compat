@@ -1,0 +1,78 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:crocodile_scute"
+      }
+    },
+    "name": {
+      "translate": "Crocodile Scute"
+    },
+    "stats": {
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 22.0,
+        "enchantment_value": 9.0,
+        "charging_value": 0.5,
+        "rarity": 20.0,
+        "armor": 20.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 7.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 2.0,
+        "armor_toughness": 4.0,
+        "magic_armor": 4.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:turtle",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_count",
+              "count": 3
+            }
+          ]
+        },
+        {
+            "name": "silentgear:flexible",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/helmet": [
+        {
+          "texture": "silentgear:turtle",
+          "color": "#384a1b"
+        }
+      ],
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#384a1b"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#384a1b"
+        }
+      ]
+    }
+  }

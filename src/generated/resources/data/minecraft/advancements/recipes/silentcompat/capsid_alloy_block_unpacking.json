@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "capsid_alloy_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "silentcompat:capsid_alloy_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:capsid_alloy_block_unpacking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "capsid_alloy_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:capsid_alloy_block_unpacking"
+    ]
+  }
+}

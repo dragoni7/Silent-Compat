@@ -1,0 +1,86 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:shark_tooth"
+      }
+    },
+    "name": {
+      "text": "Shark Tooth"
+    },
+    "stats": {
+      "tip": {
+        "durability": {
+          "add": 256.0
+        },
+        "harvest_level": {
+          "max": 2.0
+        },
+        "harvest_speed": {
+          "add": 2.2
+        },
+        "melee_damage": {
+          "add": 2.0
+        },
+        "ranged_damage": {
+          "add": 1.0
+        },
+        "rarity": {
+          "add": 20.0
+        }
+      }
+    },
+    "traits": {
+      "tip": [
+        {
+          "name": "silentgear:chipping",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#FCFBED"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#FCFBED"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#FCFBED"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#FCFBED"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }

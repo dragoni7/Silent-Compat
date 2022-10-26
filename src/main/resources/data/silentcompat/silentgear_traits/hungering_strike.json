@@ -1,0 +1,16 @@
+{
+    "type": "silentcompat:hungering_strike",
+    "max_level": 1,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "tool"
+      }
+    ],
+    "name": {
+      "translate": "trait.silentcompat.hungering_strike"
+    },
+    "description": {
+      "translate": "trait.silentcompat.hungering_strike.desc"
+    }
+  }

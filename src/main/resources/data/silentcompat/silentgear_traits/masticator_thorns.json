@@ -1,0 +1,26 @@
+{
+    "type": "silentgear:enchantment",
+    "max_level": 1,
+    "conditions": [
+        {
+          "type": "silentgear:gear_type",
+          "gear_type": "armor"
+        }
+      ],
+    "name": {
+      "text": "Masticator Thorns"
+    },
+    "description": {
+      "text": "Applies Powerful Thorns"
+    },
+    "enchantments": {
+      "armor": [
+        {
+          "enchantment": "minecraft:thorns",
+          "level": [
+            5
+          ]
+        }
+      ]
+    }
+  }

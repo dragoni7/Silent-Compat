@@ -1,0 +1,131 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 3,
+    "categories": [
+      "organic",
+      "cloth"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "silentcompat:naga_scale"
+    }
+  },
+  "name": {
+    "text": "Naga Scale"
+  },
+  "stats": {
+    "main": {
+      "durability": 440.0,
+      "armor_durability": 21.0,
+      "enchantability": 16.0,
+      "armor": 24.0,
+      "armor_toughness": 2.0,
+      "magic_armor": 6.0,
+      "rarity": 60.0,
+      "chargeability": 1.0
+    },
+    "grip": {
+      "durability": {
+        "add": 44.0
+      },
+      "harvest_speed": {
+        "add": 0.5
+      },
+      "attack_speed": {
+        "add": 0.15
+      },
+      "rarity": {
+        "add": 40.0
+      }
+    },
+    "lining": {
+      "armor_durability": {
+        "add": 10.0
+      },
+      "armor_toughness": {
+        "add": 0.5
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:flexible",
+        "level": 3
+      },
+      {
+        "name": "silentcompat:naga_magic",
+        "level": 1
+      }
+    ],
+    "grip": [
+      {
+        "name": "silentgear:flexible",
+        "level": 3
+      },
+      {
+        "name": "silentgear:ancient",
+        "level": 2
+      }
+    ],
+    "lining": [
+      {
+        "name": "silentgear:flexible",
+        "level": 3
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#2C5A0C"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#2C5A0C"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_hc",
+        "color": "#2C5A0C"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "silentgear:rod",
+        "color": "#2C5A0C"
+      }
+    ],
+    "grip/all": [
+      {
+        "texture": "silentgear:grip_wool",
+        "color": "#2C5A0C"
+      }
+    ],
+    "grip/part": [
+      {
+        "texture": "silentgear:grip",
+        "color": "#2C5A0C"
+      }
+    ],
+    "lining/part": [
+      {
+        "texture": "silentgear:lining_cloth",
+        "color": "#2C5A0C"
+      }
+    ]
+  }
+}

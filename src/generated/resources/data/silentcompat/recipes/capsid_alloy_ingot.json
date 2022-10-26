@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "tag": "silentcompat:capsid"
+    },
+    {
+      "tag": "silentcompat:capsid"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:capsid_alloy_ingot"
+  }
+}

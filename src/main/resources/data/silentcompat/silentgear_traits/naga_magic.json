@@ -1,0 +1,50 @@
+{
+  "type": "silentgear:enchantment",
+  "max_level": 1,
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "armor"
+    }
+  ],
+  "name": {
+    "text": "Naga Magic"
+  },
+  "description": {
+    "text": "Grants Protection and Fire Protection"
+  },
+  "enchantments": {
+    "helmet": [
+      {
+        "enchantment": "minecraft:protection",
+        "level": [
+          3
+        ]
+      }
+    ],
+    "chestplate": [
+      {
+        "enchantment": "minecraft:fire_protection",
+        "level": [
+          3
+        ]
+      }
+    ],
+    "leggings": [
+      {
+        "enchantment": "minecraft:protection",
+        "level": [
+          3
+        ]
+      }
+    ],
+    "boots": [
+      {
+        "enchantment": "minecraft:fire_protection",
+        "level": [
+          3
+        ]
+      }
+    ]
+  }
+}

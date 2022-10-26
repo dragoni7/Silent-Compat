@@ -1,0 +1,113 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 4,
+    "categories": [
+      "organic",
+      "cloth"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "silentcompat:masticator_scales"
+    }
+  },
+  "name": {
+    "text": "Masticator Scales"
+  },
+  "stats": {
+    "main": {
+      "durability": 0.0,
+      "armor_durability": 17.0,
+      "enchantability": 10.0,
+      "rarity": 70.0,
+      "chargeability": 0.8,
+      "armor": 20.0,
+      "magic_armor": 8.0
+    },
+    "grip": {
+      "harvest_speed": {
+        "mul1": 0.15
+      },
+      "attack_speed": {
+        "add": 0.17
+      },
+      "rarity": {
+        "add": 15.0
+      }
+    },
+    "lining": {
+      "armor_durability": {
+        "add": 2.0
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:bounce",
+        "level": 1
+      },
+      {
+        "name": "silentgear:bastion",
+        "level": 1
+      },
+      {
+        "name": "silentcompat:masticator_thorns",
+        "level": 1
+      }
+    ],
+    "grip": [
+      {
+        "name": "silentgear:flexible",
+        "level": 3
+      }
+    ],
+    "lining": [
+      {
+        "name": "silentgear:flexible",
+        "level": 2
+      },
+      {
+        "name": "silentgear:bounce",
+        "level": 1
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_lc",
+        "color": "#1F1F1F"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:cloth",
+        "color": "#1F1F1F"
+      }
+    ],
+    "grip/all": [
+      {
+        "texture": "silentgear:grip_wool",
+        "color": "#1F1F1F"
+      }
+    ],
+    "grip/part": [
+      {
+        "texture": "silentgear:grip",
+        "color": "#1F1F1F"
+      }
+    ],
+    "lining/part": [
+      {
+        "texture": "silentgear:lining_cloth",
+        "color": "#1F1F1F"
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:gems/purity"
+      }
+    },
+    "name": {
+      "text": "Purity"
+    },
+    "stats": {
+      "main": {
+        "durability": 59.0,
+        "armor_durability": 15.0,
+        "enchantability": 16.0,
+        "rarity": 50.0,
+        "chargeability": 1.1,
+        "harvest_level": 3.0,
+        "harvest_speed": 8.0,
+        "melee_damage": 6.0,
+        "magic_damage": 6.0,
+        "attack_speed": -0.3,
+        "ranged_damage": 3.0,
+        "ranged_speed": 0.1,
+        "armor": 20.0,
+        "armor_toughness": 2.0,
+        "magic_armor": 8.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:cure_poison",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:gear_type",
+              "gear_type": "armor"
+            },
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 1.0
+            }
+          ]
+        },
+        {
+            "name": "silentgear:cure_wither",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:gear_type",
+                "gear_type": "armor"
+              },
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 1.0
+              }
+            ]
+          },
+        {
+          "name": "silentgear:lustrous",
+          "level": 2
+        },
+        {
+          "name": "silentgear:brittle",
+          "level": 5
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#e0d479"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#e0d479"
+        }
+      ]
+    }
+  }

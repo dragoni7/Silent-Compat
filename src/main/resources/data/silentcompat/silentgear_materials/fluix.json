@@ -1,0 +1,79 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:gems/fluix"
+      }
+    },
+    "name": {
+      "text": "Fluix"
+    },
+    "stats": {
+      "main": {
+        "durability": 750.0,
+        "armor_durability": 15.0,
+        "enchantability": 12.0,
+        "rarity": 30.0,
+        "chargeability": 1.3,
+        "harvest_level": 2.0,
+        "harvest_speed": 6.0,
+        "melee_damage": 2.4,
+        "magic_damage": 4.0,
+        "attack_speed": -0.3,
+        "ranged_damage": 3.0,
+        "ranged_speed": -0.3,
+        "armor": 15.0,
+        "armor_toughness": 2.0,
+        "magic_armor": 4.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentcompat:looting",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        },
+        {
+          "name": "silentgear:rustic",
+          "level": 3
+        },
+        {
+          "name": "silentgear:brittle",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#6733a6"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#6733a6"
+        }
+      ]
+    }
+  }

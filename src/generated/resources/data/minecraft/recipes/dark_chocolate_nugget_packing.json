@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:dark_chocolate_nugget"
+    },
+    {
+      "item": "silentcompat:dark_chocolate_nugget"
+    },
+    {
+      "item": "silentcompat:dark_chocolate_nugget"
+    },
+    {
+      "item": "silentcompat:dark_chocolate_nugget"
+    },
+    {
+      "item": "silentcompat:dark_chocolate_nugget"
+    },
+    {
+      "item": "silentcompat:dark_chocolate_nugget"
+    },
+    {
+      "item": "silentcompat:dark_chocolate_nugget"
+    },
+    {
+      "item": "silentcompat:dark_chocolate_nugget"
+    },
+    {
+      "item": "silentcompat:dark_chocolate_nugget"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:dark_chocolate_ingot"
+  }
+}

@@ -1,0 +1,90 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic",
+        "fiber"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:tentacle"
+      }
+    },
+    "name": {
+      "translate": "Tentacle"
+    },
+    "stats": {
+      "binding": {
+        "repair_efficiency": {
+          "mul1": 0.05
+        }
+      },
+      "cord": {
+        "ranged_damage": {
+          "mul1": 0.15
+        },
+        "ranged_speed": {
+          "mul1": 0.15
+        }
+      }
+    },
+    "traits": {
+      "binding": [
+        {
+          "name": "silentgear:flexible",
+          "level": 5
+        }
+      ],
+      "cord": [
+        {
+          "name": "silentgear:flexible",
+          "level": 2
+        },
+        {
+            "name": "silentgear:aquatic",
+            "level": 3
+        }
+      ]
+    },
+    "model": {
+      "binding/all": [
+        {
+          "texture": "silentgear:binding_generic",
+          "color": "#a64c4c"
+        }
+      ],
+      "binding/part": [
+        {
+          "texture": "silentgear:binding",
+          "color": "#a64c4c"
+        }
+      ],
+      "cord/all": [
+        {
+          "texture": "silentgear:bowstring_string",
+          "color": "#a64c4c"
+        },
+        {
+          "texture": "silentgear:arrow"
+        }
+      ],
+      "cord/part": [
+        {
+          "texture": "silentgear:bowstring",
+          "color": "#a64c4c"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#a64c4c"
+        }
+      ]
+    }
+  }

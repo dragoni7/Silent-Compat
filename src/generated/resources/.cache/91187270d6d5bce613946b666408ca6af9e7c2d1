@@ -1,10 +1,11 @@
-// 1.19.2	2022-10-24T21:51:13.946545	Item Models: silentcompat
+// 1.19.2	2022-10-25T17:50:21.1674285	Item Models: silentcompat
 fbb9a95dbdd70e2ffd434c5656d6cd7aad803306 assets/silentcompat/models/item/bunny_steel_block.json
 b340223a84e4f649fe35fc2a99c2a7ee0c32090e assets/silentcompat/models/item/bunny_steel_ingot.json
 b10de613c34ce06f8f201f44bc3bebd69eeb0af7 assets/silentcompat/models/item/bunny_steel_nugget.json
 f42b63669bf4cf12392d0c68512284d0e88d31dc assets/silentcompat/models/item/capsid_alloy_block.json
 67fde8e04fc0e6c990828619db08c7a8cbb98b45 assets/silentcompat/models/item/capsid_alloy_ingot.json
 5c4b52ffb312a6f36e798a57dfc8b2f173a44168 assets/silentcompat/models/item/capsid_alloy_nugget.json
+8290a0085943fe4c9a58a55d84cd41ab8cf05c86 assets/silentcompat/models/item/chocolate_chip.json
 c5f4390380d0e532efa565e1207f27044ac6a7c8 assets/silentcompat/models/item/dark_chocolate_block.json
 fee1a413b4f82a311148146fe9ef66aca4efaf00 assets/silentcompat/models/item/dark_chocolate_ingot.json
 b2627955c77558c8621234a2aecf324e0e392a67 assets/silentcompat/models/item/dark_chocolate_nugget.json

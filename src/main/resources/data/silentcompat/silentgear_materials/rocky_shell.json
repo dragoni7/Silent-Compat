@@ -1,0 +1,93 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "rock"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:rocky_shell"
+      }
+    },
+    "name": {
+      "translate": "Rocky Shell"
+    },
+    "stats": {
+      "main": {
+        "armor_durability": 36.0,
+        "enchantment_value": 0.0,
+        "rarity": 10.0,
+        "charging_value": 0.6,
+        "repair_value": 0.0,
+        "armor": 20.0,
+        "armor/helmet": 3.0,
+        "armor/chestplate": 8.0,
+        "armor/leggings": 6.0,
+        "armor/boots": 3.0,
+        "armor_toughness": 6.0,
+        "magic_armor": 4.0
+      },
+      "rod": {
+        "harvest_speed": {
+          "mul2": -0.1
+        },
+        "melee_damage": {
+          "add": 1
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:crushing",
+          "level": 3
+        },
+        {
+            "name": "silentgear:crude",
+            "level": 1
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:chipping",
+          "level": 3
+        },
+        {
+            "name": "silentgear:crude",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#8a7d67"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#8a7d67"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#8a7d67"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#8a7d67"
+        }
+      ]
+    }
+  }

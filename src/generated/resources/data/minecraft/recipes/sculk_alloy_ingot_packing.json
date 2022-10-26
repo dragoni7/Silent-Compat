@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:sculk_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:sculk_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:sculk_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:sculk_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:sculk_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:sculk_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:sculk_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:sculk_alloy_ingot"
+    },
+    {
+      "item": "silentcompat:sculk_alloy_ingot"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:sculk_alloy_block"
+  }
+}

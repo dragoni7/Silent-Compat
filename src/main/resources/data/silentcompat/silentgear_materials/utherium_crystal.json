@@ -1,0 +1,153 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/utherium"
+      }
+    },
+    "name": {
+      "text": "Utherium"
+    },
+    "stats": {
+      "main": {
+        "durability": 1279.0,
+        "armor_durability": 30.0,
+        "enchantability": 8.0,
+        "rarity": 40.0,
+        "chargeability": 1.0,
+        "harvest_level": 3.0,
+        "harvest_speed": 7.0,
+        "melee_damage": 3.5,
+        "magic_damage": 2.0,
+        "attack_speed": 0.0,
+        "ranged_damage": 3.5,
+        "ranged_speed": -0.2,
+        "armor": 20.0,
+        "armor_toughness": 12.0,
+        "magic_armor": 10.0
+      },
+      "tip": {
+        "durability": {
+          "add": 279.0
+        },
+        "armor_durability": {
+          "add": 164.0
+        },
+        "harvest_level": {
+          "max": 3.0
+        },
+        "harvest_speed": {
+          "add": 1.0
+        },
+        "melee_damage": {
+          "add": 1.0
+        },
+        "ranged_damage": {
+          "add": 1.5
+        },
+        "ranged_speed": {
+          "add": -0.1
+        },
+        "rarity": {
+          "add": 40.0
+        }
+      },
+      "adornment": {}
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:eroded",
+          "level": 1
+        },
+        {
+          "name": "silentgear:brittle",
+          "level": 3
+        },
+        {
+          "name": "silentcompat:featherweight",
+          "level": 1
+        }
+      ],
+      "tip": [
+        {
+          "name": "silentgear:eroded",
+          "level": 1
+        },
+        {
+          "name": "silentgear:brittle",
+          "level": 1
+        }
+      ],
+      "adornment": [
+        {
+          "name": "silentgear:bastion",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#EA6753"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#EA6753"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#EA6753"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#EA6753"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ],
+      "adornment/all": [
+        {
+          "texture": "silentgear:adornment_generic",
+          "color": "#EA6753"
+        },
+        {
+          "texture": "silentgear:adornment_highlight",
+          "color": "#EA6753"
+        }
+      ],
+      "adornment/part": [
+        {
+          "texture": "silentgear:adornment",
+          "color": "#EA6753"
+        },
+        {
+          "texture": "silentgear:adornment_highlight"
+        }
+      ]
+    }
+  }

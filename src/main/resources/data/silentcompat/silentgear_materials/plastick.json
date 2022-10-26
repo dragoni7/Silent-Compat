@@ -1,0 +1,55 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:rods/plastic"
+      }
+    },
+    "name": {
+      "text": "PlaStick"
+    },
+    "stats": {
+      "rod": {
+        "durability": {
+            "mul1": 1.0
+        },
+        "rarity": 30.0
+      }
+    },
+    "traits": {
+      "rod": [
+        {
+          "name": "silentgear:flexible",
+          "level": 3
+        },
+        {
+            "name": "silentgear:sturdy",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#c4c4c4"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#c4c4c4"
+        }
+      ]
+    }
+  }

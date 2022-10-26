@@ -1,0 +1,16 @@
+{
+    "type": "silentcompat:dodging",
+    "max_level": 3,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "armor"
+      }
+    ],
+    "name": {
+      "translate": "trait.silentcompat.dodging"
+    },
+    "description": {
+      "translate": "trait.silentcompat.dodging.desc"
+    }
+  }

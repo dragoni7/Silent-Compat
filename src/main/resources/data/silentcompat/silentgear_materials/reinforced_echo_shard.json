@@ -1,0 +1,104 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "deeperdarker:reinforced_echo_shard"
+      }
+    },
+    "name": {
+      "translate": "Reinforced Echo Shard"
+    },
+    "name_prefix": {
+      "translate": "Warden"
+    },
+    "stats": {
+      "coating": {
+        "durability": [
+          {
+            "mul2": 0.3
+          },
+          {
+            "add": 2.0
+          }
+        ],
+        "armor_durability": {
+          "mul2": 0.121212125
+        },
+        "harvest_speed": {
+          "mul2": 0.125
+        },
+        "harvest_level": {
+          "max": 4.0
+        },
+        "melee_damage": {
+          "mul2": 0.666667
+        },
+        "magic_damage": {
+          "mul2": 0.666667
+        },
+        "ranged_damage": {
+          "mul2": 0.666667
+        },
+        "armor_toughness": {
+          "add": 5.0
+        },
+        "enchantability": {
+          "add": 5.0
+        },
+        "knockback_resistance": {
+          "add": 5.0
+        },
+        "rarity": {
+          "add": 50.0
+        }
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentcompat:swift_sneak",
+          "level": 1
+        },
+        {
+          "name": "silentcompat:vorpal",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#083740"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#083740"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#083740"
+        }
+      ]
+    }
+  }

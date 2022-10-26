@@ -5,8 +5,16 @@ import com.github.dragoni7.core.SilentCompatBlocks;
 import com.github.dragoni7.core.SilentCompatItems;
 import com.github.dragoni7.traits.DecayTrait;
 import com.github.dragoni7.traits.DiurnalTrait;
+import com.github.dragoni7.traits.DodgingTrait;
 import com.github.dragoni7.traits.EnderFluTrait;
+import com.github.dragoni7.traits.FeatherWeightTrait;
+import com.github.dragoni7.traits.FleetFootedTrait;
+import com.github.dragoni7.traits.FreezingTrait;
+import com.github.dragoni7.traits.HungeringStrike;
 import com.github.dragoni7.traits.NocturnalTrait;
+import com.github.dragoni7.traits.SoulStealTrait;
+import com.github.dragoni7.traits.VorpalTrait;
+import com.github.dragoni7.traits.EdibleTrait;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -39,6 +47,14 @@ public class SilentCompat
     	GearApi.registerTraitSerializer(NocturnalTrait.SERIALIZER);
     	GearApi.registerTraitSerializer(DecayTrait.SERIALIZER);
     	GearApi.registerTraitSerializer(EnderFluTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(DodgingTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(EdibleTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(FleetFootedTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(FreezingTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(FeatherWeightTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(VorpalTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(HungeringStrike.SERIALIZER);
+    	GearApi.registerTraitSerializer(SoulStealTrait.SERIALIZER);
     }
     
     public static final CreativeModeTab SilentCompatTab = (new CreativeModeTab("silentcompat")  {

@@ -1,0 +1,99 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "organic",
+        "cloth"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:cloth"
+      }
+    },
+    "name": {
+      "translate": "Cloth"
+    },
+    "stats": {
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 14.0,
+        "enchantment_value": 14.0,
+        "rarity": 20.0,
+        "charging_value": 0.8,
+        "armor_durability/elytra": 18.0,
+        "armor": 6.0,
+        "armor/helmet": 1.0,
+        "armor/chestplate": 2.0,
+        "armor/leggings": 2.0,
+        "armor/boots": 1.0,
+        "magic_armor": 14.0
+      },
+      "grip": {
+        "repair_efficiency": {
+          "mul1": 0.2
+        },
+        "harvest_speed": {
+          "mul1": 0.15
+        }
+      },
+      "lining": {
+        "magic_armor": {
+          "add": 1.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+      ],
+      "grip": [
+        {
+          "name": "silentgear:accelerate",
+          "level": 1
+        }
+      ],
+      "lining": [
+        {
+          "name": "silentgear:flexible",
+          "level": 3
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#b196b5"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#b196b5"
+        }
+      ],
+      "grip/all": [
+        {
+          "texture": "silentgear:grip_wool",
+          "color": "#b196b5"
+        }
+      ],
+      "grip/part": [
+        {
+          "texture": "silentgear:grip",
+          "color": "#b196b5"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#b196b5"
+        }
+      ]
+    }
+  }

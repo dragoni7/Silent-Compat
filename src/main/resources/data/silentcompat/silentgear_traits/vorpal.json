@@ -1,0 +1,16 @@
+{
+    "type": "silentcompat:vorpal",
+    "max_level": 1,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "tool"
+      }
+    ],
+    "name": {
+      "translate": "trait.silentcompat.vorpal"
+    },
+    "description": {
+      "translate": "trait.silentcompat.vorpal.desc"
+    }
+  }

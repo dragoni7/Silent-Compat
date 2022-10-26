@@ -1,0 +1,50 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:sculk_vines"
+      }
+    },
+    "name": {
+      "translate": "Sculk Vine"
+    },
+    "stats": {
+      "binding": {
+        "repair_efficiency": {
+          "mul1": 0.03
+        }
+      }
+    },
+    "traits": {
+        "binding": [
+          {
+            "name": "silentgear:accelerate",
+            "level": 1
+          }
+        ]
+      },
+    "model": {
+      "binding/all": [
+        {
+          "texture": "silentgear:binding_generic",
+          "color": "#084035"
+        }
+      ],
+      "binding/part": [
+        {
+          "texture": "silentgear:binding",
+          "color": "#084035"
+        }
+      ]
+    }
+  }

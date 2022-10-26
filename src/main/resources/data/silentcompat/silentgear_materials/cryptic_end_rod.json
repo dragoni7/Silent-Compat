@@ -1,0 +1,69 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "subs": {
+        "rod": {
+          "tag": "silentcompat:cryptic_end_rod"
+        }
+      }
+    },
+    "name": {
+      "text": "Cryptic End Rod"
+    },
+    "stats": {
+      "rod": {
+        "harvest_level": {
+          "max": 3.0
+        },
+        "harvest_speed": {
+          "mul2": 0.22
+        },
+        "melee_damage": {
+          "mul2": 0.09
+        },
+        "ranged_damage": {
+          "mul2": 0.12
+        }
+      }
+    },
+    "traits": {
+      "rod": [
+        {
+          "name": "silentgear:flexible",
+          "level": 4
+        },
+        {
+          "name": "silentgear:sturdy",
+          "level": 2
+        },
+        {
+          "name": "silentgear:refractive",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#f78b8b"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#f78b8b"
+        }
+      ]
+    }
+  }

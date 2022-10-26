@@ -40,7 +40,7 @@ public class DiurnalTrait extends SimpleTrait {
 			return baseValue + (baseValue * 0.10F);
 		}
 		
-		return baseValue;
+		return super.onAttackEntity(context, target, baseValue);
 	}
 	
 	@Override

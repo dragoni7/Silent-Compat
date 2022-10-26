@@ -1,0 +1,86 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:gazelle_horn"
+      }
+    },
+    "name": {
+      "text": "Gazelle Horn"
+    },
+    "stats": {
+      "tip": {
+        "durability": {
+          "add": 256.0
+        },
+        "harvest_level": {
+          "max": 1.0
+        },
+        "harvest_speed": {
+          "add": 2.4
+        },
+        "melee_damage": {
+          "add": 1.5
+        },
+        "ranged_damage": {
+          "add": 2.0
+        },
+        "rarity": {
+          "add": 20.0
+        }
+      }
+    },
+    "traits": {
+      "tip": [
+        {
+          "name": "silentcompat:fleet_footed",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#1c1a11"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#1c1a11"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#1c1a11"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#1c1a11"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }

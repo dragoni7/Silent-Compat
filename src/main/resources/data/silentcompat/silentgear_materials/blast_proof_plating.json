@@ -1,6 +1,15 @@
 {
     "type": "silentgear:standard",
     "simple": true,
+    "conditions": [
+      {
+        "value": {
+          "tag": "silentcompat:blast_proof_plating",
+          "type": "forge:tag_empty"
+        },
+        "type": "forge:not"
+      }
+    ],
     "availability": {
       "tier": 2,
       "categories": [
@@ -16,7 +25,7 @@
       }
     },
     "name": {
-      "text": "Blast Proof Plate"
+      "text": "Griefer"
     },
     "stats": {
       "main": {
@@ -53,7 +62,13 @@
         },
         {
           "name": "silentcompat:blast_resistant",
-          "level": 1
+          "level": 2,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         }
       ],
       "grip": [
@@ -73,7 +88,13 @@
         },
         {
             "name": "silentcompat:blast_resistant",
-            "level": 1
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.5
+              }
+            ]
         }
       ]
     },
