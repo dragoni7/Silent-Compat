@@ -1,0 +1,53 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 0,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "item": "minecraft:twisting_vines"
+      }
+    },
+    "name": {
+      "translate": "Twisting Vines"
+    },
+    "stats": {
+      "binding": {
+        "repair_efficiency": {
+          "mul1": 0.025
+        },
+        "ranged_damage": {
+            "mul1": 0.1
+        }
+      }
+    },
+    "traits": {
+        "binding": [
+          {
+            "name": "silentgear:racker",
+            "level": 1
+          }
+        ]
+    },
+    "model": {
+      "binding/all": [
+        {
+          "texture": "silentgear:binding_generic",
+          "color": "#197d43"
+        }
+      ],
+      "binding/part": [
+        {
+          "texture": "silentgear:binding",
+          "color": "#197d43"
+        }
+      ]
+    }
+  }

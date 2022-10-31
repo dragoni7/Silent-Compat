@@ -11,6 +11,10 @@ import net.minecraftforge.registries.RegistryObject;
 public class SilentCompatItems {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SilentCompat.MODID);
 	
+	public static final RegistryObject<Item> RAW_PLASTEEL = ITEMS.register("raw_plasteel",
+			() -> new Item(new Item.Properties()
+					.tab(SilentCompat.SilentCompatTab)));
+	
 	public static final RegistryObject<Item> CHOCOLATECHIP = ITEMS.register("chocolate_chip", 
 			() -> new Item(new Item.Properties()
 					.tab(SilentCompat.SilentCompatTab)

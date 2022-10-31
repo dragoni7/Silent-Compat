@@ -1,0 +1,92 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "item": "minecraft:nautilus_shell"
+      }
+    },
+    "name": {
+      "translate": "Nautilus Shell"
+    },
+    "stats": {
+      "main": {
+        "armor_durability": 16.0,
+        "enchantment_value": 5.0,
+        "rarity": 20.0,
+        "charging_value": 1.5,
+        "armor": 20.0,
+        "armor/helmet": 3.0,
+        "armor/chestplate": 8.0,
+        "armor/leggings": 6.0,
+        "armor/boots": 3.0,
+        "armor_toughness": 2.0,
+        "magic_armor": 6.0
+      },
+      "adornment": {}
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:chipping",
+          "level": 3
+        },
+        {
+            "name": "silentgear:aquatic",
+            "level": 5
+        },
+        {
+            "name": "silentgear:ancient",
+            "level": 2
+        }
+      ],
+      "adornment": [
+        {
+          "name": "silentcompat:dense",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#cc827c"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#cc827c"
+        }
+      ],
+      "adornment/all": [
+        {
+          "texture": "silentgear:adornment_generic",
+          "color": "#cc827c"
+        },
+        {
+          "texture": "silentgear:adornment_highlight",
+          "color": "#cc827c"
+        }
+      ],
+      "adornment/part": [
+        {
+          "texture": "silentgear:adornment",
+          "color": "#cc827c"
+        },
+        {
+          "texture": "silentgear:adornment_highlight"
+        }
+      ]
+    }
+  }

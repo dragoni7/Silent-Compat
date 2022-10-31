@@ -40,6 +40,10 @@
         {
           "name": "silentgear:cursed",
           "level": 2
+        },
+        {
+          "name": "silentcompat:fleet_footed",
+          "level": 1
         }
       ],
       "cord": [

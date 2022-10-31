@@ -1,0 +1,58 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "slime",
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:ooze"
+      }
+    },
+    "name": {
+      "text": "Ooze"
+    },
+    "stats": {
+      "lining": {
+        "armor_toughness": {
+          "add": 1.0
+        }
+      }
+    },
+    "traits": {
+      "lining": [
+        {
+          "name": "silentgear:bounce",
+          "level": 1
+        },
+        {
+            "name": "silentgear:heavy",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_slime",
+          "color": "#393157"
+        },
+        {
+          "texture": "silentgear:lining_slime_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#393157"
+        }
+      ]
+    }
+  }

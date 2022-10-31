@@ -1,0 +1,105 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "item": "minecraft:dried_kelp"
+      }
+    },
+    "name": {
+      "translate": "Dried Kelp"
+    },
+    "stats": {
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 8.0,
+        "enchantment_value": 3.0,
+        "rarity": 5.0,
+        "charging_value": 0.6,
+        "armor_durability/elytra": 6.0,
+        "armor": 4.0,
+        "armor/helmet": 1.0,
+        "armor/chestplate": 2.0,
+        "armor/leggings": 2.0,
+        "armor/boots": 1.0,
+        "magic_armor": 2.0
+      },
+      "grip": {
+        "repair_efficiency": {
+          "mul1": 0.1
+        },
+        "durability": {
+            "add": -2
+        }
+      },
+      "lining": {
+        "magic_armor": {
+          "add": 1.0
+        },
+        "repair_efficiency": {
+            "mul1": 0.1
+        }
+      }
+    },
+    "traits": {
+      "main": [
+      ],
+      "grip": [
+        {
+            "name": "silentgear:soft",
+            "level": 5
+        }
+      ],
+      "lining": [
+        {
+          "name": "silentgear:crude",
+          "level": 1
+        },
+        {
+            "name": "silentgear:swift_swim",
+            "level": 3
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#212b25"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#212b25"
+        }
+      ],
+      "grip/all": [
+        {
+          "texture": "silentgear:grip_wool",
+          "color": "#212b25"
+        }
+      ],
+      "grip/part": [
+        {
+          "texture": "silentgear:grip",
+          "color": "#212b25"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#212b25"
+        }
+      ]
+    }
+  }

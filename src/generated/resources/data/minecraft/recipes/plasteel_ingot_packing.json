@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:plasteel_ingot"
+    },
+    {
+      "item": "silentcompat:plasteel_ingot"
+    },
+    {
+      "item": "silentcompat:plasteel_ingot"
+    },
+    {
+      "item": "silentcompat:plasteel_ingot"
+    },
+    {
+      "item": "silentcompat:plasteel_ingot"
+    },
+    {
+      "item": "silentcompat:plasteel_ingot"
+    },
+    {
+      "item": "silentcompat:plasteel_ingot"
+    },
+    {
+      "item": "silentcompat:plasteel_ingot"
+    },
+    {
+      "item": "silentcompat:plasteel_ingot"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:plasteel_block"
+  }
+}

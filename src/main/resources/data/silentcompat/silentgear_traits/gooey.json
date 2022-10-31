@@ -1,0 +1,16 @@
+{
+    "type": "silentcompat:gooey",
+    "max_level": 1,
+    "conditions": [
+        {
+          "type": "silentgear:gear_type",
+          "gear_type": "tool"
+        }
+      ],
+    "name": {
+      "translate": "trait.silentcompat.gooey"
+    },
+    "description": {
+      "translate": "trait.silentcompat.gooey.desc"
+    }
+  }

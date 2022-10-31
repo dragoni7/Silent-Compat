@@ -12,7 +12,7 @@
     },
     "crafting_items": {
       "main": {
-        "tag": "forge:ingot/soul_steel"
+        "tag": "forge:ingots/soul_steel"
       }
     },
     "name": {
@@ -70,10 +70,6 @@
     "traits": {
       "main": [
         {
-          "name": "silentgear:flexible",
-          "level": 3
-        },
-        {
           "name": "silentcompat:soul_steal",
           "level": 1,
           "conditions": [
@@ -85,10 +81,6 @@
         }
       ],
       "rod": [
-        {
-          "name": "silentgear:flexible",
-          "level": 2
-        },
         {
             "name": "silentgear:cursed",
             "level": 1
@@ -107,7 +99,7 @@
       "tip": [
         {
           "name": "silentgear:flexible",
-          "level": 2
+          "level": 1
         },
         {
             "name": "silentgear:cursed",

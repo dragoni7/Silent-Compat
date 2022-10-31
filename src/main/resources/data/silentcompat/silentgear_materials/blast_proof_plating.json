@@ -44,6 +44,28 @@
         "armor_toughness": {
           "add": 0.5
         }
+      },
+      "grip": {
+      "durability": [
+          {
+            "mul2": 0.2
+          }
+        ]
+      },
+      "coating": {
+        "durability": [
+          {
+            "mul2": 0.5
+          }
+        ],
+        "armor_durability": {
+          "mul2": 0.25
+        },
+        "melee_damage": [
+          {
+            "add": 1
+          }
+        ]
       }
     },
     "traits": {
@@ -74,6 +96,12 @@
       "grip": [
         {
             "name": "silentgear:heavy",
+            "level": 1
+        }
+      ],
+      "coating": [
+        {
+            "name": "silentcompat:retaliating_blast",
             "level": 1
         }
       ],

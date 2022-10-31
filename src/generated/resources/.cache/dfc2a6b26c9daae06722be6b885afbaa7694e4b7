@@ -1,11 +1,13 @@
-// 1.19.2	2022-10-24T21:51:13.9475454	Block States: silentcompat
+// 1.19.2	2022-10-30T10:44:43.1281711	Block States: silentcompat
 8f0afe4e3864c6ec47eeec543a84213d228b23eb assets/silentcompat/blockstates/bunny_steel_block.json
 11328b9594e8a5127767aab1106c4bd989aff8b6 assets/silentcompat/blockstates/capsid_alloy_block.json
 dab947931a2762f8519973ecdf72687a0fd0002f assets/silentcompat/blockstates/dark_chocolate_block.json
 adf28cb937948155f3107aaacd2dd691effbf857 assets/silentcompat/blockstates/midnight_iron_block.json
+9aa4e075af8664d0cc6d2b65578909dbffcec9cf assets/silentcompat/blockstates/plasteel_block.json
 4434d0f5a0cbd8f42e42eb9cd75d85f3e6950691 assets/silentcompat/blockstates/sculk_alloy_block.json
 44b3dc7b6534e564479aeb46bde3f579ef63dedd assets/silentcompat/models/block/bunny_steel_block.json
 223416967c17621fb09e0f56c671d5682d9bfdef assets/silentcompat/models/block/capsid_alloy_block.json
 04bb37d9aa32a1d98d90eb18c4bc9e0026265fcd assets/silentcompat/models/block/dark_chocolate_block.json
 f4e1d5b768a49ef2d42ff038cf0e0c9953c7e71d assets/silentcompat/models/block/midnight_iron_block.json
+72b1abe5e7b83fa629bd876bc778b874452cf5ea assets/silentcompat/models/block/plasteel_block.json
 97bc0232759fe5359cc084caf5ad2905ea932b88 assets/silentcompat/models/block/sculk_alloy_block.json

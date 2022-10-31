@@ -1,4 +1,4 @@
-// 1.19.2	2022-10-25T17:50:21.1674285	Item Models: silentcompat
+// 1.19.2	2022-10-30T10:44:43.1301724	Item Models: silentcompat
 fbb9a95dbdd70e2ffd434c5656d6cd7aad803306 assets/silentcompat/models/item/bunny_steel_block.json
 b340223a84e4f649fe35fc2a99c2a7ee0c32090e assets/silentcompat/models/item/bunny_steel_ingot.json
 b10de613c34ce06f8f201f44bc3bebd69eeb0af7 assets/silentcompat/models/item/bunny_steel_nugget.json
@@ -12,6 +12,10 @@ b2627955c77558c8621234a2aecf324e0e392a67 assets/silentcompat/models/item/dark_ch
 524aad38c3f33bfb543f589e5ed4bcf33fed5cd9 assets/silentcompat/models/item/midnight_iron_block.json
 79e3371fc4b25805e3a29edc645421c6aad06fab assets/silentcompat/models/item/midnight_iron_ingot.json
 abc5e73338c4d90561f6c8f96e5f08bb3a01f443 assets/silentcompat/models/item/midnight_iron_nugget.json
+06fe769386e8dcc7d7375864fdc129b7018f99e9 assets/silentcompat/models/item/plasteel_block.json
+42271fadcf476977b07e827d32c1a7f040cdc981 assets/silentcompat/models/item/plasteel_ingot.json
+05ac6664e5bee2fdf2e6b08d8440a626eba8640f assets/silentcompat/models/item/plasteel_nugget.json
+cc872564502e6caa34198ab4514f84c478c10129 assets/silentcompat/models/item/raw_plasteel.json
 53b74c6f10941823e8234d61d56cb37faa72322c assets/silentcompat/models/item/sculk_alloy_block.json
 b787d3cdd14c5ef3041b7ce92d5fdf81d89150ea assets/silentcompat/models/item/sculk_alloy_ingot.json
 23621638217ac0c5c960a4676dc0859038c45ad3 assets/silentcompat/models/item/sculk_alloy_nugget.json

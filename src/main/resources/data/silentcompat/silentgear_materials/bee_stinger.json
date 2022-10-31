@@ -1,15 +1,6 @@
 {
     "type": "silentgear:standard",
     "simple": true,
-    "conditions": [
-      {
-        "value": {
-          "tag": "silentcompat:bee_stinger",
-          "type": "forge:tag_empty"
-        },
-        "type": "forge:not"
-      }
-    ],
     "availability": {
       "tier": 1,
       "categories": [
@@ -30,7 +21,7 @@
     "stats": {
       "tip": {
         "durability": {
-          "add": 10.0
+          "add": 5.0
         },
         "melee_damage": {
           "add": 1.0

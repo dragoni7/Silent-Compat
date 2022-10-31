@@ -8,6 +8,7 @@ public class MaterialRegistry {
 	public static final MaterialSet SCULKALLOY = new MaterialSet("sculk_alloy", MaterialColor.METAL);
 	public static final MaterialSet BUNNYSTEEL = new MaterialSet("bunny_steel", MaterialColor.COLOR_BROWN);
 	public static final MaterialSet CAPSID_ALLOY = new MaterialSet("capsid_alloy", MaterialColor.COLOR_PURPLE);
+	public static final MaterialSet PLASTEEL = new MaterialSet("plasteel", MaterialColor.COLOR_BLUE);
 	
 	public static void init() {
 		

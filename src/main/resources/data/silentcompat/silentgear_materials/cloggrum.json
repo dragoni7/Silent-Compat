@@ -22,7 +22,7 @@
       "main": {
         "durability": 286.0,
         "armor_durability": 20.0,
-        "enchantment_value": 12.0,
+        "enchantment_value": 10.0,
         "harvest_level": 2.0,
         "harvest_speed": 6.0,
         "melee_damage": 3.0,
@@ -34,6 +34,7 @@
         "armor/leggings": 5.0,
         "armor/boots": 2.0,
         "magic_armor": 6.0,
+        "armor_toughness": 1.0,
         "ranged_damage": 0.5,
         "ranged_speed": 0.1,
         "rarity": 40.0,
@@ -52,8 +53,14 @@
     "traits": {
       "main": [
         {
-          "name": "silentgear:malleable",
-          "level": 3
+          "name": "silentcompat:abyssal_synergy",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.35
+            }
+          ]
         },
         {
           "name": "silentgear:sharp",

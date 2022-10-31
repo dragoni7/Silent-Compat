@@ -37,6 +37,7 @@ public class ModLootTables extends LootTableProvider {
 		basicBlockTable(MaterialRegistry.DARKCHOCOLATE.block.get(), "dark_chocolate_block");
 		basicBlockTable(MaterialRegistry.MIDNIGHTIRON.block.get(), "midnight_iron_block");
 		basicBlockTable(MaterialRegistry.SCULKALLOY.block.get(), "sculk_alloy_block");
+		basicBlockTable(MaterialRegistry.PLASTEEL.block.get(), "plasteel_block");
 	}
 	
 	@Override

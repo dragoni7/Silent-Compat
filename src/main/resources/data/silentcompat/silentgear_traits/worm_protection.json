@@ -12,6 +12,9 @@
         {
           "enchantment": "minecraft:protection",
           "level": [
+            3,
+            3,
+            3,
             5
           ]
         }

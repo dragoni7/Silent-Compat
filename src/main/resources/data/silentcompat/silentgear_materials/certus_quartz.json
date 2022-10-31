@@ -29,7 +29,7 @@
         "harvest_speed": 6.0,
         "melee_damage": 2.0,
         "magic_damage": 4.0,
-        "attack_speed": -0.3,
+        "attack_speed": 0.0,
         "ranged_damage": 3.0,
         "ranged_speed": -0.3,
         "armor": 15.0,
@@ -46,6 +46,10 @@
         {
           "name": "silentgear:brittle",
           "level": 2
+        },
+        {
+          "name": "silentcompat:swiftness",
+          "level": 1
         }
       ]
     },

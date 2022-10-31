@@ -38,10 +38,6 @@
     "traits": {
         "main": [
           {
-            "name": "silentgear:flexible",
-            "level": 5
-          },
-          {
             "name": "silentgear:stellar",
             "level": 4
           },

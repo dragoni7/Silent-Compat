@@ -1,0 +1,67 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "slime",
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "item": "minecraft:magma_cream"
+      }
+    },
+    "name": {
+      "translate": "Magma Cream"
+    },
+    "stats": {
+      "coating": {
+        "harvest_speed": {
+          "mul2": 0.1
+        },
+        "melee_damage": {
+          "add": 1.0
+        },
+        "armor_toughness": {
+          "add": 0.5
+        }
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentgear:bounce",
+          "level": 1
+        },
+        {
+            "name": "silentgear:ignite",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#abe36f"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#abe36f"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ]
+    }
+  }

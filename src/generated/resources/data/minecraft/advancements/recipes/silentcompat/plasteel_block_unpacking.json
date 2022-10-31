@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:plasteel_block_unpacking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "plasteel_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "silentcompat:plasteel_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "plasteel_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:plasteel_block_unpacking"
+    ]
+  }
+}

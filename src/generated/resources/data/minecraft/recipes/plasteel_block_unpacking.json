@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:plasteel_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "silentcompat:plasteel_ingot"
+  }
+}

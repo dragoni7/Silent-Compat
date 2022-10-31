@@ -24,7 +24,7 @@
         "armor_durability": 13.0,
         "enchantability": 10.0,
         "harvest_level": 2.0,
-        "harvest_speed": 6.0,
+        "harvest_speed": 5.0,
         "melee_damage": 1.5,
         "magic_damage": 1.0,
         "attack_speed": 0.0,
@@ -39,7 +39,7 @@
         "ranged_speed": 0.1,
         "projectile_speed": 1.0,
         "projectile_accuracy": 1.0,
-        "rarity": 10.0,
+        "rarity": 5.0,
         "chargeability": 0.7
       },
       "rod": {

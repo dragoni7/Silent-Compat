@@ -14,7 +14,6 @@ import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModRecipes extends RecipeProvider {
@@ -31,6 +30,7 @@ public class ModRecipes extends RecipeProvider {
 		materialSetRecipes(MaterialRegistry.DARKCHOCOLATE, consumer);
 		materialSetRecipes(MaterialRegistry.MIDNIGHTIRON, consumer);
 		materialSetRecipes(MaterialRegistry.SCULKALLOY, consumer);
+		materialSetRecipes(MaterialRegistry.PLASTEEL, consumer);
 		
 		ShapedRecipeBuilder.shaped(MaterialRegistry.BUNNYSTEEL.ingot.get())
 		.pattern(" R ")

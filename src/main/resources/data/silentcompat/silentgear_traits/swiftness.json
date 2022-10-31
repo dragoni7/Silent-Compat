@@ -1,0 +1,25 @@
+{
+    "type": "silentgear:attribute",
+    "max_level": 5,
+    "name": {
+      "text": "Swiftness"
+    },
+    "description": {
+      "translate": "Gain more movespeed"
+    },
+    "attribute_modifiers": {
+      "all": [
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": 0,
+          "value": [
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.25
+          ]
+        }
+      ]
+    }
+  }

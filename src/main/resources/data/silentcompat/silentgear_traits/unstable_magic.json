@@ -1,0 +1,10 @@
+{
+    "type": "silentcompat:unstable_magic",
+    "max_level": 1,
+    "name": {
+      "translate": "trait.silentcompat.unstable_magic"
+    },
+    "description": {
+      "translate": "trait.silentcompat.unstable_magic.desc"
+    }
+  }

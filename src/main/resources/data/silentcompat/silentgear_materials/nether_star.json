@@ -1,0 +1,119 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:nether_stars"
+      }
+    },
+    "name": {
+      "text": "Nether Star"
+    },
+    "stats": {
+      "tip": {
+        "melee_damage": {
+          "add": 5.0
+        },
+        "ranged_damage": {
+          "add": 5.0
+        },
+        "rarity": {
+          "add": 10.0
+        }
+      },
+      "adornment": {}
+    },
+    "traits": {
+      "tip": [
+        {
+          "name": "silentgear:chipping",
+          "level": 2
+        },
+        {
+            "name": "silentgear:cursed",
+            "level": 2
+        },
+        {
+          "name": "silentcompat:swiftness",
+          "level": 2
+        }
+      ],
+      "adornment": [
+        {
+            "name": "silentgear:cursed",
+            "level": 2
+        },
+        {
+            "name": "silentgear:mighty",
+            "level": 3
+        },
+        {
+          "name": "silentcompat:swiftness",
+          "level": 3
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#cdf0f7"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#cdf0f7"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#cdf0f7"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#cdf0f7"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ],
+      "adornment/all": [
+        {
+          "texture": "silentgear:adornment_generic",
+          "color": "#cdf0f7"
+        },
+        {
+          "texture": "silentgear:adornment_highlight",
+          "color": "#cdf0f7"
+        }
+      ],
+      "adornment/part": [
+        {
+          "texture": "silentgear:adornment",
+          "color": "#cdf0f7"
+        },
+        {
+          "texture": "silentgear:adornment_highlight"
+        }
+      ]
+    }
+  }

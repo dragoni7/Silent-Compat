@@ -1,0 +1,76 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "item": "minecraft:heart_of_the_sea"
+      }
+    },
+    "name": {
+      "text": "Heart of the Sea"
+    },
+    "stats": {
+      "adornment": {
+        "melee_damage": {
+            "add": 1.0
+        }
+      }
+    },
+    "traits": {
+      "adornment": [
+        {
+            "name": "silentgear:swift_swim",
+            "level": 5
+        },
+        {
+          "name": "silentcompat:bulwark",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#1e9492"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#1e9492"
+        }
+      ],
+      "adornment/all": [
+        {
+          "texture": "silentgear:adornment_generic",
+          "color": "#1e9492"
+        },
+        {
+          "texture": "silentgear:adornment_highlight",
+          "color": "#1e9492"
+        }
+      ],
+      "adornment/part": [
+        {
+          "texture": "silentgear:adornment",
+          "color": "#1e9492"
+        },
+        {
+          "texture": "silentgear:adornment_highlight"
+        }
+      ]
+    }
+  }

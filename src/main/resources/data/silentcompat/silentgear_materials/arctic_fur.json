@@ -1,0 +1,142 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "organic",
+        "cloth"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "twilightforest:arctic_fur"
+      }
+    },
+    "name": {
+      "text": "Arctic Fur"
+    },
+    "stats": {
+      "main": {
+        "durability": 131.0,
+        "armor_durability": 10.0,
+        "enchantability": 8.0,
+        "armor": 10.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 7.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 2.0,
+        "armor_toughness": 8.0,
+        "magic_armor": 6.0,
+        "rarity": 40.0,
+        "chargeability": 1.0
+      },
+      "grip": {
+        "durability": {
+          "add": 20.0
+        },
+        "repair_efficiency": {
+          "add": 5.0
+        },
+        "harvest_speed": {
+          "add": 0.2
+        },
+        "attack_speed": {
+          "add": 0.1
+        },
+        "rarity": {
+          "add": 10.0
+        }
+      },
+      "lining": {
+        "armor_durability": {
+          "add": 4.0
+        },
+        "armor_toughness": {
+          "add": 1.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:bastion",
+          "level": 1
+        },
+        {
+            "name": "silentgear:soft",
+            "level": 3
+        },
+        {
+            "name": "silentgear:chilled",
+            "level": 1
+        }
+      ],
+      "grip": [
+        {
+          "name": "silentgear:soft",
+          "level": 2
+        }
+      ],
+      "lining": [
+        {
+          "name": "silentgear:bastion",
+          "level": 1
+        },
+        {
+            "name": "silentgear:soft",
+            "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#E8F4FC"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#E8F4FC"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#E8F4FC"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#E8F4FC"
+        }
+      ],
+      "grip/all": [
+        {
+          "texture": "silentgear:grip_wool",
+          "color": "#E8F4FC"
+        }
+      ],
+      "grip/part": [
+        {
+          "texture": "silentgear:grip",
+          "color": "#E8F4FC"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#E8F4FC"
+        }
+      ]
+    }
+  }

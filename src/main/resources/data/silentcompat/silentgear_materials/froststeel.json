@@ -21,7 +21,7 @@
     "stats": {
       "main": {
         "durability": 575.0,
-        "armor_durability": 16.0,
+        "armor_durability": 25.0,
         "enchantment_value": 15.0,
         "harvest_level": 3.0,
         "harvest_speed": 6.0,

@@ -1,0 +1,83 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "slime",
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:goo"
+      }
+    },
+    "name": {
+      "text": "Goo"
+    },
+    "stats": {
+      "lining": {
+        "armor_toughness": {
+          "add": 0.5
+        }
+      },
+      "coating": {
+        "armor_toughness": {
+            "add": 0.5
+        }
+      }
+    },
+    "traits": {
+      "lining": [
+        {
+          "name": "silentgear:bounce",
+          "level": 1
+        }
+      ],
+      "coating": [
+        {
+          "name": "silentcompat:gooey",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_slime",
+          "color": "#747844"
+        },
+        {
+          "texture": "silentgear:lining_slime_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#747844"
+        }
+      ],
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#747844"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#747844"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ]
+    }
+  }

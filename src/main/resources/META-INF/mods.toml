@@ -3,7 +3,7 @@ loaderVersion="[43,)"
 license="MIT"
 issueTrackerURL=""
 logoFile="logo.png"
-#credits="SilentChaos for his lib and mod silentgear"
+#credits="SilentChaos for his lib and mod silentgear. To the Silent's Mods discord for material references / ideas"
 authors="dragoni7"
 
 [[mods]]
@@ -25,6 +25,18 @@ authors="dragoni7"
     mandatory=true
     versionRange="[3.0.4,)"
     ordering="AFTER"
+    side="BOTH"
+[[dependencies.undergarden]]
+    modId="undergarden"
+    mandatory=false
+    versionRange="[0.8.3,)"
+    ordering="BEFORE"
+    side="BOTH"
+[[dependencies.ars_nouveau]]
+    modId="ars_nouveau"
+    mandatory=false
+    versionRange="[3.4.5,)"
+    ordering="BEFORE"
     side="BOTH"
 [[dependencies.dreamland]]
     modId="dreamland"

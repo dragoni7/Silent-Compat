@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:plasteel_nugget"
+    },
+    {
+      "item": "silentcompat:plasteel_nugget"
+    },
+    {
+      "item": "silentcompat:plasteel_nugget"
+    },
+    {
+      "item": "silentcompat:plasteel_nugget"
+    },
+    {
+      "item": "silentcompat:plasteel_nugget"
+    },
+    {
+      "item": "silentcompat:plasteel_nugget"
+    },
+    {
+      "item": "silentcompat:plasteel_nugget"
+    },
+    {
+      "item": "silentcompat:plasteel_nugget"
+    },
+    {
+      "item": "silentcompat:plasteel_nugget"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:plasteel_ingot"
+  }
+}

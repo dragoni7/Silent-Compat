@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:plasteel_nugget_packing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "plasteel_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "silentcompat:plasteel_nugget"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "plasteel_nugget",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:plasteel_nugget_packing"
+    ]
+  }
+}

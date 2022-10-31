@@ -1,15 +1,6 @@
 {
     "type": "silentgear:standard",
     "simple": true,
-    "conditions": [
-      {
-        "value": {
-          "tag": "forge:pellets/animatter",
-          "type": "forge:tag_empty"
-        },
-        "type": "forge:not"
-      }
-    ],
     "availability": {
       "tier": 3,
       "categories": [
@@ -21,7 +12,7 @@
     },
     "crafting_items": {
       "main": {
-        "tag": "forge:pellets/animatter"
+        "tag": "forge:pellets/antimatter"
       }
     },
     "name": {
@@ -49,6 +40,10 @@
         {
           "name": "silentgear:stellar",
           "level": 1
+        },
+        {
+        "name": "silentcompat:retaliating_blast",
+        "level": 1
         }
       ]
     },

@@ -2,13 +2,13 @@ package com.github.dragoni7.data;
 
 import com.github.dragoni7.core.MaterialRegistry;
 import com.github.dragoni7.core.MaterialSet;
+import com.github.dragoni7.core.SilentCompatItems;
 import com.github.dragoni7.main.SilentCompat;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -27,6 +27,10 @@ public class AddItemTags extends ItemTagsProvider {
 		addMaterialTags(MaterialRegistry.DARKCHOCOLATE);
 		addMaterialTags(MaterialRegistry.SCULKALLOY);
 		addMaterialTags(MaterialRegistry.CAPSID_ALLOY);
+		addMaterialTags(MaterialRegistry.PLASTEEL);
+		
+		tag(Tags.Items.RAW_MATERIALS).add(SilentCompatItems.RAW_PLASTEEL.get());
+		tag(ModItemTags.RAW_PLASTEEL).add(SilentCompatItems.RAW_PLASTEEL.get());
 		
 		// Other mod's items:
 		
@@ -51,6 +55,9 @@ public class AddItemTags extends ItemTagsProvider {
 		tag(ModItemTags.ROADRUNNER).addOptional(new ResourceLocation("alexsmobs:roadrunner_feather"));
 		tag(ModItemTags.ROCKY_SHELL).addOptional(new ResourceLocation("alexsmobs:rocky_shell"));
 		tag(ModItemTags.SCULK_VINE).addOptional(new ResourceLocation("deeperdarker:sculk_vines"));
+		tag(ModItemTags.SCULK_VINE).addOptional(new ResourceLocation("deeperdarker:sculk_tendrils"));
+		tag(ModItemTags.SCULK_BONE).addOptional(new ResourceLocation("deeperdarker:sculk_bone"));
+		tag(ModItemTags.SOUL_CRYSTAL).addOptional(new ResourceLocation("deeperdarker:soul_crystal"));
 		tag(ModItemTags.TARANTUAL_HAWK).addOptional(new ResourceLocation("alexsmobs:tarantula_hawk_wing"));
 		tag(ModItemTags.VOID_WORM).addOptional(new ResourceLocation("alexsmobs:void_worm_mandible"));
 		tag(ModItemTags.ANDESITE_ALLOY).addOptional(new ResourceLocation("create:andesite_alloy"));
@@ -63,6 +70,14 @@ public class AddItemTags extends ItemTagsProvider {
 		tag(ModItemTags.MIMICREAM).addOptional(new ResourceLocation("alexsmobs:mimicream"));
 		tag(ModItemTags.CENTIPEDE).addOptional(new ResourceLocation("alexsmobs:centipede_leg"));
 		tag(ModItemTags.STRADDLITE).addOptional(new ResourceLocation("alexsmobs:straddlite"));
+		tag(ModItemTags.OOZE).addOptional(new ResourceLocation("dreamland:ooze_block"));
+		tag(ModItemTags.MAGE_FIBER).addOptional(new ResourceLocation("ars_nouveau:magebloom_fiber"));
+		tag(ModItemTags.BLAZE_FIBER).addOptional(new ResourceLocation("ars_nouveau:blaze_fiber"));
+		tag(ModItemTags.END_FIBER).addOptional(new ResourceLocation("ars_nouveau:end_fiber"));
+		tag(ModItemTags.GOO).addOptional(new ResourceLocation("undergarden:goo_ball"));
+		tag(ModItemTags.MOGMOSS).addOptional(new ResourceLocation("undergarden:mogmoss"));
+		tag(ModItemTags.DITCHBULB).addOptional(new ResourceLocation("undergarden:ditchbulb_paste"));
+		tag(ModItemTags.BRUTE_TUSK).addOptional(new ResourceLocation("undergarden:brute_tusk"));
 		tag(ModItemTags.ROTTEN_FLESH).add(Items.ROTTEN_FLESH);
 	}
 	

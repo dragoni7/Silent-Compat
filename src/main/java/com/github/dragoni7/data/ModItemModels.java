@@ -25,7 +25,9 @@ public class ModItemModels extends ItemModelProvider {
 		registerMaterialSetItemModels(MaterialRegistry.DARKCHOCOLATE);
 		registerMaterialSetItemModels(MaterialRegistry.SCULKALLOY);
 		registerMaterialSetItemModels(MaterialRegistry.CAPSID_ALLOY);
+		registerMaterialSetItemModels(MaterialRegistry.PLASTEEL);
 		
+		singleTextureItemModel(SilentCompatItems.RAW_PLASTEEL, "item/raw_plasteel");
 		singleTextureItemModel(SilentCompatItems.CHOCOLATECHIP, "item/chocolate_chip");
 	}
 	

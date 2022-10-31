@@ -23,7 +23,7 @@
       "coating": {
         "durability": [
           {
-            "mul2": 0.3
+            "mul2": 0.1
           },
           {
             "add": 1.0
@@ -67,6 +67,10 @@
         {
             "name": "silentgear:crackler",
             "level": 1
+        },
+        {
+          "name": "silentcompat:knockout",
+          "level": 1
         }
       ]
     },

@@ -1,17 +1,22 @@
 {
-    "type": "silentgear:wielder_effect",
+    "type": "silentgear:enchantment",
     "max_level": 4,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "armor"
+      }
+    ],
     "name": {
       "text": "Blast Protection"
     },
     "description": {
       "text": "Grants Blast Protection"
     },
-    "potion_effects": {
+    "enchantments": {
       "armor": [
         {
-          "type": "piece_count",
-          "effect": "minecraft:blast_protection",
+          "enchantment": "minecraft:blast_protection",
           "level": [
             1,
             2,

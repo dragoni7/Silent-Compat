@@ -1,0 +1,16 @@
+{
+    "type": "silentcompat:vigorous",
+    "max_level": 1,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "tool"
+      }
+    ],
+    "name": {
+      "translate": "trait.silentcompat.vigorous"
+    },
+    "description": {
+      "translate": "trait.silentcompat.vigorous.desc"
+    }
+  }

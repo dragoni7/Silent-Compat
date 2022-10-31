@@ -22,6 +22,7 @@ public class AddBlockTags extends BlockTagsProvider {
 		addMaterialTags(MaterialRegistry.DARKCHOCOLATE);
 		addMaterialTags(MaterialRegistry.SCULKALLOY);
 		addMaterialTags(MaterialRegistry.CAPSID_ALLOY);
+		addMaterialTags(MaterialRegistry.PLASTEEL);
 	}
 	
 	private void addMaterialTags(MaterialSet set) {

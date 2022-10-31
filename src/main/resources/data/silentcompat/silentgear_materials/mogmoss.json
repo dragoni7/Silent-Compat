@@ -1,0 +1,59 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:mogmoss"
+      }
+    },
+    "name": {
+      "text": "Mogmoss"
+    },
+    "stats": {
+      "coating": {
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentgear:eroded",
+          "level": 3
+        }
+      ]
+    },
+    "model": {
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#478a1e"
+        }
+      ],
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#478a1e"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#478a1e"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ]
+    }
+  }

@@ -22,7 +22,7 @@
       "main": {
         "durability": 1279.0,
         "armor_durability": 30.0,
-        "enchantability": 8.0,
+        "enchantability": 13.0,
         "rarity": 40.0,
         "chargeability": 1.0,
         "harvest_level": 3.0,
@@ -77,6 +77,16 @@
         {
           "name": "silentcompat:featherweight",
           "level": 1
+        },
+        {
+          "name": "silentcompat:abyssal_synergy",
+          "level": 2,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.35
+            }
+          ]
         }
       ],
       "tip": [

@@ -1,0 +1,10 @@
+{
+    "type": "silentcompat:abyssal_synergy",
+    "max_level": 3,
+    "name": {
+      "translate": "trait.silentcompat.abyssal_synergy"
+    },
+    "description": {
+      "translate": "trait.silentcompat.abyssal_synergy.desc"
+    }
+  }

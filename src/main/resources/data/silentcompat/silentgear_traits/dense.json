@@ -1,0 +1,25 @@
+{
+    "type": "silentgear:attribute",
+    "max_level": 5,
+    "name": {
+      "text": "Dense"
+    },
+    "description": {
+      "translate": "Gain more armor toughness"
+    },
+    "attribute_modifiers": {
+      "all": [
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "operation": 0,
+          "value": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0
+          ]
+        }
+      ]
+    }
+  }

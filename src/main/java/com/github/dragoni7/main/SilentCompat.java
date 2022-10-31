@@ -3,6 +3,7 @@ package com.github.dragoni7.main;
 import com.github.dragoni7.core.MaterialRegistry;
 import com.github.dragoni7.core.SilentCompatBlocks;
 import com.github.dragoni7.core.SilentCompatItems;
+import com.github.dragoni7.traits.AbyssalSynergyTrait;
 import com.github.dragoni7.traits.DecayTrait;
 import com.github.dragoni7.traits.DiurnalTrait;
 import com.github.dragoni7.traits.DodgingTrait;
@@ -10,9 +11,16 @@ import com.github.dragoni7.traits.EnderFluTrait;
 import com.github.dragoni7.traits.FeatherWeightTrait;
 import com.github.dragoni7.traits.FleetFootedTrait;
 import com.github.dragoni7.traits.FreezingTrait;
+import com.github.dragoni7.traits.GooeyTrait;
 import com.github.dragoni7.traits.HungeringStrike;
+import com.github.dragoni7.traits.KnockoutTrait;
+import com.github.dragoni7.traits.LuckyBreak;
+import com.github.dragoni7.traits.ManaRegen;
 import com.github.dragoni7.traits.NocturnalTrait;
+import com.github.dragoni7.traits.RetaliatingBlastTrait;
 import com.github.dragoni7.traits.SoulStealTrait;
+import com.github.dragoni7.traits.UnstableMagicTrait;
+import com.github.dragoni7.traits.VigorousTrait;
 import com.github.dragoni7.traits.VorpalTrait;
 import com.github.dragoni7.traits.EdibleTrait;
 import com.mojang.logging.LogUtils;
@@ -55,6 +63,14 @@ public class SilentCompat
     	GearApi.registerTraitSerializer(VorpalTrait.SERIALIZER);
     	GearApi.registerTraitSerializer(HungeringStrike.SERIALIZER);
     	GearApi.registerTraitSerializer(SoulStealTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(LuckyBreak.SERIALIZER);
+    	GearApi.registerTraitSerializer(RetaliatingBlastTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(KnockoutTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(AbyssalSynergyTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(VigorousTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(GooeyTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(ManaRegen.SERIALIZER);
+    	GearApi.registerTraitSerializer(UnstableMagicTrait.SERIALIZER);
     }
     
     public static final CreativeModeTab SilentCompatTab = (new CreativeModeTab("silentcompat")  {

@@ -1,0 +1,236 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "fiber",
+        "cloth"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:magebloom_fiber"
+      }
+    },
+    "name": {
+      "text": "Magebloom Fiber"
+    },
+    "stats": {
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 25.0,
+        "enchantability": 25.0,
+        "rarity": 20.0,
+        "chargeability": 1.0,
+        "armor_durability/elytra": 16.0,
+        "armor": 11.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 5.0,
+        "armor/leggings": 3.0,
+        "armor/boots": 1.0,
+        "magic_armor": 16.0
+      },
+      "grip": {
+        "repair_efficiency": {
+          "mul1": 0.15
+        },
+        "harvest_speed": {
+          "mul1": 0.25
+        },
+        "rarity": {
+          "add": 4.0
+        },
+        "enchantability": {
+          "add": 8.0
+        }
+      },
+      "binding": {
+        "armor_durability": {
+          "mul1": 0.04
+        },
+        "magic_armor": {
+          "add": 3.5
+        },
+        "rarity": {
+          "add": 4.0
+        },
+        "enchantability": {
+          "add": 8.0
+        }
+      },
+      "cord": {
+        "durability": {
+          "mul1": 0.04
+        },
+        "ranged_damage": {
+          "mul1": 0.05
+        },
+        "rarity": {
+          "add": 4.0
+        },
+        "enchantability": {
+          "add": 8.0
+        }
+      },
+      "lining": {
+        "enchantability": {
+          "add": 8.0
+        },
+        "armor_durability": {
+            "mul1": 0.02
+        },
+        "magic_armor": {
+            "add": 4
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentcompat:mana_regen",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 2
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:freezing",
+          "level": 1
+        }
+      ],
+      "grip": [
+        {
+          "name": "silentgear:terminus",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 1.00
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:mana_regen",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 2
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.55
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "binding": [
+        {
+          "name": "silentgear:terminus",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 1.00
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cord": [
+        
+      ],
+      "lining": [
+        
+      ]
+    },
+    "model": {
+      "binding/all": [
+        {
+          "texture": "silentgear:binding_generic",
+          "color": "#E16DDA"
+        }
+      ],
+      "binding/part": [
+        {
+          "texture": "silentgear:binding",
+          "color": "#E16DDA"
+        }
+      ],
+      "cord/all": [
+        {
+          "texture": "silentgear:bowstring_string",
+          "color": "#E16DDA"
+        },
+        {
+          "texture": "silentgear:arrow"
+        }
+      ],
+      "cord/part": [
+        {
+          "texture": "silentgear:bowstring",
+          "color": "#E16DDA"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#E16DDA"
+        }
+      ],
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#E16DDA"
+        }
+      ],
+      "grip/all": [
+        {
+          "texture": "silentgear:grip_wool",
+          "color": "#E16DDA"
+        }
+      ],
+      "grip/part": [
+        {
+          "texture": "silentgear:grip",
+          "color": "#E16DDA"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#E16DDA"
+        }
+      ]
+    }
+  }

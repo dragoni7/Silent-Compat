@@ -8,6 +8,10 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
 public class ModItemTags {
+	
+	public static final TagKey<Item> RAW_PLASTEEL = forgeTag("raw_materials/plasteel");
+	
+	// Other mod's items
 
 	public static final TagKey<Item> BEE_STINGER = createTag("bee_stinger");
 	public static final TagKey<Item> BLAST_PROOF_PLATING = createTag("blast_proof_plating");
@@ -45,6 +49,16 @@ public class ModItemTags {
 	public static final TagKey<Item> MIMICREAM = createTag("mimicream");
 	public static final TagKey<Item> CENTIPEDE = createTag("centipede_leg");
 	public static final TagKey<Item> STRADDLITE = createTag("straddlite");
+	public static final TagKey<Item> OOZE = createTag("ooze");
+	public static final TagKey<Item> MAGE_FIBER = createTag("magebloom_fiber");
+	public static final TagKey<Item> BLAZE_FIBER = createTag("blaze_fiber");
+	public static final TagKey<Item> END_FIBER = createTag("end_fiber");
+	public static final TagKey<Item> SCULK_BONE = createTag("sculk_bone");
+	public static final TagKey<Item> SOUL_CRYSTAL = createTag("soul_crystal");
+	public static final TagKey<Item> GOO = createTag("goo");
+	public static final TagKey<Item> MOGMOSS = createTag("mogmoss");
+	public static final TagKey<Item> DITCHBULB = createTag("ditchbulb");
+	public static final TagKey<Item> BRUTE_TUSK = createTag("brute_tusk");
 	
 	private static TagKey<Item> createTag(String name) {
 		return ItemTags.create(new ResourceLocation(SilentCompat.MODID, name));
@@ -54,3 +68,4 @@ public class ModItemTags {
 		return ItemTags.create(new ResourceLocation("forge", name));
 	}
 }
+

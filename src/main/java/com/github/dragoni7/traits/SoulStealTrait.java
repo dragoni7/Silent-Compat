@@ -2,7 +2,7 @@ package com.github.dragoni7.traits;
 
 import java.util.Collection;
 
-import com.github.dragoni7.core.ModKeys;
+import com.github.dragoni7.core.EffectResourceLocs;
 import com.github.dragoni7.main.SilentCompat;
 
 import net.minecraft.resources.ResourceLocation;
@@ -16,16 +16,11 @@ import net.silentchaos512.gear.gear.trait.SimpleTrait;
 
 public class SoulStealTrait extends SimpleTrait {
 	public static final Serializer<SoulStealTrait> SERIALIZER = new Serializer<SoulStealTrait>(new ResourceLocation(SilentCompat.MODID, "soul_steal"), SoulStealTrait::new);
-	private static MobEffect soul_steal = null;
+	private static MobEffect soul_steal = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.SOUL_STEAL);
 	
 	public SoulStealTrait(ResourceLocation id) {
 		super(id, SERIALIZER);
 	}
-	
-	@Override
-    public void onGearCrafted(TraitActionContext context) {
-		soul_steal = ForgeRegistries.MOB_EFFECTS.getValue(ModKeys.SOUL_STEAL);
-    }
 	
 	@Override
 	public float onAttackEntity(TraitActionContext context, LivingEntity target, float baseValue) {
@@ -35,10 +30,13 @@ public class SoulStealTrait extends SimpleTrait {
 				return super.onAttackEntity(context, target, baseValue);
 			} 
 			else {
-				if (player.getRandom().nextInt(10) % 10 == 0) {
+				if (player.getRandom().nextIntBetweenInclusive(1, 4) % 4 == 0) {
 					context.getPlayer().addEffect(new MobEffectInstance(soul_steal, 100));
 				}
 			}
+		}
+		else {
+			soul_steal = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.SOUL_STEAL);
 		}
 		
 		return super.onAttackEntity(context, target, baseValue);

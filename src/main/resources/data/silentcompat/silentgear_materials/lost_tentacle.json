@@ -39,6 +39,10 @@
         {
           "name": "silentgear:flexible",
           "level": 5
+        },
+        {
+          "name": "silentcompat:fleet_footed",
+          "level": 1
         }
       ],
       "cord": [

@@ -1,0 +1,54 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 0,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "item": "minecraft:chain"
+      }
+    },
+    "name": {
+      "translate": "Chain"
+    },
+    "stats": {
+      "binding": {
+        "durability": {
+            "mul2": 0.25
+        }
+      }
+    },
+    "traits": {
+        "binding": [
+          {
+            "name": "silentgear:crude",
+            "level": 3
+          },
+          {
+            "name": "silentcompat:dense",
+            "level": 1
+          }
+        ]
+    },
+    "model": {
+      "binding/all": [
+        {
+          "texture": "silentgear:binding_generic",
+          "color": "#27313d"
+        }
+      ],
+      "binding/part": [
+        {
+          "texture": "silentgear:binding",
+          "color": "#27313d"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,59 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:ditchbulb"
+      }
+    },
+    "name": {
+      "text": "Ditchbulb Paste"
+    },
+    "stats": {
+      "coating": {
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentgear:refractive",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#e8b602"
+        }
+      ],
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#e8b602"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#e8b602"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ]
+    }
+  }

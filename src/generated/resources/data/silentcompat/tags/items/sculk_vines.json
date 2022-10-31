@@ -3,6 +3,10 @@
     {
       "id": "deeperdarker:sculk_vines",
       "required": false
+    },
+    {
+      "id": "deeperdarker:sculk_tendrils",
+      "required": false
     }
   ]
 }

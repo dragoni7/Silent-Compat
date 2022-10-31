@@ -1,0 +1,335 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "fiber"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:blaze_fiber"
+      }
+    },
+    "name": {
+      "text": "Blaze Fiber"
+    },
+    "stats": {
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 22.0,
+        "enchantability": 20.0,
+        "rarity": 35.0,
+        "chargeability": 0.7,
+        "armor_durability/elytra": 17.0,
+        "armor": 6.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 6.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 2.0,
+        "magic_armor": 17.0
+      },
+      "grip": {
+        "repair_efficiency": {
+          "mul1": 0.17
+        },
+        "harvest_speed": {
+          "mul1": 0.11
+        },
+        "attack_speed": {
+          "add": 0.21
+        },
+        "rarity": {
+          "add": 9.0
+        },
+        "enchantability": {
+          "add": 9.0
+        }
+      },
+      "binding": {
+        "durability": {
+          "mul1": 0.05
+        },
+        "armor_durability": {
+          "mul1": 0.05
+        },
+        "magic_armor": {
+          "add": 4.0
+        },
+        "rarity": {
+          "add": 11.0
+        },
+        "enchantability": {
+          "add": 9.0
+        }
+      },
+      "cord": {
+        "durability": {
+          "mul1": 0.04
+        },
+        "ranged_damage": {
+          "mul1": 0.10
+        },
+        "rarity": {
+          "add": 11.0
+        },
+        "enchantability": {
+          "add": 9.0
+        }
+      },
+      "lining": {
+        "knockback_resistance": {
+          "add": 0.2
+        },
+        "enchantability": {
+          "add": 9.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentcompat:mana_regen",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 2
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.55
+                }
+              ]
+            }
+          ]
+        },
+        {
+            "name": "silentcompat:unstable_magic",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:or",
+                "values": [
+                  {
+                    "type": "silentgear:material_count",
+                    "count": 2
+                  },
+                  {
+                    "type": "silentgear:material_ratio",
+                    "ratio": 0.55
+                  }
+                ]
+              }
+            ]
+        },
+        {
+            "name": "silentgear:flame_ward",
+            "level": 1
+        }
+      ],
+      "grip": [
+        {
+            "name": "silentcompat:mana_regen",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:or",
+                "values": [
+                  {
+                    "type": "silentgear:material_count",
+                    "count": 2
+                  },
+                  {
+                    "type": "silentgear:material_ratio",
+                    "ratio": 0.55
+                  }
+                ]
+              }
+            ]
+        },
+        {
+          "name": "silentgear:racker",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 1.00
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "binding": [
+        {
+            "name": "silentcompat:mana_regen",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:or",
+                "values": [
+                  {
+                    "type": "silentgear:material_count",
+                    "count": 2
+                  },
+                  {
+                    "type": "silentgear:material_ratio",
+                    "ratio": 0.55
+                  }
+                ]
+              }
+            ]
+          },
+        {
+          "name": "silentgear:racker",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 1.00
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cord": [
+        {
+            "name": "silentcompat:mana_regen",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:or",
+                "values": [
+                  {
+                    "type": "silentgear:material_count",
+                    "count": 2
+                  },
+                  {
+                    "type": "silentgear:material_ratio",
+                    "ratio": 0.55
+                  }
+                ]
+              }
+            ]
+          }
+      ],
+      "lining": [
+        {
+            "name": "silentcompat:mana_regen",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:or",
+                "values": [
+                  {
+                    "type": "silentgear:material_count",
+                    "count": 2
+                  },
+                  {
+                    "type": "silentgear:material_ratio",
+                    "ratio": 0.55
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "silentcompat:unstable_magic",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:or",
+                "values": [
+                  {
+                    "type": "silentgear:material_count",
+                    "count": 2
+                  },
+                  {
+                    "type": "silentgear:material_ratio",
+                    "ratio": 0.55
+                  }
+                ]
+              }
+            ]
+        },
+        {
+            "name": "silentgear:flame_ward",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "binding/all": [
+        {
+          "texture": "silentgear:binding_generic",
+          "color": "#EABE1A"
+        }
+      ],
+      "binding/part": [
+        {
+          "texture": "silentgear:binding",
+          "color": "#EABE1A"
+        }
+      ],
+      "cord/all": [
+        {
+          "texture": "silentgear:bowstring_string",
+          "color": "#EABE1A"
+        },
+        {
+          "texture": "silentgear:arrow"
+        }
+      ],
+      "cord/part": [
+        {
+          "texture": "silentgear:bowstring",
+          "color": "#EABE1A"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#EABE1A"
+        }
+      ],
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#EABE1A"
+        }
+      ],
+      "grip/all": [
+        {
+          "texture": "silentgear:grip_wool",
+          "color": "#EABE1A"
+        }
+      ],
+      "grip/part": [
+        {
+          "texture": "silentgear:grip",
+          "color": "#EABE1A"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#EABE1A"
+        }
+      ]
+    }
+  }

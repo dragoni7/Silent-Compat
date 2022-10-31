@@ -50,16 +50,22 @@
     "traits": {
       "main": [
         {
-          "name": "silentcompat:fleet_footed",
-          "level": 1
-        },
-        {
           "name": "silentgear:soft",
           "level": 2
         },
         {
           "name": "silentcompat:featherweight",
           "level": 1
+        },
+        {
+          "name": "silentcompat:abyssal_synergy",
+          "level": 3,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.35
+            }
+          ]
         }
       ],
       "rod": [
