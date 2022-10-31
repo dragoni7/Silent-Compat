@@ -55,7 +55,7 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.lucky_break", "Lucky Break");
 		add("trait.silentcompat.lucky_break.desc", "Chance to gain random potion effect when hit. Effected by luck");
 		add("trait.silentcompat.retaliating_blast", "Retaliating Blast");
-		add("trait.silentcompat.retaliating_blast.desc", "Attacks have a chance to apply a delayed explosion on the target");
+		add("trait.silentcompat.retaliating_blast.desc", "Attacks or being attacked have a chance to apply a delayed explosion on the target");
 		add("trait.silentcompat.knockout", "Knockout");
 		add("trait.silentcompat.knockout.desc", "Chance to inflict a heavy knockback to targets");
 		add("trait.silentcompat.abyssal_synergy", "Abyssal Synergy");
@@ -65,7 +65,7 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.mana_regen", "Mana Regen");
 		add("trait.silentcompat.mana_regen.desc", "Sometimes grants mana regen");
 		add("trait.silentcompat.unstable_magic", "Unstable Magic");
-		add("trait.silentcompat.unstable_magic.desc", "Chance to gain random positive magic effect or apply random negative magic effect to targets");
+		add("trait.silentcompat.unstable_magic.desc", "Somtimes gain a random positive magic effect or apply random negative magic effect to targets");
 		add("trait.silentcompat.gooey", "Gooey");
 		add("trait.silentcompat.gooey.desc", "Attacks have a chance to apply scintling goo under the target's feet");
 	}
