@@ -25,7 +25,7 @@
       "coating": {
         "durability": [
           {
-            "mul2": 0.3
+            "mul2": 0.31
           },
           {
             "add": 2.0
@@ -41,13 +41,13 @@
           "max": 4.0
         },
         "melee_damage": {
-          "mul2": 0.666667
+          "mul2": 0.23333334
         },
         "magic_damage": {
-          "mul2": 0.666667
+          "mul2": 0.23333334
         },
         "ranged_damage": {
-          "mul2": 0.666667
+          "mul2": 0.23333334
         },
         "armor_toughness": {
           "add": 5.0
