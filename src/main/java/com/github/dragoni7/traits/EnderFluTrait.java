@@ -6,15 +6,12 @@ import com.github.dragoni7.core.EffectResourceLocs;
 import com.github.dragoni7.main.SilentCompat;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.level.Level;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.silentchaos512.gear.api.traits.TraitActionContext;
 import net.silentchaos512.gear.gear.trait.SimpleTrait;
-import net.silentchaos512.gear.util.GearHelper;
 
 public class EnderFluTrait extends SimpleTrait {
 	

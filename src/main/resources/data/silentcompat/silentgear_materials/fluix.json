@@ -35,6 +35,23 @@
         "armor": 15.0,
         "armor_toughness": 2.0,
         "magic_armor": 4.0
+      },
+      "tip": {
+        "harvest_speed": {
+          "add": 0.05
+        },
+        "attack_speed": {
+          "add": 0.05
+        },
+        "melee_damage": {
+          "add": 4.0
+        },
+        "ranged_damage": {
+          "add": 4.0
+        },
+        "rarity": {
+          "add": 20.0
+        }
       }
     },
     "traits": {
@@ -57,6 +74,12 @@
           "name": "silentgear:brittle",
           "level": 2
         }
+      ],
+      "tip": [
+        {
+          "name": "silentcompat:looting",
+          "level": 1
+        }
       ]
     },
     "model": {
@@ -73,6 +96,25 @@
         {
           "texture": "silentgear:metal",
           "color": "#6733a6"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#6733a6"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base",
+          "color": "#6733a6"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#6733a6"
+        },
+        {
+          "texture": "silentgear:tip_shine"
         }
       ]
     }

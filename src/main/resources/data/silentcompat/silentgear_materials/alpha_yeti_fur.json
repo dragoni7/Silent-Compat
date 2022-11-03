@@ -68,8 +68,8 @@
     ],
     "grip": [
       {
-        "name": "silentgear:flexible",
-        "level": 3
+        "name": "silentgear:sturdy",
+        "level": 2
       },
       {
         "name": "silentgear:soft",
@@ -78,8 +78,8 @@
     ],
     "lining": [
       {
-        "name": "silentgear:flexible",
-        "level": 3
+        "name": "silentgear:sturdy",
+        "level": 2
       },
       {
         "name": "silentcompat:yeti_strength",

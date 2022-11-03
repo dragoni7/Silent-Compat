@@ -20,8 +20,8 @@ public static final Serializer<VorpalTrait> SERIALIZER = new Serializer<VorpalTr
 	public float onAttackEntity(TraitActionContext context, LivingEntity target, float baseValue) {
 		
 		if (target.getHealth() > 200) {
-			// 15% more base damage on entities
-			return baseValue + (baseValue * 0.15F);
+			// 10% more base damage on entities
+			return baseValue + (baseValue * 0.10F);
 		}
 		return super.onAttackEntity(context, target, baseValue);
 	}
@@ -29,7 +29,7 @@ public static final Serializer<VorpalTrait> SERIALIZER = new Serializer<VorpalTr
 	@Override
     public Collection<String> getExtraWikiLines() {
         Collection<String> ret = super.getExtraWikiLines();
-        ret.add("Deal more damage to targets with over 100 hearts");
+        ret.add("Deal more damage to targets with over 200 hearts");
         return ret;
     }
 

@@ -65,5 +65,5 @@
   "trait.silentcompat.vigorous": "Vigorous",
   "trait.silentcompat.vigorous.desc": "Deal more damage while at full health",
   "trait.silentcompat.vorpal": "Vorpal",
-  "trait.silentcompat.vorpal.desc": "Deal more damage to targets with over 100 hearts"
+  "trait.silentcompat.vorpal.desc": "Deal more damage to targets with over 200 hearts"
 }

@@ -35,6 +35,23 @@
         "armor": 15.0,
         "armor_toughness": 1.0,
         "magic_armor": 4.0
+      },
+      "tip": {
+        "harvest_speed": {
+          "add": 0.02
+        },
+        "attack_speed": {
+          "add": 0.02
+        },
+        "melee_damage": {
+          "add": 4.0
+        },
+        "ranged_damage": {
+          "add": 3.0
+        },
+        "rarity": {
+          "add": 10.0
+        }
       }
     },
     "traits": {
@@ -51,6 +68,9 @@
           "name": "silentcompat:swiftness",
           "level": 1
         }
+      ],
+      "tip": [
+
       ]
     },
     "model": {
@@ -67,6 +87,25 @@
         {
           "texture": "silentgear:metal",
           "color": "#86e3db"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#86e3db"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base",
+          "color": "#86e3db"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#86e3db"
+        },
+        {
+          "texture": "silentgear:tip_shine"
         }
       ]
     }

@@ -47,6 +47,9 @@
       "armor_durability": {
         "mul2": 0.075
       },
+      "melee_damage": {
+        "add": 2.0
+      },
       "rarity": 50.0
     },
     "adornment": {}

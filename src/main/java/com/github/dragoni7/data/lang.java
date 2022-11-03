@@ -47,7 +47,7 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.featherweight", "Featherweight");
 		add("trait.silentcompat.featherweight.desc", "Targets take additional knockback when hit");
 		add("trait.silentcompat.vorpal", "Vorpal");
-		add("trait.silentcompat.vorpal.desc", "Deal more damage to targets with over 100 hearts");
+		add("trait.silentcompat.vorpal.desc", "Deal more damage to targets with over 200 hearts");
 		add("trait.silentcompat.hungering_strike", "Hungering Strike");
 		add("trait.silentcompat.hungering_strike.desc", "Deal more damage while under half hunger");
 		add("trait.silentcompat.soul_steal", "Soul Steal");

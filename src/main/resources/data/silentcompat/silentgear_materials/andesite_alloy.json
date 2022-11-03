@@ -37,14 +37,14 @@
         "magic_armor": 6.0,
         "ranged_damage": 1.0,
         "ranged_speed": 0.1,
-        "projectile_speed": 1.0,
+        "projectile_speed": 0.8,
         "projectile_accuracy": 1.0,
         "rarity": 5.0,
         "chargeability": 0.7
       },
       "rod": {
         "durability": {
-          "mul2": 0.1
+          "mul2": 0.05
         },
         "enchantability": [
           {
@@ -54,17 +54,14 @@
             "mul2": -0.1
           }
         ],
-        "melee_damage": {
-          "mul2": 0.1
-        },
-        "rarity": 10.0
+        "rarity": 4.0
       },
       "tip": {
         "durability": {
-          "add": 60.0
+          "add": 30.0
         },
         "armor_durability": {
-          "add": 4.0
+          "add": 2.0
         },
         "harvest_level": {
           "max": 2.0
@@ -73,13 +70,13 @@
           "add": 1.0
         },
         "melee_damage": {
-          "add": 1.0
+          "add": 0.5
         },
         "ranged_speed": {
-          "add": 0.2
+          "add": 0.1
         },
         "rarity": {
-          "add": 4.0
+          "add": 2.0
         }
       }
     },
@@ -113,7 +110,7 @@
       "tip": [
         {
           "name": "silentgear:malleable",
-          "level": 2
+          "level": 1
         }
       ]
     },
