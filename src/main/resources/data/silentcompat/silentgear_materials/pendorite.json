@@ -59,9 +59,6 @@
         "armor_toughness": {
           "add": 4.0
         },
-        "knockback_resistance": {
-          "add": 1.0
-        },
         "enchantment_value": {
           "add": 5.0
         }

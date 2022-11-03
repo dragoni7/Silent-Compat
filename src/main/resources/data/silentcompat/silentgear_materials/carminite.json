@@ -28,17 +28,17 @@
       "charging_value": 1.0,
       "repair_value": 0.25,
       "harvest_level": 2.0,
-      "harvest_speed": 6.0,
-      "melee_damage": 2.0,
-      "magic_damage": 2.0,
+      "harvest_speed": 8.0,
+      "melee_damage": 5.5,
+      "magic_damage": 5.0,
       "attack_speed": 0.0,
       "ranged_damage": 1.0,
       "ranged_speed": -0.1,
       "projectile_speed": 1.1,
       "projectile_accuracy": 0.9,
-      "armor": 7.0,
+      "armor": 10.0,
       "armor_toughness": 4.0,
-      "magic_armor": 6.0
+      "magic_armor": 10.0
     },
     "coating": {
       "durability": {
