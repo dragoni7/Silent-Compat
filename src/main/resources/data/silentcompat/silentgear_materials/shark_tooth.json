@@ -19,6 +19,11 @@
       "text": "Shark Tooth"
     },
     "stats": {
+      "main": {
+        "projectile_speed": 1.2,
+        "projectile_accuracy": 1.0,
+        "ranged_damage": 1.5
+        },
       "tip": {
         "durability": {
           "add": 256.0
@@ -41,10 +46,17 @@
       }
     },
     "traits": {
+      "main": [
+
+      ],
       "tip": [
         {
           "name": "silentgear:chipping",
           "level": 2
+        },
+        {
+          "name": "silentgear:jagged",
+          "level": 1
         }
       ]
     },

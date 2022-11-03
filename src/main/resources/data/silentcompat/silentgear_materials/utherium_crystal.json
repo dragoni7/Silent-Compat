@@ -32,6 +32,8 @@
         "attack_speed": 0.0,
         "ranged_damage": 3.5,
         "ranged_speed": -0.2,
+        "projectile_speed": 1.1,
+        "projectile_accuracy": 1.3,
         "armor": 20.0,
         "armor_toughness": 12.0,
         "magic_armor": 10.0

@@ -19,6 +19,11 @@
       "text": "Gazelle Horn"
     },
     "stats": {
+      "main": {
+        "projectile_speed": 1.0,
+        "projectile_accuracy": 0.5,
+        "ranged_damage": 2.0
+        },
       "tip": {
         "durability": {
           "add": 256.0

@@ -30,7 +30,9 @@
         "armor/leggings": 6.0,
         "armor/boots": 3.0,
         "armor_toughness": 0.0,
-        "magic_armor": 8.0
+        "magic_armor": 8.0,
+        "projectile_speed": 1.5,
+        "projectile_accuracy": 0.6
       }
     },
     "traits": {

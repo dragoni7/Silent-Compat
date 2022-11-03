@@ -56,9 +56,6 @@
             "mul2": 0.33333334
           }
         ],
-        "armor_toughness": {
-          "add": 4.0
-        },
         "enchantment_value": {
           "add": 5.0
         }

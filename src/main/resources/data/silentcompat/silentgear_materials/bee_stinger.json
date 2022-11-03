@@ -19,6 +19,10 @@
       "translate": "Bee Stinger"
     },
     "stats": {
+      "main": {
+        "projectile_speed": 1.1,
+        "projectile_accuracy": 1.1
+      },
       "tip": {
         "durability": {
           "add": 5.0
@@ -32,6 +36,8 @@
       }
     },
     "traits": {
+      "main": [
+      ],
       "tip": [
         {
           "name": "silentgear:venom",

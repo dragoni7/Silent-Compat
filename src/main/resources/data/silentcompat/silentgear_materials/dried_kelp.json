@@ -48,6 +48,10 @@
         "repair_efficiency": {
             "mul1": 0.1
         }
+      },
+      "fletching": {
+        "projectile_speed": 0.9,
+        "projectile_accuracy": 1.2
       }
     },
     "traits": {
