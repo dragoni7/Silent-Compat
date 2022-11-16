@@ -59,6 +59,10 @@
       {
         "name": "silentcompat:ironwood_magic",
         "level": 1
+      },
+      {
+        "name": "silentcompat:mana_regen",
+        "level": 1
       }
     ],
     "rod": [

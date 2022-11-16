@@ -1,0 +1,25 @@
+{
+    "type": "silentgear:attribute",
+    "max_level": 5,
+    "name": {
+      "text": "Mana Boost"
+    },
+    "description": {
+      "translate": "Grants additional max mana"
+    },
+    "attribute_modifiers": {
+      "all": [
+        {
+          "attribute": "ars_nouveau:ars_nouveau.perk.flat_max_mana",
+          "operation": 0,
+          "value": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ]
+        }
+      ]
+    }
+  }

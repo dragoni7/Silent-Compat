@@ -59,6 +59,14 @@
         {
           "name": "silentcompat:swiftness",
           "level": 3
+        },
+        {
+          "name": "silentcompat:mana_regen",
+          "level": 1
+        },
+        {
+          "name": "silentcompat:spell_damage",
+          "level": 3
         }
       ]
     },

@@ -62,6 +62,10 @@
       {
         "name": "silentcompat:naga_magic",
         "level": 1
+      },
+      {
+        "name": "silentcompat:mana_regen",
+        "level": 2
       }
     ],
     "grip": [

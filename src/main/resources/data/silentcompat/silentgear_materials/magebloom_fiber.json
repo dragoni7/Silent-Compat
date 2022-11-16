@@ -110,8 +110,14 @@
           ]
         },
         {
-          "name": "silentcompat:freezing",
-          "level": 1
+          "name": "silentcompat:mana_boost",
+          "level": 1,
+          "conditions": [
+              {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.55
+              }
+            ]
         }
       ],
       "grip": [
@@ -165,6 +171,10 @@
               ]
             }
           ]
+        },
+        {
+          "name": "silentcompat:spell_damage",
+          "level": 1
         }
       ],
       "cord": [

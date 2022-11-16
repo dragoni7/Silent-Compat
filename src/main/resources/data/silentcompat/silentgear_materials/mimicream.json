@@ -36,6 +36,10 @@
         {
           "name": "silentgear:synergistic",
           "level": 1
+        },
+        {
+          "name": "silentcompat:spell_damage",
+          "level": 1
         }
       ]
     },

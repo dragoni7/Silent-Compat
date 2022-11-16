@@ -1,0 +1,29 @@
+{
+    "type": "silentgear:attribute",
+    "max_level": 9,
+    "name": {
+      "text": "Spell Damage"
+    },
+    "description": {
+      "translate": "Grants additional spell damage"
+    },
+    "attribute_modifiers": {
+      "all": [
+        {
+          "attribute": "ars_nouveau:ars_nouveau.perk.spell_damage",
+          "operation": 0,
+          "value": [
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0
+          ]
+        }
+      ]
+    }
+  }

@@ -131,8 +131,8 @@
             ]
         },
         {
-            "name": "silentgear:flame_ward",
-            "level": 1
+          "name": "silentcompat:mana_boost",
+          "level": 2
         }
       ],
       "grip": [

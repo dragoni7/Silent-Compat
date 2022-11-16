@@ -61,6 +61,14 @@
         {
             "name": "silentcompat:bulwark",
             "level": 1
+        },
+        {
+          "name": "silentcompat:mana_boost",
+          "level": 3
+        },
+        {
+          "name": "silentcompat:spell_damage",
+          "level": 4
         }
       ]
     },

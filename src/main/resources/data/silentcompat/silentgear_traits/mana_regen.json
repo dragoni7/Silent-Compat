@@ -1,10 +1,25 @@
 {
-    "type": "silentcompat:mana_regen",
-    "max_level": 1,
-    "name": {
-      "translate": "trait.silentcompat.mana_regen"
-    },
-    "description": {
-      "translate": "trait.silentcompat.mana_regen.desc"
-    }
+  "type": "silentgear:attribute",
+  "max_level": 5,
+  "name": {
+    "text": "Mana Regen"
+  },
+  "description": {
+    "translate": "Grants additional mana regen"
+  },
+  "attribute_modifiers": {
+    "all": [
+      {
+        "attribute": "ars_nouveau:ars_nouveau.perk.mana_regen",
+        "operation": 0,
+        "value": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ]
+      }
+    ]
   }
+}

@@ -76,8 +76,42 @@
           "level": 1
         },
         {
-            "name": "silentgear:holy",
-            "level": 2
+          "name": "silentcompat:mana_regen",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 2
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:mana_boost",
+          "level": 3,
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 2
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.55
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "silentgear:lustrous",
@@ -134,6 +168,14 @@
       "adornment": [
         {
           "name": "silentcompat:swiftness",
+          "level": 1
+        },
+        {
+          "name": "silentcompat:mana_regen",
+          "level": 1
+        },
+        {
+          "name": "silentcompat:spell_damage",
           "level": 1
         }
       ]

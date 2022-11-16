@@ -54,19 +54,9 @@
           ]
         },
         {
-            "name": "silentgear:cure_wither",
-            "level": 1,
-            "conditions": [
-              {
-                "type": "silentgear:gear_type",
-                "gear_type": "armor"
-              },
-              {
-                "type": "silentgear:material_ratio",
-                "ratio": 0.66
-              }
-            ]
-          },
+          "name": "silentcompat:spell_damage",
+          "level": 1
+        },
         {
           "name": "silentgear:brittle",
           "level": 5

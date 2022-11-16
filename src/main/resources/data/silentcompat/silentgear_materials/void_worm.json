@@ -93,7 +93,11 @@
         {
           "name": "silentcompat:worm_protection",
           "level": 1
-      }
+        },
+        {
+          "name": "silentcompat:spell_damage",
+          "level": 4
+        }
       ],
       "rod": [
         {

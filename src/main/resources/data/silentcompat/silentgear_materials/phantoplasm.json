@@ -94,7 +94,8 @@
       "fletching": {
         "projectile_speed": 1.3,
         "projectile_accuracy": 1.0
-      }
+      },
+      "adornment": {}
     },
     "traits": {
       "grip": [
@@ -146,6 +147,16 @@
           "name": "silentgear:widen",
           "level": 1
         }
+      ],
+      "adornment": [
+        {
+          "name": "silentcompat:mana_boost",
+          "level": 2
+        },
+        {
+          "name": "silentcompat:spell_damage",
+          "level": 3
+        }
       ]
     },
     "model": {
@@ -195,6 +206,25 @@
         {
           "texture": "silentgear:lining_cloth",
           "color": "#6bffe9"
+        }
+      ],
+      "adornment/all": [
+        {
+          "texture": "silentgear:adornment_generic",
+          "color": "#6bffe9"
+        },
+        {
+          "texture": "silentgear:adornment_highlight",
+          "color": "#6bffe9"
+        }
+      ],
+      "adornment/part": [
+        {
+          "texture": "silentgear:adornment",
+          "color": "#6bffe9"
+        },
+        {
+          "texture": "silentgear:adornment_highlight"
         }
       ]
     }

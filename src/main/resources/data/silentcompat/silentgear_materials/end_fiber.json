@@ -80,7 +80,7 @@
       },
       "lining": {
         "knockback_resistance": {
-          "add": 0.2
+          "add": 0.1
         },
         "enchantability": {
           "add": 10.0
@@ -119,30 +119,44 @@
               ]
         },
         {
-            "name": "silentgear:moonwalker",
-            "level": 2
-        }
-      ],
-      "grip": [
-        {
-            "name": "silentcompat:unstable_magic",
-            "level": 1,
-            "conditions": [
+          "name": "silentcompat:mana_boost",
+          "level": 4,
+          "conditions": [
               {
-                "type": "silentgear:or",
-                "values": [
-                  {
-                    "type": "silentgear:material_count",
-                    "count": 2
-                  },
-                  {
-                    "type": "silentgear:material_ratio",
-                    "ratio": 0.55
-                  }
-                ]
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.55
               }
             ]
         },
+        {
+            "name": "silentgear:moonwalker",
+            "level": 2
+        },
+        {
+          "name": "silentcompat:mana_regen",
+          "level": 2,
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 2
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.55
+                }
+              ]
+            }
+          ]
+      },
+      {
+        "name": "silentcompat:spell_damage",
+        "level": 4
+      }
+      ],
+      "grip": [
         {
           "name": "silentgear:floatstoner",
           "level": 1,
@@ -157,28 +171,38 @@
               ]
             }
           ]
-        }
-      ],
-      "binding": [
+        },
         {
-            "name": "silentcompat:unstable_magic",
-            "level": 1,
-            "conditions": [
+          "name": "silentcompat:mana_boost",
+          "level": 2,
+          "conditions": [
               {
-                "type": "silentgear:or",
-                "values": [
-                  {
-                    "type": "silentgear:material_count",
-                    "count": 2
-                  },
-                  {
-                    "type": "silentgear:material_ratio",
-                    "ratio": 0.55
-                  }
-                ]
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.55
               }
             ]
         },
+        {
+          "name": "silentcompat:mana_regen",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 2
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.55
+                }
+              ]
+            }
+          ]
+      }
+      ],
+      "binding": [
         {
           "name": "silentgear:floatstoner",
           "level": 1,
@@ -196,46 +220,37 @@
         }
       ],
       "cord": [
-        {
-            "name": "silentcompat:unstable_magic",
-            "level": 1,
-            "conditions": [
-              {
-                "type": "silentgear:or",
-                "values": [
-                  {
-                    "type": "silentgear:material_count",
-                    "count": 2
-                  },
-                  {
-                    "type": "silentgear:material_ratio",
-                    "ratio": 0.55
-                  }
-                ]
-              }
-            ]
-        }
       ],
       "lining": [
         {
-            "name": "silentcompat:unstable_magic",
-            "level": 1,
-            "conditions": [
+          "name": "silentcompat:mana_boost",
+          "level": 2,
+          "conditions": [
               {
-                "type": "silentgear:or",
-                "values": [
-                  {
-                    "type": "silentgear:material_count",
-                    "count": 2
-                  },
-                  {
-                    "type": "silentgear:material_ratio",
-                    "ratio": 0.55
-                  }
-                ]
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.55
               }
             ]
-        }
+        },
+        {
+          "name": "silentcompat:mana_regen",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 2
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.55
+                }
+              ]
+            }
+          ]
+      }
       ]
     },
     "model": {

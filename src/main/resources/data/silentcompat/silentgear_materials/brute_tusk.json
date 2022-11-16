@@ -66,6 +66,10 @@
         {
             "name": "silentcompat:bludgeoning",
             "level": 1
+        },
+        {
+          "name": "silentcompat:spell_damage",
+          "level": 1
         }
       ]
     },

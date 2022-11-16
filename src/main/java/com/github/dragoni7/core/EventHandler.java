@@ -109,7 +109,7 @@ public class EventHandler {
 							}
 							
 							if (!attacked.hasEffect(mobEffect)) {
-								attacked.forceAddEffect(new MobEffectInstance(mobEffect, 80), attacked);
+								attacked.forceAddEffect(new MobEffectInstance(mobEffect, 40), attacked);
 							}
 						}
 					}

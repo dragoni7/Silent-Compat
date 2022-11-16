@@ -33,7 +33,8 @@
         "magic_armor": 8.0,
         "projectile_speed": 1.5,
         "projectile_accuracy": 0.6
-      }
+      },
+      "adornment": {}
     },
     "traits": {
       "main": [
@@ -49,6 +50,16 @@
             "name": "silentgear:moonwalker",
             "level": 1
         }
+      ],
+      "adornment": [
+        {
+          "name": "silentcompat:mana_regen",
+          "level": 1
+        },
+        {
+          "name": "silentcompat:mana_boost",
+          "level": 1
+        }
       ]
     },
     "model": {
@@ -62,6 +73,25 @@
         {
           "texture": "silentgear:metal",
           "color": "#1f472a"
+        }
+      ],
+      "adornment/all": [
+        {
+          "texture": "silentgear:adornment_generic",
+          "color": "#1f472a"
+        },
+        {
+          "texture": "silentgear:adornment_highlight",
+          "color": "#1f472a"
+        }
+      ],
+      "adornment/part": [
+        {
+          "texture": "silentgear:adornment",
+          "color": "#1f472a"
+        },
+        {
+          "texture": "silentgear:adornment_highlight"
         }
       ]
     }

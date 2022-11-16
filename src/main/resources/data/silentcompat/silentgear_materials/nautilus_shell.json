@@ -53,6 +53,14 @@
         {
           "name": "silentcompat:dense",
           "level": 1
+        },
+        {
+          "name": "silentcompat:mana_regen",
+          "level": 1
+        },
+        {
+          "name": "silentcompat:spell_damage",
+          "level": 2
         }
       ]
     },

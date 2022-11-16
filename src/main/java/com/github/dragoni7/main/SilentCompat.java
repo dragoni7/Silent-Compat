@@ -18,7 +18,6 @@ import com.github.dragoni7.traits.HungeringStrike;
 import com.github.dragoni7.traits.KnightlyTrait;
 import com.github.dragoni7.traits.KnockoutTrait;
 import com.github.dragoni7.traits.LuckyBreak;
-import com.github.dragoni7.traits.ManaRegen;
 import com.github.dragoni7.traits.NeptunesMightTrait;
 import com.github.dragoni7.traits.NocturnalTrait;
 import com.github.dragoni7.traits.RetaliatingBlastTrait;
@@ -73,7 +72,6 @@ public class SilentCompat
     	GearApi.registerTraitSerializer(AbyssalSynergyTrait.SERIALIZER);
     	GearApi.registerTraitSerializer(VigorousTrait.SERIALIZER);
     	GearApi.registerTraitSerializer(GooeyTrait.SERIALIZER);
-    	GearApi.registerTraitSerializer(ManaRegen.SERIALIZER);
     	GearApi.registerTraitSerializer(UnstableMagicTrait.SERIALIZER);
     	GearApi.registerTraitSerializer(KnightlyTrait.SERIALIZER);
     	GearApi.registerTraitSerializer(FireReactTrait.SERIALIZER);

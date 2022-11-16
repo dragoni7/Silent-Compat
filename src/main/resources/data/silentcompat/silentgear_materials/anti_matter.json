@@ -44,6 +44,10 @@
         {
         "name": "silentcompat:retaliating_blast",
         "level": 1
+        },
+        {
+          "name": "silentcompat:spell_damage",
+          "level": 2
         }
       ]
     },

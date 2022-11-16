@@ -34,6 +34,10 @@
         {
           "name": "silentcompat:bulwark",
           "level": 2
+        },
+        {
+          "name": "silentcompat:mana_regen",
+          "level": 2
         }
       ]
     },
