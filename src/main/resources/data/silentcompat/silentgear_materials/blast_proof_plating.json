@@ -30,7 +30,7 @@
     "stats": {
       "main": {
         "armor_durability": 15.0,
-        "enchantability": 10.0,
+        "enchantment_value": 10.0,
         "armor": 15.0,
         "armor_toughness": 4.0,
         "magic_armor": 6.0,

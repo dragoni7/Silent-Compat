@@ -74,7 +74,7 @@ public class AddItemTags extends ItemTagsProvider {
 		tag(ModItemTags.MAGE_FIBER).addOptional(new ResourceLocation("ars_nouveau:magebloom_fiber"));
 		tag(ModItemTags.BLAZE_FIBER).addOptional(new ResourceLocation("ars_nouveau:blaze_fiber"));
 		tag(ModItemTags.END_FIBER).addOptional(new ResourceLocation("ars_nouveau:end_fiber"));
-		tag(ModItemTags.GOO).addOptional(new ResourceLocation("undergarden:goo_ball"));
+		tag(ModItemTags.GOO).addOptional(new ResourceLocation("undergarden:goo_block"));
 		tag(ModItemTags.MOGMOSS).addOptional(new ResourceLocation("undergarden:mogmoss"));
 		tag(ModItemTags.DITCHBULB).addOptional(new ResourceLocation("undergarden:ditchbulb_paste"));
 		tag(ModItemTags.BRUTE_TUSK).addOptional(new ResourceLocation("undergarden:brute_tusk"));

@@ -1,4 +1,4 @@
-// 1.19.2	2022-10-30T13:52:59.8745363	Tags for minecraft:item
+// 1.19.2	2022-11-15T22:13:56.828856	Tags for minecraft:item
 49c12dc1066afdea5c89a385fae5130956cd34ae data/forge/tags/items/dragon_scale.json
 0765e30f0871716da082290db89cd2789fe99514 data/forge/tags/items/gems/honey_crystal_shards.json
 a98bd54457e668a2fc2993d2cb5f12eec9444305 data/forge/tags/items/ingots.json
@@ -44,7 +44,7 @@ d2f3153fa78109813ac4757612e36bdd7b60e246 data/silentcompat/tags/items/elastic_te
 e367137c4d4cd9a82a406cda32b61454b4fe03dd data/silentcompat/tags/items/farseer_arm.json
 a5df22b20402426631ca3676500c820a2aa68480 data/silentcompat/tags/items/fortunes_favor.json
 36b03a7da6164b4ac38ab6d6626adc1cc8178585 data/silentcompat/tags/items/gazelle_horn.json
-405e96768d24c7d47754dbb8946fb2db89b13758 data/silentcompat/tags/items/goo.json
+7b84b12e55ac56be3a8ae76f4eb7415a9c55f6d3 data/silentcompat/tags/items/goo.json
 d2511063214e53df856788e940b1aee4b3f34383 data/silentcompat/tags/items/komodo_spit.json
 30f21ef97c6cf8efce09fce76cfb776d9373fa10 data/silentcompat/tags/items/magebloom_fiber.json
 761895b28f1a9a5367e2ddda8db919cd12fe198c data/silentcompat/tags/items/masticator_scales.json

@@ -1,0 +1,26 @@
+{
+    "type": "silentgear:enchantment",
+    "max_level": 1,
+    "conditions": [
+        {
+          "type": "silentgear:gear_type",
+          "gear_type": "tool"
+        }
+    ],
+    "name": {
+      "text": "Aqua Affinity"
+    },
+    "description": {
+      "text": "Applies Aqua Affinity to tools"
+    },
+    "enchantments": {
+      "tool": [
+        {
+          "enchantment": "minecraft:aqua_affinity",
+          "level": [
+            1
+          ]
+        }
+      ]
+    }
+  }

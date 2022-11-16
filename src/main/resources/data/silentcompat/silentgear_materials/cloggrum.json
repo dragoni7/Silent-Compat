@@ -34,7 +34,7 @@
         "armor/leggings": 5.0,
         "armor/boots": 2.0,
         "magic_armor": 6.0,
-        "armor_toughness": 1.0,
+        "armor_toughness": 4.0,
         "ranged_damage": 0.5,
         "ranged_speed": 0.1,
         "rarity": 40.0,
@@ -63,7 +63,7 @@
           ]
         },
         {
-          "name": "silentgear:sharp",
+          "name": "silentcompat:slow_immune",
           "level": 1
         },
         {

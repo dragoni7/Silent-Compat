@@ -25,14 +25,14 @@
       "coating": {
         "durability": [
           {
-            "mul2": 0.31
+            "mul2": 0.34
           },
           {
             "add": 2.0
           }
         ],
         "armor_durability": {
-          "mul2": 0.121212125
+          "mul2": 0.123
         },
         "harvest_speed": {
           "mul2": 0.125
@@ -41,16 +41,16 @@
           "max": 4.0
         },
         "melee_damage": {
-          "mul2": 0.23333334
+          "mul2": 0.4
         },
         "magic_damage": {
-          "mul2": 0.23333334
+          "mul2": 0.4
         },
         "ranged_damage": {
-          "mul2": 0.23333334
+          "mul2": 0.4
         },
         "armor_toughness": {
-          "add": 5.0
+          "add": 4.0
         },
         "enchantability": {
           "add": 5.0

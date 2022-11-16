@@ -1,5 +1,5 @@
 {
-    "type": "silentcompat:unstable_magic",
+    "type": "silentcompat:knightly",
     "max_level": 1,
     "conditions": [
       {
@@ -8,9 +8,9 @@
       }
     ],
     "name": {
-      "translate": "trait.silentcompat.unstable_magic"
+      "translate": "trait.silentcompat.knightly"
     },
     "description": {
-      "translate": "trait.silentcompat.unstable_magic.desc"
+      "translate": "trait.silentcompat.knightly.desc"
     }
   }

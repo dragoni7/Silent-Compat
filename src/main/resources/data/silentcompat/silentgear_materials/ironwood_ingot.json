@@ -23,7 +23,7 @@
     "main": {
       "durability": 512.0,
       "armor_durability": 20.0,
-      "enchantability": 16.0,
+      "enchantment_value": 16.0,
       "harvest_level": 2.0,
       "harvest_speed": 6.0,
       "melee_damage": 6.0,
@@ -55,6 +55,10 @@
       {
         "name": "silentgear:malleable",
         "level": 3
+      },
+      {
+        "name": "silentcompat:ironwood_magic",
+        "level": 1
       }
     ],
     "rod": [

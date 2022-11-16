@@ -22,7 +22,7 @@
     "main": {
       "durability": 512.0,
       "armor_durability": 20.0,
-      "enchantability": 16.0,
+      "enchantment_value": 16.0,
       "harvest_level": 2.0,
       "harvest_speed": 7.0,
       "melee_damage": 3.0,
@@ -49,26 +49,22 @@
   "traits": {
     "main": [
       {
-        "name": "silentgear:malleable",
-        "level": 4
-      },
-      {
         "name": "silentgear:adamant",
         "level": 2
+      },
+      {
+        "name": "silentcompat:knightly",
+        "level": 1
       }
     ],
     "rod": [
-      {
-        "name": "silentgear:malleable",
-        "level": 4
-      }
     ]
   },
   "model": {
     "main/all": [
       {
         "texture": "silentgear:main_generic_hc",
-        "color": "#B9C4A6"
+        "color": "#ccd4c5"
       },
       {
         "texture": "silentgear:_highlight"
@@ -77,19 +73,19 @@
     "main/fragment": [
       {
         "texture": "silentgear:metal",
-        "color": "#B9C4A6"
+        "color": "#ccd4c5"
       }
     ],
     "rod/all": [
       {
         "texture": "silentgear:rod_generic_hc",
-        "color": "#B9C4A6"
+        "color": "#ccd4c5"
       }
     ],
     "rod/part": [
       {
         "texture": "silentgear:rod",
-        "color": "#B9C4A6"
+        "color": "#ccd4c5"
       }
     ]
   }

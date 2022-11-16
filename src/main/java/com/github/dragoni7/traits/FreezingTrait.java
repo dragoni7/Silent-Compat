@@ -23,7 +23,7 @@ public class FreezingTrait extends SimpleTrait {
 	
 	@Override
 	public float onAttackEntity(TraitActionContext context, LivingEntity target, float baseValue) {
-		if (freezing != null) {
+		if (freezing != null && target.canFreeze()) {
 			target.addEffect(new MobEffectInstance(freezing, 60));
 		}
 		else {

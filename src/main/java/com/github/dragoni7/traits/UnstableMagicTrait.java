@@ -34,7 +34,9 @@ public class UnstableMagicTrait extends SimpleTrait {
 				
 				switch(effect) {
 				case 1: {
-					mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.FREEZING);
+					if (target.canFreeze()) {
+						mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.FREEZING);
+					}
 					break;
 				}
 				case 2: {

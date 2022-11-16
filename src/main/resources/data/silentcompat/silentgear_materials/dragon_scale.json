@@ -20,6 +20,7 @@
       "text": "Dragon Scale"
     },
     "stats": {
+
       "fletching": {
         "projectile_speed": 3.5,
         "projectile_accuracy": 1.3
@@ -27,13 +28,22 @@
       "main": {
         "durability": 0.0,
         "armor_durability": 60.0,
-        "enchantability": 30.0,
+        "enchantment_value": 30.0,
         "rarity": 90.0,
         "chargeability": 1.1,
         "armor_durability/elytra": 24.0,
-        "armor": 23.0,
-        "magic_armor": 10.0
-      }
+        "armor": 30.0,
+        "armor/helmet": 6.0,
+        "armor/chestplate": 10.0,
+        "armor/leggings": 9.0,
+        "armor/boots": 5.0,
+        "armor_toughness": 16.0,
+        "magic_armor": 10.0,
+        "knockback_resistance": {
+          "add": 7.0
+        }
+      },
+      "adornment": {}
     },
     "traits": {
         "main": [
@@ -45,15 +55,22 @@
             "name": "silentcompat:draconic",
             "level": 3
             
+          },
+          {
+            "name": "silentcompat:bulwark",
+            "level": 3
           }
         ],
         "adornment": [
             {
               "name": "silentcompat:draconic",
-              "level": 2
+              "level": 1
               
             }
-          ]
+        ],
+        "fletching": [
+
+        ]
       },
     "model": {
       "fletching/all": [

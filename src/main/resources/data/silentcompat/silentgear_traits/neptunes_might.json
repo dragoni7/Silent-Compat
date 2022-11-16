@@ -1,0 +1,16 @@
+{
+    "type": "silentcompat:neptunes_might",
+    "max_level": 1,
+    "conditions": [
+        {
+          "type": "silentgear:gear_type",
+          "gear_type": "tool"
+        }
+    ],
+    "name": {
+      "translate": "trait.silentcompat.neptunes_might"
+    },
+    "description": {
+      "translate": "trait.silentcompat.neptunes_might.desc"
+    }
+  }

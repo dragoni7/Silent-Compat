@@ -23,7 +23,7 @@
     "main": {
       "durability": 1024.0,
       "armor_durability": 25.0,
-      "enchantability": 16.0,
+      "enchantment_value": 16.0,
       "harvest_level": 3.0,
       "harvest_speed": 6.0,
       "melee_damage": 4.0,
@@ -58,8 +58,23 @@
         "level": 1
       },
       {
-        "name": "silentgear:malleable",
-        "level": 4
+        "name": "silentcompat:fire_react",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:or",
+            "values": [
+              {
+                "type": "silentgear:material_count",
+                "count": 2
+              },
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.35
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "silentgear:fiery",

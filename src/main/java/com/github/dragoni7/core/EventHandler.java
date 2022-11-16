@@ -1,9 +1,14 @@
 package com.github.dragoni7.core;
 
+import java.util.HashSet;
+import java.util.Set;
+import java.util.UUID;
+
 import com.github.dragoni7.core.TraitConst.ModTraits;
 import com.github.dragoni7.traits.LuckyBreak;
 
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.FluidTags;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.damagesource.DamageSource;
@@ -25,7 +30,7 @@ import net.silentchaos512.gear.util.TraitHelper;
 
 @Mod.EventBusSubscriber
 public class EventHandler {
-	
+	 
 	@SubscribeEvent
 	public static void onPlayerHurt(LivingHurtEvent event) {
 		LivingEntity attacked = event.getEntity();
@@ -138,6 +143,25 @@ public class EventHandler {
 							}
 						}
 					}
+					
+					// Fire React
+					// Source: TwilightForest
+					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.FIRE_REACT.get())) {
+						if (!attacker.fireImmune()) {
+							attacker.setSecondsOnFire(1);
+						}
+					}
+					
+					// Cold
+					// Source: TwilightForest
+					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.COLD.get())) {
+						if (attacker.canFreeze()) {
+							MobEffect frosted = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.FROSTED);
+							if (!((LivingEntity) attacker).hasEffect(frosted)) {
+								((LivingEntity) attacker).addEffect(new MobEffectInstance(frosted, 20));
+							}
+						}
+					}
 				}
 			}
 		}
@@ -161,13 +185,36 @@ public class EventHandler {
 		if (!(weapon.getItem() instanceof ICoreTool))
 			return;
 		
-		// abyssal synergy trait
-		double traitLevel = TraitHelper.getTraitLevel(weapon, TraitConst.ModTraits.ABYSSAL_SYNERGY);
+		// Abyssal Synergy Trait
+		double abyssalSynergy = TraitHelper.getTraitLevel(weapon, TraitConst.ModTraits.ABYSSAL_SYNERGY);
 		double height = attacker.getY();
 
-		if (height < 0) {
-			double depthDamage = ((traitLevel / 10.0D) / 2.0D) * height;
+		if (abyssalSynergy > 0 && height < 0) {
+			double depthDamage = ((abyssalSynergy / 10.0D) / 2.0D) * height;
 			event.setAmount(Mth.abs((float) depthDamage) + event.getAmount());
+		}
+		
+		// Knightly Trait
+		double knightly = TraitHelper.getTraitLevel(weapon, TraitConst.ModTraits.KNIGHTLY);
+		// Source: TwilightForest
+		if (knightly > 0) {
+			if (attacked.getArmorValue() > 0) {
+				if (attacked.getArmorCoverPercentage() > 0) {
+					int extraDamage = (int) (2 * attacked.getArmorCoverPercentage());
+					event.setAmount(event.getAmount() + extraDamage);
+				}
+				else {
+					event.setAmount(event.getAmount() + 2);
+				}
+			}
+		}
+		
+		// Neptunes Might Trait
+		double neptunesMight = TraitHelper.getTraitLevel(weapon, TraitConst.ModTraits.NEPTUNES_MIGHT);
+		if (neptunesMight > 0) {
+			if (attacker.isEyeInFluid(FluidTags.WATER)) {
+				event.setAmount(event.getAmount() * 1.5F); // Source: TeamMetallurgy Aquaculture
+			}
 		}
 	}
 

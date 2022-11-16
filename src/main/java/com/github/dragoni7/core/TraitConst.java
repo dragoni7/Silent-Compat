@@ -15,5 +15,9 @@ public class TraitConst {
 		public static final DataResource<ITrait> UNSTABLE_MAGIC = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "unstable_magic"));
 		public static final DataResource<ITrait> LUCKY_BREAK = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "lucky_break"));
 		public static final DataResource<ITrait> RETAILIATING_BLAST = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "retaliating_blast"));
+		public static final DataResource<ITrait> KNIGHTLY = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "knightly"));
+		public static final DataResource<ITrait> FIRE_REACT = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "fire_react"));
+		public static final DataResource<ITrait> NEPTUNES_MIGHT = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "neptunes_might"));
+		public static final DataResource<ITrait> COLD = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "cold"));
 	}
 }

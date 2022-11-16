@@ -68,6 +68,14 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.unstable_magic.desc", "Somtimes gain a random positive magic effect or apply random negative magic effect to targets");
 		add("trait.silentcompat.gooey", "Gooey");
 		add("trait.silentcompat.gooey.desc", "Attacks have a chance to apply scintling goo under the target's feet");
+		add("trait.silentcompat.knightly", "Knightly");
+		add("trait.silentcompat.knightly.desc", "Attacks do extra damage to armored targets");
+		add("trait.silentcompat.fire_react", "Fire React");
+		add("trait.silentcompat.fire_react.desc", "Sets attackers on fire");
+		add("trait.silentcompat.neptunes_might", "Neptune's Might");
+		add("trait.silentcompat.neptunes_might.desc", "Does more damage targets while in water");
+		add("trait.silentcompat.cold", "Cold");
+		add("trait.silentcompat.cold.desc", "Chills attackers");
 	}
 	
 	private void translateMaterialSet(MaterialSet set, String name) {

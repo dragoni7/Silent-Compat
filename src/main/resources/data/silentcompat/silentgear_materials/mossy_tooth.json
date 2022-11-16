@@ -22,7 +22,7 @@
       "main": {
         "durability": 693.0,
         "armor_durability": 25.0,
-        "enchantability": 0.0,
+        "enchantment_value": 0.0,
         "harvest_level": 2.0,
         "harvest_speed": 4.0,
         "melee_damage": 5.0,
@@ -81,8 +81,8 @@
       ],
       "tip": [
         {
-            "name": "silentcompat:mighty",
-            "level": 3
+            "name": "silentgear:mighty",
+            "level": 1
         },
         {
             "name": "silentgear:jagged",

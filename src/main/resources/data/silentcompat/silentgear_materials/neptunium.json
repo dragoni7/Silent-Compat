@@ -20,13 +20,13 @@
     },
     "stats": {
       "main": {
-        "durability": 2500.0,
-        "armor_durability": 75.0,
+        "durability": 1796.0,
+        "armor_durability": 35.0,
         "repair_value": 0.15,
-        "enchantability": 20.0,
+        "enchantment_value": 20.0,
         "harvest_level": 3.0,
-        "harvest_speed": 3.0,
-        "melee_damage": 6.0,
+        "harvest_speed": 8.0,
+        "melee_damage": 3.5,
         "magic_damage": 5.0,
         "attack_speed": 0.0,
         "armor": 20.0,
@@ -38,7 +38,7 @@
         "magic_armor": 6.0,
         "ranged_damage": 1.0,
         "ranged_speed": 2.0,
-        "rarity": 50.0,
+        "rarity": 40.0,
         "chargeability": 1.0
       },
       "rod": {
@@ -52,31 +52,41 @@
       "main": [
         {
           "name": "silentgear:malleable",
-          "level": 4
+          "level": 2
         },
         {
-          "name": "silentgear:chilled",
-          "level": 3
+          "name": "silentcompat:neptunes_might",
+          "level": 1
         },
         {
             "name": "silentgear:aquatic",
             "level": 5,
             "conditions": [
               {
-                "type": "silentgear:material_ratio",
-                "ratio": 0.5
+                "type": "silentgear:gear_type",
+                "gear_type": "armor"
               }
             ]
+        },
+        {
+          "name": "silentgear:swift_swim",
+          "level": 5,
+          "conditions": [
+            {
+              "type": "silentgear:gear_type",
+              "gear_type": "boots"
+            }
+          ]
         }
       ],
       "rod": [
         {
-          "name": "silentgear:malleable",
-          "level": 4
-        },
-        {
             "name": "silentgear:lucky",
             "level": 1
+        },
+        {
+          "name": "silentcompat:aqua_affinity",
+          "level": 1
         }
       ]
     },

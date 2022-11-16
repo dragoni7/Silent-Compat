@@ -1,5 +1,5 @@
 {
-    "type": "silentcompat:retaliating_blast",
+    "type": "silentgear:cancel_effects",
     "max_level": 1,
     "conditions": [
       {
@@ -8,9 +8,12 @@
       }
     ],
     "name": {
-      "translate": "trait.silentcompat.retaliating_blast"
+      "translate": "Slow Immune"
     },
     "description": {
-      "translate": "trait.silentcompat.retaliating_blast.desc"
-    }
+      "translate": "Grants immunity to slow"
+    },
+    "effects": [
+      "minecraft:slowness"
+    ]
   }

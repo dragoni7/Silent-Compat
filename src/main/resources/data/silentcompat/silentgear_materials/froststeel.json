@@ -29,6 +29,10 @@
         "magic_damage": 1.0,
         "attack_speed": 0.0,
         "armor": 18.0,
+        "armor/helmet": 3.0,
+        "armor/chestplate": 7.0,
+        "armor/leggings": 6.0,
+        "armor/boots": 2.0,
         "armor_toughness": 16.0,
         "magic_armor": 4.0,
         "ranged_damage": 1.0,
@@ -109,7 +113,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#9fd6d0"
+          "color": "#7498db"
         },
         {
           "texture": "silentgear:_highlight"
@@ -118,25 +122,25 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#9fd6d0"
+          "color": "#7498db"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_hc",
-          "color": "#9fd6d0"
+          "color": "#7498db"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#9fd6d0"
+          "color": "#7498db"
         }
       ],
       "lining/part": [
         {
           "texture": "silentgear:lining_cloth",
-          "color": "#9fd6d0"
+          "color": "#7498db"
         }
       ]
     }

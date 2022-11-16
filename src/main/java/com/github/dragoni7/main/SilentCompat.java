@@ -4,18 +4,22 @@ import com.github.dragoni7.core.MaterialRegistry;
 import com.github.dragoni7.core.SilentCompatBlocks;
 import com.github.dragoni7.core.SilentCompatItems;
 import com.github.dragoni7.traits.AbyssalSynergyTrait;
+import com.github.dragoni7.traits.ColdTrait;
 import com.github.dragoni7.traits.DecayTrait;
 import com.github.dragoni7.traits.DiurnalTrait;
 import com.github.dragoni7.traits.DodgingTrait;
 import com.github.dragoni7.traits.EnderFluTrait;
 import com.github.dragoni7.traits.FeatherWeightTrait;
+import com.github.dragoni7.traits.FireReactTrait;
 import com.github.dragoni7.traits.FleetFootedTrait;
 import com.github.dragoni7.traits.FreezingTrait;
 import com.github.dragoni7.traits.GooeyTrait;
 import com.github.dragoni7.traits.HungeringStrike;
+import com.github.dragoni7.traits.KnightlyTrait;
 import com.github.dragoni7.traits.KnockoutTrait;
 import com.github.dragoni7.traits.LuckyBreak;
 import com.github.dragoni7.traits.ManaRegen;
+import com.github.dragoni7.traits.NeptunesMightTrait;
 import com.github.dragoni7.traits.NocturnalTrait;
 import com.github.dragoni7.traits.RetaliatingBlastTrait;
 import com.github.dragoni7.traits.SoulStealTrait;
@@ -71,6 +75,10 @@ public class SilentCompat
     	GearApi.registerTraitSerializer(GooeyTrait.SERIALIZER);
     	GearApi.registerTraitSerializer(ManaRegen.SERIALIZER);
     	GearApi.registerTraitSerializer(UnstableMagicTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(KnightlyTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(FireReactTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(NeptunesMightTrait.SERIALIZER);
+    	GearApi.registerTraitSerializer(ColdTrait.SERIALIZER);
     }
     
     public static final CreativeModeTab SilentCompatTab = (new CreativeModeTab("silentcompat")  {

@@ -24,7 +24,7 @@
         "durability": 1561.0,
         "armor_durability": 33.0,
         "armor_durability/elytra": 33.0,
-        "enchantability": 25.0,
+        "enchantment_value": 25.0,
         "rarity": 40.0,
         "chargeability": 1.0,
         "harvest_level": 2.0,

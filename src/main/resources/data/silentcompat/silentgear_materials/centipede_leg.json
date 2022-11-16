@@ -22,7 +22,7 @@
       "main": {
         "durability": 0.0,
         "armor_durability": 37.0,
-        "enchantability": 10.0,
+        "enchantment_value": 10.0,
         "rarity": 30.0,
         "chargeability": 0.8,
         "armor": 20.0,

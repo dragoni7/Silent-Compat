@@ -19,4 +19,6 @@ public class EffectResourceLocs {
 	public static final ResourceLocation SNARED = new ResourceLocation("ars_nouveau", "snared");
 	public static final ResourceLocation FREEZING = new ResourceLocation("ars_nouveau", "freezing");
 	public static final ResourceLocation BLASTING = new ResourceLocation("ars_nouveau", "blasting");
+	
+	public static final ResourceLocation FROSTED = new ResourceLocation("twilightforest", "frosted");
 }

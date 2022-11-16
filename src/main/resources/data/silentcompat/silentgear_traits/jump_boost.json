@@ -1,6 +1,12 @@
 {
   "type": "silentgear:wielder_effect",
   "max_level": 2,
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "armor"
+    }
+  ],
   "name": {
     "text": "Jump Boost"
   },

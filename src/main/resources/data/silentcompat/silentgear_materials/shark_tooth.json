@@ -26,7 +26,7 @@
         },
       "tip": {
         "durability": {
-          "add": 256.0
+          "add": 156.0
         },
         "harvest_level": {
           "max": 2.0
@@ -41,7 +41,7 @@
           "add": 1.0
         },
         "rarity": {
-          "add": 20.0
+          "add": 10.0
         }
       }
     },
@@ -52,11 +52,11 @@
       "tip": [
         {
           "name": "silentgear:chipping",
-          "level": 2
+          "level": 1
         },
         {
-          "name": "silentgear:jagged",
-          "level": 1
+          "name": "silentgear:sharp",
+          "level": 2
         }
       ]
     },

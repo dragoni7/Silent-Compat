@@ -1,0 +1,29 @@
+{
+    "type": "silentgear:enchantment",
+    "max_level": 4,
+    "conditions": [
+        {
+            "type": "silentgear:gear_type",
+            "gear_type": "boots"
+        }
+    ],
+    "name": {
+      "text": "Feather Falling"
+    },
+    "description": {
+      "text": "Applies Feather Falling to boots"
+    },
+    "enchantments": {
+      "boots": [
+        {
+          "enchantment": "minecraft:feather_falling",
+          "level": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ]
+    }
+  }

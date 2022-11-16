@@ -23,7 +23,7 @@
     "main": {
       "durability": 440.0,
       "armor_durability": 21.0,
-      "enchantability": 16.0,
+      "enchantment_value": 16.0,
       "armor": 24.0,
       "armor_toughness": 2.0,
       "magic_armor": 6.0,

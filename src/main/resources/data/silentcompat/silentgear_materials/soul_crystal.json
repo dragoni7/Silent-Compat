@@ -2,7 +2,7 @@
     "type": "silentgear:standard",
     "simple": true,
     "availability": {
-      "tier": 3,
+      "tier": 4,
       "categories": [
         "organic"
       ],
@@ -24,13 +24,13 @@
           "add": 356.0
         },
         "harvest_level": {
-          "max": 3.0
+          "max": 4.0
         },
         "harvest_speed": {
           "add": 3.0
         },
         "melee_damage": {
-          "add": 3.5
+          "add": 4
         },
         "ranged_damage": {
           "add": 2.0
@@ -53,14 +53,14 @@
         },
         {
             "name": "silentcompat:bulwark",
-            "level": 1
+            "level": 2
         }
       ],
 
       "adornment": [
         {
-            "name": "silentcompat:dense",
-            "level": 3
+            "name": "silentcompat:bulwark",
+            "level": 1
         }
       ]
     },

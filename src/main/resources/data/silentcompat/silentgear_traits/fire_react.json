@@ -1,5 +1,5 @@
 {
-    "type": "silentcompat:retaliating_blast",
+    "type": "silentcompat:fire_react",
     "max_level": 1,
     "conditions": [
       {
@@ -8,9 +8,9 @@
       }
     ],
     "name": {
-      "translate": "trait.silentcompat.retaliating_blast"
+      "translate": "trait.silentcompat.fire_react"
     },
     "description": {
-      "translate": "trait.silentcompat.retaliating_blast.desc"
+      "translate": "trait.silentcompat.fire_react.desc"
     }
   }

@@ -2,11 +2,11 @@
     "type": "silentcompat:gooey",
     "max_level": 1,
     "conditions": [
-        {
-          "type": "silentgear:gear_type",
-          "gear_type": "tool"
-        }
-      ],
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "weapon"
+      }
+    ],
     "name": {
       "translate": "trait.silentcompat.gooey"
     },
