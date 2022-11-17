@@ -2,7 +2,7 @@
     "type": "silentgear:standard",
     "simple": true,
     "availability": {
-      "tier": 3,
+      "tier": 2,
       "categories": [
         "rock"
       ],
@@ -20,17 +20,20 @@
     },
     "stats": {
       "main": {
-        "armor_durability": 36.0,
+        "armor_durability": 20.0,
         "enchantment_value": 0.0,
         "rarity": 10.0,
         "charging_value": 0.6,
         "repair_value": 0.0,
-        "armor": 20.0,
+        "armor": 19.0,
         "armor/helmet": 3.0,
-        "armor/chestplate": 8.0,
+        "armor/chestplate": 7.0,
         "armor/leggings": 6.0,
         "armor/boots": 3.0,
-        "armor_toughness": 6.0,
+        "armor_toughness": 2.0,
+        "knockback_resistance": {
+          "add": 2.0
+        },
         "magic_armor": 4.0
       },
       "rod": {

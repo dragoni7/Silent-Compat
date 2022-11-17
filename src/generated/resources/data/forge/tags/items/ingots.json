@@ -5,6 +5,7 @@
     "silentcompat:dark_chocolate_ingot",
     "silentcompat:sculk_alloy_ingot",
     "silentcompat:capsid_alloy_ingot",
-    "silentcompat:plasteel_ingot"
+    "silentcompat:plasteel_ingot",
+    "silentcompat:source_steel_ingot"
   ]
 }

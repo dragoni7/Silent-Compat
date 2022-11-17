@@ -1,0 +1,98 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:serpent_tooth"
+      }
+    },
+    "name": {
+      "text": "Serpent Tooth"
+    },
+    "stats": {
+      "main": {
+        "projectile_speed": 1.0,
+        "projectile_accuracy": 1.2,
+        "ranged_damage": 1.6
+        },
+      "tip": {
+        "durability": {
+          "add": 256.0
+        },
+        "harvest_level": {
+          "max": 3.0
+        },
+        "harvest_speed": {
+          "add": 1.2
+        },
+        "melee_damage": {
+          "add": 2.5
+        },
+        "ranged_damage": {
+          "add": 1.5
+        },
+        "rarity": {
+          "add": 10.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+
+      ],
+      "tip": [
+        {
+          "name": "silentgear:eroded",
+          "level": 2
+        },
+        {
+          "name": "silentgear:sharp",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#8c8b7b"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#8c8b7b"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#8c8b7b"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#8c8b7b"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }

@@ -15,6 +15,10 @@ public class SilentCompatItems {
 			() -> new Item(new Item.Properties()
 					.tab(SilentCompat.SilentCompatTab)));
 	
+	public static final RegistryObject<Item> OUTBACK_LEATHER = ITEMS.register("outback_leather",
+			() -> new Item(new Item.Properties()
+					.tab(SilentCompat.SilentCompatTab)));
+	
 	public static final RegistryObject<Item> CHOCOLATECHIP = ITEMS.register("chocolate_chip", 
 			() -> new Item(new Item.Properties()
 					.tab(SilentCompat.SilentCompatTab)

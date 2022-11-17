@@ -1,0 +1,70 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:moose_antler"
+      }
+    },
+    "name": {
+      "translate": "Antler"
+    },
+    "stats": {
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 19.0,
+        "enchantment_value": 10.0,
+        "armor": 18.0,
+        "armor/helmet": 3.0,
+        "armor/chestplate": 7.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 3.0,
+        "magic_armor": 6.0,
+        "armor_toughness": 2.0,
+        "rarity": 15.0,
+        "chargeability": 0.7
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:crude",
+          "level": 2
+        },
+        {
+            "name": "silentgear:organic",
+            "level": 2
+        },
+        {
+          "name": "silentcompat:knockback",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#bd8c75"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#bd8c75"
+        }
+      ]
+    }
+  }

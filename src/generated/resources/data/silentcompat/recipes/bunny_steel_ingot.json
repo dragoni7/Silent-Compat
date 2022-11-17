@@ -2,6 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "group": "silentcompat",
   "key": {
+    "L": {
+      "item": "minecraft:rabbit_hide"
+    },
     "R": {
       "item": "minecraft:rabbit_foot"
     },
@@ -10,9 +13,9 @@
     }
   },
   "pattern": [
-    " R ",
+    " L ",
     "RSR",
-    " R "
+    " L "
   ],
   "result": {
     "item": "silentcompat:bunny_steel_ingot"

@@ -1,0 +1,101 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:froststalker_horn"
+      }
+    },
+    "name": {
+      "text": "Froststalker Horn"
+    },
+    "stats": {
+      "main": {
+        "projectile_speed": 0.8,
+        "projectile_accuracy": 1.0,
+        "ranged_damage": 1.0
+        },
+      "tip": {
+        "durability": {
+          "add": 56.0
+        },
+        "harvest_level": {
+          "max": 2.0
+        },
+        "melee_damage": {
+          "add": 1.0
+        },
+        "ranged_damage": {
+          "add": 1.0
+        },
+        "armor": {
+          "add": 1.0
+        },
+        "armor_toughness": {
+          "add": 0.5
+        },
+        "rarity": {
+          "add": 15.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+
+      ],
+      "tip": [
+        {
+          "name": "silentgear:chipping",
+          "level": 1
+        },
+        {
+          "name": "silentgear:synergistic",
+          "level": 3
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#FCFBED"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#FCFBED"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#FCFBED"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#FCFBED"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }

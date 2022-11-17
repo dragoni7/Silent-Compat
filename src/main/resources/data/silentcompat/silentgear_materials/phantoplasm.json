@@ -70,7 +70,7 @@
         "rarity": {
           "add": 10.0
         },
-        "enchantability": {
+        "enchantment_value": {
           "add": 10.0
         },
         "ranged_speed": {
@@ -78,7 +78,7 @@
         }
       },
       "coating": {
-        "enchantability": {
+        "enchantment_value": {
           "add": 15.0
         },
         "rarity": {

@@ -44,7 +44,7 @@
         "rarity": {
           "add": 4.0
         },
-        "enchantability": {
+        "enchantment_value": {
           "add": 8.0
         }
       },
@@ -58,7 +58,7 @@
         "rarity": {
           "add": 4.0
         },
-        "enchantability": {
+        "enchantment_value": {
           "add": 8.0
         }
       },
@@ -72,12 +72,12 @@
         "rarity": {
           "add": 4.0
         },
-        "enchantability": {
+        "enchantment_value": {
           "add": 8.0
         }
       },
       "lining": {
-        "enchantability": {
+        "enchantment_value": {
           "add": 8.0
         },
         "armor_durability": {

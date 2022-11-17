@@ -1,10 +1,11 @@
-// 1.19.2	2022-10-30T10:44:43.1261712	Tags for minecraft:block
-37b227b2157b8ac57a09451b8cea7ecdea797e28 data/forge/tags/blocks/storage_blocks.json
+// 1.19.2	2022-11-17T11:09:20.7854333	Tags for minecraft:block
+9e3f703126aaa8497e180e97a88ce2a1eb177efb data/forge/tags/blocks/storage_blocks.json
 959dc46856274767bfee466b0e11798a248ac8cf data/forge/tags/blocks/storage_blocks/bunny_steel.json
 ed26c199720ab08834c6ba84c3bd1326997867b7 data/forge/tags/blocks/storage_blocks/capsid_alloy.json
 74dac19fe684c3b04039e4744b223a1c75d0c9de data/forge/tags/blocks/storage_blocks/dark_chocolate.json
 d03905b78db259fe6c89460ea9f44bf4c6f230d0 data/forge/tags/blocks/storage_blocks/midnight_iron.json
 b174725a0fd3d231ed31e48be4d9b681a39a67bc data/forge/tags/blocks/storage_blocks/plasteel.json
 79e7721fe6a56d48a5e396469b1736da2827151f data/forge/tags/blocks/storage_blocks/sculk_alloy.json
-37b227b2157b8ac57a09451b8cea7ecdea797e28 data/minecraft/tags/blocks/mineable/pickaxe.json
-37b227b2157b8ac57a09451b8cea7ecdea797e28 data/minecraft/tags/blocks/needs_iron_tool.json
+911351bb10a0827449ccadbe62b5fe953cc93791 data/forge/tags/blocks/storage_blocks/source_steel.json
+9e3f703126aaa8497e180e97a88ce2a1eb177efb data/minecraft/tags/blocks/mineable/pickaxe.json
+9e3f703126aaa8497e180e97a88ce2a1eb177efb data/minecraft/tags/blocks/needs_iron_tool.json

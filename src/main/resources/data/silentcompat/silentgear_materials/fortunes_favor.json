@@ -62,7 +62,7 @@
         "harvest_speed": {
           "mul1": 0.07
         },
-        "enchantability": {
+        "enchantment_value": {
           "add": 7.0
         }
       },
@@ -79,12 +79,12 @@
         "rarity": {
           "add": 7.0
         },
-        "enchantability": {
+        "enchantment_value": {
           "add": 7.0
         }
       },
       "coating": {
-        "enchantability": {
+        "enchantment_value": {
           "add": 7.0
         },
         "rarity": {

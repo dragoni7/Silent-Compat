@@ -1,12 +1,6 @@
 {
     "type": "silentcompat:unstable_magic",
     "max_level": 1,
-    "conditions": [
-      {
-        "type": "silentgear:gear_type",
-        "gear_type": "weapon"
-      }
-    ],
     "name": {
       "translate": "trait.silentcompat.unstable_magic"
     },

@@ -24,7 +24,9 @@ public class lang extends LanguageProvider {
 		translateMaterialSet(MaterialRegistry.SCULKALLOY, "Sculk Alloy");
 		translateMaterialSet(MaterialRegistry.CAPSID_ALLOY, "Capsid Alloy");
 		translateMaterialSet(MaterialRegistry.PLASTEEL, "Plasteel");
+		translateMaterialSet(MaterialRegistry.SOURCE_STEEL, "Source Steel");
 		
+		add(SilentCompatItems.OUTBACK_LEATHER.get(), "Outback Leather");
 		add(SilentCompatItems.RAW_PLASTEEL.get(), "Raw Plasteel");
 		add(SilentCompatItems.CHOCOLATECHIP.get(), "Chocolate Chip");
 		
@@ -37,7 +39,7 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.ender_flu", "Ender Flu");
 		add("trait.silentcompat.ender_flu.desc", "Infects the target with Ender Flu");
 		add("trait.silentcompat.dodging", "Dodging");
-		add("trait.silentcompat.dodging.desc", "Grants a chance to avoid damage.");
+		add("trait.silentcompat.dodging.desc", "Grants a chance to avoid damage. Requires full armor set");
 		add("trait.silentcompat.edible", "Edible");
 		add("trait.silentcompat.edible.desc", "Chance to drop a chocolate chip on durability loss");
 		add("trait.silentcompat.fleetfooted", "Fleet-Footed");
@@ -73,9 +75,11 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.fire_react", "Fire React");
 		add("trait.silentcompat.fire_react.desc", "Sets attackers on fire");
 		add("trait.silentcompat.neptunes_might", "Neptune's Might");
-		add("trait.silentcompat.neptunes_might.desc", "Does more damage targets while in water");
+		add("trait.silentcompat.neptunes_might.desc", "Does more damage to targets while in water");
 		add("trait.silentcompat.cold", "Cold");
 		add("trait.silentcompat.cold.desc", "Chills attackers");
+		add("trait.silentcompat.emu_dodge", "Emu Dodge");
+		add("trait.silentcompat.emu_dodge.desc", "Grants a chance to avoid projectile damage. Requires full armor set");
 	}
 	
 	private void translateMaterialSet(MaterialSet set, String name) {

@@ -30,6 +30,7 @@
         "melee_damage": 2.0,
         "magic_damage": 1.0,
         "attack_speed": 0.05,
+        "attack_speed/axe": -0.1,
         "ranged_damage": 2.0,
         "ranged_speed": 0.5,
         "projectile_speed": 1.2,

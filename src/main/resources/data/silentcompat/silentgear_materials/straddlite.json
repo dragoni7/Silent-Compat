@@ -23,7 +23,7 @@
       "coating": {
         "durability": [
           {
-            "mul2": 0.1
+            "mul2": 0.2
           },
           {
             "add": 1.0

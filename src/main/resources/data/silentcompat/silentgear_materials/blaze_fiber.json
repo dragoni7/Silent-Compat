@@ -46,7 +46,7 @@
         "rarity": {
           "add": 9.0
         },
-        "enchantability": {
+        "enchantment_value": {
           "add": 9.0
         }
       },
@@ -63,7 +63,7 @@
         "rarity": {
           "add": 11.0
         },
-        "enchantability": {
+        "enchantment_value": {
           "add": 9.0
         }
       },
@@ -77,7 +77,7 @@
         "rarity": {
           "add": 11.0
         },
-        "enchantability": {
+        "enchantment_value": {
           "add": 9.0
         }
       },
@@ -85,7 +85,7 @@
         "knockback_resistance": {
           "add": 0.2
         },
-        "enchantability": {
+        "enchantment_value": {
           "add": 9.0
         }
       }

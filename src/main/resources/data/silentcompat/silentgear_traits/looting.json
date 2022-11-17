@@ -1,6 +1,6 @@
 {
     "type": "silentgear:enchantment",
-    "max_level": 1,
+    "max_level": 3,
     "conditions": [
         {
           "type": "silentgear:gear_type",
@@ -18,7 +18,9 @@
         {
           "enchantment": "minecraft:looting",
           "level": [
-            1
+            1,
+            2,
+            3
           ]
         }
       ]

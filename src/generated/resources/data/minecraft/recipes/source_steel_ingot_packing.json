@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:source_steel_ingot"
+    },
+    {
+      "item": "silentcompat:source_steel_ingot"
+    },
+    {
+      "item": "silentcompat:source_steel_ingot"
+    },
+    {
+      "item": "silentcompat:source_steel_ingot"
+    },
+    {
+      "item": "silentcompat:source_steel_ingot"
+    },
+    {
+      "item": "silentcompat:source_steel_ingot"
+    },
+    {
+      "item": "silentcompat:source_steel_ingot"
+    },
+    {
+      "item": "silentcompat:source_steel_ingot"
+    },
+    {
+      "item": "silentcompat:source_steel_ingot"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:source_steel_block"
+  }
+}

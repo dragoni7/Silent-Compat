@@ -5,6 +5,7 @@
     "silentcompat:dark_chocolate_block",
     "silentcompat:sculk_alloy_block",
     "silentcompat:capsid_alloy_block",
-    "silentcompat:plasteel_block"
+    "silentcompat:plasteel_block",
+    "silentcompat:source_steel_block"
   ]
 }

@@ -1,0 +1,91 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:dropbear_claw"
+      }
+    },
+    "name": {
+      "text": "Dropbear Claw"
+    },
+    "stats": {
+      "main": {
+        "projectile_speed": 0.5,
+        "projectile_accuracy": 1.0,
+        "ranged_damage": 2.5
+        },
+      "tip": {
+        "durability": {
+          "add": 356.0
+        },
+        "harvest_level": {
+          "max": 2.0
+        },
+        "harvest_speed": {
+          "add": 1.0
+        },
+        "melee_damage": {
+          "add": 2.0
+        },
+        "ranged_damage": {
+          "add": 2.0
+        },
+        "rarity": {
+          "add": 20.0
+        }
+      }
+    },
+    "traits": {
+      "tip": [
+        {
+          "name": "silentgear:sharp",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#2b2f38"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#2b2f38"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#2b2f38"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#2b2f38"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }

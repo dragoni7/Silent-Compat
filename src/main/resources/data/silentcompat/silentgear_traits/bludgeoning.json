@@ -3,17 +3,8 @@
     "max_level": 3,
     "conditions": [
       {
-        "type": "silentgear:or",
-        "values": [
-          {
-            "type": "silentgear:gear_type",
-            "gear_type": "weapon"
-          },
-          {
-            "type": "silentgear:gear_type",
-            "gear_type": "curio"
-          }
-        ]
+        "type": "silentgear:gear_type",
+        "gear_type": "weapon"
       }
     ],
     "name": {

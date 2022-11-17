@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "silentcompat:item/source_steel_nugget"
+  }
+}

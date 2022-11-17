@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "silentcompat:block/source_steel_block"
+    }
+  }
+}

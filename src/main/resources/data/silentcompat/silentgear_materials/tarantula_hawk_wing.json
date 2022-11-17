@@ -28,10 +28,10 @@
       "main": {
         "durability": 0.0,
         "armor_durability": 10.0,
-        "enchantability": 3.0,
+        "enchantment_value": 3.0,
         "rarity": 15.0,
         "chargeability": 0.5,
-        "armor_durability/elytra": 34.0,
+        "armor_durability/elytra": 30.0,
         "armor": 4.0,
         "magic_armor": 1.0
       }
@@ -43,8 +43,8 @@
             "level": 1
           },
           {
-            "name": "silentcompat:dodging",
-            "level": 1
+            "name": "silentgear:light",
+            "level": 2
           }
         ]
       },

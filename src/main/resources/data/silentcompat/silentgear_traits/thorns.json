@@ -1,0 +1,28 @@
+{
+    "type": "silentgear:enchantment",
+    "max_level": 3,
+    "conditions": [
+        {
+          "type": "silentgear:gear_type",
+          "gear_type": "armor"
+        }
+      ],
+    "name": {
+      "text": "Thorns"
+    },
+    "description": {
+      "text": "Applies Thorns"
+    },
+    "enchantments": {
+      "armor": [
+        {
+          "enchantment": "minecraft:thorns",
+          "level": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    }
+  }

@@ -1,0 +1,66 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:fish_bones"
+      }
+    },
+    "name": {
+      "text": "Skelewag Bone"
+    },
+    "stats": {
+      "rod": {
+        "durability": {
+          "mul1": 1.1
+        },
+        "harvest_speed": {
+          "mul2": 0.2
+        },
+        "attack_speed": {
+          "add": 1.0
+        },
+        "attack_speed/axe": {
+          "add": 0.0
+        },
+        "melee_damage": {
+          "mul2": -0.75
+        },
+        "ranged_damage": {
+          "add": 1.0
+        },
+        "rarity": 10.0
+      }
+    },
+    "traits": {
+      "rod": [
+        {
+          "name": "silentgear:chipping",
+          "level": 3
+        }
+      ]
+    },
+    "model": {
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#dffcc5"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#dffcc5"
+        }
+      ]
+    }
+  }

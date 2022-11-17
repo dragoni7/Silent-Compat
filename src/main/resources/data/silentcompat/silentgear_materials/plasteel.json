@@ -21,8 +21,8 @@
     "stats": {
       "main": {
         "durability": 3000.0,
-        "armor_durability": 36.0,
-        "enchantability": 10.0,
+        "armor_durability": 38.0,
+        "enchantment_value": 10.0,
         "harvest_level": 4.0,
         "harvest_speed": 7.0,
         "melee_damage": 7.0,
@@ -38,15 +38,18 @@
         "ranged_damage": 2.0,
         "ranged_speed": 1.0,
         "projectile_speed": 1.0,
-        "projectile_accuracy": 1.5,
+        "projectile_accuracy": 2.0,
         "rarity": 50.0,
-        "chargeability": 0.8
+        "chargeability": 0.8,
+        "knockback_resistance": {
+            "add": 4.0
+        }
       },
       "rod": {
         "durability": {
-          "mul2": 0.3
+          "mul2": 0.35
         },
-        "rarity": 20.0
+        "rarity": 30.0
       }
     },
     "traits": {

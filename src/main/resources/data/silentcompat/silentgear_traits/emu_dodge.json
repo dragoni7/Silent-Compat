@@ -1,0 +1,17 @@
+{
+    "type": "silentcompat:emu_dodge",
+    "max_level": 1,
+    "cancels_with": ["silentcompat:dodging"],
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "armor"
+      }
+    ],
+    "name": {
+      "translate": "trait.silentcompat.emu_dodge"
+    },
+    "description": {
+      "translate": "trait.silentcompat.emu_dodge.desc"
+    }
+  }

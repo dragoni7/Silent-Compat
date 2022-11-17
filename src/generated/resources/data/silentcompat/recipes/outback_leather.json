@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "tag": "silentcompat:emu_feather"
+    },
+    {
+      "tag": "silentcompat:emu_feather"
+    },
+    {
+      "tag": "silentcompat:kangaroo_hide"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "silentcompat:outback_leather"
+  }
+}

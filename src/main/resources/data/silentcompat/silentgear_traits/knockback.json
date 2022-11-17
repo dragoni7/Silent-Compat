@@ -1,0 +1,25 @@
+{
+    "type": "silentgear:attribute",
+    "max_level": 5,
+    "name": {
+      "text": "Knockback"
+    },
+    "description": {
+      "translate": "Grants more knockback to attacks"
+    },
+    "attribute_modifiers": {
+      "all": [
+        {
+          "attribute": "minecraft:generic.attack_knockback",
+          "operation": 0,
+          "value": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0
+          ]
+        }
+      ]
+    }
+  }

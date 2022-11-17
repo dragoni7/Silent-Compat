@@ -46,7 +46,7 @@
         "durability": {
           "mul2": 0.2
         },
-        "enchantability": [
+        "enchantment_value": [
           {
             "add": -2.0
           },

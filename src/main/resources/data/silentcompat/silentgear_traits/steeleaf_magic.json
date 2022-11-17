@@ -128,7 +128,7 @@
     ],
     "mattock": [
       {
-        "enchantment": "minecraft:efficiency",
+        "enchantment": "minecraft:fortune",
         "level": [
           1
         ]

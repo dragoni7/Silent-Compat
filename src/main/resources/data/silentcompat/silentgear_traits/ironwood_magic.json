@@ -64,7 +64,7 @@
       ],
       "spear": [
         {
-          "enchantment": "minecraft:knockback",
+          "enchantment": "minecraft:looting",
           "level": [
             1
           ]
@@ -80,7 +80,7 @@
       ],
       "knife": [
         {
-          "enchantment": "minecraft:knockback",
+          "enchantment": "minecraft:looting",
           "level": [
             1
           ]
@@ -128,7 +128,7 @@
       ],
       "mattock": [
         {
-          "enchantment": "minecraft:efficiency",
+          "enchantment": "minecraft:unbreaking",
           "level": [
             1
           ]

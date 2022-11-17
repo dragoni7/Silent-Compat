@@ -1,0 +1,111 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic",
+        "cloth"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:bear_hair"
+      }
+    },
+    "name": {
+      "translate": "Bear Fur"
+    },
+    "stats": {
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 7.0,
+        "enchantment_value": 14.0,
+        "rarity": 10.0,
+        "charging_value": 0.8,
+        "armor_durability/elytra": 9.0,
+        "armor": 7.0,
+        "armor/helmet": 1.0,
+        "armor/chestplate": 3.0,
+        "armor/leggings": 2.0,
+        "armor/boots": 1.0,
+        "magic_armor": 10.0
+      },
+      "grip": {
+        "repair_efficiency": {
+          "mul1": 0.1
+        },
+        "harvest_speed": {
+          "mul1": 0.05
+        }
+      },
+      "lining": {
+        "magic_armor": {
+          "add": 1.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:rustic",
+          "level": 1
+        }
+      ],
+      "grip": [
+        {
+          "name": "silentgear:soft",
+          "level": 1
+        }
+      ],
+      "lining": [
+        {
+          "name": "silentgear:rustic",
+          "level": 1
+        },
+        {
+          "name": "silentgear:organic",
+          "level": 1
+        },
+        {
+          "name": "silentgear:bastion",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#734932"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#734932"
+        }
+      ],
+      "grip/all": [
+        {
+          "texture": "silentgear:grip_wool",
+          "color": "#734932"
+        }
+      ],
+      "grip/part": [
+        {
+          "texture": "silentgear:grip",
+          "color": "#734932"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#734932"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,72 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:spiked_scute"
+      }
+    },
+    "name": {
+      "translate": "Spiked Scute"
+    },
+    "stats": {
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 35.0,
+        "enchantment_value": 9.0,
+        "charging_value": 0.5,
+        "rarity": 20.0,
+        "armor": 17,
+        "armor/helmet": 3.0,
+        "armor/chestplate": 6.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 3.0,
+        "armor_toughness": 4.0,
+        "knockback_resistance": {
+            "add": 2.0
+        },
+        "magic_armor": 4.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:turtle",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_count",
+              "count": 3
+            }
+          ]
+        },
+        {
+            "name": "silentcompat:thorns",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/helmet": [
+        {
+          "texture": "silentgear:turtle",
+          "color": "#4a3629"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#4a3629"
+        }
+      ]
+    }
+  }

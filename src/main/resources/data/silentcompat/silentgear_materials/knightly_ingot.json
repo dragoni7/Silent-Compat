@@ -28,6 +28,7 @@
       "melee_damage": 3.0,
       "magic_damage": 1.0,
       "attack_speed": 0.2,
+      "attack_speed/axe": -0.1,
       "armor": 20.0,
       "armor_toughness": 4.0,
       "magic_armor": 6.0,

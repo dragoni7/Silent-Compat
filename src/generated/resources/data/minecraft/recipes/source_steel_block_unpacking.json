@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:source_steel_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "silentcompat:source_steel_ingot"
+  }
+}

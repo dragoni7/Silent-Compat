@@ -1,0 +1,47 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:raccoon_tail"
+      }
+    },
+    "name": {
+      "translate": "Raccoon Tail"
+    },
+    "stats": {
+      "binding": {
+      }
+    },
+    "traits": {
+        "binding": [
+          {
+            "name": "silentcompat:swift_sneak",
+            "level": 1
+          }
+        ]
+    },
+    "model": {
+      "binding/all": [
+        {
+          "texture": "silentgear:binding_generic",
+          "color": "#444f54"
+        }
+      ],
+      "binding/part": [
+        {
+          "texture": "silentgear:binding",
+          "color": "#444f54"
+        }
+      ]
+    }
+  }

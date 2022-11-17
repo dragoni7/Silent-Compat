@@ -29,6 +29,7 @@
         "melee_damage": 3.5,
         "magic_damage": 5.0,
         "attack_speed": 0.0,
+        "attack_speed/axe": -0.1,
         "armor": 20.0,
         "armor/helmet": 3.0,
         "armor/chestplate": 8.0,
@@ -94,7 +95,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#35e661"
+          "color": "#35e6a5"
         },
         {
           "texture": "silentgear:_highlight"
@@ -103,19 +104,19 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#35e661"
+          "color": "#35e6a5"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_hc",
-          "color": "#35e661"
+          "color": "#35e6a5"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#35e661"
+          "color": "#35e6a5"
         }
       ]
     }

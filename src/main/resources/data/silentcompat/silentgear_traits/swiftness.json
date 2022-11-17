@@ -5,7 +5,7 @@
       "text": "Swiftness"
     },
     "description": {
-      "translate": "Gain faster movespeed"
+      "translate": "Gain additonal movespeed"
     },
     "attribute_modifiers": {
       "all": [

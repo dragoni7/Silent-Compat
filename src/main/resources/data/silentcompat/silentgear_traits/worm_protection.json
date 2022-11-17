@@ -8,13 +8,34 @@
       "text": "Applies strong Protection"
     },
     "enchantments": {
-      "armor": [
+      "helmet": [
         {
           "enchantment": "minecraft:protection",
           "level": [
-            4,
-            4,
-            4,
+            4
+          ]
+        }
+      ],
+      "chestplate": [
+        {
+          "enchantment": "minecraft:protection",
+          "level": [
+            5
+          ]
+        }
+      ],
+      "leggings": [
+        {
+          "enchantment": "minecraft:protection",
+          "level": [
+            4
+          ]
+        }
+      ],
+      "boots": [
+        {
+          "enchantment": "minecraft:protection",
+          "level": [
             4
           ]
         }

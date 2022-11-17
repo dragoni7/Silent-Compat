@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/steel"
+    },
+    {
+      "tag": "forge:essence/conjuration"
+    },
+    {
+      "tag": "forge:essence/abjuration"
+    },
+    {
+      "tag": "forge:essence/earth"
+    },
+    {
+      "tag": "forge:gems/source"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:source_steel_ingot"
+  }
+}

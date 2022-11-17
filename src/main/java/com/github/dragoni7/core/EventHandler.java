@@ -1,11 +1,10 @@
 package com.github.dragoni7.core;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.UUID;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import com.github.dragoni7.core.TraitConst.ModTraits;
-import com.github.dragoni7.traits.LuckyBreak;
+import com.github.dragoni7.trait.LuckyBreak;
 
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.FluidTags;
@@ -30,7 +29,9 @@ import net.silentchaos512.gear.util.TraitHelper;
 
 @Mod.EventBusSubscriber
 public class EventHandler {
-	 
+	
+	private static final ArrayList<EquipmentSlot> ARMOR_ONLY = new ArrayList<EquipmentSlot>(Arrays.asList(EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET));
+	
 	@SubscribeEvent
 	public static void onPlayerHurt(LivingHurtEvent event) {
 		LivingEntity attacked = event.getEntity();
@@ -38,51 +39,79 @@ public class EventHandler {
 		
 		if (attacked instanceof Player) {
 			if (attacker instanceof LivingEntity) {
+				
+				DamageSource source = event.getSource();
+				RandomSource random = attacked.getRandom();
+				
+				int dodgeCount = 0;
+				int dodgeLevel = 0;
+				int emuDodgeCount = 0;
+				int emuDodgeLevel = 0;
+				
+				// Only check armor slots. Traits require full set
+				for (EquipmentSlot slot : ARMOR_ONLY) {
+					ItemStack stack = event.getEntity().getItemBySlot(slot);
+					
+					// Emu dodge
+					if (source.isProjectile()) {
+						if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.EMU_DODGE.get())) {
+							
+							emuDodgeCount++;
+							
+							if (emuDodgeLevel < TraitHelper.getTraitLevel(stack, ModTraits.EMU_DODGE.get())) {
+								emuDodgeLevel = TraitHelper.getTraitLevel(stack, ModTraits.EMU_DODGE.get());
+							}
+						}
+					}
+					// Dodging
+					else if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.DODGING.get()) && source == DamageSource.GENERIC) {
+						
+						dodgeCount++;
+						
+						if (dodgeLevel < TraitHelper.getTraitLevel(stack, ModTraits.DODGING.get())) {
+							dodgeLevel = TraitHelper.getTraitLevel(stack, ModTraits.DODGING.get());
+						}
+					}
+				}
+				
+				if (dodgeCount == 4) {
+					switch(dodgeLevel) {
+					case 1: {
+						if (random.nextFloat() < 0.15F) {
+							event.setCanceled(true);
+							break;
+						}
+					}
+					case 2: {
+						if (random.nextFloat() < 0.25F) {
+							event.setCanceled(true);
+							break;
+						}
+					}
+					case 3: {
+						if (random.nextFloat() < 0.35F) {
+							event.setCanceled(true);
+							break;
+						}
+					}
+					default: {
+							return;
+						}
+					}
+				}
+				
+				if (emuDodgeCount == 4) {
+					if (random.nextFloat() < 0.45F) {
+						event.setCanceled(true);
+					}
+				}
+				
 				for (EquipmentSlot slot: EquipmentSlot.values()) {
 					ItemStack stack = event.getEntity().getItemBySlot(slot);
 					
-					// dodging trait
-					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.DODGING.get())) {
-						int level = TraitHelper.getTraitLevel(stack, ModTraits.DODGING.get());
-							switch(level) {
-							case 1: {
-								if (attacked.getLevel().getRandom().nextInt(20) % 20 == 0) {
-									event.setCanceled(true);
-									attacked.playSound(SoundEvents.RABBIT_AMBIENT);
-								}
-							}
-							case 2: {
-								if (attacked.getLevel().getRandom().nextInt(15) % 15 == 0) {
-									event.setCanceled(true);
-									attacked.playSound(SoundEvents.RABBIT_AMBIENT);
-								}
-							}
-							case 3: {
-								if (attacked.getLevel().getRandom().nextInt(10) % 10 == 0) {
-									event.setCanceled(true);
-									attacked.playSound(SoundEvents.RABBIT_AMBIENT);
-								}
-							}
-							default: {
-							return;
-							}
-						}
-					}
-					
-					// Mana Regen
-					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.MANA_REGEN.get())) {
-						if (attacked.getRandom().nextIntBetweenInclusive(1, 3) % 3 == 0) {
-							MobEffect mana_regen = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.MANAREGEN);
-							if (!attacked.hasEffect(mana_regen)) {
-								attacked.forceAddEffect(new MobEffectInstance(mana_regen, 80), attacked);
-							}
-						}
-					}
-					
 					// Unstable Magic
 					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.UNSTABLE_MAGIC.get())) {
-						RandomSource random = attacked.getRandom();
-						if (random.nextIntBetweenInclusive(1, 4) % 4 == 0) {
+						if (random.nextFloat() < 0.45F) {
 							int effect = random.nextIntBetweenInclusive(1, 5);
 							MobEffect mobEffect = MobEffects.REGENERATION;
 							switch (effect) {
@@ -119,7 +148,7 @@ public class EventHandler {
 						float luck = ((Player) attacked).getLuck();
 						
 						// luck based probability derived from MeetYourFight CocktailCutlass from Lykrast.
-						double effectChance = 1/10;
+						double effectChance = 0.1;
 						
 						if (luck >= 0) {
 							effectChance = (2 + luck) / (20 + luck);

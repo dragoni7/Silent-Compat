@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:source_steel_nugget"
+    },
+    {
+      "item": "silentcompat:source_steel_nugget"
+    },
+    {
+      "item": "silentcompat:source_steel_nugget"
+    },
+    {
+      "item": "silentcompat:source_steel_nugget"
+    },
+    {
+      "item": "silentcompat:source_steel_nugget"
+    },
+    {
+      "item": "silentcompat:source_steel_nugget"
+    },
+    {
+      "item": "silentcompat:source_steel_nugget"
+    },
+    {
+      "item": "silentcompat:source_steel_nugget"
+    },
+    {
+      "item": "silentcompat:source_steel_nugget"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:source_steel_ingot"
+  }
+}

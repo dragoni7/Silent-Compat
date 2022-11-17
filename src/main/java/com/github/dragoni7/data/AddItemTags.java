@@ -28,9 +28,12 @@ public class AddItemTags extends ItemTagsProvider {
 		addMaterialTags(MaterialRegistry.SCULKALLOY);
 		addMaterialTags(MaterialRegistry.CAPSID_ALLOY);
 		addMaterialTags(MaterialRegistry.PLASTEEL);
+		addMaterialTags(MaterialRegistry.SOURCE_STEEL);
 		
 		tag(Tags.Items.RAW_MATERIALS).add(SilentCompatItems.RAW_PLASTEEL.get());
 		tag(ModItemTags.RAW_PLASTEEL).add(SilentCompatItems.RAW_PLASTEEL.get());
+		
+		tag(ModItemTags.OUTBACK_LEATHER).add(SilentCompatItems.OUTBACK_LEATHER.get());
 		
 		// Other mod's items:
 		
@@ -58,7 +61,7 @@ public class AddItemTags extends ItemTagsProvider {
 		tag(ModItemTags.SCULK_VINE).addOptional(new ResourceLocation("deeperdarker:sculk_tendrils"));
 		tag(ModItemTags.SCULK_BONE).addOptional(new ResourceLocation("deeperdarker:sculk_bone"));
 		tag(ModItemTags.SOUL_CRYSTAL).addOptional(new ResourceLocation("deeperdarker:soul_crystal"));
-		tag(ModItemTags.TARANTUAL_HAWK).addOptional(new ResourceLocation("alexsmobs:tarantula_hawk_wing"));
+		tag(ModItemTags.TARANTUAL_HAWK).addOptional(new ResourceLocation("alexsmobs:tarantula_hawk_wing_fragment"));
 		tag(ModItemTags.VOID_WORM).addOptional(new ResourceLocation("alexsmobs:void_worm_mandible"));
 		tag(ModItemTags.ANDESITE_ALLOY).addOptional(new ResourceLocation("create:andesite_alloy"));
 		tag(ModItemTags.CAST_IRON).addOptional(new ResourceLocation("createdeco:cast_iron_ingot"));
@@ -78,6 +81,24 @@ public class AddItemTags extends ItemTagsProvider {
 		tag(ModItemTags.MOGMOSS).addOptional(new ResourceLocation("undergarden:mogmoss"));
 		tag(ModItemTags.DITCHBULB).addOptional(new ResourceLocation("undergarden:ditchbulb_paste"));
 		tag(ModItemTags.BRUTE_TUSK).addOptional(new ResourceLocation("undergarden:brute_tusk"));
+		tag(ModItemTags.BEAR_HAIR).addOptional(new ResourceLocation("alexsmobs:bear_fur"));
+		tag(ModItemTags.SERPENT_TOOTH).addOptional(new ResourceLocation("alexsmobs:bone_serpent_tooth"));
+		tag(ModItemTags.BLOOD_SAC).addOptional(new ResourceLocation("alexsmobs:blood_sac"));
+		tag(ModItemTags.HEMOLYMPH_SAC).addOptional(new ResourceLocation("alexsmobs:hemolymph_sac"));
+		tag(ModItemTags.RACCOON_TAIL).addOptional(new ResourceLocation("alexsmobs:raccoon_tail"));
+		tag(ModItemTags.ANTLER).addOptional(new ResourceLocation("alexsmobs:moose_antler"));
+		tag(ModItemTags.SPIKED_SCUTE).addOptional(new ResourceLocation("alexsmobs:spiked_scute"));
+		tag(ModItemTags.COCKROACH_WING).addOptional(new ResourceLocation("alexsmobs:cockroach_wing"));
+		tag(ModItemTags.DROPBEAR_CLAW).addOptional(new ResourceLocation("alexsmobs:dropbear_claw"));
+		tag(ModItemTags.WHALE_TOOTH).addOptional(new ResourceLocation("alexsmobs:cachalot_whale_tooth"));
+		tag(ModItemTags.SERRATED_SHARK_TOOTH).addOptional(new ResourceLocation("alexsmobs:serrated_shark_tooth"));
+		tag(ModItemTags.FROSTSTALKER_HORN).addOptional(new ResourceLocation("alexsmobs:froststalker_horn"));
+		tag(ModItemTags.BISON_FUR).addOptional(new ResourceLocation("alexsmobs:bison_fur_block"));
+		tag(ModItemTags.KANGAROO_HIDE).addOptional(new ResourceLocation("alexsmobs:kangaroo_hide"));
+		tag(ModItemTags.FISH_BONES).addOptional(new ResourceLocation("alexsmobs:fish_bones"));
+		tag(ModItemTags.ABJURATION_ESSENCE).addOptional(new ResourceLocation("ars_nouveau:abjuration_essence"));
+		tag(ModItemTags.CONJURATION_ESSENCE).addOptional(new ResourceLocation("ars_nouveau:conjuration_essence"));
+		tag(ModItemTags.EARTH_ESSENCE).addOptional(new ResourceLocation("ars_nouveau:earth_essence"));
 		tag(ModItemTags.ROTTEN_FLESH).add(Items.ROTTEN_FLESH);
 	}
 	
@@ -91,3 +112,4 @@ public class AddItemTags extends ItemTagsProvider {
 		tag(set.blockItemTag).add(set.blockItem.get());
 	}
 }
+

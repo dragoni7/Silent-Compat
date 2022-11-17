@@ -1,0 +1,71 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:blood_sac"
+      }
+    },
+    "name": {
+      "translate": "Blood Sac"
+    },
+    "name_prefix": {
+      "translate": "Bloody"
+    },
+    "stats": {
+      "coating": {
+        "durability": {
+          "add": -15.0
+        },
+        "armor_durability": {
+          "add": -10.0
+        },
+        "melee_damage": {
+          "add": 0.5
+        }
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentcompat:bulwark",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#7a1d12"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#7a1d12"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#7a1d12"
+        }
+      ]
+    }
+  }

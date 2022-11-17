@@ -1,0 +1,107 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic",
+        "cloth"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:outback_leather"
+      }
+    },
+    "name": {
+      "translate": "Outback Leather"
+    },
+    "stats": {
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 9.0,
+        "enchantment_value": 15.0,
+        "rarity": 15.0,
+        "charging_value": 0.8,
+        "armor": 13.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 5.0,
+        "armor/leggings": 4.0,
+        "armor/boots": 2.0,
+        "armor_toughness": 2.0,
+        "magic_armor": 8.0
+      },
+      "grip": {
+        "repair_efficiency": {
+          "mul1": 0.1
+        },
+        "harvest_speed": {
+          "mul1": 0.16
+        },
+        "attack_speed": {
+          "add": 0.16
+        }
+      },
+      "lining": {}
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentcompat:emu_dodge",
+          "level": 1
+        },
+        {
+            "name": "silentgear:light",
+            "level": 1
+        }
+      ],
+      "grip": [
+        {
+          "name": "silentgear:flexible",
+          "level": 3
+        }
+      ],
+      "lining": [
+        {
+          "name": "silentgear:flexible",
+          "level": 4
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#d9bcab"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#d9bcab"
+        }
+      ],
+      "grip/all": [
+        {
+          "texture": "silentgear:grip_wool",
+          "color": "#d9bcab"
+        }
+      ],
+      "grip/part": [
+        {
+          "texture": "silentgear:grip",
+          "color": "#d9bcab"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#d9bcab"
+        }
+      ]
+    }
+  }
+  

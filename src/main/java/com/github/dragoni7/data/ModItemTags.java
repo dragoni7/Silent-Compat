@@ -10,12 +10,17 @@ import net.minecraft.world.item.Item;
 public class ModItemTags {
 	
 	public static final TagKey<Item> RAW_PLASTEEL = forgeTag("raw_materials/plasteel");
+	public static final TagKey<Item> OUTBACK_LEATHER = createTag("outback_leather");
 	
 	// Other mod's items
 
 	public static final TagKey<Item> BEE_STINGER = createTag("bee_stinger");
 	public static final TagKey<Item> BLAST_PROOF_PLATING = createTag("blast_proof_plating");
 	public static final TagKey<Item> STEEL_INGOT = forgeTag("ingots/steel");
+	public static final TagKey<Item> SOURCE_GEM = forgeTag("gems/source");
+	public static final TagKey<Item> CONJURATION_ESSENCE = forgeTag("essence/conjuration");
+	public static final TagKey<Item> ABJURATION_ESSENCE = forgeTag("essence/abjuration");
+	public static final TagKey<Item> EARTH_ESSENCE = forgeTag("essence/earth");
 	public static final TagKey<Item> CHOCOLATE = forgeTag("chocolate");
 	public static final TagKey<Item> SKREECHER_SOUL = createTag("skreecher_soul");
 	public static final TagKey<Item> CAPSID = createTag("capsid");
@@ -25,6 +30,7 @@ public class ModItemTags {
 	public static final TagKey<Item> DRAGON_SCALE = forgeTag("dragon_scale");
 	public static final TagKey<Item> ELASTIC_TENDON = createTag("elastic_tendon");
 	public static final TagKey<Item> EMU_FEATHER = createTag("emu_feather");
+	public static final TagKey<Item> KANGAROO_HIDE = createTag("kangaroo_hide");
 	public static final TagKey<Item> FARSEER_ARM = createTag("farseer_arm");
 	public static final TagKey<Item> FORTUNES_FAVOR = createTag("fortunes_favor");
 	public static final TagKey<Item> HONEY_CRYSTAL = forgeTag("gems/honey_crystal_shards");
@@ -59,6 +65,20 @@ public class ModItemTags {
 	public static final TagKey<Item> MOGMOSS = createTag("mogmoss");
 	public static final TagKey<Item> DITCHBULB = createTag("ditchbulb");
 	public static final TagKey<Item> BRUTE_TUSK = createTag("brute_tusk");
+	public static final TagKey<Item> BEAR_HAIR = createTag("bear_hair");
+	public static final TagKey<Item> SERPENT_TOOTH = createTag("serpent_tooth");
+	public static final TagKey<Item> BLOOD_SAC = createTag("blood_sac");
+	public static final TagKey<Item> HEMOLYMPH_SAC = createTag("hemolymph_sac");
+	public static final TagKey<Item> RACCOON_TAIL = createTag("raccoon_tail");
+	public static final TagKey<Item> ANTLER = createTag("moose_antler");
+	public static final TagKey<Item> SPIKED_SCUTE = createTag("spiked_scute");
+	public static final TagKey<Item> COCKROACH_WING = createTag("cockroach_wing");
+	public static final TagKey<Item> DROPBEAR_CLAW = createTag("dropbear_claw");
+	public static final TagKey<Item> WHALE_TOOTH = createTag("whale_tooth");
+	public static final TagKey<Item> SERRATED_SHARK_TOOTH = createTag("serrated_shark_tooth");
+	public static final TagKey<Item> FROSTSTALKER_HORN = createTag("froststalker_horn");
+	public static final TagKey<Item> BISON_FUR = createTag("bison_fur");
+	public static final TagKey<Item> FISH_BONES = createTag("fish_bones");
 	
 	private static TagKey<Item> createTag(String name) {
 		return ItemTags.create(new ResourceLocation(SilentCompat.MODID, name));
@@ -68,4 +88,5 @@ public class ModItemTags {
 		return ItemTags.create(new ResourceLocation("forge", name));
 	}
 }
+
 
