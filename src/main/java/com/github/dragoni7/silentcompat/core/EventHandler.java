@@ -3,7 +3,7 @@ package com.github.dragoni7.silentcompat.core;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import com.github.dragoni7.silentcompat.core.TraitConst.ModTraits;
+import com.github.dragoni7.silentcompat.core.TraitConst;
 import com.github.dragoni7.silentcompat.trait.LuckyBreak;
 
 import net.minecraft.sounds.SoundEvents;
@@ -54,22 +54,22 @@ public class EventHandler {
 					
 					// Emu dodge
 					if (source.isProjectile()) {
-						if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.EMU_DODGE.get())) {
+						if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.EMU_DODGE.get())) {
 							
 							emuDodgeCount++;
 							
-							if (emuDodgeLevel < TraitHelper.getTraitLevel(stack, ModTraits.EMU_DODGE.get())) {
-								emuDodgeLevel = TraitHelper.getTraitLevel(stack, ModTraits.EMU_DODGE.get());
+							if (emuDodgeLevel < TraitHelper.getTraitLevel(stack, TraitConst.EMU_DODGE.get())) {
+								emuDodgeLevel = TraitHelper.getTraitLevel(stack, TraitConst.EMU_DODGE.get());
 							}
 						}
 					}
 					// Dodging
-					else if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.DODGING.get()) && source == DamageSource.GENERIC) {
+					else if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.DODGING.get()) && source == DamageSource.GENERIC) {
 						
 						dodgeCount++;
 						
-						if (dodgeLevel < TraitHelper.getTraitLevel(stack, ModTraits.DODGING.get())) {
-							dodgeLevel = TraitHelper.getTraitLevel(stack, ModTraits.DODGING.get());
+						if (dodgeLevel < TraitHelper.getTraitLevel(stack, TraitConst.DODGING.get())) {
+							dodgeLevel = TraitHelper.getTraitLevel(stack, TraitConst.DODGING.get());
 						}
 					}
 				}
@@ -110,7 +110,7 @@ public class EventHandler {
 					ItemStack stack = event.getEntity().getItemBySlot(slot);
 					
 					// Unstable Magic
-					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.UNSTABLE_MAGIC.get())) {
+					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.UNSTABLE_MAGIC.get())) {
 						if (random.nextFloat() < 0.45F) {
 							int effect = random.nextIntBetweenInclusive(1, 5);
 							MobEffect mobEffect = MobEffects.REGENERATION;
@@ -144,7 +144,7 @@ public class EventHandler {
 					}
 					
 					// Lucky Break
-					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.LUCKY_BREAK.get())) {
+					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.LUCKY_BREAK.get())) {
 						float luck = ((Player) attacked).getLuck();
 						
 						// luck based probability derived from MeetYourFight CocktailCutlass from Lykrast.
@@ -164,7 +164,7 @@ public class EventHandler {
 					}
 					
 					// Retaliating Blast
-					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.RETAILIATING_BLAST.get())) {
+					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.RETAILIATING_BLAST.get())) {
 						if (attacked.getRandom().nextIntBetweenInclusive(1, 4) % 4 == 0) {
 							MobEffect blasting = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.BLASTING);
 							if (!((LivingEntity) attacker).hasEffect(blasting)) {
@@ -175,7 +175,7 @@ public class EventHandler {
 					
 					// Fire React
 					// Source: TwilightForest
-					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.FIRE_REACT.get())) {
+					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.FIRE_REACT.get())) {
 						if (!attacker.fireImmune()) {
 							attacker.setSecondsOnFire(1);
 						}
@@ -183,7 +183,7 @@ public class EventHandler {
 					
 					// Cold
 					// Source: TwilightForest
-					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, ModTraits.COLD.get())) {
+					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.COLD.get())) {
 						if (attacker.canFreeze()) {
 							MobEffect frosted = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.FROSTED);
 							if (!((LivingEntity) attacker).hasEffect(frosted)) {
@@ -215,7 +215,7 @@ public class EventHandler {
 			return;
 		
 		// Abyssal Synergy Trait
-		double abyssalSynergy = TraitHelper.getTraitLevel(weapon, TraitConst.ModTraits.ABYSSAL_SYNERGY);
+		double abyssalSynergy = TraitHelper.getTraitLevel(weapon, TraitConst.ABYSSAL_SYNERGY);
 		double height = attacker.getY();
 
 		if (abyssalSynergy > 0 && height < 0) {
@@ -224,7 +224,7 @@ public class EventHandler {
 		}
 		
 		// Knightly Trait
-		double knightly = TraitHelper.getTraitLevel(weapon, TraitConst.ModTraits.KNIGHTLY);
+		double knightly = TraitHelper.getTraitLevel(weapon, TraitConst.KNIGHTLY);
 		// Source: TwilightForest
 		if (knightly > 0) {
 			if (attacked.getArmorValue() > 0) {
@@ -239,7 +239,7 @@ public class EventHandler {
 		}
 		
 		// Neptunes Might Trait
-		double neptunesMight = TraitHelper.getTraitLevel(weapon, TraitConst.ModTraits.NEPTUNES_MIGHT);
+		double neptunesMight = TraitHelper.getTraitLevel(weapon, TraitConst.NEPTUNES_MIGHT);
 		if (neptunesMight > 0) {
 			if (attacker.isEyeInFluid(FluidTags.WATER)) {
 				event.setAmount(event.getAmount() * 1.5F); // Source: TeamMetallurgy Aquaculture
