@@ -7,7 +7,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class ModItemTags {
+public class SilentCompatItemTags {
 	
 	public static final TagKey<Item> RAW_PLASTEEL = forgeTag("raw_materials/plasteel");
 	public static final TagKey<Item> OUTBACK_LEATHER = createTag("outback_leather");

@@ -12,9 +12,9 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModItemModels extends ItemModelProvider {
+public class SilentCompatItemModels extends ItemModelProvider {
 
-	public ModItemModels(DataGenerator generator, String modid, ExistingFileHelper existingFileHelper) {
+	public SilentCompatItemModels(DataGenerator generator, String modid, ExistingFileHelper existingFileHelper) {
 		super(generator, modid, existingFileHelper);
 	}
 

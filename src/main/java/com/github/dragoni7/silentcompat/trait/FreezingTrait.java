@@ -3,7 +3,7 @@ package com.github.dragoni7.silentcompat.trait;
 import java.util.Collection;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.core.EffectResourceLocs;
+import com.github.dragoni7.silentcompat.core.ModEffectsLocs;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
@@ -15,7 +15,7 @@ import net.silentchaos512.gear.gear.trait.SimpleTrait;
 
 public class FreezingTrait extends SimpleTrait {
 	public static final Serializer<FreezingTrait> SERIALIZER = new Serializer<FreezingTrait>(new ResourceLocation(SilentCompat.MODID, "freezing"), FreezingTrait::new);
-	private static MobEffect freezing = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.FREEZING);
+	private static MobEffect freezing = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.FREEZING);
 	
 	public FreezingTrait(ResourceLocation id) {
 		super(id, SERIALIZER);
@@ -27,7 +27,7 @@ public class FreezingTrait extends SimpleTrait {
 			target.addEffect(new MobEffectInstance(freezing, 60));
 		}
 		else {
-			freezing = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.FREEZING);
+			freezing = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.FREEZING);
 		}
 		
 		return super.onAttackEntity(context, target, baseValue);

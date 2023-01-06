@@ -3,7 +3,7 @@ package com.github.dragoni7.silentcompat.trait;
 import java.util.Collection;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.core.EffectResourceLocs;
+import com.github.dragoni7.silentcompat.core.ModEffectsLocs;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
@@ -15,7 +15,7 @@ import net.silentchaos512.gear.gear.trait.SimpleTrait;
 
 public class GooeyTrait extends SimpleTrait {
 	public static final Serializer<GooeyTrait> SERIALIZER = new Serializer<GooeyTrait>(new ResourceLocation(SilentCompat.MODID, "gooey"), GooeyTrait::new);
-	private static MobEffect gooey = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.GOOEY);
+	private static MobEffect gooey = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.GOOEY);
 	
 	public GooeyTrait(ResourceLocation id) {
 		super(id, SERIALIZER);
@@ -30,7 +30,7 @@ public class GooeyTrait extends SimpleTrait {
 				}
 			}
 			else {
-				gooey = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.GOOEY);
+				gooey = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.GOOEY);
 			}
 		}
 		

@@ -3,7 +3,7 @@ package com.github.dragoni7.silentcompat.trait;
 import java.util.Collection;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.core.EffectResourceLocs;
+import com.github.dragoni7.silentcompat.core.ModEffectsLocs;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
@@ -16,7 +16,7 @@ import net.silentchaos512.gear.gear.trait.SimpleTrait;
 public class EnderFluTrait extends SimpleTrait {
 	
 	public static final Serializer<EnderFluTrait> SERIALIZER = new Serializer<EnderFluTrait>(new ResourceLocation(SilentCompat.MODID, "enderflu"), EnderFluTrait::new);
-	private static MobEffect ender_flu = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.ENDER_FLU);
+	private static MobEffect ender_flu = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.ENDER_FLU);
 	
 	public EnderFluTrait(ResourceLocation id) {
 		super(id, SERIALIZER);
@@ -24,7 +24,7 @@ public class EnderFluTrait extends SimpleTrait {
 	
 	@Override
 	public float onAttackEntity(TraitActionContext context, LivingEntity target, float baseValue) {
-		SilentCompat.LOGGER.info("effect = " + ender_flu);
+		
 		if (ender_flu != null) {
 			if (target.hasEffect(ender_flu)) {
 				return super.onAttackEntity(context, target, baseValue);
@@ -34,7 +34,7 @@ public class EnderFluTrait extends SimpleTrait {
 			}
 		}
 		else {
-			ender_flu = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.ENDER_FLU);
+			ender_flu = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.ENDER_FLU);
 		}
 		
 		return super.onAttackEntity(context, target, baseValue);

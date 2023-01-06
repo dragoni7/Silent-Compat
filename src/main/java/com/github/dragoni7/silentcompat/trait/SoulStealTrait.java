@@ -3,7 +3,7 @@ package com.github.dragoni7.silentcompat.trait;
 import java.util.Collection;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.core.EffectResourceLocs;
+import com.github.dragoni7.silentcompat.core.ModEffectsLocs;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
@@ -16,7 +16,7 @@ import net.silentchaos512.gear.gear.trait.SimpleTrait;
 
 public class SoulStealTrait extends SimpleTrait {
 	public static final Serializer<SoulStealTrait> SERIALIZER = new Serializer<SoulStealTrait>(new ResourceLocation(SilentCompat.MODID, "soul_steal"), SoulStealTrait::new);
-	private static MobEffect soul_steal = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.SOUL_STEAL);
+	private static MobEffect soul_steal = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.SOUL_STEAL);
 	
 	public SoulStealTrait(ResourceLocation id) {
 		super(id, SERIALIZER);
@@ -36,7 +36,7 @@ public class SoulStealTrait extends SimpleTrait {
 			}
 		}
 		else {
-			soul_steal = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.SOUL_STEAL);
+			soul_steal = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.SOUL_STEAL);
 		}
 		
 		return super.onAttackEntity(context, target, baseValue);

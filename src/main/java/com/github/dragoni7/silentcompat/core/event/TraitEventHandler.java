@@ -1,12 +1,17 @@
-package com.github.dragoni7.silentcompat.core;
+package com.github.dragoni7.silentcompat.core.event;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
+import com.github.dragoni7.silentcompat.core.ModEffectsLocs;
+import com.github.dragoni7.silentcompat.core.SilentCompatSoundEvents;
 import com.github.dragoni7.silentcompat.core.TraitConst;
+import com.github.dragoni7.silentcompat.networking.Networking;
+import com.github.dragoni7.silentcompat.networking.PacketImmuneParticles;
+import com.github.dragoni7.silentcompat.networking.PacketJoltChain;
+import com.github.dragoni7.silentcompat.networking.PacketJoltParticles;
 import com.github.dragoni7.silentcompat.trait.LuckyBreak;
 
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
@@ -17,8 +22,10 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.phys.AABB;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -28,87 +35,98 @@ import net.silentchaos512.gear.util.GearHelper;
 import net.silentchaos512.gear.util.TraitHelper;
 
 @Mod.EventBusSubscriber
-public class EventHandler {
-	
-	private static final ArrayList<EquipmentSlot> ARMOR_ONLY = new ArrayList<EquipmentSlot>(Arrays.asList(EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET));
-	
+public class TraitEventHandler {
+
+	private static final EquipmentSlot[] ARMOR_ONLY = { EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS,
+			EquipmentSlot.FEET };
+
 	@SubscribeEvent
 	public static void onPlayerHurt(LivingHurtEvent event) {
 		LivingEntity attacked = event.getEntity();
 		Entity attacker = event.getSource().getDirectEntity();
-		
+
 		if (attacked instanceof Player) {
+
+			ServerPlayer serverPlayer = null;
+			if (attacked instanceof ServerPlayer) {
+				serverPlayer = (ServerPlayer) attacked;
+			}
+
 			if (attacker instanceof LivingEntity) {
-				
+
 				DamageSource source = event.getSource();
 				RandomSource random = attacked.getRandom();
-				
+
 				int dodgeCount = 0;
 				int dodgeLevel = 0;
 				int emuDodgeCount = 0;
 				int emuDodgeLevel = 0;
-				
+
 				// Only check armor slots. Traits require full set
 				for (EquipmentSlot slot : ARMOR_ONLY) {
 					ItemStack stack = event.getEntity().getItemBySlot(slot);
-					
 					// Emu dodge
 					if (source.isProjectile()) {
 						if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.EMU_DODGE.get())) {
-							
+
 							emuDodgeCount++;
-							
+
 							if (emuDodgeLevel < TraitHelper.getTraitLevel(stack, TraitConst.EMU_DODGE.get())) {
 								emuDodgeLevel = TraitHelper.getTraitLevel(stack, TraitConst.EMU_DODGE.get());
 							}
 						}
 					}
 					// Dodging
-					else if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.DODGING.get()) && source == DamageSource.GENERIC) {
-						
+					else if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.DODGING.get())
+							&& !source.isBypassArmor()) {
+
 						dodgeCount++;
-						
+
 						if (dodgeLevel < TraitHelper.getTraitLevel(stack, TraitConst.DODGING.get())) {
 							dodgeLevel = TraitHelper.getTraitLevel(stack, TraitConst.DODGING.get());
 						}
 					}
 				}
-				
+
 				if (dodgeCount == 4) {
-					switch(dodgeLevel) {
+					switch (dodgeLevel) {
 					case 1: {
 						if (random.nextFloat() < 0.15F) {
+							immuneEffects(serverPlayer, attacker);
 							event.setCanceled(true);
 							break;
 						}
 					}
 					case 2: {
 						if (random.nextFloat() < 0.25F) {
+							immuneEffects(serverPlayer, attacker);
 							event.setCanceled(true);
 							break;
 						}
 					}
 					case 3: {
 						if (random.nextFloat() < 0.35F) {
+							immuneEffects(serverPlayer, attacker);
 							event.setCanceled(true);
 							break;
 						}
 					}
 					default: {
-							return;
-						}
+						return;
+					}
 					}
 				}
-				
+
 				if (emuDodgeCount == 4) {
 					if (random.nextFloat() < 0.45F) {
+						immuneEffects(serverPlayer, attacker);
 						event.setCanceled(true);
 					}
 				}
-				
-				for (EquipmentSlot slot: EquipmentSlot.values()) {
+
+				for (EquipmentSlot slot : EquipmentSlot.values()) {
 					ItemStack stack = event.getEntity().getItemBySlot(slot);
-					
+
 					// Unstable Magic
 					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.UNSTABLE_MAGIC.get())) {
 						if (random.nextFloat() < 0.45F) {
@@ -116,15 +134,15 @@ public class EventHandler {
 							MobEffect mobEffect = MobEffects.REGENERATION;
 							switch (effect) {
 							case 1: {
-								mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.MANAREGEN);
+								mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.MANAREGEN);
 								break;
 							}
 							case 2: {
-								mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.SPELLDAMAGE);
+								mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.SPELLDAMAGE);
 								break;
 							}
 							case 3: {
-								mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.RECOVERY);
+								mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.RECOVERY);
 								break;
 							}
 							case 4: {
@@ -136,43 +154,43 @@ public class EventHandler {
 								break;
 							}
 							}
-							
+
 							if (!attacked.hasEffect(mobEffect)) {
 								attacked.forceAddEffect(new MobEffectInstance(mobEffect, 40), attacked);
 							}
 						}
 					}
-					
+
 					// Lucky Break
 					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.LUCKY_BREAK.get())) {
 						float luck = ((Player) attacked).getLuck();
-						
-						// luck based probability derived from MeetYourFight CocktailCutlass from Lykrast.
+
+						// luck based probability derived from MeetYourFight CocktailCutlass from
+						// Lykrast.
 						double effectChance = 0.1;
-						
+
 						if (luck >= 0) {
 							effectChance = (2 + luck) / (20 + luck);
+						} else {
+							effectChance = 1 / (10 - luck);
 						}
-						else {
-							effectChance = 1/(10 - luck);
-						}
-						
+
 						if (attacked.getRandom().nextDouble() <= effectChance) {
 							int i = attacked.getRandom().nextIntBetweenInclusive(0, LuckyBreak.EFFECTS.size() - 1);
 							attacked.addEffect(new MobEffectInstance(LuckyBreak.EFFECTS.get(i), 100));
 						}
 					}
-					
+
 					// Retaliating Blast
 					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.RETAILIATING_BLAST.get())) {
 						if (attacked.getRandom().nextIntBetweenInclusive(1, 4) % 4 == 0) {
-							MobEffect blasting = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.BLASTING);
+							MobEffect blasting = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.BLASTING);
 							if (!((LivingEntity) attacker).hasEffect(blasting)) {
 								((LivingEntity) attacker).addEffect(new MobEffectInstance(blasting, 80));
 							}
 						}
 					}
-					
+
 					// Fire React
 					// Source: TwilightForest
 					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.FIRE_REACT.get())) {
@@ -180,12 +198,12 @@ public class EventHandler {
 							attacker.setSecondsOnFire(1);
 						}
 					}
-					
+
 					// Cold
 					// Source: TwilightForest
 					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.COLD.get())) {
 						if (attacker.canFreeze()) {
-							MobEffect frosted = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.FROSTED);
+							MobEffect frosted = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.FROSTED);
 							if (!((LivingEntity) attacker).hasEffect(frosted)) {
 								((LivingEntity) attacker).addEffect(new MobEffectInstance(frosted, 20));
 							}
@@ -195,34 +213,38 @@ public class EventHandler {
 			}
 		}
 	}
-	
+
 	@SubscribeEvent
 	public static void onAttackEntity(LivingHurtEvent event) {
 		LivingEntity attacked = event.getEntity();
 		DamageSource source = event.getSource();
-		
+
 		if (source == null || !"player".equals(source.msgId))
 			return;
-		
+
 		Entity attacker = source.getEntity();
-		if(!(attacker instanceof Player))
+		if (!(attacker instanceof Player))
 			return;
-		
+
 		Player player = (Player) attacker;
+		ServerPlayer serverPlayer = null;
+		if (player instanceof ServerPlayer) {
+			serverPlayer = (ServerPlayer) player;
+		}
 		ItemStack weapon = player.getMainHandItem();
-		
+
 		if (!(weapon.getItem() instanceof ICoreTool))
 			return;
-		
+
 		// Abyssal Synergy Trait
 		double abyssalSynergy = TraitHelper.getTraitLevel(weapon, TraitConst.ABYSSAL_SYNERGY);
-		double height = attacker.getY();
+		double height = player.getY();
 
 		if (abyssalSynergy > 0 && height < 0) {
 			double depthDamage = ((abyssalSynergy / 10.0D) / 2.0D) * height;
 			event.setAmount(Mth.abs((float) depthDamage) + event.getAmount());
 		}
-		
+
 		// Knightly Trait
 		double knightly = TraitHelper.getTraitLevel(weapon, TraitConst.KNIGHTLY);
 		// Source: TwilightForest
@@ -231,20 +253,57 @@ public class EventHandler {
 				if (attacked.getArmorCoverPercentage() > 0) {
 					int extraDamage = (int) (2 * attacked.getArmorCoverPercentage());
 					event.setAmount(event.getAmount() + extraDamage);
-				}
-				else {
+				} else {
 					event.setAmount(event.getAmount() + 2);
 				}
 			}
 		}
-		
+
 		// Neptunes Might Trait
 		double neptunesMight = TraitHelper.getTraitLevel(weapon, TraitConst.NEPTUNES_MIGHT);
 		if (neptunesMight > 0) {
-			if (attacker.isEyeInFluid(FluidTags.WATER)) {
+			if (player.isEyeInFluid(FluidTags.WATER)) {
 				event.setAmount(event.getAmount() * 1.5F); // Source: TeamMetallurgy Aquaculture
 			}
 		}
+
+		// Shocking Trait
+		double shocking = TraitHelper.getTraitLevel(weapon, TraitConst.JOLT_HIT);
+		if (shocking > 0 && player.getRandom().nextFloat() < 0.35F) {
+
+			LivingEntity nearestEntity = attacked.level.getNearestEntity(LivingEntity.class,
+					TargetingConditions.forCombat(), attacked, attacked.getX(), attacked.getY(), attacked.getZ(),
+					(new AABB(attacked.blockPosition())).inflate(10.0D, 10.0D, 10.0D));
+
+			if (!player.level.isClientSide) {
+				attacked.level.playSound(null, attacked.blockPosition(), SilentCompatSoundEvents.ELECTRIC_ZAP.get(),
+						SoundSource.PLAYERS, 0.5f, 1.0f);
+
+				if (serverPlayer != null) {
+					Networking.sendToClient(new PacketJoltParticles(attacked.getId()), serverPlayer);
+				}
+
+				if (nearestEntity != null && serverPlayer != null) {
+					Networking.sendToClient(new PacketJoltChain(attacked.position(), nearestEntity.position()),
+							serverPlayer);
+				}
+			}
+
+			event.setAmount((float) (event.getAmount() + (shocking + 1)));
+
+			if (nearestEntity != null) {
+				nearestEntity.hurt(DamageSource.LIGHTNING_BOLT, (float) (shocking + 1));
+			}
+		}
+	}
+
+	private static void immuneEffects(ServerPlayer player, Entity attacker) {
+
+		if (player != null) {
+			Networking.sendToClient(new PacketImmuneParticles(player.getId()), player);
+		}
+
+		attacker.level.playSound(null, player.blockPosition(), SoundEvents.SHIELD_BLOCK, SoundSource.NEUTRAL, 0.4f, 1.5f);
 	}
 
 }

@@ -21,12 +21,12 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 
-public class ModLootTables extends LootTableProvider {
+public class SilentCompatLootTables extends LootTableProvider {
 	
 	protected final Map<Block, LootTable.Builder> lootTables = new HashMap<>();
 	private final DataGenerator generator;
 
-	public ModLootTables(DataGenerator genIn) {
+	public SilentCompatLootTables(DataGenerator genIn) {
 		super(genIn);
 		this.generator = genIn;
 	}

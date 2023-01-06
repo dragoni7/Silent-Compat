@@ -1,8 +1,8 @@
-package com.github.dragoni7.silentcompat.core;
+ package com.github.dragoni7.silentcompat.core;
 
 import net.minecraft.resources.ResourceLocation;
 
-public class EffectResourceLocs {
+public class ModEffectsLocs {
 
 	public static final ResourceLocation DECAY_EFFECT = new ResourceLocation("dreamland", "decay");
 	public static final ResourceLocation FLEET_FOOTED = new ResourceLocation("alexsmobs", "fleet_footed");

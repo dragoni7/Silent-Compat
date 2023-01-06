@@ -35,7 +35,7 @@
         "armor_toughness": 4.0,
         "magic_armor": 6.0,
         "rarity": 10.0,
-        "chargeability": 0.8
+        "charging_value": 0.8
       },
       "lining": {
         "armor_durability": {

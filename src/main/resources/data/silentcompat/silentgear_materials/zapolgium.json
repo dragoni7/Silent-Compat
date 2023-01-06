@@ -1,0 +1,114 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 5,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/zapolgium"
+      }
+    },
+    "name": {
+      "text": "Zapolgium"
+    },
+    "stats": {
+      "main": {
+        "durability": 2531.0,
+        "armor_durability": 42.0,
+        "enchantment_value": 25.0,
+        "rarity": 85.0,
+        "charging_value": 1.3,
+        "harvest_level": 5.0,
+        "harvest_speed": 14.0,
+        "melee_damage": 4.0,
+        "magic_damage": 5.0,
+        "attack_speed": 0.3,
+        "ranged_damage": 2.0,
+        "ranged_speed": 0.5,
+        "armor": 20.0,
+        "armor/helmet": 3.0,
+        "armor/chestplate": 8.0,
+        "armor/leggings": 6.0,
+        "armor/boots": 3.0,
+        "armor_toughness": 12.0,
+        "magic_armor": 6.0
+      },
+      "rod": {
+        "attack_speed": {
+          "add": 0.2
+        },
+        "ranged_speed": {
+          "mul2": 0.2
+        },
+        "rarity": 50.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:flame_ward",
+          "level": 1
+        },
+        {
+            "name": "silentgear:malleable",
+            "level": 3
+        },
+        {
+            "name": "silentcompat:jolt_hit",
+            "level": 2
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:lustrous",
+          "level": 4,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        },
+        {
+            "name": "silentgear:malleable",
+            "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#855121"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#855121"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#855121"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#855121"
+        }
+      ]
+    }
+  }

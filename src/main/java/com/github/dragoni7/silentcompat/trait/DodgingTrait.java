@@ -18,7 +18,7 @@ public class DodgingTrait extends SimpleTrait {
 	@Override
     public Collection<String> getExtraWikiLines() {
         Collection<String> ret = super.getExtraWikiLines();
-        ret.add("Grants a chance to avoid damage");
+        ret.add("Grants a chance to avoid damage. Requires full armor set. Does not protect against projectiles and armor ignoring damage");
         return ret;
     }
 }

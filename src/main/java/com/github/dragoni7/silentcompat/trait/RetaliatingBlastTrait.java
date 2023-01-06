@@ -3,7 +3,7 @@ package com.github.dragoni7.silentcompat.trait;
 import java.util.Collection;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.core.EffectResourceLocs;
+import com.github.dragoni7.silentcompat.core.ModEffectsLocs;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
@@ -14,8 +14,9 @@ import net.silentchaos512.gear.api.traits.TraitActionContext;
 import net.silentchaos512.gear.gear.trait.SimpleTrait;
 
 public class RetaliatingBlastTrait extends SimpleTrait {
+	
 	public static final Serializer<RetaliatingBlastTrait> SERIALIZER = new Serializer<RetaliatingBlastTrait>(new ResourceLocation(SilentCompat.MODID, "retaliating_blast"), RetaliatingBlastTrait::new);
-	private static MobEffect blasting = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.BLASTING);
+	private static MobEffect blasting = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.BLASTING);
 	
 	public RetaliatingBlastTrait(ResourceLocation id) {
 		super(id, SERIALIZER);
@@ -31,7 +32,7 @@ public class RetaliatingBlastTrait extends SimpleTrait {
 				}
 			}
 			else {
-				blasting = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.BLASTING);
+				blasting = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.BLASTING);
 			}
 		}
 		

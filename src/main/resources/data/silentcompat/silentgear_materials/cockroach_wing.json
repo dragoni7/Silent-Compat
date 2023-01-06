@@ -30,7 +30,7 @@
         "armor_durability": 10.0,
         "enchantment_value": 7.0,
         "rarity": 10.0,
-        "chargeability": 0.7,
+        "charging_value": 0.7,
         "armor_durability/elytra": 10.0,
         "armor": 2.0,
         "magic_armor": 1.0

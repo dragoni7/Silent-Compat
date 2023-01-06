@@ -17,9 +17,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public class ModRecipes extends RecipeProvider {
+public class SilentCompatRecipes extends RecipeProvider {
 
-	public ModRecipes(DataGenerator genIn) {
+	public SilentCompatRecipes(DataGenerator genIn) {
 		super(genIn);
 	}
 	
@@ -40,7 +40,7 @@ public class ModRecipes extends RecipeProvider {
 		.pattern(" L ")
 		.define('R', Items.RABBIT_FOOT)
 		.define('L', Items.RABBIT_HIDE)
-		.define('S', ModItemTags.STEEL_INGOT)
+		.define('S', SilentCompatItemTags.STEEL_INGOT)
 		.group(SilentCompat.MODID).unlockedBy("steel_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Items.RABBIT_FOOT)).save(consumer);
 		
 		ShapedRecipeBuilder.shaped(MaterialRegistry.MIDNIGHTIRON.ingot.get())
@@ -53,38 +53,38 @@ public class ModRecipes extends RecipeProvider {
 		
 		ShapelessRecipeBuilder.shapeless(MaterialRegistry.SCULKALLOY.ingot.get())
 		.requires(Items.ECHO_SHARD)
-		.requires(ModItemTags.SKREECHER_SOUL)
+		.requires(SilentCompatItemTags.SKREECHER_SOUL)
 		.requires(Items.OBSIDIAN)
 		.requires(Items.OBSIDIAN)
-		.group(SilentCompat.MODID).unlockedBy("has_item", has(ModItemTags.SKREECHER_SOUL)).save(consumer);
+		.group(SilentCompat.MODID).unlockedBy("has_item", has(SilentCompatItemTags.SKREECHER_SOUL)).save(consumer);
 		
 		ShapelessRecipeBuilder.shapeless(MaterialRegistry.DARKCHOCOLATE.ingot.get())
-		.requires(ModItemTags.CHOCOLATE)
+		.requires(SilentCompatItemTags.CHOCOLATE)
 		.requires(Items.COCOA_BEANS)
 		.requires(Items.COCOA_BEANS)
 		.requires(Items.OBSIDIAN)
 		.group(SilentCompat.MODID).unlockedBy("coco_beans", InventoryChangeTrigger.TriggerInstance.hasItems(Items.COCOA_BEANS)).save(consumer);
 
 		ShapelessRecipeBuilder.shapeless(MaterialRegistry.CAPSID_ALLOY.ingot.get())
-		.requires(ModItemTags.CAPSID)
-		.requires(ModItemTags.CAPSID)
+		.requires(SilentCompatItemTags.CAPSID)
+		.requires(SilentCompatItemTags.CAPSID)
 		.requires(Items.DIAMOND)
 		.requires(Items.DIAMOND)
-		.group(SilentCompat.MODID).unlockedBy("has_item", has(ModItemTags.CAPSID)).save(consumer);
+		.group(SilentCompat.MODID).unlockedBy("has_item", has(SilentCompatItemTags.CAPSID)).save(consumer);
 		
 		ShapelessRecipeBuilder.shapeless(SilentCompatItems.OUTBACK_LEATHER.get(), 3)
-		.requires(ModItemTags.EMU_FEATHER)
-		.requires(ModItemTags.EMU_FEATHER)
-		.requires(ModItemTags.KANGAROO_HIDE)
-		.group(SilentCompat.MODID).unlockedBy("has_item", has(ModItemTags.EMU_FEATHER)).save(consumer);
+		.requires(SilentCompatItemTags.EMU_FEATHER)
+		.requires(SilentCompatItemTags.EMU_FEATHER)
+		.requires(SilentCompatItemTags.KANGAROO_HIDE)
+		.group(SilentCompat.MODID).unlockedBy("has_item", has(SilentCompatItemTags.EMU_FEATHER)).save(consumer);
 		
 		ShapelessRecipeBuilder.shapeless(MaterialRegistry.SOURCE_STEEL.ingot.get())
-		.requires(ModItemTags.STEEL_INGOT)
-		.requires(ModItemTags.CONJURATION_ESSENCE)
-		.requires(ModItemTags.ABJURATION_ESSENCE)
-		.requires(ModItemTags.EARTH_ESSENCE)
-		.requires(ModItemTags.SOURCE_GEM)
-		.group(SilentCompat.MODID).unlockedBy("has_item", has(ModItemTags.STEEL_INGOT)).save(consumer);
+		.requires(SilentCompatItemTags.STEEL_INGOT)
+		.requires(SilentCompatItemTags.CONJURATION_ESSENCE)
+		.requires(SilentCompatItemTags.ABJURATION_ESSENCE)
+		.requires(SilentCompatItemTags.EARTH_ESSENCE)
+		.requires(SilentCompatItemTags.SOURCE_GEM)
+		.group(SilentCompat.MODID).unlockedBy("has_item", has(SilentCompatItemTags.STEEL_INGOT)).save(consumer);
 	}
 	
 	private void materialSetRecipes(MaterialSet set, Consumer<FinishedRecipe> consumer) {

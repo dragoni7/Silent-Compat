@@ -3,7 +3,7 @@ package com.github.dragoni7.silentcompat.trait;
 import java.util.Collection;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.core.EffectResourceLocs;
+import com.github.dragoni7.silentcompat.core.ModEffectsLocs;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
@@ -35,20 +35,20 @@ public class UnstableMagicTrait extends SimpleTrait {
 				switch(effect) {
 				case 1: {
 					if (target.canFreeze()) {
-						mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.FREEZING);
+						mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.FREEZING);
 					}
 					break;
 				}
 				case 2: {
-					mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.BLASTING);
+					mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.BLASTING);
 					break;
 				}
 				case 3: {
-					mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.SNARED);
+					mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.SNARED);
 					break;
 				}
 				case 4: {
-					mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.GRAVITY);
+					mobEffect = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.GRAVITY);
 					break;
 				}
 				default: {

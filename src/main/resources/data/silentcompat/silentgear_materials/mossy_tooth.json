@@ -35,7 +35,7 @@
         "ranged_damage": 1.2,
         "ranged_speed": 0.05,
         "rarity": 30.0,
-        "chargeability": 1.0
+        "charging_value": 1.0
       },
       "rod": {
         "durability": {

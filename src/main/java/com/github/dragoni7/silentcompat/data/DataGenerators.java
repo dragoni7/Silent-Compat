@@ -19,16 +19,16 @@ public class DataGenerators {
 		ExistingFileHelper fileHelper = event.getExistingFileHelper();
 		
 		if (event.includeServer()) {
-			generator.addProvider(true, new ModRecipes(generator));
-			generator.addProvider(true, new ModLootTables(generator));
+			generator.addProvider(true, new SilentCompatRecipes(generator));
+			generator.addProvider(true, new SilentCompatLootTables(generator));
 			BlockTagsProvider blocks = new BlockTagsProvider(generator, SilentCompat.MODID, fileHelper);
 			generator.addProvider(true, new AddBlockTags(generator, fileHelper));
 			generator.addProvider(true, new AddItemTags(generator, blocks, fileHelper));
 		}
 		
 		if (event.includeClient()) {
-			generator.addProvider(true, new ModBlockStates(generator, SilentCompat.MODID, fileHelper));
-			generator.addProvider(true, new ModItemModels(generator, SilentCompat.MODID, fileHelper));
+			generator.addProvider(true, new SilentCompatBlockStates(generator, SilentCompat.MODID, fileHelper));
+			generator.addProvider(true, new SilentCompatItemModels(generator, SilentCompat.MODID, fileHelper));
 			generator.addProvider(true, new lang(generator, "en_us"));
 		}
 	}

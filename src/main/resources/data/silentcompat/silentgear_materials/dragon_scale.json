@@ -30,7 +30,7 @@
         "armor_durability": 60.0,
         "enchantment_value": 30.0,
         "rarity": 90.0,
-        "chargeability": 1.1,
+        "charging_value": 1.1,
         "armor_durability/elytra": 24.0,
         "armor": 30.0,
         "armor/helmet": 6.0,

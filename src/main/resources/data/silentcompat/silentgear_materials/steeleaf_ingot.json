@@ -35,7 +35,7 @@
       "ranged_damage": 0.6,
       "ranged_speed": 0.2,
       "rarity": 40.0,
-      "chargeability": 1.2
+      "charging_value": 1.2
     },
     "fletching": {
       "projectile_speed": 1.2,

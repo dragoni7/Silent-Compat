@@ -28,7 +28,7 @@
       "armor_toughness": 2.0,
       "magic_armor": 6.0,
       "rarity": 60.0,
-      "chargeability": 1.0
+      "charging_value": 1.0
     },
     "grip": {
       "durability": {

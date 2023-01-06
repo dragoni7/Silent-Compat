@@ -3,7 +3,7 @@ package com.github.dragoni7.silentcompat.trait;
 import java.util.Collection;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.core.EffectResourceLocs;
+import com.github.dragoni7.silentcompat.core.ModEffectsLocs;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
@@ -16,7 +16,7 @@ import net.silentchaos512.gear.gear.trait.SimpleTrait;
 public class DecayTrait extends SimpleTrait {
 	
 	public static final Serializer<DecayTrait> SERIALIZER = new Serializer<DecayTrait>(new ResourceLocation(SilentCompat.MODID, "decay"), DecayTrait::new);
-	private static MobEffect decay = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.DECAY_EFFECT);
+	private static MobEffect decay = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.DECAY_EFFECT);
 	
 	@Override
 	public float onAttackEntity(TraitActionContext context, LivingEntity target, float baseValue) {
@@ -29,7 +29,7 @@ public class DecayTrait extends SimpleTrait {
 			}
 		}
 		else {
-			decay = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.DECAY_EFFECT);
+			decay = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.DECAY_EFFECT);
 		}
 		
 		return super.onAttackEntity(context, target, baseValue);

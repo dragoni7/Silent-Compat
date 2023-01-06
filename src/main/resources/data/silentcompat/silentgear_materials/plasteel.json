@@ -40,7 +40,7 @@
         "projectile_speed": 1.0,
         "projectile_accuracy": 2.0,
         "rarity": 50.0,
-        "chargeability": 0.8,
+        "charging_value": 0.8,
         "knockback_resistance": {
             "add": 4.0
         }

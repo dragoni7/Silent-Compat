@@ -1,0 +1,16 @@
+{
+    "type": "silentcompat:jolt_hit",
+    "max_level": 5,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "tool"
+      }
+    ],
+    "name": {
+      "translate": "trait.silentcompat.jolt_hit"
+    },
+    "description": {
+      "translate": "trait.silentcompat.jolt_hit.desc"
+    }
+  }

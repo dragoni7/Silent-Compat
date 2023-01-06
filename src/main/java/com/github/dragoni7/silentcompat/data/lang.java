@@ -39,7 +39,7 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.ender_flu", "Ender Flu");
 		add("trait.silentcompat.ender_flu.desc", "Infects the target with Ender Flu");
 		add("trait.silentcompat.dodging", "Dodging");
-		add("trait.silentcompat.dodging.desc", "Grants a chance to avoid damage. Requires full armor set");
+		add("trait.silentcompat.dodging.desc", "Grants a chance to avoid damage. Requires full armor set. Does not protect against projectiles and armor ignoring damage");
 		add("trait.silentcompat.edible", "Edible");
 		add("trait.silentcompat.edible.desc", "Chance to drop a chocolate chip on durability loss");
 		add("trait.silentcompat.fleetfooted", "Fleet-Footed");
@@ -80,6 +80,8 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.cold.desc", "Chills attackers");
 		add("trait.silentcompat.emu_dodge", "Emu Dodge");
 		add("trait.silentcompat.emu_dodge.desc", "Grants a chance to avoid projectile damage. Requires full armor set");
+		add("trait.silentcompat.jolt_hit", "Jolt Hit");
+		add("trait.silentcompat.jolt_hit.desc", "Attacks have a chance to jolt the target, making it take extra damage and bounce damage to a nearby entity");
 	}
 	
 	private void translateMaterialSet(MaterialSet set, String name) {

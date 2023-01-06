@@ -9,9 +9,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-public class ModBlockStates extends BlockStateProvider {
+public class SilentCompatBlockStates extends BlockStateProvider {
 
-	public ModBlockStates(DataGenerator gen, String modid, ExistingFileHelper exFileHelper) {
+	public SilentCompatBlockStates(DataGenerator gen, String modid, ExistingFileHelper exFileHelper) {
 		super(gen, modid, exFileHelper);
 	}
 

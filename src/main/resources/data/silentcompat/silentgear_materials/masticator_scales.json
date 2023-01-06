@@ -25,7 +25,7 @@
       "armor_durability": 17.0,
       "enchantment_value": 5.0,
       "rarity": 70.0,
-      "chargeability": 0.8,
+      "charging_value": 0.8,
       "armor": 20.0,
       "magic_armor": 8.0
     },

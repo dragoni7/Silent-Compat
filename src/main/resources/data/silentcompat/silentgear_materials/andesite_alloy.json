@@ -40,7 +40,7 @@
         "projectile_speed": 0.8,
         "projectile_accuracy": 1.0,
         "rarity": 5.0,
-        "chargeability": 0.7
+        "charging_value": 0.7
       },
       "rod": {
         "durability": {

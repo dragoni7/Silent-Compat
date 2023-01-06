@@ -1,0 +1,10 @@
+{
+    "electric_zap": {
+        "sounds": [
+            {
+                "name": "silentcompat:electric_zap"
+            }
+        ],
+        "subtitle": "silentcompat.sounds.subtitle.electric_zap"
+    }
+}

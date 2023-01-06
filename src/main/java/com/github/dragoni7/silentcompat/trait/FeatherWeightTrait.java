@@ -3,7 +3,7 @@ package com.github.dragoni7.silentcompat.trait;
 import java.util.Collection;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.core.EffectResourceLocs;
+import com.github.dragoni7.silentcompat.core.ModEffectsLocs;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
@@ -16,7 +16,7 @@ import net.silentchaos512.gear.gear.trait.SimpleTrait;
 public class FeatherWeightTrait extends SimpleTrait {
 
 	public static final Serializer<FeatherWeightTrait> SERIALIZER = new Serializer<FeatherWeightTrait>(new ResourceLocation(SilentCompat.MODID, "featherweight"), FeatherWeightTrait::new);
-	private static MobEffect featherweight = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.FEATHERWEIGHT);
+	private static MobEffect featherweight = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.FEATHERWEIGHT);
 	
 	public FeatherWeightTrait(ResourceLocation id) {
 		super(id, SERIALIZER);
@@ -33,7 +33,7 @@ public class FeatherWeightTrait extends SimpleTrait {
 			}
 		}
 		else {
-			featherweight = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.FEATHERWEIGHT);
+			featherweight = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.FEATHERWEIGHT);
 		}
 		
 		return super.onAttackEntity(context, target, baseValue);

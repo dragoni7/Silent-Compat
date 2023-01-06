@@ -3,7 +3,7 @@ package com.github.dragoni7.silentcompat.trait;
 import java.util.Collection;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.core.EffectResourceLocs;
+import com.github.dragoni7.silentcompat.core.ModEffectsLocs;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
@@ -16,7 +16,7 @@ import net.silentchaos512.gear.gear.trait.SimpleTrait;
 public class FleetFootedTrait extends SimpleTrait {
 	
 	public static final Serializer<FleetFootedTrait> SERIALIZER = new Serializer<FleetFootedTrait>(new ResourceLocation(SilentCompat.MODID, "fleetfooted"), FleetFootedTrait::new);
-	private static MobEffect fleet_footed = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.FLEET_FOOTED);;
+	private static MobEffect fleet_footed = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.FLEET_FOOTED);;
 	
 	public FleetFootedTrait(ResourceLocation id) {
 		super(id, SERIALIZER);
@@ -33,7 +33,7 @@ public class FleetFootedTrait extends SimpleTrait {
 			}
 		}
 		else {
-			fleet_footed = ForgeRegistries.MOB_EFFECTS.getValue(EffectResourceLocs.FLEET_FOOTED);;
+			fleet_footed = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.FLEET_FOOTED);;
 		}
 		
 		return super.onAttackEntity(context, target, baseValue);
