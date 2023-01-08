@@ -21,7 +21,7 @@
     "stats": {
       "rod": {
         "durability": {
-            "mul1": 2.5
+          "mul1": 2.5
         },
         "harvest_speed": {
           "mul2": 0.4
@@ -32,7 +32,7 @@
         "ranged_damage": {
           "mul2": 0.3
         },
-        "rarity": 35.0
+        "rarity": 55.0
       }
     },
     "traits": {

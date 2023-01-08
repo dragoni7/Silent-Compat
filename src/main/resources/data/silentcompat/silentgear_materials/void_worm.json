@@ -37,14 +37,19 @@
         "harvest_level": {
           "max": 5.0
         },
-        "melee_damage": {
-          "mul2": 3.2
-        },
+        "melee_damage": [
+          {
+            "mul2": 0.5
+          },
+          {
+            "add": 4.0
+          }
+        ],
         "magic_damage": {
-          "mul2": 3.2
+          "add": 4
         },
         "ranged_damage": {
-          "mul2": 3.2
+          "add": 4
         },
         "armor_toughness": {
           "add": 8.0
@@ -56,7 +61,7 @@
           "add": 8.0
         },
         "rarity": {
-          "add": 50.0
+          "add": 80.0
         }
       },
       "rod": {

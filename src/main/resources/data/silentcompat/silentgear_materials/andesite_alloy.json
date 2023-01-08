@@ -84,7 +84,13 @@
       "main": [
         {
             "name": "silentcompat:diurnal",
-            "level": 1
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.66
+              }
+            ]
         },
         {
           "name": "silentgear:crude",

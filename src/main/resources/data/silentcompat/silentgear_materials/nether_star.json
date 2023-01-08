@@ -2,7 +2,7 @@
     "type": "silentgear:standard",
     "simple": true,
     "availability": {
-      "tier": 3,
+      "tier": 4,
       "categories": [
         "organic"
       ],
@@ -25,6 +25,9 @@
         },
         "ranged_damage": {
           "add": 5.0
+        },
+        "repair_efficiency": {
+          "mul1": -0.2
         },
         "rarity": {
           "add": 10.0

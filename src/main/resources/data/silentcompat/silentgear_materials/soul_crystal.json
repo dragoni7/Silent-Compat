@@ -21,7 +21,7 @@
     "stats": {
       "tip": {
         "durability": {
-          "add": 356.0
+          "add": -356.0
         },
         "harvest_level": {
           "max": 4.0
@@ -35,8 +35,11 @@
         "ranged_damage": {
           "add": 2.0
         },
+        "repair_efficiency": {
+          "mul1": -0.2
+        },
         "rarity": {
-          "add": 30.0
+          "add": 50.0
         }
       },
       "adornment": {}

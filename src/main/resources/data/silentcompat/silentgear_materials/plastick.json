@@ -23,6 +23,9 @@
         "durability": {
             "mul1": 1.0
         },
+        "repair_efficiency": {
+          "mul1": 0.15
+        },
         "rarity": 30.0
       }
     },

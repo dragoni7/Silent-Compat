@@ -50,6 +50,9 @@
       "melee_damage": {
         "add": 2.0
       },
+      "repair_efficiency": {
+        "mul1": -0.3
+      },
       "rarity": 50.0
     },
     "adornment": {}

@@ -20,8 +20,8 @@
     },
     "stats": {
       "main": {
-        "durability": 561.0,
-        "armor_durability": 16.0,
+        "durability": 261.0,
+        "armor_durability": 8.0,
         "enchantment_value": 20.0,
         "rarity": 20.0,
         "charging_value": 1.0,
@@ -49,10 +49,10 @@
       },
       "tip": {
         "durability": {
-          "add": 256.0
+          "add": -256.0
         },
         "armor_durability": {
-          "add": 9.0
+          "add": -9.0
         },
         "harvest_level": {
           "max": 2.0

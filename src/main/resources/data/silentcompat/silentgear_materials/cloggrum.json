@@ -48,6 +48,9 @@
         "melee_damage": {
           "mul2": 0.1
         },
+        "repair_efficiency": {
+          "mul1": -0.1
+        },
         "rarity": 40.0
       }
     },

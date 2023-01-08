@@ -43,13 +43,16 @@
         "charging_value": 0.8
       },
       "rod": {
-		"durability": {
-            "mul2": -0.2
+		  "durability": {
+          "add": -200
         }
       },
       "tip": {
         "durability": {
-          "add": 500.0
+          "add": 200.0
+        },
+        "repair_efficiency": {
+          "mul1": -0.2
         }
       }
     },

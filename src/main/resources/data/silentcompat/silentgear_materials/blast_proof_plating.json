@@ -46,11 +46,12 @@
         }
       },
       "grip": {
-      "durability": [
-          {
-            "mul2": 0.1
-          }
-        ]
+      "durability": {
+        "mul2": 0.1
+        },
+        "repair_efficiency": {
+          "mul1": -0.1
+        }
       },
       "coating": {
         "durability": [
@@ -65,7 +66,10 @@
           {
             "add": 1
           }
-        ]
+        ],
+        "repair_efficiency": {
+          "mul1": -0.1
+        }
       }
     },
     "traits": {

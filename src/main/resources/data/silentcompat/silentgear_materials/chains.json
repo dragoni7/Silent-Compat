@@ -2,7 +2,7 @@
     "type": "silentgear:standard",
     "simple": true,
     "availability": {
-      "tier": 0,
+      "tier": 1,
       "categories": [
         "metal"
       ],
@@ -21,7 +21,7 @@
     "stats": {
       "binding": {
         "durability": {
-            "mul2": 0.25
+            "add": 200
         }
       }
     },

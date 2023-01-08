@@ -31,6 +31,9 @@
         },
         "ranged_speed": {
           "mul1": 0.15
+        },
+        "repair_efficiency": {
+          "mul1": -0.15
         }
       }
     },

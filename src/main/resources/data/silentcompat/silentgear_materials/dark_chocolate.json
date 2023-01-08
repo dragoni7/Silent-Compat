@@ -26,7 +26,7 @@
         "enchantment_value": 11.0,
         "harvest_level": 3.0,
         "harvest_speed": 7.0,
-        "melee_damage": 4.0,
+        "melee_damage": 3.0,
         "magic_damage": 1.5,
         "attack_speed": 0.1,
         "armor": 18.0,
@@ -43,7 +43,7 @@
       },
       "rod": {
         "durability": {
-          "mul2": 0.35
+          "mul2": 0.2
         },
         "harvest_speed": {
           "mul2": 0.05
@@ -85,7 +85,7 @@
         },
         {
             "name": "silentgear:soft",
-            "level": 2
+            "level": 3
         }
       ]
     },

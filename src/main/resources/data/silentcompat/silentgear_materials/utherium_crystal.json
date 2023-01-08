@@ -65,6 +65,9 @@
         "ranged_speed": {
           "add": -0.1
         },
+        "repair_efficiency": {
+          "mul1": -0.15
+        },
         "rarity": {
           "add": 40.0
         }

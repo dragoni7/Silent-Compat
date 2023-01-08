@@ -46,6 +46,9 @@
       "rod": {
         "harvest_speed": {
           "mul2": 0.3
+        },
+        "repair_efficiency": {
+          "mul1": -0.15
         }
       },
       "tip": {
@@ -66,6 +69,9 @@
         },
         "ranged_damage": {
           "add": 0.5
+        },
+        "repair_efficiency": {
+          "mul1": -0.15
         },
         "rarity": {
           "add": 10.0

@@ -25,7 +25,7 @@
         "repair_value": 0.2,
         "enchantment_value": 15.0,
         "harvest_level": 3.0,
-        "harvest_speed": 8.0,
+        "harvest_speed": 14.0,
         "melee_damage": 5.0,
         "magic_damage": 2.0,
         "attack_speed": 0.0,
@@ -79,7 +79,7 @@
       "rod": [
         {
           "name": "silentgear:malleable",
-          "level": 5
+          "level": 4
         }
       ]
     },

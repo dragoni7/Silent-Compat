@@ -26,6 +26,9 @@
         "ranged_damage": {
           "mul2": 0.15
         },
+        "repair_efficiency": {
+          "mul1": -0.1
+        },
         "harvest_level": {
             "max": 3.0
         }

@@ -58,6 +58,9 @@
         ],
         "enchantment_value": {
           "add": 5.0
+        },
+        "repair_efficiency": {
+          "mul1": -0.15
         }
       }
     },

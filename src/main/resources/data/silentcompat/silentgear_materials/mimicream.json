@@ -28,6 +28,9 @@
           },
           "ranged_damage": {
             "add": 3.2
+          },
+          "repair_efficiency": {
+            "mul1": -0.15
           }
       }
     },

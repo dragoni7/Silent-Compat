@@ -24,7 +24,7 @@
         "durability": 0.0,
         "armor_durability": 14.0,
         "enchantment_value": 14.0,
-        "rarity": 20.0,
+        "rarity": 10.0,
         "charging_value": 0.8,
         "armor_durability/elytra": 18.0,
         "armor": 6.0,
@@ -60,7 +60,7 @@
       "lining": [
         {
           "name": "silentgear:flexible",
-          "level": 3
+          "level": 1
         }
       ]
     },

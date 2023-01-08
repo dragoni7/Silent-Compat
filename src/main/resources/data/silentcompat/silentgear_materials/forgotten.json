@@ -42,9 +42,9 @@
           "mul2": 0.1
         },
         "repair_efficiency": {
-          "mul2": -0.1
+          "mul2": -0.2
         },
-        "rarity": 70.0
+        "rarity": 50.0
       }
     },
     "traits": {

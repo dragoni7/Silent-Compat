@@ -39,7 +39,7 @@
         "ranged_speed": 1.0,
         "projectile_speed": 1.0,
         "projectile_accuracy": 2.0,
-        "rarity": 50.0,
+        "rarity": 70.0,
         "charging_value": 0.8,
         "knockback_resistance": {
             "add": 4.0
@@ -47,9 +47,9 @@
       },
       "rod": {
         "durability": {
-          "mul2": 0.35
+          "add": 500
         },
-        "rarity": 30.0
+        "rarity": 50.0
       }
     },
     "traits": {

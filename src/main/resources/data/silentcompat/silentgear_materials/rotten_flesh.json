@@ -35,10 +35,10 @@
       },
       "grip": {
         "repair_efficiency": {
-          "mul1": -0.1
+          "mul1": -0.15
         },
         "durability": {
-            "add": -10
+            "add": -300
         }
       },
       "lining": {
@@ -46,7 +46,7 @@
           "add": 1.0
         },
         "repair_efficiency": {
-            "mul1": -0.1
+          "mul1": -0.15
         }
       }
     },
