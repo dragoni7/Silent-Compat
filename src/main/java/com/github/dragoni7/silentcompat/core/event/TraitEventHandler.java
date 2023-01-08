@@ -17,11 +17,13 @@ import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -61,6 +63,8 @@ public class TraitEventHandler {
 				int dodgeLevel = 0;
 				int emuDodgeCount = 0;
 				int emuDodgeLevel = 0;
+				int purifyingCount = 0;
+				int purifyingLevel = 0;
 
 				// Only check armor slots. Traits require full set
 				for (EquipmentSlot slot : ARMOR_ONLY) {
@@ -84,6 +88,15 @@ public class TraitEventHandler {
 
 						if (dodgeLevel < TraitHelper.getTraitLevel(stack, TraitConst.DODGING.get())) {
 							dodgeLevel = TraitHelper.getTraitLevel(stack, TraitConst.DODGING.get());
+						}
+					}
+					// Purifying
+					else if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.PURIFYING.get())) {
+
+						purifyingCount++;
+
+						if (purifyingLevel < TraitHelper.getTraitLevel(stack, TraitConst.PURIFYING.get())) {
+							purifyingLevel = TraitHelper.getTraitLevel(stack, TraitConst.PURIFYING.get());
 						}
 					}
 				}
@@ -117,10 +130,17 @@ public class TraitEventHandler {
 					}
 				}
 
-				if (emuDodgeCount == 4) {
-					if (random.nextFloat() < 0.45F) {
-						immuneEffects(serverPlayer, attacker);
-						event.setCanceled(true);
+				if (emuDodgeCount == 4 && random.nextFloat() < 0.45F) {
+					immuneEffects(serverPlayer, attacker);
+					event.setCanceled(true);
+				}
+				
+				if (purifyingCount == 4 && random.nextFloat() < 0.15F) {
+					// remove all harmful effects from the entity
+					for (MobEffectInstance effect : attacked.getActiveEffects()) {
+						if (effect.getEffect().getCategory() == MobEffectCategory.HARMFUL) {
+							attacked.removeEffect(effect.getEffect());
+						}
 					}
 				}
 
@@ -267,11 +287,11 @@ public class TraitEventHandler {
 			}
 		}
 
-		// Shocking Trait
-		double shocking = TraitHelper.getTraitLevel(weapon, TraitConst.JOLT_HIT);
-		if (shocking > 0 && player.getRandom().nextFloat() < 0.35F) {
+		// Jolt Hit Trait
+		double joltHit = TraitHelper.getTraitLevel(weapon, TraitConst.JOLT_HIT);
+		if (joltHit > 0 && player.getRandom().nextFloat() < 0.35F) {
 
-			LivingEntity nearestEntity = attacked.level.getNearestEntity(LivingEntity.class,
+			Mob nearestEntity = attacked.level.getNearestEntity(Mob.class,
 					TargetingConditions.forCombat(), attacked, attacked.getX(), attacked.getY(), attacked.getZ(),
 					(new AABB(attacked.blockPosition())).inflate(10.0D, 10.0D, 10.0D));
 
@@ -289,10 +309,10 @@ public class TraitEventHandler {
 				}
 			}
 
-			event.setAmount((float) (event.getAmount() + (shocking + 1)));
+			event.setAmount((float) (event.getAmount() + (joltHit + 1)));
 
 			if (nearestEntity != null) {
-				nearestEntity.hurt(DamageSource.LIGHTNING_BOLT, (float) (shocking + 1));
+				nearestEntity.hurt(DamageSource.LIGHTNING_BOLT, (float) (joltHit + 1));
 			}
 		}
 	}

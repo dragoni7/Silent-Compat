@@ -16,11 +16,11 @@ import net.minecraft.world.phys.Vec3;
 import net.silentchaos512.gear.api.traits.TraitActionContext;
 import net.silentchaos512.gear.gear.trait.SimpleTrait;
 
-public class EdibleTrait extends SimpleTrait {
+public class ChocolateChipping extends SimpleTrait {
 	
-	public static final Serializer<EdibleTrait> SERIALIZER = new Serializer<EdibleTrait>(new ResourceLocation(SilentCompat.MODID, "edible"), EdibleTrait::new);
+	public static final Serializer<ChocolateChipping> SERIALIZER = new Serializer<ChocolateChipping>(new ResourceLocation(SilentCompat.MODID, "chocolate_chipping"), ChocolateChipping::new);
 
-	public EdibleTrait(ResourceLocation id) {
+	public ChocolateChipping(ResourceLocation id) {
 		super(id, SERIALIZER);
 	}
 	

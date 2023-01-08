@@ -58,8 +58,14 @@
             "level": 3
         },
         {
-            "name": "silentcompat:edible",
-            "level": 1
+            "name": "silentcompat:chocolate_chipping",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.5
+              }
+            ]
         },
         {
           "name": "silentcompat:nocturnal",

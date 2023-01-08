@@ -1,0 +1,177 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 7,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/celeslar"
+      }
+    },
+    "name": {
+      "text": "Celeslar"
+    },
+    "stats": {
+      "main": {
+        "durability": 4452.0,
+        "armor_durability": 64.0,
+        "enchantment_value": 20.0,
+        "rarity": 130.0,
+        "charging_value": 1.0,
+        "harvest_level": 8.0,
+        "harvest_speed": 18.0,
+        "melee_damage": 10.0,
+        "magic_damage": 10.0,
+        "attack_speed": 0.1,
+        "ranged_damage": 2.0,
+        "ranged_speed": 5.0,
+        "projectile_speed": 5.0,
+        "projectile_accuracy": -0.2,
+        "armor": 40.0,
+        "armor/helmet": 9.0,
+        "armor/chestplate": 13.0,
+        "armor/leggings": 10.0,
+        "armor/boots": 8.0,
+        "armor_toughness": 14.0,
+        "magic_armor": 16.0
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.23
+        },
+        "melee_damage": [
+          {
+            "mul2": 0.22
+          },
+          {
+            "add": 2.0
+          }
+        ],
+        "rarity": 100.0
+      },
+      "tip": {
+        "harvest_level": {
+          "max": 8.0
+        },
+        "enchantment_value": {
+            "add": 6
+        },
+        "melee_damage": {
+            "add": 2.0
+        },
+        "rarity": 100
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:stellar",
+          "level": 3
+        },
+        {
+          "name": "silentgear:void_ward",
+          "level": 1
+        },
+        {
+          "name": "silentcompat:mana_boost",
+          "level": 5,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:vorpal",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        }
+      ],
+      "rod": [
+        {
+            "name": "silentgear:malleable",
+            "level": 5
+        },
+        {
+          "name": "silentgear:flexible",
+          "level": 2
+        }
+      ],
+      "tip": [
+        {
+            "name": "silentcompat:mana_boost",
+            "level": 2,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.66
+              }
+            ]
+        },
+        {
+            "name": "silentgear:malleable",
+            "level": 4
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#74b7ed"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#74b7ed"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#74b7ed"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#74b7ed"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#74b7ed"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#74b7ed"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }

@@ -19,4 +19,5 @@ public class TraitConst {
 	public static final DataResource<ITrait> COLD = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "cold"));
 	public static final DataResource<ITrait> EMU_DODGE = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "emu_dodge"));
 	public static final DataResource<ITrait> JOLT_HIT = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "jolt_hit"));
+	public static final DataResource<ITrait> PURIFYING = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "purifying"));
 }

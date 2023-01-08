@@ -1,0 +1,211 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/mythril"
+      }
+    },
+    "name": {
+      "text": "Mythril"
+    },
+    "stats": {
+      "main": {
+        "durability": 1259.0,
+        "armor_durability": 26.0,
+        "enchantment_value": 40.0,
+        "rarity": 110.0,
+        "charging_value": 2.0,
+        "repair_value": 0.5,
+        "harvest_level": 5.0,
+        "harvest_speed": 11.0,
+        "melee_damage": 5.0,
+        "magic_damage": 11.0,
+        "attack_speed": 0.2,
+        "ranged_damage": 1.0,
+        "ranged_speed": 0.3,
+        "projectile_speed": 2.0,
+        "projectile_accuracy": 2.0,
+        "armor": 25.0,
+        "armor/helmet": 5.0,
+        "armor/chestplate": 9.0,
+        "armor/leggings": 7.0,
+        "armor/boots": 4.0,
+        "armor_toughness": 12.0,
+        "magic_armor": 23.0
+      },
+      "rod": {
+        "harvest_speed": {
+          "mul2": 0.1
+        },
+        "durability": {
+          "mul2": -0.2
+        },
+        "magic_damage": {
+            "mul2": 0.2
+        },
+          "rarity": 50.0
+        },
+      "tip": {
+        "durability": {
+          "add": 300.0
+        },
+        "armor_durability": {
+          "add": 9.0
+        },
+        "harvest_level": {
+          "max": 4.0
+        },
+        "magic_armor": {
+            "add": 2.0
+        }
+      },
+      "coating": {
+
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:malleable",
+          "level": 2
+        },
+        {
+            "name": "silentgear:soft",
+            "level": 1
+        },
+        {
+          "name": "silentgear:renew",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.35
+            }
+          ]
+        },
+        {
+            "name": "silentcompat:mana_boost",
+            "level": 5,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.66
+              }
+            ]
+        },
+        {
+            "name": "silentgear:holy",
+            "level": 5
+        }
+      ],
+      "rod": [
+        {
+            "name": "silentgear:bending",
+            "level": 2
+        }
+      ],
+      "tip": [
+        {
+            "name": "silentgear:holy",
+            "level": 5
+        }
+      ],
+      "coating": [
+        {
+            "name": "silentgear:renew",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.35
+              }
+            ]
+        },
+        {
+            "name": "silentcompat:mana_boost",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.66
+              }
+            ]
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#74b7ed"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#74b7ed"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#74b7ed"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#74b7ed"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#74b7ed"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#74b7ed"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ],
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#74b7ed"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#74b7ed"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,104 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/nlatstone"
+      }
+    },
+    "name": {
+      "translate": "Nlatstone"
+    },
+    "stats": {
+      "main": {
+        "durability": 1900.0,
+        "armor_durability": 30.0,
+        "enchantment_value": 16.0,
+        "harvest_level": 5.0,
+        "harvest_speed": 12.0,
+        "melee_damage": 5.0,
+        "magic_damage": 6.0,
+        "attack_speed": 0.0,
+        "armor": 25.0,
+        "armor/helmet": 4.0,
+        "armor/chestplate": 9.0,
+        "armor/leggings": 8.0,
+        "armor/boots": 4.0,
+        "armor_toughness": 12.0,
+        "magic_armor": 12.0,
+        "ranged_damage": 2.0,
+        "ranged_speed": 0.0,
+        "rarity": 100.0,
+        "charging_value": 1.2
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.13
+        },
+        "repair_efficiency": {
+          "mul2": 0.13
+        },
+        "rarity": 80.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:malleable",
+          "level": 3
+        },
+        {
+            "name": "silentcompat:bludgeoning",
+            "level": 2
+        },
+        {
+            "name": "silentgear:terminus",
+            "level": 1
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:sturdy",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#B3B3FF"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#B3B3FF"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#B3B3FF"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#B3B3FF"
+        }
+      ]
+    }
+  }

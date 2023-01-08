@@ -1,0 +1,91 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/echo"
+      }
+    },
+    "name": {
+      "text": "Echo"
+    },
+    "stats": {
+      "main": {
+        "durability": 2031.0,
+        "armor_durability": 38.0,
+        "enchantment_value": 11.0,
+        "rarity": 110.0,
+        "charging_value": 0.8,
+        "harvest_level": 5.0,
+        "harvest_speed": 9.0,
+        "melee_damage": 6.0,
+        "magic_damage": 4.0,
+        "attack_speed": 0.1,
+        "ranged_damage": 3.0,
+        "ranged_speed": 0.0,
+        "projectile_speed": 1.0,
+        "projectile_accuracy": 1.0,
+        "armor": 25.0,
+        "armor/helmet": 5.0,
+        "armor/chestplate": 9.0,
+        "armor/leggings": 7.0,
+        "armor/boots": 4.0,
+        "armor_toughness": 12.0,
+        "magic_armor": 10.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:hard",
+          "level": 3
+        },
+        {
+            "name": "silentcompat:dark_ward",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.66
+              }
+            ]
+        },
+        {
+            "name": "silentcompat:nocturnal",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.66
+              }
+            ]
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#05272e"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#05272e"
+        }
+      ]
+    }
+  }

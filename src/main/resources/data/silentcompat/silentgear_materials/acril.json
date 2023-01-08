@@ -1,0 +1,85 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 9,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/acril"
+      }
+    },
+    "name": {
+      "text": "Acril"
+    },
+    "stats": {
+      "main": {
+        "durability": 5052.0,
+        "armor_durability": 54.0,
+        "enchantment_value": 13.0,
+        "rarity": 165.0,
+        "charging_value": 1.0,
+        "harvest_level": 11.0,
+        "harvest_speed": 18.0,
+        "melee_damage": 16.0,
+        "magic_damage": 7.0,
+        "attack_speed": 0.1,
+        "ranged_damage": 5.0,
+        "ranged_speed": 1.0,
+        "projectile_speed": 2.0,
+        "projectile_accuracy": 4.0,
+        "armor": 65.0,
+        "armor/helmet": 15.0,
+        "armor/chestplate": 18.0,
+        "armor/leggings": 17.0,
+        "armor/boots": 15.0,
+        "armor_toughness": 16.0,
+        "magic_armor": 16.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:chipping",
+          "level": 3,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        },
+        {
+            "name": "silentcompat:bludgeoning",
+            "level": 3
+        },
+        {
+            "name": "silentgear:crushing",
+            "level": 4
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#74b7ed"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#74b7ed"
+        }
+      ]
+    }
+  }

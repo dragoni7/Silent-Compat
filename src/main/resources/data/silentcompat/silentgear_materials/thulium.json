@@ -1,0 +1,151 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/thulium"
+      }
+    },
+    "name": {
+      "text": "Thulium"
+    },
+    "stats": {
+      "main": {
+        "durability": 1359.0,
+        "armor_durability": 29.0,
+        "enchantment_value": 14.0,
+        "rarity": 100.0,
+        "charging_value": 0.8,
+        "harvest_level": 5.0,
+        "harvest_speed": 8.0,
+        "melee_damage": 5.0,
+        "magic_damage": 5.0,
+        "attack_speed": 0.0,
+        "ranged_damage": 2.0,
+        "ranged_speed": 0.2,
+        "armor": 25.0,
+        "armor/helmet": 5.0,
+        "armor/chestplate": 9.0,
+        "armor/leggings": 7.0,
+        "armor/boots": 4.0,
+        "armor_toughness": 12.0,
+        "magic_armor": 8.0
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.2
+        }
+        },
+      "tip": {
+        "durability": {
+          "add": 300.0
+        },
+        "harvest_level": {
+          "max": 5.0
+        },
+        "armor_durability": {
+          "add": 9.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:malleable",
+          "level": 2
+        },
+        {
+            "name": "silentgear:magnetic",
+            "level": 4,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.66
+              }
+            ]
+        },
+        {
+            "name": "silentcompat:jolt_hit",
+            "level": 2
+        }
+      ],
+      "rod": [
+        {
+            "name": "silentgear:soft",
+            "level": 2
+        }
+      ],
+      "tip": [
+        {
+          "name": "silentgear:magnetic",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        },
+        {
+          "name": "silentgear:soft",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#855c56"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#855c56"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#855c56"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#855c56"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#855c56"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#855c56"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }

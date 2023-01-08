@@ -69,6 +69,16 @@
         {
             "name": "silentgear:soft",
             "level": 3
+        },
+                {
+          "name": "silentgear:snow_walker",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:gear_type",
+              "gear_type": "boots"
+            }
+          ]
         }
       ],
       "grip": [

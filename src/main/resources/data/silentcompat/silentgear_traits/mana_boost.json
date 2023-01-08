@@ -5,7 +5,7 @@
       "text": "Mana Boost"
     },
     "description": {
-      "translate": "Grants additional max mana"
+      "translate": "Grants additional max mana. (Requires: Ars Nouveau)"
     },
     "attribute_modifiers": {
       "all": [

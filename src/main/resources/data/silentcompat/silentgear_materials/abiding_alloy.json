@@ -1,0 +1,101 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 10,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/abiding_alloy"
+      }
+    },
+    "name": {
+      "text": "Abiding Alloy"
+    },
+    "stats": {
+      "main": {
+        "durability": 6552.0,
+        "armor_durability": 119.0,
+        "enchantment_value": 23.0,
+        "rarity": 170.0,
+        "charging_value": 1.0,
+        "harvest_level": 12.0,
+        "harvest_speed": 24.0,
+        "melee_damage": 20.0,
+        "magic_damage": 7.0,
+        "attack_speed": 0.1,
+        "ranged_damage": 7.0,
+        "ranged_speed": 9.0,
+        "projectile_speed": 9.0,
+        "projectile_accuracy": 9.0,
+        "armor": 75.0,
+        "armor/helmet": 17.0,
+        "armor/chestplate": 22.0,
+        "armor/leggings": 20.0,
+        "armor/boots": 16.0,
+        "armor_toughness": 20.0,
+        "magic_armor": 18.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:lustrous",
+          "level": 5,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        },
+        {
+            "name": "silentgear:sturdy",
+            "level": 5
+        },
+        {
+            "name": "silentgear:stellar",
+            "level": 5
+        },
+        {
+            "name": "silentgear:mighty",
+            "level": 5
+        },
+        {
+            "name": "silentgear:void_ward",
+            "level": 5
+        },
+        {
+            "name": "silentgear:cure_wither",
+            "level": 1
+        },
+        {
+            "name": "silentcompat:purifying",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#74b7ed"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#74b7ed"
+        }
+      ]
+    }
+  }

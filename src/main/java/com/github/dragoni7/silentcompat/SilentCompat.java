@@ -12,7 +12,7 @@ import com.github.dragoni7.silentcompat.trait.ColdTrait;
 import com.github.dragoni7.silentcompat.trait.DecayTrait;
 import com.github.dragoni7.silentcompat.trait.DiurnalTrait;
 import com.github.dragoni7.silentcompat.trait.DodgingTrait;
-import com.github.dragoni7.silentcompat.trait.EdibleTrait;
+import com.github.dragoni7.silentcompat.trait.ChocolateChipping;
 import com.github.dragoni7.silentcompat.trait.EmuDodgeTrait;
 import com.github.dragoni7.silentcompat.trait.EnderFluTrait;
 import com.github.dragoni7.silentcompat.trait.FeatherWeightTrait;
@@ -26,6 +26,7 @@ import com.github.dragoni7.silentcompat.trait.KnockoutTrait;
 import com.github.dragoni7.silentcompat.trait.LuckyBreak;
 import com.github.dragoni7.silentcompat.trait.NeptunesMightTrait;
 import com.github.dragoni7.silentcompat.trait.NocturnalTrait;
+import com.github.dragoni7.silentcompat.trait.PurifyingTrait;
 import com.github.dragoni7.silentcompat.trait.RetaliatingBlastTrait;
 import com.github.dragoni7.silentcompat.trait.JoltHitTrait;
 import com.github.dragoni7.silentcompat.trait.SoulStealTrait;
@@ -75,7 +76,7 @@ public class SilentCompat {
 		registerTrait(DecayTrait.SERIALIZER);
 		registerTrait(EnderFluTrait.SERIALIZER);
 		registerTrait(DodgingTrait.SERIALIZER);
-		registerTrait(EdibleTrait.SERIALIZER);
+		registerTrait(ChocolateChipping.SERIALIZER);
 		registerTrait(FleetFootedTrait.SERIALIZER);
 		registerTrait(FreezingTrait.SERIALIZER);
 		registerTrait(FeatherWeightTrait.SERIALIZER);
@@ -95,6 +96,7 @@ public class SilentCompat {
 		registerTrait(ColdTrait.SERIALIZER);
 		registerTrait(EmuDodgeTrait.SERIALIZER);
 		registerTrait(JoltHitTrait.SERIALIZER);
+		registerTrait(PurifyingTrait.SERIALIZER);
 	}
 
 	private void registerTrait(ITraitSerializer<?> serializer) {

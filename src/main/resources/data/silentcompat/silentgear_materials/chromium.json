@@ -12,39 +12,37 @@
     },
     "crafting_items": {
       "main": {
-        "tag": "forge:ingots/bunny_steel"
+        "tag": "forge:ingots/chromium"
       }
     },
     "name": {
-      "translate": "material.silentcompat.bunny_steel"
+      "text": "Chromium"
     },
     "stats": {
       "main": {
-        "durability": 540.0,
-        "armor_durability": 21.0,
-        "repair_value": 0.2,
-        "enchantment_value": 15.0,
+        "durability": 1660.0,
+        "armor_durability": 20.0,
+        "enchantment_value": 11.0,
         "harvest_level": 3.0,
         "harvest_speed": 8.0,
-        "melee_damage": 5.0,
-        "magic_damage": 2.0,
-        "attack_speed": 0.0,
-        "attack_speed/axe": -0.1,
-        "armor": 20.0,
+        "melee_damage": 3.0,
+        "magic_damage": 1.5,
+        "attack_speed": 0.1,
+        "armor": 18.0,
         "armor/helmet": 3.0,
-        "armor/chestplate": 8.0,
-        "armor/leggings": 6.0,
+        "armor/chestplate": 7.0,
+        "armor/leggings": 5.0,
         "armor/boots": 3.0,
-        "armor_toughness": 2.0,
-        "magic_armor": 7.0,
-        "ranged_damage": 2.0,
-        "ranged_speed": 0.1,
-        "rarity": 35.0,
+        "armor_toughness": 8.0,
+        "magic_armor": 6.0,
+        "ranged_damage": 1.0,
+        "ranged_speed": 0.0,
+        "rarity": 45.0,
         "charging_value": 1.0
       },
       "rod": {
         "durability": {
-          "mul2": 0.25
+          "mul2": 0.3
         },
         "rarity": 45.0
       }
@@ -53,25 +51,15 @@
       "main": [
         {
           "name": "silentgear:malleable",
-          "level": 5
+          "level": 3
         },
         {
-          "name": "silentcompat:dodging",
-          "level": 2,
+          "name": "silentgear:hard",
+          "level": 5,
           "conditions": [
             {
               "type": "silentgear:material_ratio",
               "ratio": 0.5
-            }
-          ]
-        },
-        {
-          "name": "silentcompat:bunny_jump",
-          "level": 2,
-          "conditions": [
-            {
-              "type": "silentgear:gear_type",
-              "gear_type": "boots"
             }
           ]
         }
@@ -79,7 +67,11 @@
       "rod": [
         {
           "name": "silentgear:malleable",
-          "level": 5
+          "level": 2
+        },
+        {
+          "name": "silentgear:hard",
+          "level": 3
         }
       ]
     },
@@ -87,7 +79,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#a6893f"
+          "color": "#9f9f9f"
         },
         {
           "texture": "silentgear:_highlight"
@@ -96,21 +88,20 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#a6893f"
+          "color": "#9f9f9f"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_hc",
-          "color": "#a6893f"
+          "color": "#9f9f9f"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#a6893f"
+          "color": "#9f9f9f"
         }
       ]
     }
   }
-  

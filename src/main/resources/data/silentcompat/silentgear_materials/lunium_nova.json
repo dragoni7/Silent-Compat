@@ -1,0 +1,165 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 9,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/lunium_nova"
+      }
+    },
+    "name": {
+      "text": "Lunium Nova"
+    },
+    "stats": {
+      "main": {
+        "durability": 5552.0,
+        "armor_durability": 94.0,
+        "enchantment_value": 23.0,
+        "rarity": 170.0,
+        "charging_value": 1.0,
+        "harvest_level": 11.0,
+        "harvest_speed": 22.0,
+        "melee_damage": 17.0,
+        "magic_damage": 7.0,
+        "attack_speed": 0.2,
+        "ranged_damage": 7.0,
+        "ranged_speed": 1.0,
+        "projectile_speed": 1.0,
+        "projectile_accuracy": 2.0,
+        "armor": 65.0,
+        "armor/helmet": 15.0,
+        "armor/chestplate": 18.0,
+        "armor/leggings": 17.0,
+        "armor/boots": 15.0,
+        "armor_toughness": 18.0,
+        "magic_armor": 18.0
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.5
+        },
+        "ranged_damage": {
+            "add": 3.0
+        },
+        "harvest_speed": {
+            "mul2": 0.5
+        },
+        "rarity": 140.0
+      },
+      "tip": {
+        "harvest_level": {
+          "max": 11.0
+        },
+        "melee_damage": {
+            "add": 4.0
+        },
+        "harvest_speed": {
+            "add": 3.0
+        },
+        "rarity": 140
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:lustrous",
+          "level": 5,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        },
+        {
+            "name": "silentgear:confetti",
+            "level": 5
+        },
+        {
+            "name": "silentgear:stellar",
+            "level": 4
+        },
+        {
+            "name": "silentgear:accelerate",
+            "level": 3
+        }
+      ],
+      "rod": [
+        {
+            "name": "silentgear:sturdy",
+            "level": 5
+        }
+      ],
+      "tip": [
+        {
+            "name": "silentgear:sturdy",
+            "level": 3
+        },
+        {
+            "name": "silentgear:chipping",
+            "level": 5,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.66
+              }
+            ]
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#74b7ed"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#74b7ed"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#74b7ed"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#74b7ed"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#74b7ed"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#74b7ed"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }

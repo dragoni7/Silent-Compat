@@ -4,8 +4,7 @@
     "availability": {
       "tier": 4,
       "categories": [
-        "metal",
-        "organic"
+        "metal"
       ],
       "visible": true,
       "gear_blacklist": [],
@@ -13,86 +12,73 @@
     },
     "crafting_items": {
       "main": {
-        "tag": "forge:ingots/sculk_alloy"
+        "tag": "forge:ingots/estalt"
       }
     },
     "name": {
-      "translate": "material.silentcompat.sculk_alloy"
+      "text": "Estalt"
     },
     "stats": {
       "main": {
-        "durability": 2400.0,
-        "armor_durability": 48.0,
-        "repair_value": -0.2,
-        "enchantment_value": 10.0,
-        "harvest_level": 3.0,
-        "harvest_speed": 10.0,
+        "durability": 1400.0,
+        "armor_durability": 20.0,
+        "enchantment_value": 19.0,
+        "rarity": 60.0,
+        "charging_value": 0.9,
+        "harvest_level": 4.0,
+        "harvest_speed": 7.0,
         "melee_damage": 4.0,
-        "magic_damage": 4.0,
-        "attack_speed": 0.1,
+        "magic_damage": 2.0,
+        "attack_speed": -0.1,
+        "ranged_damage": 1.0,
+        "ranged_speed": -0.1,
+        "projectile_speed": 1.0,
+        "projectile_accuracy": 1.3,
         "armor": 22.0,
         "armor/helmet": 4.0,
         "armor/chestplate": 8.0,
         "armor/leggings": 6.0,
         "armor/boots": 4.0,
-        "armor_toughness": 8.0,
-        "magic_armor": 6.0,
-        "ranged_damage": 3.0,
-        "ranged_speed": 0.2,
-        "rarity": 40.0,
-        "charging_value": 0.8
+        "armor_toughness": 2.0,
+        "magic_armor": 10.0
       },
       "rod": {
-		"durability": {
-            "mul2": -0.2
+        "ranged_damage": {
+          "add": 1.0
         }
       },
       "tip": {
         "durability": {
-          "add": 500.0
+          "add": 148.0
+        },
+        "harvest_level": {
+          "max": 4.0
+        },
+        "rarity": {
+          "add": 20.0
         }
       }
     },
     "traits": {
       "main": [
         {
-          "name": "silentgear:ancient",
-          "level": 3
-        },
-        {
-          "name": "silentcompat:swift_sneak",
+          "name": "silentgear:malleable",
           "level": 2
         },
         {
-          "name": "silentcompat:mending",
-          "level": 1,
-          "conditions": [
-            {
-              "type": "silentgear:material_ratio",
-              "ratio": 0.5
-            }
-          ]
+          "name": "silentgear:hard",
+          "level": 1
         }
       ],
       "rod": [
         {
-          "name": "silentgear:malleable",
-          "level": 5
-        },
-        {
-            "name": "silentcompat:mending",
-            "level": 1,
-            "conditions": [
-              {
-                "type": "silentgear:material_ratio",
-                "ratio": 0.5
-              }
-            ]
+          "name": "silentgear:flexible",
+          "level": 1
         }
       ],
       "tip": [
         {
-          "name": "silentgear:sturdy",
+          "name": "silentgear:sharp",
           "level": 1
         }
       ]
@@ -101,7 +87,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#05272e"
+          "color": "#DC143C"
         },
         {
           "texture": "silentgear:_highlight"
@@ -110,25 +96,25 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#05272e"
+          "color": "#DC143C"
         }
       ],
       "rod/all": [
         {
-          "texture": "silentgear:rod_generic_hc",
-          "color": "#05272e"
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#DC143C"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#05272e"
+          "color": "#DC143C"
         }
       ],
       "tip/all": [
         {
           "texture": "silentgear:tip_sharp",
-          "color": "#05272e"
+          "color": "#DC143C"
         }
       ],
       "tip/part": [
@@ -137,7 +123,7 @@
         },
         {
           "texture": "silentgear:tip",
-          "color": "#05272e"
+          "color": "#DC143C"
         },
         {
           "texture": "silentgear:tip_shine"
@@ -145,4 +131,3 @@
       ]
     }
   }
-  

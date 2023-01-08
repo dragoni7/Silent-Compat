@@ -1,0 +1,120 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/thlanium"
+      }
+    },
+    "name": {
+      "text": "Thlanium"
+    },
+    "stats": {
+      "main": {
+        "durability": 2459.0,
+        "armor_durability": 36.0,
+        "enchantment_value": 20.0,
+        "rarity": 110.0,
+        "charging_value": 1.5,
+        "harvest_level": 5.0,
+        "harvest_speed": 12.0,
+        "melee_damage": 5.0,
+        "magic_damage": 6.0,
+        "attack_speed": 0.1,
+        "ranged_damage": 1.0,
+        "ranged_speed": 0.5,
+        "armor": 25.0,
+        "armor/helmet": 5.0,
+        "armor/chestplate": 9.0,
+        "armor/leggings": 7.0,
+        "armor/boots": 4.0,
+        "armor_toughness": 16.0,
+        "magic_armor": 8.0
+      },
+      "rod": {
+        "harvest_speed": {
+          "mul2": 0.1
+        },
+        "ranged_speed": {
+          "mul2": 0.15
+        },
+        "durability": {
+            "mul2": -0.1
+        },
+        "repair_efficiency": {
+            "mul2": 0.1
+        },
+        "rarity": 80.0
+        }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:malleable",
+          "level": 5
+        },
+        {
+          "name": "silentgear:venom",
+          "level": 1
+        },
+        {
+          "name": "silentcompat:dodging",
+          "level": 1
+        },
+        {
+            "name": "silentgear:magnetic",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.66
+              }
+            ]
+        }
+      ],
+      "rod": [
+        {
+            "name": "silentgear:malleable",
+            "level": 3
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#e089ce"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#e089ce"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#e089ce"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#e089ce"
+        }
+      ]
+    }
+  }

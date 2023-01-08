@@ -5,7 +5,7 @@
       "text": "Spell Damage"
     },
     "description": {
-      "translate": "Grants additional spell damage"
+      "translate": "Grants additional spell damage. (Requires: Ars Nouveau)"
     },
     "attribute_modifiers": {
       "all": [

@@ -2,7 +2,7 @@
     "type": "silentgear:standard",
     "simple": true,
     "availability": {
-      "tier": 3,
+      "tier": 2,
       "categories": [
         "metal"
       ],
@@ -12,52 +12,53 @@
     },
     "crafting_items": {
       "main": {
-        "tag": "forge:ingots/bunny_steel"
+        "tag": "forge:ingots/magnesium"
       }
     },
     "name": {
-      "translate": "material.silentcompat.bunny_steel"
+      "text": "Magnesium"
     },
     "stats": {
       "main": {
-        "durability": 540.0,
-        "armor_durability": 21.0,
-        "repair_value": 0.2,
-        "enchantment_value": 15.0,
-        "harvest_level": 3.0,
+        "durability": 365.0,
+        "armor_durability": 15.0,
+        "enchantment_value": 14.0,
+        "harvest_level": 2.0,
         "harvest_speed": 8.0,
-        "melee_damage": 5.0,
+        "melee_damage": 2.0,
         "magic_damage": 2.0,
-        "attack_speed": 0.0,
-        "attack_speed/axe": -0.1,
-        "armor": 20.0,
-        "armor/helmet": 3.0,
-        "armor/chestplate": 8.0,
-        "armor/leggings": 6.0,
-        "armor/boots": 3.0,
-        "armor_toughness": 2.0,
-        "magic_armor": 7.0,
+        "attack_speed": 0.2,
+        "armor": 14.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 6.0,
+        "armor/leggings": 4.0,
+        "armor/boots": 2.0,
+        "armor_toughness": 0.5,
+        "magic_armor": 3.0,
         "ranged_damage": 2.0,
-        "ranged_speed": 0.1,
-        "rarity": 35.0,
-        "charging_value": 1.0
+        "ranged_speed": 0.2,
+        "rarity": 25.0,
+        "charging_value": 0.9
       },
       "rod": {
         "durability": {
-          "mul2": 0.25
+          "mul2": 0.2
         },
-        "rarity": 45.0
+        "ranged_damage": {
+          "mul2": 0.1
+        },
+        "rarity": 30.0
       }
     },
     "traits": {
       "main": [
         {
-          "name": "silentgear:malleable",
-          "level": 5
+          "name": "silentgear:brittle",
+          "level": 3
         },
         {
-          "name": "silentcompat:dodging",
-          "level": 2,
+          "name": "silentgear:flammable",
+          "level": 1,
           "conditions": [
             {
               "type": "silentgear:material_ratio",
@@ -66,20 +67,18 @@
           ]
         },
         {
-          "name": "silentcompat:bunny_jump",
-          "level": 2,
-          "conditions": [
-            {
-              "type": "silentgear:gear_type",
-              "gear_type": "boots"
-            }
-          ]
+          "name": "silentgear:fiery",
+          "level": 1
         }
       ],
       "rod": [
         {
-          "name": "silentgear:malleable",
-          "level": 5
+          "name": "silentgear:brittle",
+          "level": 3
+        },
+        {
+          "name": "silentgear:fiery",
+          "level": 1
         }
       ]
     },
@@ -87,7 +86,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#a6893f"
+          "color": "#8b7a79"
         },
         {
           "texture": "silentgear:_highlight"
@@ -96,21 +95,20 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#a6893f"
+          "color": "#8b7a79"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_hc",
-          "color": "#a6893f"
+          "color": "#8b7a79"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#a6893f"
+          "color": "#8b7a79"
         }
       ]
     }
   }
-  

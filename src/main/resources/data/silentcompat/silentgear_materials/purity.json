@@ -41,13 +41,9 @@
     "traits": {
       "main": [
         {
-          "name": "silentgear:cure_poison",
+          "name": "silentcompat:purifying",
           "level": 1,
           "conditions": [
-            {
-              "type": "silentgear:gear_type",
-              "gear_type": "armor"
-            },
             {
               "type": "silentgear:material_ratio",
               "ratio": 0.66

@@ -72,7 +72,17 @@
       {
         "name": "silentcompat:feather_falling",
         "level": 4
-      }
+      },
+              {
+          "name": "silentgear:snow_walker",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:gear_type",
+              "gear_type": "boots"
+            }
+          ]
+        }
     ],
     "grip": [
       {

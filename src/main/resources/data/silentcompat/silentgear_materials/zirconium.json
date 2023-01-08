@@ -20,8 +20,8 @@
   },
   "stats": {
     "main": {
-      "durability": 2031.0,
-      "armor_durability": 37.0,
+      "durability": 531.0,
+      "armor_durability": 21.0,
       "enchantment_value": 13.0,
       "rarity": 80.0,
       "charging_value": 1.3,
@@ -44,7 +44,11 @@
   "traits": {
     "main": [
       {
-        "name": "silentgear:brittle",
+        "name": "silentgear:flexible",
+        "level": 3
+      },
+      {
+        "name": "silentgear:soft",
         "level": 1
       },
       {

@@ -12,74 +12,55 @@
     },
     "crafting_items": {
       "main": {
-        "tag": "forge:ingots/cast_iron"
+        "tag": "forge:ingots/boron"
       }
     },
     "name": {
-      "translate": "Cast Iron"
+      "text": "Boron"
     },
     "stats": {
       "main": {
-        "durability": 460.0,
-        "armor_durability": 18.0,
+        "durability": 250.0,
+        "armor_durability": 15.0,
         "enchantment_value": 14.0,
+        "rarity": 20.0,
+        "charging_value": 0.8,
         "harvest_level": 2.0,
         "harvest_speed": 6.0,
-        "melee_damage": 3.0,
-        "magic_damage": 1.0,
-        "attack_speed": -0.05,
+        "melee_damage": 2.0,
+        "magic_damage": 3.0,
+        "attack_speed": 0.1,
         "attack_speed/axe": -0.1,
-        "armor": 19.0,
-        "armor/helmet": 3.0,
-        "armor/chestplate": 7.0,
-        "armor/leggings": 6.0,
-        "armor/boots": 3.0,
-        "magic_armor": 6.0,
-        "ranged_damage": 1.1,
-        "ranged_speed": 0.1,
-        "projectile_speed": 1.0,
-        "projectile_accuracy": 1.1,
-        "rarity": 20.0,
-        "charging_value": 0.7
+        "ranged_damage": 1.0,
+        "ranged_speed": 0.2,
+        "projectile_speed": 1.2,
+        "projectile_accuracy": 1.0,
+        "armor": 15.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 6.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 2.0,
+        "magic_armor": 8.0
       },
-      "rod": {
-        "durability": {
-          "mul2": 0.2
-        },
-        "enchantment_value": [
-          {
-            "add": -2.0
-          },
-          {
-            "mul2": -0.1
-          }
-        ],
-        "melee_damage": {
-          "mul2": 0.11
-        },
-        "rarity": 20.0
-      },
+      "rod": {},
       "tip": {
         "durability": {
-          "add": 228.0
+          "add": 128.0
         },
         "armor_durability": {
-          "add": 6.0
+          "add": 4.0
         },
         "harvest_level": {
           "max": 2.0
         },
         "harvest_speed": {
-          "add": -0.01
-        },
-        "attack_speed": {
-            "add": -0.01
+          "add": 1.0
         },
         "melee_damage": {
-          "add": 2.0
+          "add": 1.0
         },
         "ranged_speed": {
-          "add": 0.1
+          "add": 0.3
         },
         "rarity": {
           "add": 8.0
@@ -89,15 +70,15 @@
     "traits": {
       "main": [
         {
-          "name": "silentcompat:blast_resistant",
+          "name": "silentgear:brittle",
           "level": 1
         },
         {
-          "name": "silentgear:hard",
-          "level": 1
+            "name": "silentgear:light",
+            "level": 1
         },
         {
-          "name": "silentgear:crushing",
+          "name": "silentgear:magnetic",
           "level": 2,
           "conditions": [
             {
@@ -109,13 +90,13 @@
       ],
       "rod": [
         {
-            "name": "silentgear:hard",
+            "name": "silentgear:brittle",
             "level": 1
         }
       ],
       "tip": [
         {
-            "name": "silentgear:hard",
+            "name": "silentgear:brittle",
             "level": 1
         }
       ]
@@ -124,7 +105,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#42413c"
+          "color": "#547991"
         },
         {
           "texture": "silentgear:_highlight"
@@ -133,35 +114,34 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#42413c"
+          "color": "#547991"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_lc",
-          "color": "#42413c"
+          "color": "#547991"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#42413c"
+          "color": "#547991"
         }
       ],
       "tip/all": [
         {
           "texture": "silentgear:tip_sharp",
-          "color": "#42413c"
+          "color": "#547991"
         }
       ],
       "tip/part": [
         {
-          "texture": "silentgear:tip_base",
-          "color": "#42413c"
+          "texture": "silentgear:tip_base"
         },
         {
           "texture": "silentgear:tip",
-          "color": "#42413c"
+          "color": "#547991"
         },
         {
           "texture": "silentgear:tip_shine"

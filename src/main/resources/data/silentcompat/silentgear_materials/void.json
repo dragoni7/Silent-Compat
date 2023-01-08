@@ -1,0 +1,101 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 8,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/void"
+      }
+    },
+    "name": {
+      "text": "Void"
+    },
+    "stats": {
+      "main": {
+        "durability": 7152.0,
+        "armor_durability": 104.0,
+        "enchantment_value": 6.0,
+        "rarity": 150.0,
+        "charging_value": 0.6,
+        "harvest_level": 9.0,
+        "harvest_speed": 1.0,
+        "melee_damage": 14.0,
+        "magic_damage": 7.0,
+        "attack_speed": -0.3,
+        "ranged_damage": 5.0,
+        "ranged_speed": -1.0,
+        "projectile_speed": -1.0,
+        "projectile_accuracy": -0.8,
+        "armor": 45.0,
+        "armor/helmet": 10.0,
+        "armor/chestplate": 15.0,
+        "armor/leggings": 11.0,
+        "armor/boots": 9.0,
+        "armor_toughness": 12.0,
+        "magic_armor": 13.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:heavy",
+          "level": 5,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        },
+        {
+          "name": "silentgear:bastion",
+          "level": 5,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:dense",
+          "level": 4,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        },
+        {
+            "name": "silentcompat:bulwark",
+            "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#74b7ed"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#74b7ed"
+        }
+      ]
+    }
+  }

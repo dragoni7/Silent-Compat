@@ -2,10 +2,9 @@
     "type": "silentgear:standard",
     "simple": true,
     "availability": {
-      "tier": 4,
+      "tier": 3,
       "categories": [
-        "metal",
-        "organic"
+        "metal"
       ],
       "visible": true,
       "gear_blacklist": [],
@@ -13,87 +12,93 @@
     },
     "crafting_items": {
       "main": {
-        "tag": "forge:ingots/sculk_alloy"
+        "tag": "forge:ingots/tellurium"
       }
     },
     "name": {
-      "translate": "material.silentcompat.sculk_alloy"
+      "text": "Tellurium"
     },
     "stats": {
       "main": {
-        "durability": 2400.0,
-        "armor_durability": 48.0,
-        "repair_value": -0.2,
-        "enchantment_value": 10.0,
-        "harvest_level": 3.0,
-        "harvest_speed": 10.0,
-        "melee_damage": 4.0,
+        "durability": 1776.0,
+        "armor_durability": 36.0,
+        "enchantment_value": 12.0,
+        "rarity": 75.0,
+        "charging_value": 0.9,
+        "repair_value": 0.5,
+        "harvest_level": 4.0,
+        "harvest_speed": 8.0,
+        "melee_damage": 3.0,
         "magic_damage": 4.0,
-        "attack_speed": 0.1,
+        "attack_speed": -0.1,
+        "ranged_damage": 2.0,
+        "ranged_speed": 0.0,
+        "projectile_speed": 1.0,
+        "projectile_accuracy": 1.0,
         "armor": 22.0,
         "armor/helmet": 4.0,
         "armor/chestplate": 8.0,
         "armor/leggings": 6.0,
         "armor/boots": 4.0,
         "armor_toughness": 8.0,
-        "magic_armor": 6.0,
-        "ranged_damage": 3.0,
-        "ranged_speed": 0.2,
-        "rarity": 40.0,
-        "charging_value": 0.8
+        "magic_armor": 4.0
       },
       "rod": {
-		"durability": {
-            "mul2": -0.2
+        "harvest_speed": {
+          "mul2": 0.15
         }
       },
       "tip": {
         "durability": {
-          "add": 500.0
+          "add": 360.0
+        },
+        "armor_durability": {
+          "add": 16.0
+        },
+        "harvest_level": {
+          "max": 4.0
+        },
+        "rarity": {
+          "add": 25.0
         }
       }
     },
     "traits": {
       "main": [
         {
-          "name": "silentgear:ancient",
-          "level": 3
+          "name": "silentgear:brittle",
+          "level": 4
         },
         {
-          "name": "silentcompat:swift_sneak",
-          "level": 2
-        },
-        {
-          "name": "silentcompat:mending",
+          "name": "silentgear:flame_ward",
           "level": 1,
           "conditions": [
             {
-              "type": "silentgear:material_ratio",
-              "ratio": 0.5
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 3
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.33
+                }
+              ]
             }
           ]
         }
       ],
       "rod": [
         {
-          "name": "silentgear:malleable",
-          "level": 5
-        },
-        {
-            "name": "silentcompat:mending",
-            "level": 1,
-            "conditions": [
-              {
-                "type": "silentgear:material_ratio",
-                "ratio": 0.5
-              }
-            ]
+            "name": "silentgear:brittle",
+            "level": 3
         }
       ],
       "tip": [
         {
-          "name": "silentgear:sturdy",
-          "level": 1
+            "name": "silentgear:brittle",
+            "level": 3
         }
       ]
     },
@@ -101,7 +106,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#05272e"
+          "color": "#a6e0c1"
         },
         {
           "texture": "silentgear:_highlight"
@@ -110,25 +115,25 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#05272e"
+          "color": "#a6e0c1"
         }
       ],
       "rod/all": [
         {
-          "texture": "silentgear:rod_generic_hc",
-          "color": "#05272e"
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#a6e0c1"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#05272e"
+          "color": "#a6e0c1"
         }
       ],
       "tip/all": [
         {
           "texture": "silentgear:tip_sharp",
-          "color": "#05272e"
+          "color": "#a6e0c1"
         }
       ],
       "tip/part": [
@@ -137,7 +142,7 @@
         },
         {
           "texture": "silentgear:tip",
-          "color": "#05272e"
+          "color": "#a6e0c1"
         },
         {
           "texture": "silentgear:tip_shine"
@@ -145,4 +150,3 @@
       ]
     }
   }
-  

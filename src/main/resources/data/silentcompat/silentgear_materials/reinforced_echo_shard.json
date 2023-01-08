@@ -72,6 +72,10 @@
         {
           "name": "silentcompat:vorpal",
           "level": 1
+        },
+		{
+          "name": "silentcompat:dark_ward",
+          "level": 1
         }
       ]
     },
