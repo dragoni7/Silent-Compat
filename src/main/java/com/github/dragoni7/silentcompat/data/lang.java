@@ -1,9 +1,10 @@
 package com.github.dragoni7.silentcompat.data;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.core.MaterialRegistry;
-import com.github.dragoni7.silentcompat.core.MaterialSet;
-import com.github.dragoni7.silentcompat.core.SilentCompatItems;
+import com.github.dragoni7.silentcompat.core.registry.MaterialRegistry;
+import com.github.dragoni7.silentcompat.core.registry.MaterialSet;
+import com.github.dragoni7.silentcompat.core.registry.SilentCompatEffects;
+import com.github.dragoni7.silentcompat.core.registry.SilentCompatItems;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
@@ -29,6 +30,8 @@ public class lang extends LanguageProvider {
 		add(SilentCompatItems.OUTBACK_LEATHER.get(), "Outback Leather");
 		add(SilentCompatItems.RAW_PLASTEEL.get(), "Raw Plasteel");
 		add(SilentCompatItems.CHOCOLATECHIP.get(), "Chocolate Chip");
+		
+		add(SilentCompatEffects.AMPLIFIED.get(), "Amplified");
 		
 		add("trait.silentcompat.diurnal", "Diurnal");
 		add("trait.silentcompat.diurnal.desc", "Deal increased damage during the day. Gear slowly repairs during the day");
@@ -80,8 +83,13 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.emu_dodge.desc", "Grants a chance to avoid projectile damage. Requires full armor set");
 		add("trait.silentcompat.jolt_hit", "Jolt Hit");
 		add("trait.silentcompat.jolt_hit.desc", "Attacks have a chance to jolt the target, making it take extra damage and bounce damage to a nearby entity");
+		add("trait.silentcompat.amplifying", "Amplifying");
+		add("trait.silentcompat.amplifying.desc", "Getting a kill has a chance to grant the amplified effect. Requires full set");
 		add("trait.silentcompat.purifying", "Purifying");
 		add("trait.silentcompat.purifying.desc", "Rare chance to remove harmful effects when hit. Requires full set");
+		
+		// JEED
+		add("effect.silentcompat.amplified.description", "Increases speed. Allows certain abilities such as Jolt Hit to proc");
 	}
 	
 	private void translateMaterialSet(MaterialSet set, String name) {

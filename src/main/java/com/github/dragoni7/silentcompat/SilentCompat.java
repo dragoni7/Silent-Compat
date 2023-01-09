@@ -1,13 +1,15 @@
 package com.github.dragoni7.silentcompat;
 
-import com.github.dragoni7.silentcompat.core.MaterialRegistry;
-import com.github.dragoni7.silentcompat.core.SilentCompatBlocks;
-import com.github.dragoni7.silentcompat.core.SilentCompatItems;
-import com.github.dragoni7.silentcompat.core.SilentCompatParticles;
-import com.github.dragoni7.silentcompat.core.SilentCompatSoundEvents;
-import com.github.dragoni7.silentcompat.core.event.ClientEventHandler;
+import com.github.dragoni7.silentcompat.core.registry.MaterialRegistry;
+import com.github.dragoni7.silentcompat.core.registry.SilentCompatBlocks;
+import com.github.dragoni7.silentcompat.core.registry.SilentCompatEffects;
+import com.github.dragoni7.silentcompat.core.registry.SilentCompatItems;
+import com.github.dragoni7.silentcompat.core.registry.SilentCompatParticles;
+import com.github.dragoni7.silentcompat.core.registry.SilentCompatSoundEvents;
+import com.github.dragoni7.silentcompat.event.ClientEventHandler;
 import com.github.dragoni7.silentcompat.networking.Networking;
 import com.github.dragoni7.silentcompat.trait.AbyssalSynergyTrait;
+import com.github.dragoni7.silentcompat.trait.AmplifyingTrait;
 import com.github.dragoni7.silentcompat.trait.ColdTrait;
 import com.github.dragoni7.silentcompat.trait.DecayTrait;
 import com.github.dragoni7.silentcompat.trait.DiurnalTrait;
@@ -60,13 +62,14 @@ public class SilentCompat {
 		SilentCompatParticles.PARTICLES.register(modEventBus);
 		SilentCompatItems.ITEMS.register(modEventBus);
 		SilentCompatBlocks.BLOCKS.register(modEventBus);
+		SilentCompatEffects.MOB_EFFECTS.register(modEventBus);
 		MaterialRegistry.init();
 		registerTraits();
 		MinecraftForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::commonSetup);
 
 		if (FMLEnvironment.dist == Dist.CLIENT) {
-			ClientEventHandler.init(modEventBus);
+			ClientEventHandler.setUp(modEventBus);
 		}
 	}
 
@@ -97,6 +100,7 @@ public class SilentCompat {
 		registerTrait(EmuDodgeTrait.SERIALIZER);
 		registerTrait(JoltHitTrait.SERIALIZER);
 		registerTrait(PurifyingTrait.SERIALIZER);
+		registerTrait(AmplifyingTrait.SERIALIZER);
 	}
 
 	private void registerTrait(ITraitSerializer<?> serializer) {

@@ -1,4 +1,4 @@
- package com.github.dragoni7.silentcompat.core;
+ package com.github.dragoni7.silentcompat.consts;
 
 import net.minecraft.resources.ResourceLocation;
 

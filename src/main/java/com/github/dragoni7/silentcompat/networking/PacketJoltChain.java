@@ -2,7 +2,7 @@ package com.github.dragoni7.silentcompat.networking;
 
 import java.util.function.Supplier;
 
-import com.github.dragoni7.silentcompat.core.SilentCompatParticles;
+import com.github.dragoni7.silentcompat.core.registry.SilentCompatParticles;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.core.MaterialRegistry;
+import com.github.dragoni7.silentcompat.core.registry.MaterialRegistry;
 
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataGenerator;

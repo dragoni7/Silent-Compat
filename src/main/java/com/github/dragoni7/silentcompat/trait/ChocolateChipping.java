@@ -3,7 +3,7 @@ package com.github.dragoni7.silentcompat.trait;
 import java.util.Collection;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.core.SilentCompatItems;
+import com.github.dragoni7.silentcompat.core.registry.SilentCompatItems;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;

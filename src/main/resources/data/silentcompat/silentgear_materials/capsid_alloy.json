@@ -80,7 +80,7 @@
           ]
         },
         {
-          "name": "silentgear:organic",
+          "name": "silentcompat:amplifying",
           "level": 1
         },
         {
@@ -121,31 +121,31 @@
       "main/all": [
       {
         "texture": "silentgear:main_generic_lc",
-        "color": "#c76ad4"
+        "color": "#6b2d91"
       }
     ],
     "main/fragment": [
       {
         "texture": "silentgear:cloth",
-        "color": "#c76ad4"
+        "color": "#6b2d91"
       }
     ],
     "grip/all": [
       {
         "texture": "silentgear:grip_wool",
-        "color": "#c76ad4"
+        "color": "#6b2d91"
       }
     ],
     "grip/part": [
       {
         "texture": "silentgear:grip",
-        "color": "#c76ad4"
+        "color": "#6b2d91"
       }
     ],
     "lining/part": [
       {
         "texture": "silentgear:lining_cloth",
-        "color": "#c76ad4"
+        "color": "#6b2d91"
       }
     ]
     }

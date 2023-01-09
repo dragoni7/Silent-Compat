@@ -1,4 +1,4 @@
-package com.github.dragoni7.silentcompat.core;
+package com.github.dragoni7.silentcompat.core.registry;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
 

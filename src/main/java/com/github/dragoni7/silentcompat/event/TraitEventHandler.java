@@ -1,8 +1,9 @@
-package com.github.dragoni7.silentcompat.core.event;
+package com.github.dragoni7.silentcompat.event;
 
-import com.github.dragoni7.silentcompat.core.ModEffectsLocs;
-import com.github.dragoni7.silentcompat.core.SilentCompatSoundEvents;
-import com.github.dragoni7.silentcompat.core.TraitConst;
+import com.github.dragoni7.silentcompat.consts.ModEffectsLocs;
+import com.github.dragoni7.silentcompat.consts.TraitConst;
+import com.github.dragoni7.silentcompat.core.registry.SilentCompatEffects;
+import com.github.dragoni7.silentcompat.core.registry.SilentCompatSoundEvents;
 import com.github.dragoni7.silentcompat.networking.Networking;
 import com.github.dragoni7.silentcompat.networking.PacketImmuneParticles;
 import com.github.dragoni7.silentcompat.networking.PacketJoltChain;
@@ -28,6 +29,7 @@ import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.AABB;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -134,7 +136,7 @@ public class TraitEventHandler {
 					immuneEffects(serverPlayer, attacker);
 					event.setCanceled(true);
 				}
-				
+
 				if (purifyingCount == 4 && random.nextFloat() < 0.15F) {
 					// remove all harmful effects from the entity
 					for (MobEffectInstance effect : attacked.getActiveEffects()) {
@@ -248,9 +250,11 @@ public class TraitEventHandler {
 
 		Player player = (Player) attacker;
 		ServerPlayer serverPlayer = null;
+
 		if (player instanceof ServerPlayer) {
 			serverPlayer = (ServerPlayer) player;
 		}
+
 		ItemStack weapon = player.getMainHandItem();
 
 		if (!(weapon.getItem() instanceof ICoreTool))
@@ -289,15 +293,14 @@ public class TraitEventHandler {
 
 		// Jolt Hit Trait
 		double joltHit = TraitHelper.getTraitLevel(weapon, TraitConst.JOLT_HIT);
-		if (joltHit > 0 && player.getRandom().nextFloat() < 0.35F) {
+		if (joltHit > 0 && player.hasEffect(SilentCompatEffects.AMPLIFIED.get())) {
 
-			Mob nearestEntity = attacked.level.getNearestEntity(Mob.class,
-					TargetingConditions.forCombat(), attacked, attacked.getX(), attacked.getY(), attacked.getZ(),
+			Mob nearestEntity = attacked.level.getNearestEntity(Mob.class, TargetingConditions.forCombat(), attacked,
+					attacked.getX(), attacked.getY(), attacked.getZ(),
 					(new AABB(attacked.blockPosition())).inflate(10.0D, 10.0D, 10.0D));
 
 			if (!player.level.isClientSide) {
-				attacked.level.playSound(null, attacked.blockPosition(), SilentCompatSoundEvents.ELECTRIC_ZAP.get(),
-						SoundSource.PLAYERS, 0.5f, 1.0f);
+				attacked.level.playSound(null, attacked.blockPosition(), SilentCompatSoundEvents.ELECTRIC_ZAP.get(), SoundSource.PLAYERS, 0.5f, 1.0f);
 
 				if (serverPlayer != null) {
 					Networking.sendToClient(new PacketJoltParticles(attacked.getId()), serverPlayer);
@@ -314,6 +317,36 @@ public class TraitEventHandler {
 			if (nearestEntity != null) {
 				nearestEntity.hurt(DamageSource.LIGHTNING_BOLT, (float) (joltHit + 1));
 			}
+			
+			player.removeEffect(SilentCompatEffects.AMPLIFIED.get());
+		}
+	}
+
+	@SubscribeEvent
+	public static void onKillEntity(LivingDeathEvent event) {
+		
+		DamageSource source = event.getSource();
+		Entity killer = source.getDirectEntity();
+		
+		if (killer instanceof Player) {
+			Player player = (Player) killer;
+
+			int amplifyingCount = 0;
+			MobEffect amplified = SilentCompatEffects.AMPLIFIED.get();
+			
+			for (EquipmentSlot slot : ARMOR_ONLY) {
+				ItemStack stack = player.getItemBySlot(slot);
+				// Amplifying
+				if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.AMPLIFYING.get())) {
+					amplifyingCount++;
+				}
+			}
+			
+			// Requires full set
+			if (amplifyingCount == 4 && !player.hasEffect(amplified)) {
+				player.level.playSound(null, player.blockPosition(), SoundEvents.LIGHTNING_BOLT_THUNDER, SoundSource.PLAYERS, 0.6f, 2.6f);
+				player.addEffect(new MobEffectInstance(amplified, 120));
+			}
 		}
 	}
 
@@ -323,7 +356,7 @@ public class TraitEventHandler {
 			Networking.sendToClient(new PacketImmuneParticles(player.getId()), player);
 		}
 
-		attacker.level.playSound(null, player.blockPosition(), SoundEvents.SHIELD_BLOCK, SoundSource.NEUTRAL, 0.4f, 1.5f);
+		attacker.level.playSound(null, player.blockPosition(), SoundEvents.SHIELD_BLOCK, SoundSource.PLAYERS, 0.4f, 1.5f);
 	}
 
 }

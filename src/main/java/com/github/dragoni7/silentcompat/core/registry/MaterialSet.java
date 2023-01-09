@@ -1,4 +1,4 @@
-package com.github.dragoni7.silentcompat.core;
+package com.github.dragoni7.silentcompat.core.registry;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
 
@@ -15,16 +15,16 @@ import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.RegistryObject;
 
 public class MaterialSet {
-	public String name;
+	public final String name;
 	public final TagKey<Item> ingotTag;
 	public final TagKey<Item> nuggetTag;
 	public final TagKey<Item> blockItemTag;
 	public final TagKey<Block> blockTag;
 	
-	public RegistryObject<Item> ingot;
-	public RegistryObject<Item> nugget;
-	public RegistryObject<Item> blockItem;
-	public RegistryObject<Block> block;
+	public final RegistryObject<Item> ingot;
+	public final RegistryObject<Item> nugget;
+	public final RegistryObject<Item> blockItem;
+	public final RegistryObject<Block> block;
 	
 	public MaterialSet(String name, MaterialColor color) {
 		this.name = name;

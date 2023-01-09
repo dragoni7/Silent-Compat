@@ -1,6 +1,6 @@
 package com.github.dragoni7.silentcompat.networking;
 
-import com.github.dragoni7.silentcompat.core.SilentCompatParticles;
+import com.github.dragoni7.silentcompat.core.registry.SilentCompatParticles;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

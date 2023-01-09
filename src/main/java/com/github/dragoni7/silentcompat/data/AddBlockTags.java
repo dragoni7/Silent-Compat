@@ -1,8 +1,8 @@
 package com.github.dragoni7.silentcompat.data;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.core.MaterialRegistry;
-import com.github.dragoni7.silentcompat.core.MaterialSet;
+import com.github.dragoni7.silentcompat.core.registry.MaterialRegistry;
+import com.github.dragoni7.silentcompat.core.registry.MaterialSet;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
