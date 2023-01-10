@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:voidmetal_nugget"
+    },
+    {
+      "item": "silentcompat:voidmetal_nugget"
+    },
+    {
+      "item": "silentcompat:voidmetal_nugget"
+    },
+    {
+      "item": "silentcompat:voidmetal_nugget"
+    },
+    {
+      "item": "silentcompat:voidmetal_nugget"
+    },
+    {
+      "item": "silentcompat:voidmetal_nugget"
+    },
+    {
+      "item": "silentcompat:voidmetal_nugget"
+    },
+    {
+      "item": "silentcompat:voidmetal_nugget"
+    },
+    {
+      "item": "silentcompat:voidmetal_nugget"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:voidmetal_ingot"
+  }
+}

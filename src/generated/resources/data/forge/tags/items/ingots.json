@@ -1,11 +1,14 @@
 {
   "values": [
-    "silentcompat:midnight_iron_ingot",
-    "silentcompat:bunny_steel_ingot",
-    "silentcompat:dark_chocolate_ingot",
-    "silentcompat:sculk_alloy_ingot",
     "silentcompat:capsid_alloy_ingot",
+    "silentcompat:arcmetal_ingot",
     "silentcompat:plasteel_ingot",
-    "silentcompat:source_steel_ingot"
+    "silentcompat:voidmetal_ingot",
+    "silentcompat:source_steel_ingot",
+    "silentcompat:sculk_alloy_ingot",
+    "silentcompat:midnight_iron_ingot",
+    "silentcompat:solarmetal_ingot",
+    "silentcompat:dark_chocolate_ingot",
+    "silentcompat:bunny_steel_ingot"
   ]
 }

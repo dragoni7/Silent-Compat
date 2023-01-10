@@ -311,11 +311,11 @@ public class TraitEventHandler {
 							serverPlayer);
 				}
 			}
-
+			
 			event.setAmount((float) (event.getAmount() + (joltHit + 1)));
 
 			if (nearestEntity != null) {
-				nearestEntity.hurt(DamageSource.LIGHTNING_BOLT, (float) (joltHit + 1));
+				nearestEntity.hurt(DamageSource.LIGHTNING_BOLT, (float) (joltHit + 2));
 			}
 			
 			player.removeEffect(SilentCompatEffects.AMPLIFIED.get());

@@ -22,18 +22,16 @@ public class AddItemTags extends ItemTagsProvider {
 	@Override
 	protected void addTags() {
 		
-		addMaterialTags(MaterialRegistry.MIDNIGHTIRON);
-		addMaterialTags(MaterialRegistry.BUNNYSTEEL);
-		addMaterialTags(MaterialRegistry.DARKCHOCOLATE);
-		addMaterialTags(MaterialRegistry.SCULKALLOY);
-		addMaterialTags(MaterialRegistry.CAPSID_ALLOY);
-		addMaterialTags(MaterialRegistry.PLASTEEL);
-		addMaterialTags(MaterialRegistry.SOURCE_STEEL);
+		for (MaterialSet set : MaterialRegistry.MATERIAL_SETS.values()) {
+			addMaterialTags(set);
+		}
 		
 		tag(Tags.Items.RAW_MATERIALS).add(SilentCompatItems.RAW_PLASTEEL.get());
 		tag(SilentCompatItemTags.RAW_PLASTEEL).add(SilentCompatItems.RAW_PLASTEEL.get());
 		
 		tag(SilentCompatItemTags.OUTBACK_LEATHER).add(SilentCompatItems.OUTBACK_LEATHER.get());
+		
+		tag(SilentCompatItemTags.WARDEN_INGOT).add(SilentCompatItems.WARDEN_INGOT.get());
 		
 		// Other mod's items:
 		

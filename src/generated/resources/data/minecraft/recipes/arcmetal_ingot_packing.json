@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:arcmetal_ingot"
+    },
+    {
+      "item": "silentcompat:arcmetal_ingot"
+    },
+    {
+      "item": "silentcompat:arcmetal_ingot"
+    },
+    {
+      "item": "silentcompat:arcmetal_ingot"
+    },
+    {
+      "item": "silentcompat:arcmetal_ingot"
+    },
+    {
+      "item": "silentcompat:arcmetal_ingot"
+    },
+    {
+      "item": "silentcompat:arcmetal_ingot"
+    },
+    {
+      "item": "silentcompat:arcmetal_ingot"
+    },
+    {
+      "item": "silentcompat:arcmetal_ingot"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:arcmetal_block"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "silentcompat:block/arcmetal_block"
+    }
+  }
+}

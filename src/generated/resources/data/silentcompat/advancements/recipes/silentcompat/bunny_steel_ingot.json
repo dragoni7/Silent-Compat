@@ -1,13 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "silentcompat:bunny_steel_ingot"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
-    "steel_ingot": {
+    "has_steel_ingot": {
       "conditions": {
         "items": [
           {
@@ -18,11 +12,17 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "silentcompat:bunny_steel_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "steel_ingot",
+      "has_steel_ingot",
       "has_the_recipe"
     ]
   ],

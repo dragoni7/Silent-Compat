@@ -20,17 +20,15 @@ public class SilentCompatItemModels extends ItemModelProvider {
 
 	@Override
 	protected void registerModels() {
-		registerMaterialSetItemModels(MaterialRegistry.MIDNIGHTIRON);
-		registerMaterialSetItemModels(MaterialRegistry.BUNNYSTEEL);
-		registerMaterialSetItemModels(MaterialRegistry.DARKCHOCOLATE);
-		registerMaterialSetItemModels(MaterialRegistry.SCULKALLOY);
-		registerMaterialSetItemModels(MaterialRegistry.CAPSID_ALLOY);
-		registerMaterialSetItemModels(MaterialRegistry.PLASTEEL);
-		registerMaterialSetItemModels(MaterialRegistry.SOURCE_STEEL);
+		
+		for (MaterialSet set : MaterialRegistry.MATERIAL_SETS.values()) {
+			registerMaterialSetItemModels(set);
+		}
 		
 		singleTextureItemModel(SilentCompatItems.RAW_PLASTEEL, "item/raw_plasteel");
 		singleTextureItemModel(SilentCompatItems.OUTBACK_LEATHER, "item/outback_leather");
 		singleTextureItemModel(SilentCompatItems.CHOCOLATECHIP, "item/chocolate_chip");
+		singleTextureItemModel(SilentCompatItems.WARDEN_INGOT, "item/warden_ingot");
 	}
 	
 	private void registerMaterialSetItemModels(MaterialSet set) {

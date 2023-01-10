@@ -7,6 +7,7 @@ import java.util.Map;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
 import com.github.dragoni7.silentcompat.core.registry.MaterialRegistry;
+import com.github.dragoni7.silentcompat.core.registry.MaterialSet;
 
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataGenerator;
@@ -32,13 +33,17 @@ public class SilentCompatLootTables extends LootTableProvider {
 	}
 	
 	protected void addTables() {
-		basicBlockTable(MaterialRegistry.BUNNYSTEEL.block.get(), "bunny_steel_block");
+		/*basicBlockTable(MaterialRegistry.BUNNYSTEEL.block.get(), "bunny_steel_block");
 		basicBlockTable(MaterialRegistry.CAPSID_ALLOY.block.get(), "capsid_alloy_block");
 		basicBlockTable(MaterialRegistry.DARKCHOCOLATE.block.get(), "dark_chocolate_block");
 		basicBlockTable(MaterialRegistry.MIDNIGHTIRON.block.get(), "midnight_iron_block");
 		basicBlockTable(MaterialRegistry.SCULKALLOY.block.get(), "sculk_alloy_block");
 		basicBlockTable(MaterialRegistry.PLASTEEL.block.get(), "plasteel_block");
-		basicBlockTable(MaterialRegistry.SOURCE_STEEL.block.get(), "source_steel_block");
+		basicBlockTable(MaterialRegistry.SOURCE_STEEL.block.get(), "source_steel_block");*/
+		
+		for (MaterialSet set : MaterialRegistry.MATERIAL_SETS.values()) {
+			basicBlockTable(set.block.get(), set.name + "_block");
+		}
 	}
 	
 	@Override

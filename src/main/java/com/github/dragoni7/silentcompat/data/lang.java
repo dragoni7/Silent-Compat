@@ -1,5 +1,7 @@
 package com.github.dragoni7.silentcompat.data;
 
+import org.codehaus.plexus.util.StringUtils;
+
 import com.github.dragoni7.silentcompat.SilentCompat;
 import com.github.dragoni7.silentcompat.core.registry.MaterialRegistry;
 import com.github.dragoni7.silentcompat.core.registry.MaterialSet;
@@ -19,13 +21,19 @@ public class lang extends LanguageProvider {
 	protected void addTranslations() {
 		add("itemGroup." + SilentCompat.MODID, "SilentCompat");
 		
-		translateMaterialSet(MaterialRegistry.MIDNIGHTIRON, "Midnight Iron");
+		/*translateMaterialSet(MaterialRegistry.MIDNIGHTIRON, "Midnight Iron");
 		translateMaterialSet(MaterialRegistry.BUNNYSTEEL, "Bunny Steel");
 		translateMaterialSet(MaterialRegistry.DARKCHOCOLATE, "Dark Chocolate");
 		translateMaterialSet(MaterialRegistry.SCULKALLOY, "Sculk Alloy");
 		translateMaterialSet(MaterialRegistry.CAPSID_ALLOY, "Capsid Alloy");
 		translateMaterialSet(MaterialRegistry.PLASTEEL, "Plasteel");
-		translateMaterialSet(MaterialRegistry.SOURCE_STEEL, "Source Steel");
+		translateMaterialSet(MaterialRegistry.SOURCE_STEEL, "Source Steel");*/
+		
+		for (MaterialSet set : MaterialRegistry.MATERIAL_SETS.values()) {
+			String name = set.name.replace('_', ' ');
+			StringUtils.capitaliseAllWords(name);
+			translateMaterialSet(set, name);
+		}
 		
 		add(SilentCompatItems.OUTBACK_LEATHER.get(), "Outback Leather");
 		add(SilentCompatItems.RAW_PLASTEEL.get(), "Raw Plasteel");
@@ -82,7 +90,7 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.emu_dodge", "Emu Dodge");
 		add("trait.silentcompat.emu_dodge.desc", "Grants a chance to avoid projectile damage. Requires full armor set");
 		add("trait.silentcompat.jolt_hit", "Jolt Hit");
-		add("trait.silentcompat.jolt_hit.desc", "Attacks have a chance to jolt the target, making it take extra damage and bounce damage to a nearby entity");
+		add("trait.silentcompat.jolt_hit.desc", "Consumes amplified, dealing bonus damage and chaining to a nearby entity.");
 		add("trait.silentcompat.amplifying", "Amplifying");
 		add("trait.silentcompat.amplifying.desc", "Getting a kill has a chance to grant the amplified effect. Requires full set");
 		add("trait.silentcompat.purifying", "Purifying");

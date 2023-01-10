@@ -17,13 +17,17 @@ public class AddBlockTags extends BlockTagsProvider {
 	}
 	
 	protected void addTags() {
-		addMaterialTags(MaterialRegistry.MIDNIGHTIRON);
+		/*addMaterialTags(MaterialRegistry.MIDNIGHTIRON);
 		addMaterialTags(MaterialRegistry.BUNNYSTEEL);
 		addMaterialTags(MaterialRegistry.DARKCHOCOLATE);
 		addMaterialTags(MaterialRegistry.SCULKALLOY);
 		addMaterialTags(MaterialRegistry.CAPSID_ALLOY);
 		addMaterialTags(MaterialRegistry.PLASTEEL);
-		addMaterialTags(MaterialRegistry.SOURCE_STEEL);
+		addMaterialTags(MaterialRegistry.SOURCE_STEEL);*/
+		
+		for (MaterialSet set : MaterialRegistry.MATERIAL_SETS.values()) {
+			addMaterialTags(set);
+		}
 	}
 	
 	private void addMaterialTags(MaterialSet set) {

@@ -10,6 +10,7 @@ import net.minecraft.world.item.Item;
 public class SilentCompatItemTags {
 	
 	public static final TagKey<Item> RAW_PLASTEEL = forgeTag("raw_materials/plasteel");
+	public static final TagKey<Item> WARDEN_INGOT = forgeTag("ingots/warden");
 	public static final TagKey<Item> OUTBACK_LEATHER = createTag("outback_leather");
 	
 	// Other mod's items

@@ -18,7 +18,7 @@ public class JoltHitTrait extends SimpleTrait {
 	@Override
     public Collection<String> getExtraWikiLines() {
         Collection<String> ret = super.getExtraWikiLines();
-        ret.add("Attacks have a chance to jolt the target, making it take extra damage and bounce damage to a nearby entity");
+        ret.add("Consumes amplified, dealing bonus damage and chaining to a nearby entity.");
         return ret;
     }
 }

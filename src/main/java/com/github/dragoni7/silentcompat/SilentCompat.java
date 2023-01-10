@@ -1,7 +1,6 @@
 package com.github.dragoni7.silentcompat;
 
 import com.github.dragoni7.silentcompat.core.registry.MaterialRegistry;
-import com.github.dragoni7.silentcompat.core.registry.SilentCompatBlocks;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatEffects;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatItems;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatParticles;
@@ -60,10 +59,8 @@ public class SilentCompat {
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		SilentCompatSoundEvents.SOUND_EVENTS.register(modEventBus);
 		SilentCompatParticles.PARTICLES.register(modEventBus);
-		SilentCompatItems.ITEMS.register(modEventBus);
-		SilentCompatBlocks.BLOCKS.register(modEventBus);
 		SilentCompatEffects.MOB_EFFECTS.register(modEventBus);
-		MaterialRegistry.init();
+		MaterialRegistry.register(modEventBus);
 		registerTraits();
 		MinecraftForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::commonSetup);
@@ -116,7 +113,7 @@ public class SilentCompat {
 	public static final CreativeModeTab SilentCompatTab = (new CreativeModeTab("silentcompat") {
 		@Override
 		public ItemStack makeIcon() {
-			return new ItemStack(MaterialRegistry.CAPSID_ALLOY.ingot.get());
+			return new ItemStack(MaterialRegistry.MATERIAL_SETS.get("capsid_alloy").ingot.get());
 		}
 	});
 }

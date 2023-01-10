@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:solarmetal_ingot_packing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "solarmetal_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "silentcompat:solarmetal_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "solarmetal_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:solarmetal_ingot_packing"
+    ]
+  }
+}

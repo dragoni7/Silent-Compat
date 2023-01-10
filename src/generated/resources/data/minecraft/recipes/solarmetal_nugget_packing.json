@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "item": "silentcompat:solarmetal_nugget"
+    },
+    {
+      "item": "silentcompat:solarmetal_nugget"
+    },
+    {
+      "item": "silentcompat:solarmetal_nugget"
+    },
+    {
+      "item": "silentcompat:solarmetal_nugget"
+    },
+    {
+      "item": "silentcompat:solarmetal_nugget"
+    },
+    {
+      "item": "silentcompat:solarmetal_nugget"
+    },
+    {
+      "item": "silentcompat:solarmetal_nugget"
+    },
+    {
+      "item": "silentcompat:solarmetal_nugget"
+    },
+    {
+      "item": "silentcompat:solarmetal_nugget"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:solarmetal_ingot"
+  }
+}

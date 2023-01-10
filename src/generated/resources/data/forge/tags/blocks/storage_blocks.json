@@ -1,11 +1,14 @@
 {
   "values": [
-    "silentcompat:midnight_iron_block",
-    "silentcompat:bunny_steel_block",
-    "silentcompat:dark_chocolate_block",
-    "silentcompat:sculk_alloy_block",
     "silentcompat:capsid_alloy_block",
+    "silentcompat:arcmetal_block",
     "silentcompat:plasteel_block",
-    "silentcompat:source_steel_block"
+    "silentcompat:voidmetal_block",
+    "silentcompat:source_steel_block",
+    "silentcompat:sculk_alloy_block",
+    "silentcompat:midnight_iron_block",
+    "silentcompat:solarmetal_block",
+    "silentcompat:dark_chocolate_block",
+    "silentcompat:bunny_steel_block"
   ]
 }

@@ -1,11 +1,14 @@
 {
   "values": [
-    "silentcompat:midnight_iron_nugget",
-    "silentcompat:bunny_steel_nugget",
-    "silentcompat:dark_chocolate_nugget",
-    "silentcompat:sculk_alloy_nugget",
     "silentcompat:capsid_alloy_nugget",
+    "silentcompat:arcmetal_nugget",
     "silentcompat:plasteel_nugget",
-    "silentcompat:source_steel_nugget"
+    "silentcompat:voidmetal_nugget",
+    "silentcompat:source_steel_nugget",
+    "silentcompat:sculk_alloy_nugget",
+    "silentcompat:midnight_iron_nugget",
+    "silentcompat:solarmetal_nugget",
+    "silentcompat:dark_chocolate_nugget",
+    "silentcompat:bunny_steel_nugget"
   ]
 }

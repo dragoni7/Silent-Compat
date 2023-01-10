@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "coco_beans": {
+    "has_coco_beans": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "coco_beans",
+      "has_coco_beans",
       "has_the_recipe"
     ]
   ],

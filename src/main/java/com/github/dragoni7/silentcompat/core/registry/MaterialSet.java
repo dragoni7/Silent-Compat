@@ -34,7 +34,7 @@ public class MaterialSet {
 		this.blockItemTag = ItemTags.create(new ResourceLocation("forge", "storage_blocks/" + name));
 		this.blockTag = BlockTags.create(new ResourceLocation("forge", "storage_blocks/" + name));
 		
-		block = SilentCompatBlocks.BLOCKS.register(name + "_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).color(color)));
+		block = MaterialRegistry.BLOCKS.register(name + "_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).color(color)));
 		ingot = SilentCompatItems.ITEMS.register(name + "_ingot", ()-> new Item(new Item.Properties().tab(SilentCompat.SilentCompatTab)));
 		nugget = SilentCompatItems.ITEMS.register(name + "_nugget", ()-> new Item(new Item.Properties().tab(SilentCompat.SilentCompatTab)));
 		blockItem = SilentCompatItems.ITEMS.register(name + "_block", ()-> new BlockItem(this.block.get(), new Item.Properties().tab(SilentCompat.SilentCompatTab)));

@@ -3,6 +3,7 @@ package com.github.dragoni7.silentcompat.data;
 import java.util.ArrayList;
 
 import com.github.dragoni7.silentcompat.core.registry.MaterialRegistry;
+import com.github.dragoni7.silentcompat.core.registry.MaterialSet;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.level.block.Block;
@@ -17,7 +18,7 @@ public class SilentCompatBlockStates extends BlockStateProvider {
 
 	@Override
 	protected void registerStatesAndModels() {
-		ArrayList<Block> blocks = new ArrayList<Block>();
+		/*ArrayList<Block> blocks = new ArrayList<Block>();
 		blocks.add(MaterialRegistry.MIDNIGHTIRON.block.get());
 		blocks.add(MaterialRegistry.BUNNYSTEEL.block.get());
 		blocks.add(MaterialRegistry.DARKCHOCOLATE.block.get());
@@ -28,6 +29,10 @@ public class SilentCompatBlockStates extends BlockStateProvider {
 		
 		for(Block b : blocks) {
 			simpleBlock(b);
+		}*/
+		
+		for (MaterialSet set : MaterialRegistry.MATERIAL_SETS.values()) {
+			simpleBlock(set.block.get());
 		}
 	}
 

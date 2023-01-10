@@ -1,8 +1,11 @@
-// 1.19.2	2022-11-17T11:09:20.786434	SilentCompat LootTables
+// 1.19.2	2023-01-09T15:17:37.4124686	SilentCompat LootTables
+582adf146615d7417d5630c9a0068c9403989244 data/silentcompat/loot_tables/blocks/arcmetal_block.json
 c35334a199ba4b1db5414c94dd609fb7eece245d data/silentcompat/loot_tables/blocks/bunny_steel_block.json
 b4313bbe53f634cc0e36f96cd576030014329494 data/silentcompat/loot_tables/blocks/capsid_alloy_block.json
 19f4d12c4a8920c85fb978d301e9f1f0a4385531 data/silentcompat/loot_tables/blocks/dark_chocolate_block.json
 0c4a15ade56579de33d04598fd640af19f0545c3 data/silentcompat/loot_tables/blocks/midnight_iron_block.json
 5dd6c95ce71159a1c0dfa37415995131cd953e36 data/silentcompat/loot_tables/blocks/plasteel_block.json
 8a243f2107533485cd586c25761db7ca13b35dd4 data/silentcompat/loot_tables/blocks/sculk_alloy_block.json
+b1a8610c83b71500c0a0499edbff1e3770a3d55b data/silentcompat/loot_tables/blocks/solarmetal_block.json
 9823f24e261c851fb8475d80d3f3aa105a1676d1 data/silentcompat/loot_tables/blocks/source_steel_block.json
+438d5037caffcc1bc725683bf41420001824ec9e data/silentcompat/loot_tables/blocks/voidmetal_block.json

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:voidmetal_nugget_packing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "voidmetal_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "silentcompat:voidmetal_nugget"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "voidmetal_nugget",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:voidmetal_nugget_packing"
+    ]
+  }
+}

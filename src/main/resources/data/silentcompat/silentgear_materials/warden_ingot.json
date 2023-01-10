@@ -4,7 +4,7 @@
     "availability": {
       "tier": 4,
       "categories": [
-        "gem"
+        "metal"
       ],
       "visible": true,
       "gear_blacklist": [],
@@ -12,14 +12,14 @@
     },
     "crafting_items": {
       "main": {
-        "tag": "deeperdarker:reinforced_echo_shard"
+        "tag": "forge:ingots/warden"
       }
     },
     "name": {
-      "translate": "Reinforced Echo Shard"
+      "text": "Warden Ingot"
     },
     "name_prefix": {
-      "translate": "Warden"
+      "text": "Warden"
     },
     "stats": {
       "coating": {
@@ -73,7 +73,7 @@
           "name": "silentcompat:vorpal",
           "level": 1
         },
-		{
+		    {
           "name": "silentcompat:dark_ward",
           "level": 1
         }
