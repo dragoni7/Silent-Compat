@@ -1,6 +1,7 @@
 {
     "type": "silentcompat:amplifying",
     "max_level": 1,
+    "cancels_with": ["silentcompat:devouring"],
     "conditions": [
       {
         "type": "silentgear:gear_type",

@@ -21,25 +21,19 @@ public class lang extends LanguageProvider {
 	protected void addTranslations() {
 		add("itemGroup." + SilentCompat.MODID, "SilentCompat");
 		
-		/*translateMaterialSet(MaterialRegistry.MIDNIGHTIRON, "Midnight Iron");
-		translateMaterialSet(MaterialRegistry.BUNNYSTEEL, "Bunny Steel");
-		translateMaterialSet(MaterialRegistry.DARKCHOCOLATE, "Dark Chocolate");
-		translateMaterialSet(MaterialRegistry.SCULKALLOY, "Sculk Alloy");
-		translateMaterialSet(MaterialRegistry.CAPSID_ALLOY, "Capsid Alloy");
-		translateMaterialSet(MaterialRegistry.PLASTEEL, "Plasteel");
-		translateMaterialSet(MaterialRegistry.SOURCE_STEEL, "Source Steel");*/
-		
 		for (MaterialSet set : MaterialRegistry.MATERIAL_SETS.values()) {
 			String name = set.name.replace('_', ' ');
-			StringUtils.capitaliseAllWords(name);
+			name = StringUtils.capitaliseAllWords(name);
 			translateMaterialSet(set, name);
 		}
 		
 		add(SilentCompatItems.OUTBACK_LEATHER.get(), "Outback Leather");
 		add(SilentCompatItems.RAW_PLASTEEL.get(), "Raw Plasteel");
 		add(SilentCompatItems.CHOCOLATECHIP.get(), "Chocolate Chip");
+		add(SilentCompatItems.WARDEN_INGOT.get(), "Warden Ingot");
 		
 		add(SilentCompatEffects.AMPLIFIED.get(), "Amplified");
+		add(SilentCompatEffects.DEVOURING.get(), "Devouring");
 		
 		add("trait.silentcompat.diurnal", "Diurnal");
 		add("trait.silentcompat.diurnal.desc", "Deal increased damage during the day. Gear slowly repairs during the day");
@@ -72,7 +66,7 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.knockout", "Knockout");
 		add("trait.silentcompat.knockout.desc", "Chance to inflict a heavy knockback to targets");
 		add("trait.silentcompat.abyssal_synergy", "Abyssal Synergy");
-		add("trait.silentcompat.abyssal_synergy.desc", "Tools deal more damage and less durability loss the deeper you are");
+		add("trait.silentcompat.abyssal_synergy.desc", "Tools deal more damage the deeper you are. Less durability loss the deeper you are.");
 		add("trait.silentcompat.vigorous", "Vigorous");
 		add("trait.silentcompat.vigorous.desc", "Deal more damage while at full health");
 		add("trait.silentcompat.unstable_magic", "Unstable Magic");
@@ -93,11 +87,21 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.jolt_hit.desc", "Consumes amplified, dealing bonus damage and chaining to a nearby entity.");
 		add("trait.silentcompat.amplifying", "Amplifying");
 		add("trait.silentcompat.amplifying.desc", "Getting a kill has a chance to grant the amplified effect. Requires full set");
+		add("trait.silentcompat.blinding", "Blinding");
+		add("trait.silentcompat.blinding.desc", "Consumes amplified on tool swing, launching a projectile that blinds and slows targets. Damage is equal to 3 times trait level.");
 		add("trait.silentcompat.purifying", "Purifying");
 		add("trait.silentcompat.purifying.desc", "Rare chance to remove harmful effects when hit. Requires full set");
+		add("trait.silentcompat.devouring", "Devouring");
+		add("trait.silentcompat.devouring.desc", "Getting a kill has a chance to grant the devouring effect. Requires full set.");
+		add("trait.silentcompat.umbral_blast", "Umbral Blast");
+		add("trait.silentcompat.umbral_blast.desc", "Consumes devouring on tool swing, launching a projectile that weakens, damages, and knocks back targets. Damage is equal to 3 times the trait level.");
+		add("trait.silentcompat.volitile", "Volitile");
+		add("trait.silentcompat.volitile.desc", "Consumes devouring, applying the volitile effect on the target.");
 		
 		// JEED
 		add("effect.silentcompat.amplified.description", "Increases speed. Allows certain abilities such as Jolt Hit to proc");
+		add("effect.silentcompat.devouring.description", "Grants absorption hearts on kills. Has a cap.");
+		add("effect.silentcompat.volitile.description", "Causes explosions when hit.");
 	}
 	
 	private void translateMaterialSet(MaterialSet set, String name) {

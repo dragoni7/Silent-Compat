@@ -36,6 +36,12 @@ public class Networking {
 		.decoder(PacketJoltChain::new)
 		.consumerMainThread(PacketJoltChain::handle)
 		.add();
+		
+		INSTANCE.messageBuilder(PacketVolitileParticles.class, nextID())
+		.encoder(PacketVolitileParticles::write)
+		.decoder(PacketVolitileParticles::new)
+		.consumerMainThread(PacketVolitileParticles::handle)
+		.add();
 	}
 	
 	public static void sendToClient(Object packet, ServerPlayer player) {

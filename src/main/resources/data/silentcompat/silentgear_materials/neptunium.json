@@ -27,7 +27,7 @@
         "harvest_level": 3.0,
         "harvest_speed": 8.0,
         "melee_damage": 3.5,
-        "magic_damage": 5.0,
+        "magic_damage": 4.0,
         "attack_speed": 0.0,
         "attack_speed/axe": -0.1,
         "armor": 20.0,

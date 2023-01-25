@@ -45,5 +45,4 @@ public class JoltParticle extends TextureSheetParticle {
 			return particle;
 		}
 	}
-
 }

@@ -3,12 +3,10 @@ package com.github.dragoni7.silentcompat.event;
 import com.github.dragoni7.silentcompat.consts.ModEffectsLocs;
 import com.github.dragoni7.silentcompat.consts.TraitConst;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatEffects;
-import com.github.dragoni7.silentcompat.core.registry.SilentCompatSoundEvents;
 import com.github.dragoni7.silentcompat.networking.Networking;
 import com.github.dragoni7.silentcompat.networking.PacketImmuneParticles;
-import com.github.dragoni7.silentcompat.networking.PacketJoltChain;
-import com.github.dragoni7.silentcompat.networking.PacketJoltParticles;
 import com.github.dragoni7.silentcompat.trait.LuckyBreak;
+import com.github.dragoni7.silentcompat.world.VolitileExplosion;
 
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -24,11 +22,8 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.phys.AABB;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -41,8 +36,7 @@ import net.silentchaos512.gear.util.TraitHelper;
 @Mod.EventBusSubscriber
 public class TraitEventHandler {
 
-	private static final EquipmentSlot[] ARMOR_ONLY = { EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS,
-			EquipmentSlot.FEET };
+	private static final EquipmentSlot[] ARMOR_ONLY = { EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET };
 
 	@SubscribeEvent
 	public static void onPlayerHurt(LivingHurtEvent event) {
@@ -107,21 +101,21 @@ public class TraitEventHandler {
 					switch (dodgeLevel) {
 					case 1: {
 						if (random.nextFloat() < 0.15F) {
-							immuneEffects(serverPlayer, attacker);
+							addImmunityEffects(serverPlayer, attacker);
 							event.setCanceled(true);
 							break;
 						}
 					}
 					case 2: {
 						if (random.nextFloat() < 0.25F) {
-							immuneEffects(serverPlayer, attacker);
+							addImmunityEffects(serverPlayer, attacker);
 							event.setCanceled(true);
 							break;
 						}
 					}
 					case 3: {
 						if (random.nextFloat() < 0.35F) {
-							immuneEffects(serverPlayer, attacker);
+							addImmunityEffects(serverPlayer, attacker);
 							event.setCanceled(true);
 							break;
 						}
@@ -133,7 +127,7 @@ public class TraitEventHandler {
 				}
 
 				if (emuDodgeCount == 4 && random.nextFloat() < 0.45F) {
-					immuneEffects(serverPlayer, attacker);
+					addImmunityEffects(serverPlayer, attacker);
 					event.setCanceled(true);
 				}
 
@@ -249,11 +243,6 @@ public class TraitEventHandler {
 			return;
 
 		Player player = (Player) attacker;
-		ServerPlayer serverPlayer = null;
-
-		if (player instanceof ServerPlayer) {
-			serverPlayer = (ServerPlayer) player;
-		}
 
 		ItemStack weapon = player.getMainHandItem();
 
@@ -290,35 +279,14 @@ public class TraitEventHandler {
 				event.setAmount(event.getAmount() * 1.5F); // Source: TeamMetallurgy Aquaculture
 			}
 		}
-
-		// Jolt Hit Trait
-		double joltHit = TraitHelper.getTraitLevel(weapon, TraitConst.JOLT_HIT);
-		if (joltHit > 0 && player.hasEffect(SilentCompatEffects.AMPLIFIED.get())) {
-
-			Mob nearestEntity = attacked.level.getNearestEntity(Mob.class, TargetingConditions.forCombat(), attacked,
-					attacked.getX(), attacked.getY(), attacked.getZ(),
-					(new AABB(attacked.blockPosition())).inflate(10.0D, 10.0D, 10.0D));
-
-			if (!player.level.isClientSide) {
-				attacked.level.playSound(null, attacked.blockPosition(), SilentCompatSoundEvents.ELECTRIC_ZAP.get(), SoundSource.PLAYERS, 0.5f, 1.0f);
-
-				if (serverPlayer != null) {
-					Networking.sendToClient(new PacketJoltParticles(attacked.getId()), serverPlayer);
-				}
-
-				if (nearestEntity != null && serverPlayer != null) {
-					Networking.sendToClient(new PacketJoltChain(attacked.position(), nearestEntity.position()),
-							serverPlayer);
-				}
-			}
-			
-			event.setAmount((float) (event.getAmount() + (joltHit + 1)));
-
-			if (nearestEntity != null) {
-				nearestEntity.hurt(DamageSource.LIGHTNING_BOLT, (float) (joltHit + 2));
-			}
-			
-			player.removeEffect(SilentCompatEffects.AMPLIFIED.get());
+		
+		// Volitile Effect
+		if (attacked.hasEffect(SilentCompatEffects.VOLITILE.get())) {
+			int amp = attacked.getEffect(SilentCompatEffects.VOLITILE.get()).getAmplifier();
+			// explode
+			VolitileExplosion explosion = new VolitileExplosion(player, attacked, DamageSource.MAGIC, null, attacked.getX(), attacked.getY(0.0625D), attacked.getZ(), (float)(2.0 + amp));
+			explosion.explode();
+			explosion.finalizeExplosion(true);
 		}
 	}
 
@@ -330,9 +298,12 @@ public class TraitEventHandler {
 		
 		if (killer instanceof Player) {
 			Player player = (Player) killer;
-
+			
 			int amplifyingCount = 0;
 			MobEffect amplified = SilentCompatEffects.AMPLIFIED.get();
+			
+			int devouringCount = 0;
+			MobEffect devouring = SilentCompatEffects.DEVOURING.get();
 			
 			for (EquipmentSlot slot : ARMOR_ONLY) {
 				ItemStack stack = player.getItemBySlot(slot);
@@ -340,17 +311,48 @@ public class TraitEventHandler {
 				if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.AMPLIFYING.get())) {
 					amplifyingCount++;
 				}
+				
+				// Devouring
+				if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.DEVOURING.get())) {
+					devouringCount++;
+				}
 			}
 			
-			// Requires full set
-			if (amplifyingCount == 4 && !player.hasEffect(amplified)) {
+			// Amplifying requires full set
+			if (amplifyingCount == 4 && !player.hasEffect(amplified) && player.getRandom().nextFloat() < 0.45f) {
 				player.level.playSound(null, player.blockPosition(), SoundEvents.LIGHTNING_BOLT_THUNDER, SoundSource.PLAYERS, 0.6f, 2.6f);
-				player.addEffect(new MobEffectInstance(amplified, 120));
+				player.addEffect(new MobEffectInstance(amplified, 280, 0, false, false, true));
+			}
+
+			// Devouring requires full set
+			if (devouringCount == 4) {
+				
+				// while devouring, add absorption hearts on kill and refresh effect.
+				if (player.hasEffect(devouring)) {
+					
+					if (player.getAbsorptionAmount() + 2 < 12) {
+						player.setAbsorptionAmount(player.getAbsorptionAmount() + 2f);
+					}
+					
+					player.removeEffect(devouring);
+					player.addEffect(new MobEffectInstance(devouring, 100, 0, false, false, true));
+					player.level.playSound(null, player.blockPosition(), SoundEvents.END_PORTAL_FRAME_FILL, SoundSource.PLAYERS, 0.7f, 0.1f);
+				}
+				// chance to gain devouring on kill.
+				else if (!player.hasEffect(devouring) && player.getRandom().nextFloat() < 0.45f) {
+					
+					if (player.getAbsorptionAmount() + 2 < 12) {
+						player.setAbsorptionAmount(player.getAbsorptionAmount() + 2f);
+					}
+					
+					player.addEffect(new MobEffectInstance(devouring, 100, 0, false, false, true));
+					player.level.playSound(null, player.blockPosition(), SoundEvents.END_PORTAL_FRAME_FILL, SoundSource.PLAYERS, 0.7f, 0.1f);
+				}
 			}
 		}
 	}
-
-	private static void immuneEffects(ServerPlayer player, Entity attacker) {
+	
+	private static void addImmunityEffects(ServerPlayer player, Entity attacker) {
 
 		if (player != null) {
 			Networking.sendToClient(new PacketImmuneParticles(player.getId()), player);

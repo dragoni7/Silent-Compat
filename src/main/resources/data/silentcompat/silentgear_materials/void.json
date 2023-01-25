@@ -56,16 +56,6 @@
           ]
         },
         {
-          "name": "silentgear:bastion",
-          "level": 5,
-          "conditions": [
-            {
-              "type": "silentgear:material_ratio",
-              "ratio": 0.66
-            }
-          ]
-        },
-        {
           "name": "silentcompat:dense",
           "level": 4,
           "conditions": [
@@ -76,8 +66,14 @@
           ]
         },
         {
-            "name": "silentcompat:bulwark",
-            "level": 2
+          "name": "silentcompat:devouring",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         }
       ]
     },

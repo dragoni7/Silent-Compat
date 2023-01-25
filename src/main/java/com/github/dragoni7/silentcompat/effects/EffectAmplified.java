@@ -12,7 +12,7 @@ public class EffectAmplified extends MobEffect {
 
 	public EffectAmplified() {
 		super(MobEffectCategory.BENEFICIAL, 0X74a9cf);
-		this.addAttributeModifier(Attributes.MOVEMENT_SPEED, "7107DE5E-7CE8-4030-940E-514C1F160890", 1.0,
+		this.addAttributeModifier(Attributes.MOVEMENT_SPEED, "7107DE5E-7DE8-4030-940E-514C1F160890", 1.0,
 				AttributeModifier.Operation.MULTIPLY_BASE);
 	}
 

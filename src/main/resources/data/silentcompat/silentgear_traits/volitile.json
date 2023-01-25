@@ -1,0 +1,17 @@
+{
+    "type": "silentcompat:volitile",
+    "max_level": 5,
+    "cancels_with": ["silentcompat:umbral_blast"],
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "tool"
+      }
+    ],
+    "name": {
+      "translate": "trait.silentcompat.volitile"
+    },
+    "description": {
+      "translate": "trait.silentcompat.volitile.desc"
+    }
+  }

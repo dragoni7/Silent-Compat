@@ -1,0 +1,17 @@
+{
+    "type": "silentcompat:blinding",
+    "max_level": 5,
+    "cancels_with": ["silentcompat:jolt_hit"],
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "tool"
+      }
+    ],
+    "name": {
+      "translate": "trait.silentcompat.blinding"
+    },
+    "description": {
+      "translate": "trait.silentcompat.blinding.desc"
+    }
+  }

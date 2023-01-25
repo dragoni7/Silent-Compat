@@ -1,0 +1,17 @@
+{
+    "type": "silentcompat:devouring",
+    "max_level": 1,
+    "cancels_with": ["silentcompat:amplifying"],
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "armor"
+      }
+    ],
+    "name": {
+      "translate": "trait.silentcompat.devouring"
+    },
+    "description": {
+      "translate": "trait.silentcompat.devouring.desc"
+    }
+  }

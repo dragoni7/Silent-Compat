@@ -16,7 +16,7 @@
       }
     },
     "name": {
-      "translate": "Void Worm"
+      "text": "Void Worm"
     },
     "stats": {
       "coating": {
@@ -28,11 +28,11 @@
             "add": 10.0
           }
         ],
+        "repair_efficiency": {
+          "add": -0.5
+        },
         "armor_durability": {
           "mul2": 3.2
-        },
-        "harvest_speed": {
-          "mul2": 2.0
         },
         "harvest_level": {
           "max": 5.0
@@ -42,20 +42,17 @@
             "mul2": 0.5
           },
           {
-            "add": 4.0
+            "add": 3.0
           }
         ],
         "magic_damage": {
-          "add": 4
+          "add": 3
         },
         "ranged_damage": {
-          "add": 4
+          "add": 3
         },
         "armor_toughness": {
           "add": 8.0
-        },
-        "enchantment_value": {
-          "add": 10.0
         },
         "knockback_resistance": {
           "add": 8.0
@@ -66,7 +63,7 @@
       },
       "rod": {
         "melee_damage": {
-          "mul2": 0.5
+          "mul2": 0.4
         },
         "durability": [
           {
@@ -84,8 +81,14 @@
     "traits": {
       "coating": [
         {
-          "name": "silentgear:sturdy",
-          "level": 5
+          "name": "silentcompat:devouring",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         },
         {
             "name": "silentgear:void_ward",

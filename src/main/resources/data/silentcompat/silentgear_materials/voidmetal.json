@@ -1,0 +1,124 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/voidmetal"
+      }
+    },
+    "name": {
+      "translate": "material.silentcompat.voidmetal"
+    },
+    "stats": {
+      "main": {
+        "durability": 1461.0,
+        "armor_durability": 32.0,
+        "enchantment_value": 12.0,
+        "rarity": 80.0,
+        "charging_value": 1.0,
+        "harvest_level": 5.0,
+        "harvest_speed": 18.0,
+        "melee_damage": 4.0,
+        "magic_damage": 5.0,
+        "attack_speed": 0.3,
+        "ranged_damage": 1.0,
+        "ranged_speed": 0.5,
+        "projectile_speed": 0.5,
+        "projectile_accuracy": 0.8,
+        "armor": 20.0,
+        "armor/helmet": 3.0,
+        "armor/chestplate": 8.0,
+        "armor/leggings": 6.0,
+        "armor/boots": 3.0,
+        "armor_toughness": 12.0,
+        "magic_armor": 8.0
+      },
+      "rod": {
+        "attack_speed": {
+          "add": 0.2
+        },
+        "harvest_speed": {
+            "add": 3.0
+        },
+        "ranged_speed": {
+          "add": 0.5
+        },
+        "rarity": 60.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentcompat:devouring",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        },
+
+        {
+          "name": "silentcompat:umbral_blast",
+          "level": 2,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:magnetic",
+          "level": 2,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#452479"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#452479"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#452479"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#452479"
+        }
+      ]
+    }
+  }

@@ -11,6 +11,7 @@ import net.minecraft.world.level.Level;
 import net.silentchaos512.gear.api.traits.TraitActionContext;
 import net.silentchaos512.gear.gear.trait.SimpleTrait;
 import net.silentchaos512.gear.util.GearHelper;
+import net.silentchaos512.utils.MathUtils;
 
 public class NocturnalTrait extends SimpleTrait {
 	
@@ -24,13 +25,19 @@ public class NocturnalTrait extends SimpleTrait {
 	public void onUpdate(TraitActionContext context, boolean isEquipped) {
 		Level world = context.getPlayer().getLevel();
 		
+		// repair at night
 		long time = world.getDayTime() % 24000;
-		if (time > 13000) {
-			// repair at night
-			if (context.getPlayer().tickCount % 120 == 0) {
-				GearHelper.attemptDamage(context.getGear(), -1, context.getPlayer(), InteractionHand.MAIN_HAND);
-			}
+		if (time > 13000 && shouldActivate(context)) {
+			GearHelper.attemptDamage(context.getGear(), -1, context.getPlayer(), InteractionHand.MAIN_HAND);
 		}
+	}
+	
+	private boolean shouldActivate(TraitActionContext context) {
+		if (context.getPlayer() != null && context.getPlayer().tickCount % 40 == 0) {
+			return MathUtils.tryPercentage(0.25f);
+		}
+		
+		return false;
 	}
 	
 	@Override

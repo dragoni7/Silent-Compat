@@ -28,7 +28,7 @@
         "harvest_level": 2.0,
         "harvest_speed": 8.0,
         "melee_damage": 2.0,
-        "magic_damage": 5.0,
+        "magic_damage": 4.0,
         "attack_speed": -0.3,
         "attack_speed/axe": -0.4,
         "ranged_damage": 0.0,
@@ -52,6 +52,16 @@
         {
           "name": "silentcompat:mana_boost",
           "level": 1
+        },
+        {
+          "name": "silentcompat:amplifying",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         }
       ],
       "adornment": [

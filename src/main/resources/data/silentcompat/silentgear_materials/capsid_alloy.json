@@ -80,7 +80,7 @@
           ]
         },
         {
-          "name": "silentcompat:amplifying",
+          "name": "silentgear:organic",
           "level": 1
         },
         {
@@ -92,6 +92,16 @@
                   "ratio": 0.5
                 }
             ]
+        },
+        {
+          "name": "silentcompat:devouring",
+          "level": 1,
+          "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.5
+              }
+          ]
         }
       ],
       "grip": [

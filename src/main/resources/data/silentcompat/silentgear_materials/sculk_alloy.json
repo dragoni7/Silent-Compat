@@ -75,6 +75,16 @@
               "ratio": 0.5
             }
           ]
+        },
+        {
+          "name": "silentcompat:blinding",
+          "level": 2,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         }
       ],
       "rod": [

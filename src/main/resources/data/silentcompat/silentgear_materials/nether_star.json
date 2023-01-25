@@ -21,10 +21,10 @@
     "stats": {
       "tip": {
         "melee_damage": {
-          "add": 5.0
+          "add": 4.0
         },
         "ranged_damage": {
-          "add": 5.0
+          "add": 4.0
         },
         "repair_efficiency": {
           "mul1": -0.2

@@ -1,6 +1,5 @@
 package com.github.dragoni7.silentcompat.core.registry;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 import com.github.dragoni7.silentcompat.SilentCompat;

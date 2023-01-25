@@ -80,9 +80,26 @@
             "name": "silentcompat:abyssal_synergy",
             "level": 3
         },
+                {
+          "name": "silentcompat:devouring",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        },
+
         {
-            "name": "silentgear:sharp",
-            "level": 2
+          "name": "silentcompat:umbral_blast",
+          "level": 2,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         }
       ],
       "rod": [

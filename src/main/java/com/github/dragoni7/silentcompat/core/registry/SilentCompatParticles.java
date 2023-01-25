@@ -15,5 +15,7 @@ public class SilentCompatParticles {
 	public static final RegistryObject<SimpleParticleType> JOLT = PARTICLES.register("jolt", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> JOLT_CHAIN = PARTICLES.register("jolt_chain", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> IMMUNE = PARTICLES.register("immune", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> VOID = PARTICLES.register("void", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> VOLITILE = PARTICLES.register("volitile", () -> new SimpleParticleType(true));
 
 }
