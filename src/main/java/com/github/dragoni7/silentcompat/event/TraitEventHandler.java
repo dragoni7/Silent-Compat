@@ -24,7 +24,9 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.BaseFireBlock;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.event.entity.living.LivingEvent.LivingTickEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -279,6 +281,18 @@ public class TraitEventHandler {
 				event.setAmount(event.getAmount() * 1.5F); // Source: TeamMetallurgy Aquaculture
 			}
 		}
+	}
+	
+	@SubscribeEvent
+	public static void onLivingHurt(LivingHurtEvent event) {
+		LivingEntity attacked = event.getEntity();
+		DamageSource source = event.getSource();
+
+		if (source == null || !"player".equals(source.msgId))
+			return;
+
+		Entity attacker = source.getEntity();
+		Player player = (Player) attacker;
 		
 		// Volitile Effect
 		if (attacked.hasEffect(SilentCompatEffects.VOLITILE.get())) {
@@ -305,6 +319,9 @@ public class TraitEventHandler {
 			int devouringCount = 0;
 			MobEffect devouring = SilentCompatEffects.DEVOURING.get();
 			
+			int restorationCount = 0;
+			MobEffect restoration = SilentCompatEffects.RESTORATION.get();
+			
 			for (EquipmentSlot slot : ARMOR_ONLY) {
 				ItemStack stack = player.getItemBySlot(slot);
 				// Amplifying
@@ -315,6 +332,11 @@ public class TraitEventHandler {
 				// Devouring
 				if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.DEVOURING.get())) {
 					devouringCount++;
+				}
+				
+				// Restoration
+				if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.RESTORATION.get())) {
+					restorationCount++;
 				}
 			}
 			
@@ -348,6 +370,42 @@ public class TraitEventHandler {
 					player.addEffect(new MobEffectInstance(devouring, 100, 0, false, false, true));
 					player.level.playSound(null, player.blockPosition(), SoundEvents.END_PORTAL_FRAME_FILL, SoundSource.PLAYERS, 0.7f, 0.1f);
 				}
+			}
+			
+			// Restoration requires full set
+			if (restorationCount == 4 && !player.hasEffect(restoration) && player.getRandom().nextFloat() < 0.45f) {
+				player.level.playSound(null, player.blockPosition(), SoundEvents.FIRE_EXTINGUISH, SoundSource.PLAYERS, 0.7f, 1.6f);
+				player.addEffect(new MobEffectInstance(restoration, 140, 0, false, false, true));
+			}
+		}
+	}
+	
+	@SubscribeEvent
+	public static void onLivingUpdate(LivingTickEvent event) {
+		
+		LivingEntity entity = event.getEntity();
+		
+		// Remove scorch in water or rain. Explosion will still trigger.
+		if (entity.hasEffect(SilentCompatEffects.SCORCH.get())) {
+			if (entity.isInWaterOrRain()) {
+				entity.removeEffect(SilentCompatEffects.SCORCH.get());
+			}
+		}
+		
+		if (entity instanceof Player) {
+			
+			ItemStack weapon = entity.getMainHandItem();
+
+			if (!(weapon.getItem() instanceof ICoreTool))
+				return;
+			
+			// SunSpot trait.
+			if (TraitHelper.hasTrait(weapon, TraitConst.SUNSPOT) && entity.hasEffect(SilentCompatEffects.RESTORATION.get()) && entity.getFeetBlockState().getBlock() instanceof BaseFireBlock) {
+				int level = TraitHelper.getTraitLevel(weapon, TraitConst.SUNSPOT);
+				entity.level.removeBlock(entity.blockPosition(), true);
+				entity.heal((entity.getMaxHealth() / (4-level)));
+				entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, level - 1));
+				entity.removeEffect(SilentCompatEffects.RESTORATION.get());
 			}
 		}
 	}

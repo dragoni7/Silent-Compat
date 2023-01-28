@@ -22,4 +22,6 @@ public class TraitConst {
 	public static final DataResource<ITrait> PURIFYING = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "purifying"));
 	public static final DataResource<ITrait> AMPLIFYING = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "amplifying"));
 	public static final DataResource<ITrait> DEVOURING = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "devouring"));
+	public static final DataResource<ITrait> RESTORATION = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "restoration"));
+	public static final DataResource<ITrait> SUNSPOT = DataResource.trait(new ResourceLocation(SilentCompat.MODID, "sunspot"));
 }

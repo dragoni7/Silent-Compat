@@ -69,6 +69,16 @@
         {
           "name": "silentgear:fiery",
           "level": 1
+        },
+        {
+          "name": "silentcompat:sunspot",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         }
       ],
       "rod": [

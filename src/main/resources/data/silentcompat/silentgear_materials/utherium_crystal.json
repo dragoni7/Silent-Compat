@@ -97,6 +97,16 @@
               "ratio": 0.35
             }
           ]
+        },
+        {
+          "name": "silentcompat:scorching",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         }
       ],
       "tip": [

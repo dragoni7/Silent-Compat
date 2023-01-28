@@ -3,12 +3,12 @@ package com.github.dragoni7.silentcompat.networking;
 import java.util.function.Supplier;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.network.NetworkEvent;
@@ -41,7 +41,7 @@ public abstract class AbstractPacketDisplayHitParticle {
 			if (player != null) {
 				if (player.level != null) {
 					Entity entity = player.level.getEntity(hitEntity);
-					BlockPos pos = entity.blockPosition();
+					Vec3 pos = entity.position();
 					if (entity instanceof LivingEntity) {
 						double y = (entity.getBoundingBox().getYsize() / 2) + entity.level.random.nextDouble();
 
@@ -54,7 +54,7 @@ public abstract class AbstractPacketDisplayHitParticle {
 		return true;
 	}
 
-	protected abstract void addParticles(Level level, BlockPos pos, double y);
+	protected abstract void addParticles(Level level, Vec3 pos, double y);
 
 	@OnlyIn(Dist.CLIENT)
 	private Player getClientPlayer() {

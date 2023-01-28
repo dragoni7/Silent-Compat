@@ -1,0 +1,17 @@
+{
+    "type": "silentcompat:sunspot",
+    "max_level": 3,
+    "cancels_with": ["silentcompat:scorching"],
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "tool"
+      }
+    ],
+    "name": {
+      "translate": "trait.silentcompat.sunspot"
+    },
+    "description": {
+      "translate": "trait.silentcompat.sunspot.desc"
+    }
+  }

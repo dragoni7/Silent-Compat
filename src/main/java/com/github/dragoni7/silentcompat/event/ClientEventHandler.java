@@ -5,7 +5,7 @@ import com.github.dragoni7.silentcompat.client.particles.ImmuneParticle;
 import com.github.dragoni7.silentcompat.client.particles.JoltChainParticle;
 import com.github.dragoni7.silentcompat.client.particles.JoltParticle;
 import com.github.dragoni7.silentcompat.client.particles.VoidParticles;
-import com.github.dragoni7.silentcompat.client.particles.VolitileParticle;
+import com.github.dragoni7.silentcompat.client.particles.ElementalExplosionParticle;
 import com.github.dragoni7.silentcompat.client.projectiles.BlindingProjectileRender;
 import com.github.dragoni7.silentcompat.client.projectiles.UmbralBlastProjectileModel;
 import com.github.dragoni7.silentcompat.client.projectiles.UmbralBlastProjectileRender;
@@ -14,6 +14,7 @@ import com.github.dragoni7.silentcompat.core.registry.SilentCompatEntities;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatParticles;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.particle.FlameParticle;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -30,6 +31,7 @@ public class ClientEventHandler {
 	
 	public static final ResourceLocation AMPLIFIED = new ResourceLocation(SilentCompat.MODID, "shaders/post/amplified.json");
 	public static final ResourceLocation DEVOURING = new ResourceLocation(SilentCompat.MODID, "shaders/post/devouring.json");
+	public static final ResourceLocation RESTORATION = new ResourceLocation(SilentCompat.MODID, "shaders/post/restoration.json");
 
 	public static void setUp(IEventBus modBus) {
 		
@@ -43,7 +45,9 @@ public class ClientEventHandler {
 		event.register(SilentCompatParticles.JOLT_CHAIN.get(), JoltChainParticle.Provider::new);
 		event.register(SilentCompatParticles.IMMUNE.get(), ImmuneParticle.ImmuneParticleProvider::new);
 		event.register(SilentCompatParticles.VOID.get(), VoidParticles.Provider::new);
-		event.register(SilentCompatParticles.VOLITILE.get(), VolitileParticle.Provider::new);
+		event.register(SilentCompatParticles.VOLITILE.get(), ElementalExplosionParticle.Provider::new);
+		event.register(SilentCompatParticles.IGNITION.get(), ElementalExplosionParticle.Provider::new);
+		event.register(SilentCompatParticles.RESTORATION.get(), FlameParticle.Provider::new);
 	}
 	
 	private static void registerEntityLayers(final EntityRenderersEvent.RegisterLayerDefinitions event) {
@@ -61,6 +65,7 @@ public class ClientEventHandler {
 			GameRenderer renderer = Minecraft.getInstance().gameRenderer;
 			MobEffectInstance amplified = event.getEntity().getEffect(SilentCompatEffects.AMPLIFIED.get());
 			MobEffectInstance devouring = event.getEntity().getEffect(SilentCompatEffects.DEVOURING.get());
+			MobEffectInstance restoration = event.getEntity().getEffect(SilentCompatEffects.RESTORATION.get());
 			
 			if (amplified != null && renderer.currentEffect() == null) {
 				renderer.loadEffect(AMPLIFIED);
@@ -73,6 +78,13 @@ public class ClientEventHandler {
 				renderer.loadEffect(DEVOURING);
 			}
 			if (devouring == null && renderer.currentEffect() != null && renderer.currentEffect().getName() != null && DEVOURING.toString().equals(renderer.currentEffect().getName())) {
+				renderer.shutdownEffect();
+			}
+			
+			if (restoration != null && renderer.currentEffect() == null) {
+				renderer.loadEffect(RESTORATION);
+			}
+			if (restoration == null && renderer.currentEffect() != null && renderer.currentEffect().getName() != null && RESTORATION.toString().equals(renderer.currentEffect().getName())) {
 				renderer.shutdownEffect();
 			}
 		}

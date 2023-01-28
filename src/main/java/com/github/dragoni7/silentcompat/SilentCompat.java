@@ -30,12 +30,16 @@ import com.github.dragoni7.silentcompat.trait.LuckyBreak;
 import com.github.dragoni7.silentcompat.trait.NeptunesMightTrait;
 import com.github.dragoni7.silentcompat.trait.NocturnalTrait;
 import com.github.dragoni7.silentcompat.trait.PurifyingTrait;
+import com.github.dragoni7.silentcompat.trait.RestorationTrait;
 import com.github.dragoni7.silentcompat.trait.RetaliatingBlastTrait;
+import com.github.dragoni7.silentcompat.trait.ScorchingTrait;
 import com.github.dragoni7.silentcompat.trait.JoltHitTrait;
 import com.github.dragoni7.silentcompat.trait.SoulStealTrait;
+import com.github.dragoni7.silentcompat.trait.SunSpotTrait;
 import com.github.dragoni7.silentcompat.trait.UmbralBlastTrait;
 import com.github.dragoni7.silentcompat.trait.UnstableMagicTrait;
 import com.github.dragoni7.silentcompat.trait.VigorousTrait;
+import com.github.dragoni7.silentcompat.trait.VolitileTrait;
 import com.github.dragoni7.silentcompat.trait.VorpalTrait;
 import com.mojang.logging.LogUtils;
 
@@ -105,6 +109,10 @@ public class SilentCompat {
 		registerTrait(BlindingTrait.SERIALIZER);
 		registerTrait(DevouringTrait.SERIALIZER);
 		registerTrait(UmbralBlastTrait.SERIALIZER);
+		registerTrait(VolitileTrait.SERIALIZER);
+		registerTrait(RestorationTrait.SERIALIZER);
+		registerTrait(ScorchingTrait.SERIALIZER);
+		registerTrait(SunSpotTrait.SERIALIZER);
 	}
 
 	private void registerTrait(ITraitSerializer<?> serializer) {

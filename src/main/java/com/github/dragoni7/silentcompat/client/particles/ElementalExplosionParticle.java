@@ -10,20 +10,20 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class VolitileParticle extends TextureSheetParticle {
+public class ElementalExplosionParticle extends TextureSheetParticle {
 	
 	// code used from HugeExplosionParticle
 	
 	private final SpriteSet sprites;
 
-	protected VolitileParticle(ClientLevel p_106905_, double p_106906_, double p_106907_, double p_106908_, double p_106909_, SpriteSet p_106910_) {
+	protected ElementalExplosionParticle(ClientLevel p_106905_, double p_106906_, double p_106907_, double p_106908_, double p_106909_, SpriteSet p_106910_) {
 	      super(p_106905_, p_106906_, p_106907_, p_106908_, 0.0D, 0.0D, 0.0D);
 	      this.lifetime = 6 + this.random.nextInt(4);
-	      float f = this.random.nextFloat() * 0.6F + 0.4F;
+	      float f = this.random.nextFloat() * 0.10F + 0.4F;
 	      this.rCol = f;
 	      this.gCol = f;
 	      this.bCol = f;
-	      this.quadSize = 2.0F * (1.0F - (float)p_106909_ * 0.5F);
+	      this.quadSize = 2.5F * (1.0F - (float)p_106909_ * 0.5F);
 	      this.sprites = p_106910_;
 	      this.setSpriteFromAge(p_106910_);
 	   }
@@ -59,7 +59,7 @@ public class VolitileParticle extends TextureSheetParticle {
 
 		public Particle createParticle(SimpleParticleType p_106936_, ClientLevel p_106937_, double p_106938_,
 				double p_106939_, double p_106940_, double p_106941_, double p_106942_, double p_106943_) {
-			return new VolitileParticle(p_106937_, p_106938_, p_106939_, p_106940_, p_106941_, this.sprites);
+			return new ElementalExplosionParticle(p_106937_, p_106938_, p_106939_, p_106940_, p_106941_, this.sprites);
 		}
 	}
 }

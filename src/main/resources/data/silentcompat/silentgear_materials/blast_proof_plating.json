@@ -75,16 +75,16 @@
     "traits": {
       "main": [
         {
-          "name": "silentgear:heavy",
+          "name": "silentcompat:retaliating_blast",
           "level": 1
         },
         {
-          "name": "silentgear:confetti",
+          "name": "silentcompat:sunspot",
           "level": 1
         },
         {
             "name": "silentgear:sturdy",
-            "level": 2
+            "level": 1
         },
         {
           "name": "silentcompat:blast_resistant",
@@ -105,19 +105,17 @@
       ],
       "coating": [
         {
-            "name": "silentcompat:retaliating_blast",
-            "level": 1
+          "name": "silentcompat:blast_resistant",
+          "level": 2,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         }
       ],
       "lining": [
-        {
-            "name": "silentgear:heavy",
-            "level": 1
-        },
-        {
-            "name": "silentgear:sturdy",
-            "level": 1
-        },
         {
             "name": "silentcompat:blast_resistant",
             "level": 1,

@@ -97,11 +97,19 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.umbral_blast.desc", "Consumes devouring on tool swing, launching a projectile that weakens, damages, and knocks back targets. Damage is equal to 3 times the trait level.");
 		add("trait.silentcompat.volitile", "Volitile");
 		add("trait.silentcompat.volitile.desc", "Consumes devouring, applying the volitile effect on the target.");
+		add("trait.silentcompat.restoration", "Restoration");
+		add("trait.silentcompat.restoration.desc", "Getting a kill has a chance to grant the restoration effect. Requires full set.");
+		add("trait.silentcompat.scorching", "Scorching");
+		add("trait.silentcompat.scorching.desc", "Consumes restoration, applying the scorch effect to the target hit.");
+		add("trait.silentcompat.sunspot", "Sun Spot");
+		add("trait.silentcompat.sunspot.desc", "Consumes restoration. Standing in fire puts it out, healing a large chunk of health and granting strength.");
 		
 		// JEED
-		add("effect.silentcompat.amplified.description", "Increases speed. Allows certain abilities such as Jolt Hit to proc");
-		add("effect.silentcompat.devouring.description", "Grants absorption hearts on kills. Has a cap.");
+		add("effect.silentcompat.amplified.description", "Increases speed. Allows certain traits such as Jolt Hit to proc.");
+		add("effect.silentcompat.devouring.description", "Grants absorption hearts on kills. Has a cap. Allows certain traits such as volitile to proc.");
+		add("effect.silentcompat.restoration.description", "Steadily restores hp over time. Allows certain traits such as scorch to proc.");
 		add("effect.silentcompat.volitile.description", "Causes explosions when hit.");
+		add("effect.silentcompat.scorch.description", "Sets the target on fire. When the effect ends, the target explodes, spreading scorch to nearby mobs.");
 	}
 	
 	private void translateMaterialSet(MaterialSet set, String name) {

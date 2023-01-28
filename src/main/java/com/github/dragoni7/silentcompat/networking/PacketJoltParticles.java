@@ -2,9 +2,9 @@ package com.github.dragoni7.silentcompat.networking;
 
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatParticles;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 
 public class PacketJoltParticles extends AbstractPacketDisplayHitParticle {
 
@@ -17,10 +17,10 @@ public class PacketJoltParticles extends AbstractPacketDisplayHitParticle {
 	}
 
 	@Override
-	protected void addParticles(Level level, BlockPos pos, double y) {
-		level.addParticle(SilentCompatParticles.JOLT.get(), pos.getX(), pos.getY() + y, pos.getZ(), 0, 0, 0);
-		level.addParticle(SilentCompatParticles.JOLT.get(), pos.getX(), pos.getY() + y, pos.getZ(), 0, 0, 0);
-		level.addParticle(SilentCompatParticles.JOLT.get(), pos.getX(), pos.getY() + y, pos.getZ(), 0, 0, 0);
+	protected void addParticles(Level level, Vec3 pos, double y) {
+		level.addParticle(SilentCompatParticles.JOLT.get(), pos.x(), pos.y() + y, pos.z(), 0, 0, 0);
+		level.addParticle(SilentCompatParticles.JOLT.get(), pos.x(), pos.y() + y, pos.z(), 0, 0, 0);
+		level.addParticle(SilentCompatParticles.JOLT.get(), pos.x(), pos.y() + y, pos.z(), 0, 0, 0);
 	}
 
 }

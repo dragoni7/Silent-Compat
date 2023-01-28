@@ -1,6 +1,7 @@
 {
     "type": "silentcompat:jolt_hit",
     "max_level": 5,
+    "cancels_with": ["silentcompat:blinding"],
     "conditions": [
       {
         "type": "silentgear:gear_type",
