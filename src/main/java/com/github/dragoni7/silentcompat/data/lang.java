@@ -27,6 +27,12 @@ public class lang extends LanguageProvider {
 			translateMaterialSet(set, name);
 		}
 		
+		add(MaterialRegistry.ARCMETAL_ORE.get(), "Arc Metal Ore");
+		add(MaterialRegistry.VOIDMETAL_ORE.get(), "Void Metal Ore");
+		add(MaterialRegistry.SOLARMETAL_ORE.get(), "Solar Metal Ore");
+		add(MaterialRegistry.PLASTEEL_ORE.get(), "Plasteel Ore");
+		
+		
 		add(SilentCompatItems.OUTBACK_LEATHER.get(), "Outback Leather");
 		add(SilentCompatItems.RAW_PLASTEEL.get(), "Raw Plasteel");
 		add(SilentCompatItems.CHOCOLATECHIP.get(), "Chocolate Chip");
@@ -34,6 +40,9 @@ public class lang extends LanguageProvider {
 		
 		add(SilentCompatEffects.AMPLIFIED.get(), "Amplified");
 		add(SilentCompatEffects.DEVOURING.get(), "Devouring");
+		add(SilentCompatEffects.RESTORATION.get(), "Restoration");
+		add(SilentCompatEffects.VOLITILE.get(), "Volitile");
+		add(SilentCompatEffects.SCORCH.get(), "Scorch");
 		
 		add("trait.silentcompat.diurnal", "Diurnal");
 		add("trait.silentcompat.diurnal.desc", "Deal increased damage during the day. Gear slowly repairs during the day");

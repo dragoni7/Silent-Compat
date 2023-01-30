@@ -16,7 +16,7 @@
       }
     },
     "name": {
-      "translate": "Nautilus Shell"
+      "text": "Nautilus Shell"
     },
     "stats": {
       "main": {
@@ -30,7 +30,7 @@
         "armor/leggings": 6.0,
         "armor/boots": 3.0,
         "armor_toughness": 2.0,
-        "magic_armor": 6.0
+        "magic_armor": 8.0
       },
       "adornment": {}
     },

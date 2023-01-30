@@ -1,4 +1,12 @@
-// 1.19.2	2023-01-09T15:17:37.4144687	Tags for minecraft:block
+// 1.19.2	2023-01-29T12:38:17.9275557	Tags for minecraft:block
+003d2aaf670221ca58324b5dafd07f7b3cf986a4 data/forge/tags/blocks/needs_netherite_tool.json
+ca2eb32c178afa788ab1860b590bac75287618bd data/forge/tags/blocks/ores.json
+037f83e3f234f190bd2533909d26787907830eec data/forge/tags/blocks/ores/arcmetal.json
+f4df0752061cefe05c7aca910b866abe99270ac5 data/forge/tags/blocks/ores/plasteel.json
+a09b7ec866e615198e00561e5344ed2f06f29d3e data/forge/tags/blocks/ores/solarmetal.json
+dc86066fdd600f81316e5482efcc15f73af01586 data/forge/tags/blocks/ores/voidmetal.json
+d6a062f4d678cc90ceaa56a951b8f1e96e9eb817 data/forge/tags/blocks/ores_in_ground/deepslate.json
+037f83e3f234f190bd2533909d26787907830eec data/forge/tags/blocks/ores_in_ground/stone.json
 f614e216a73ef93b1109705578d5db4a9194ddae data/forge/tags/blocks/storage_blocks.json
 bec8e86f3ac34b808a1d72e6934f381716a6c2c9 data/forge/tags/blocks/storage_blocks/arcmetal.json
 959dc46856274767bfee466b0e11798a248ac8cf data/forge/tags/blocks/storage_blocks/bunny_steel.json
@@ -10,5 +18,5 @@ b174725a0fd3d231ed31e48be4d9b681a39a67bc data/forge/tags/blocks/storage_blocks/p
 30110627833c7a69c198e17f6b4693d85fa892de data/forge/tags/blocks/storage_blocks/solarmetal.json
 911351bb10a0827449ccadbe62b5fe953cc93791 data/forge/tags/blocks/storage_blocks/source_steel.json
 a0ca476723aea556a0a0dfb700d1f5e0248edb67 data/forge/tags/blocks/storage_blocks/voidmetal.json
-f614e216a73ef93b1109705578d5db4a9194ddae data/minecraft/tags/blocks/mineable/pickaxe.json
+32f9b65bae34b178d7872576a39d91f6a6b6e569 data/minecraft/tags/blocks/mineable/pickaxe.json
 f614e216a73ef93b1109705578d5db4a9194ddae data/minecraft/tags/blocks/needs_iron_tool.json

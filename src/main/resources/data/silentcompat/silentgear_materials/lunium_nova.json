@@ -93,7 +93,7 @@
         },
         {
           "name": "silentcompat:volitile",
-          "level": 1,
+          "level": 3,
           "conditions": [
               {
                 "type": "silentgear:material_ratio",

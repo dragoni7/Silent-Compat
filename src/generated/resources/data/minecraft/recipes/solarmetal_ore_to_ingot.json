@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 300,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "silentcompat:solarmetal_ore"
+  },
+  "result": "silentcompat:solarmetal_ingot"
+}

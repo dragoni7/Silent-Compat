@@ -1,7 +1,8 @@
-// 1.19.2	2023-01-09T15:57:49.3863414	Item Models: silentcompat
+// 1.19.2	2023-01-28T12:16:37.5725353	Item Models: silentcompat
 331e8fe6d14bb1102328a412227e73e2e0805829 assets/silentcompat/models/item/arcmetal_block.json
 a1eaf5c4cb8019a9f245a2ee7d8285b267166b9f assets/silentcompat/models/item/arcmetal_ingot.json
 9f19b40ad0ca9ea8d8c40040971ff855627dbcf4 assets/silentcompat/models/item/arcmetal_nugget.json
+3d1f281d5ce166ae3ba2255721d839467e16cb27 assets/silentcompat/models/item/arcmetal_ore.json
 fbb9a95dbdd70e2ffd434c5656d6cd7aad803306 assets/silentcompat/models/item/bunny_steel_block.json
 b340223a84e4f649fe35fc2a99c2a7ee0c32090e assets/silentcompat/models/item/bunny_steel_ingot.json
 b10de613c34ce06f8f201f44bc3bebd69eeb0af7 assets/silentcompat/models/item/bunny_steel_nugget.json
@@ -19,6 +20,7 @@ fd8167fb60ea4e0fccbc1e2ab0af49ea9a90ceae assets/silentcompat/models/item/outback
 06fe769386e8dcc7d7375864fdc129b7018f99e9 assets/silentcompat/models/item/plasteel_block.json
 42271fadcf476977b07e827d32c1a7f040cdc981 assets/silentcompat/models/item/plasteel_ingot.json
 05ac6664e5bee2fdf2e6b08d8440a626eba8640f assets/silentcompat/models/item/plasteel_nugget.json
+600bb10eec98191dc61f59faf37c11935668f714 assets/silentcompat/models/item/plasteel_ore.json
 cc872564502e6caa34198ab4514f84c478c10129 assets/silentcompat/models/item/raw_plasteel.json
 53b74c6f10941823e8234d61d56cb37faa72322c assets/silentcompat/models/item/sculk_alloy_block.json
 b787d3cdd14c5ef3041b7ce92d5fdf81d89150ea assets/silentcompat/models/item/sculk_alloy_ingot.json
@@ -26,10 +28,12 @@ b787d3cdd14c5ef3041b7ce92d5fdf81d89150ea assets/silentcompat/models/item/sculk_a
 fadc5325682775d3a3d3f24ac355ba1978b0de58 assets/silentcompat/models/item/solarmetal_block.json
 897b0f538aa15336da276d125ed50686b3ddc5f6 assets/silentcompat/models/item/solarmetal_ingot.json
 9919bc086bd5228cc1cc0e965d9560ae0e59dd97 assets/silentcompat/models/item/solarmetal_nugget.json
+4cc3d12ea6d1b4d90cde16c9886f33e8c3386f51 assets/silentcompat/models/item/solarmetal_ore.json
 2d43a41ded2440eb5c948c6e755b518c4b05763e assets/silentcompat/models/item/source_steel_block.json
 a1ce6630dfb65d9a93095d501d5a4fdc1d6c1ed0 assets/silentcompat/models/item/source_steel_ingot.json
 cef49d790a436405b27b8e46de8fe50da5b300c7 assets/silentcompat/models/item/source_steel_nugget.json
 4e4017499e4c6b53059efcc8e2ac72a114b70ce0 assets/silentcompat/models/item/voidmetal_block.json
 39f03ce4798c0dd8d863ec69e94519a02e9dc0a8 assets/silentcompat/models/item/voidmetal_ingot.json
 3604174c42f16e4647b3ef20f658dbca5985979c assets/silentcompat/models/item/voidmetal_nugget.json
+75f31df007b38d5fc38e4e564d33a75f819732c6 assets/silentcompat/models/item/voidmetal_ore.json
 5a2ff69339b429bd50218bf5907e7707407fedfe assets/silentcompat/models/item/warden_ingot.json

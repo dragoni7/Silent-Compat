@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "silentcompat:plasteel_ore"
+  },
+  "result": "silentcompat:plasteel_ingot"
+}

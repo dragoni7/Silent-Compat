@@ -17,17 +17,22 @@ public class AddBlockTags extends BlockTagsProvider {
 	}
 	
 	protected void addTags() {
-		/*addMaterialTags(MaterialRegistry.MIDNIGHTIRON);
-		addMaterialTags(MaterialRegistry.BUNNYSTEEL);
-		addMaterialTags(MaterialRegistry.DARKCHOCOLATE);
-		addMaterialTags(MaterialRegistry.SCULKALLOY);
-		addMaterialTags(MaterialRegistry.CAPSID_ALLOY);
-		addMaterialTags(MaterialRegistry.PLASTEEL);
-		addMaterialTags(MaterialRegistry.SOURCE_STEEL);*/
 		
 		for (MaterialSet set : MaterialRegistry.MATERIAL_SETS.values()) {
 			addMaterialTags(set);
 		}
+		
+		tag(Tags.Blocks.ORES).add(MaterialRegistry.ARCMETAL_ORE.get()).add(MaterialRegistry.VOIDMETAL_ORE.get()).add(MaterialRegistry.SOLARMETAL_ORE.get()).add(MaterialRegistry.PLASTEEL_ORE.get());
+		tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE).add(MaterialRegistry.VOIDMETAL_ORE.get()).add(MaterialRegistry.PLASTEEL_ORE.get());
+		tag(Tags.Blocks.ORES_IN_GROUND_STONE).add(MaterialRegistry.ARCMETAL_ORE.get());
+		tag(BlockTags.MINEABLE_WITH_PICKAXE).add(MaterialRegistry.ARCMETAL_ORE.get()).add(MaterialRegistry.VOIDMETAL_ORE.get()).add(MaterialRegistry.SOLARMETAL_ORE.get()).add(MaterialRegistry.PLASTEEL_ORE.get());
+		tag(Tags.Blocks.NEEDS_NETHERITE_TOOL).add(MaterialRegistry.ARCMETAL_ORE.get()).add(MaterialRegistry.VOIDMETAL_ORE.get()).add(MaterialRegistry.PLASTEEL_ORE.get()).add(MaterialRegistry.SOLARMETAL_ORE.get());
+		
+		tag(SilentCompatTags.SOLARMETAL_ORES).add(MaterialRegistry.SOLARMETAL_ORE.get());
+		tag(SilentCompatTags.ARCMETAL_ORES).add(MaterialRegistry.ARCMETAL_ORE.get());
+		tag(SilentCompatTags.VOIDMETAL_ORES).add(MaterialRegistry.VOIDMETAL_ORE.get());
+		tag(SilentCompatTags.PLASTEEL_ORES).add(MaterialRegistry.PLASTEEL_ORE.get());
+		
 	}
 	
 	private void addMaterialTags(MaterialSet set) {

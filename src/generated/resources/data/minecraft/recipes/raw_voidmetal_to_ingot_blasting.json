@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 150,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "silentcompat:raw_voidmetal"
+  },
+  "result": "silentcompat:voidmetal_ingot"
+}

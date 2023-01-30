@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 150,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "silentcompat:solarmetal_ore"
+  },
+  "result": "silentcompat:solarmetal_ingot"
+}

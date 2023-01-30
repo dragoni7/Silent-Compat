@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 300,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "silentcompat:voidmetal_ore"
+  },
+  "result": "silentcompat:voidmetal_ingot"
+}

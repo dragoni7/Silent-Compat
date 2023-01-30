@@ -44,7 +44,7 @@
       },
       "rod": {
         "durability": {
-          "mul2": 0.25
+          "mul2": 0.23
         },
         "rarity": 20.0
       }

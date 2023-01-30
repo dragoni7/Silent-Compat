@@ -105,7 +105,7 @@
         },
         {
             "name": "silentgear:holy",
-            "level": 5
+            "level": 4
         }
       ],
       "rod": [
@@ -117,20 +117,10 @@
       "tip": [
         {
             "name": "silentgear:holy",
-            "level": 5
+            "level": 4
         }
       ],
       "coating": [
-        {
-            "name": "silentgear:renew",
-            "level": 1,
-            "conditions": [
-              {
-                "type": "silentgear:material_ratio",
-                "ratio": 0.35
-              }
-            ]
-        },
         {
             "name": "silentcompat:mana_boost",
             "level": 1,

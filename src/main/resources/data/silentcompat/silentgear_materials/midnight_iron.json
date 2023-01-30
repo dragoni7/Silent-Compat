@@ -87,7 +87,7 @@
     "main": [
       {
         "name": "silentgear:malleable",
-        "level": 3
+        "level": 2
       },
       {
         "name": "silentcompat:nocturnal",
@@ -117,7 +117,7 @@
     "rod": [
       {
         "name": "silentgear:magnetic",
-        "level": 3,
+        "level": 1,
         "conditions": [
           {
             "type": "silentgear:material_ratio",
@@ -129,7 +129,7 @@
     "tip": [
       {
         "name": "silentgear:malleable",
-        "level": 2
+        "level": 1
       }
     ]
   },

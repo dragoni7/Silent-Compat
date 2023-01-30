@@ -15,6 +15,7 @@ import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.RegistryObject;
 
 public class MaterialSet {
+	
 	public final String name;
 	public final TagKey<Item> ingotTag;
 	public final TagKey<Item> nuggetTag;

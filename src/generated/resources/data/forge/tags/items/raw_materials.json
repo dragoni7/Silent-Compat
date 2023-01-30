@@ -1,5 +1,8 @@
 {
   "values": [
-    "silentcompat:raw_plasteel"
+    "silentcompat:raw_plasteel",
+    "silentcompat:raw_voidmetal",
+    "silentcompat:raw_solarmetal",
+    "silentcompat:raw_arcmetal"
   ]
 }

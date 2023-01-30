@@ -63,6 +63,7 @@ public class SilentCompat {
 	public static final Logger LOGGER = LogUtils.getLogger();
 
 	public SilentCompat() {
+		
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		SilentCompatSoundEvents.SOUND_EVENTS.register(modEventBus);
 		SilentCompatParticles.PARTICLES.register(modEventBus);

@@ -21,13 +21,13 @@
     "stats": {
       "coating": {
         "melee_damage": {
-            "add": 3.0
+            "add": 2.0
           },
           "magic_damage": {
             "add": 3.2
           },
           "ranged_damage": {
-            "add": 3.2
+            "add": 2.2
           },
           "repair_efficiency": {
             "mul1": -0.15
@@ -38,10 +38,6 @@
       "coating": [
         {
           "name": "silentgear:synergistic",
-          "level": 1
-        },
-        {
-          "name": "silentcompat:spell_damage",
           "level": 1
         }
       ]

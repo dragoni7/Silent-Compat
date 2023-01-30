@@ -51,10 +51,10 @@
       },
       "tip": {
         "durability": {
-            "mul2": 0.2
+            "add": 200
           },
           "melee_damage": {
-            "mul2": 0.1
+            "mul2": 0.15
           },
           "repair_efficiency": {
             "mul1": -0.15

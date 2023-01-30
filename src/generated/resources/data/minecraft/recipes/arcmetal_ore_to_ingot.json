@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 300,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "silentcompat:arcmetal_ore"
+  },
+  "result": "silentcompat:arcmetal_ingot"
+}

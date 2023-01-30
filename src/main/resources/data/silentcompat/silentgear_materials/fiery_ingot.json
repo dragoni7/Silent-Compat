@@ -51,12 +51,27 @@
   "traits": {
     "main": [
       {
-        "name": "silentgear:magmatic",
+        "name": "silentgear:fireproof",
         "level": 1
       },
       {
-        "name": "silentgear:fireproof",
-        "level": 1
+        "name": "silentcompat:restoration",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:or",
+            "values": [
+              {
+                "type": "silentgear:material_count",
+                "count": 2
+              },
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.35
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "silentcompat:fire_react",

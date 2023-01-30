@@ -80,7 +80,7 @@
             "name": "silentcompat:abyssal_synergy",
             "level": 3
         },
-                {
+        {
           "name": "silentcompat:devouring",
           "level": 1,
           "conditions": [
@@ -93,7 +93,7 @@
 
         {
           "name": "silentcompat:umbral_blast",
-          "level": 2,
+          "level": 3,
           "conditions": [
             {
               "type": "silentgear:material_ratio",

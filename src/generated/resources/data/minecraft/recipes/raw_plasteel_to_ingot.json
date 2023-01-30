@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 400,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "silentcompat:raw_plasteel"
+  },
+  "result": "silentcompat:plasteel_ingot"
+}

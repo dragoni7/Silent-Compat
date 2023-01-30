@@ -9,6 +9,10 @@
     "silentcompat:midnight_iron_block",
     "silentcompat:solarmetal_block",
     "silentcompat:dark_chocolate_block",
-    "silentcompat:bunny_steel_block"
+    "silentcompat:bunny_steel_block",
+    "silentcompat:arcmetal_ore",
+    "silentcompat:voidmetal_ore",
+    "silentcompat:solarmetal_ore",
+    "silentcompat:plasteel_ore"
   ]
 }

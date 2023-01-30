@@ -15,22 +15,15 @@ public class SilentCompatBlockStates extends BlockStateProvider {
 
 	@Override
 	protected void registerStatesAndModels() {
-		/*ArrayList<Block> blocks = new ArrayList<Block>();
-		blocks.add(MaterialRegistry.MIDNIGHTIRON.block.get());
-		blocks.add(MaterialRegistry.BUNNYSTEEL.block.get());
-		blocks.add(MaterialRegistry.DARKCHOCOLATE.block.get());
-		blocks.add(MaterialRegistry.SCULKALLOY.block.get());
-		blocks.add(MaterialRegistry.CAPSID_ALLOY.block.get());
-		blocks.add(MaterialRegistry.PLASTEEL.block.get());
-		blocks.add(MaterialRegistry.SOURCE_STEEL.block.get());
-		
-		for(Block b : blocks) {
-			simpleBlock(b);
-		}*/
 		
 		for (MaterialSet set : MaterialRegistry.MATERIAL_SETS.values()) {
 			simpleBlock(set.block.get());
 		}
+		
+		simpleBlock(MaterialRegistry.ARCMETAL_ORE.get());
+		simpleBlock(MaterialRegistry.VOIDMETAL_ORE.get());
+		simpleBlock(MaterialRegistry.SOLARMETAL_ORE.get());
+		simpleBlock(MaterialRegistry.PLASTEEL_ORE.get());
 	}
 
 }

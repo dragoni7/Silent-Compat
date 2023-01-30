@@ -1,4 +1,4 @@
-// 1.19.2	2023-01-09T15:57:49.3803396	Tags for minecraft:item
+// 1.19.2	2023-01-29T12:38:17.9205543	Tags for minecraft:item
 49c12dc1066afdea5c89a385fae5130956cd34ae data/forge/tags/items/dragon_scale.json
 aca1bcde8c4f759ab4e8b77f33dfd0a742936a79 data/forge/tags/items/essence/abjuration.json
 3268af9fafa0d471c4c01b2b513e88b1ec09af9f data/forge/tags/items/essence/conjuration.json
@@ -30,8 +30,16 @@ c3ccf0700892c77f9d2930e554a8a14cc116dc6f data/forge/tags/items/nuggets/sculk_all
 64cae169c39d006e44859780a96e3e74079fbc92 data/forge/tags/items/nuggets/solarmetal.json
 4cd038600e21f0a58db522e6090e8df249b5b5c0 data/forge/tags/items/nuggets/source_steel.json
 e1fd8ebff6f503758028ea0840b85cda4a20f1fd data/forge/tags/items/nuggets/voidmetal.json
-0ca7e1f32bf50d0a2d93c60e2478249a1e07afb3 data/forge/tags/items/raw_materials.json
+ca2eb32c178afa788ab1860b590bac75287618bd data/forge/tags/items/ores.json
+037f83e3f234f190bd2533909d26787907830eec data/forge/tags/items/ores/arcmetal.json
+f4df0752061cefe05c7aca910b866abe99270ac5 data/forge/tags/items/ores/plasteel.json
+a09b7ec866e615198e00561e5344ed2f06f29d3e data/forge/tags/items/ores/solarmetal.json
+dc86066fdd600f81316e5482efcc15f73af01586 data/forge/tags/items/ores/voidmetal.json
+61aa6e61b62a59b03f50c88aa1bc255f060fa90b data/forge/tags/items/raw_materials.json
+5e579002421530f727cf4201dcf775b822df2ef0 data/forge/tags/items/raw_materials/arcmetal.json
 0ca7e1f32bf50d0a2d93c60e2478249a1e07afb3 data/forge/tags/items/raw_materials/plasteel.json
+f968a74ab127bc865dc8469cb58f78a880c05cb0 data/forge/tags/items/raw_materials/solarmetal.json
+296eb5dcd63c5836f5d13e709d11946cb0c6e14f data/forge/tags/items/raw_materials/voidmetal.json
 f614e216a73ef93b1109705578d5db4a9194ddae data/forge/tags/items/storage_blocks.json
 bec8e86f3ac34b808a1d72e6934f381716a6c2c9 data/forge/tags/items/storage_blocks/arcmetal.json
 959dc46856274767bfee466b0e11798a248ac8cf data/forge/tags/items/storage_blocks/bunny_steel.json
