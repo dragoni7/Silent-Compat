@@ -1,0 +1,116 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:gems/allurite"
+      }
+    },
+    "name": {
+      "text": "Allurite"
+    },
+    "stats": {
+      "main": {
+        "durability": 67.0,
+        "armor_durability": 6.0,
+        "repair_value": -0.15,
+        "enchantment_value": 15.0,
+        "rarity": 35.0,
+        "charging_value": 1.3,
+        "harvest_level": 2.0,
+        "harvest_speed": 9.0,
+        "melee_damage": 1.0,
+        "attack_speed": 0.0,
+        "ranged_damage": 2.0,
+        "ranged_speed": 0.0,
+        "armor": 18.0,
+        "armor/helmet": 3.0,
+        "armor/chestplate": 8.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 2.0,
+        "armor_toughness": 5.0,
+        "magic_armor": 10.0
+      },
+      "rod": {},
+      "adornment": {}
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:imperial",
+          "level": 2
+        },
+        {
+          "name": "silentgear:brittle",
+          "level": 3
+        },
+        {
+            "name": "silentgear:lustrous",
+            "level": 1
+        }
+      ],
+      "adornment": [
+        {
+            "name": "silentcompat:dense",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#24f3d5"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#24f3d5"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#24f3d5"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#24f3d5"
+        }
+      ],
+      "adornment/all": [
+        {
+          "texture": "silentgear:adornment_generic",
+          "color": "#24f3d5"
+        },
+        {
+          "texture": "silentgear:adornment_highlight",
+          "color": "#24f3d5"
+        }
+      ],
+      "adornment/part": [
+        {
+          "texture": "silentgear:adornment",
+          "color": "#24f3d5"
+        },
+        {
+          "texture": "silentgear:adornment_highlight"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silentcompat",
+  "ingredients": [
+    {
+      "tag": "forge:gems/void_crystal_shard"
+    },
+    {
+      "tag": "forge:gems/void_crystal_shard"
+    },
+    {
+      "tag": "forge:gems/crystal_shard"
+    },
+    {
+      "tag": "forge:gems/crystal_shard"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:crystalline_alloy"
+  }
+}

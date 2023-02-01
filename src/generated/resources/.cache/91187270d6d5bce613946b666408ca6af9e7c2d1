@@ -1,4 +1,4 @@
-// 1.19.2	2023-01-28T12:16:37.5725353	Item Models: silentcompat
+// 1.19.2	2023-01-31T16:21:57.1912505	Item Models: silentcompat
 331e8fe6d14bb1102328a412227e73e2e0805829 assets/silentcompat/models/item/arcmetal_block.json
 a1eaf5c4cb8019a9f245a2ee7d8285b267166b9f assets/silentcompat/models/item/arcmetal_ingot.json
 9f19b40ad0ca9ea8d8c40040971ff855627dbcf4 assets/silentcompat/models/item/arcmetal_nugget.json
@@ -21,7 +21,10 @@ fd8167fb60ea4e0fccbc1e2ab0af49ea9a90ceae assets/silentcompat/models/item/outback
 42271fadcf476977b07e827d32c1a7f040cdc981 assets/silentcompat/models/item/plasteel_ingot.json
 05ac6664e5bee2fdf2e6b08d8440a626eba8640f assets/silentcompat/models/item/plasteel_nugget.json
 600bb10eec98191dc61f59faf37c11935668f714 assets/silentcompat/models/item/plasteel_ore.json
+d7d2275076459ca1b6155cad64fb690db26c4075 assets/silentcompat/models/item/raw_arcmetal.json
 cc872564502e6caa34198ab4514f84c478c10129 assets/silentcompat/models/item/raw_plasteel.json
+fc3ea1e1f9c868af455307022484560a6bc3f875 assets/silentcompat/models/item/raw_solarmetal.json
+0f22c8d0a08acbf4563ef7b51d9fe92139daa4a6 assets/silentcompat/models/item/raw_voidmetal.json
 53b74c6f10941823e8234d61d56cb37faa72322c assets/silentcompat/models/item/sculk_alloy_block.json
 b787d3cdd14c5ef3041b7ce92d5fdf81d89150ea assets/silentcompat/models/item/sculk_alloy_ingot.json
 23621638217ac0c5c960a4676dc0859038c45ad3 assets/silentcompat/models/item/sculk_alloy_nugget.json

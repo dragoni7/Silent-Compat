@@ -1,0 +1,136 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/calorite"
+      }
+    },
+    "name": {
+      "text": "Calorite"
+    },
+    "stats": {
+      "main": {
+        "durability": 1260.0,
+        "armor_durability": 27.0,
+        "enchantment_value": 12.0,
+        "harvest_level": 4.0,
+        "harvest_speed": 13.0,
+        "melee_damage": 3.0,
+        "magic_damage": 5.0,
+        "attack_speed": 0.2,
+        "armor": 24.0,
+        "armor/helmet": 4.0,
+        "armor/chestplate": 9.0,
+        "armor/leggings": 7.0,
+        "armor/boots": 4.0,
+        "magic_armor": 8.0,
+        "armor_toughness": 10,
+        "ranged_damage": 2.0,
+        "ranged_speed": 0.4,
+        "rarity": 75.0,
+        "charging_value": 1.1
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.27
+        },
+        "attack_speed": {
+          "add": 0.05
+        },
+        "rarity": 60.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:flexible",
+          "level": 2
+        },
+        {
+          "name": "silentgear:fireproof",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        },
+        {
+            "name": "silentcompat:scorching",
+            "level": 2,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.5
+              }
+            ]
+        },
+        {
+            "name": "silentcompat:bulwark",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.5
+              }
+            ]
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:flexible",
+          "level": 1
+        },
+        {
+            "name": "silentgear:hard",
+            "level": 2,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.5
+              }
+            ]
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#a66b72"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#a66b72"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#a66b72"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#a66b72"
+        }
+      ]
+    }
+  }

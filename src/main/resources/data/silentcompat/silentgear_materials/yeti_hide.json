@@ -1,0 +1,115 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic",
+        "cloth"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:yeti_hide"
+      }
+    },
+    "name": {
+      "text": "Yeti Hide"
+    },
+    "stats": {
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 7.0,
+        "enchantment_value": 16.0,
+        "rarity": 16.0,
+        "charging_value": 0.7,
+        "armor": 11.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 4.0,
+        "armor/leggings": 3.0,
+        "armor/boots": 2.0,
+        "magic_armor": 10.0
+      },
+      "grip": {
+        "repair_efficiency": {
+          "mul1": 0.15
+        },
+        "harvest_speed": {
+          "mul1": 0.1
+        },
+        "attack_speed": {
+          "add": 0.1
+        }
+      },
+      "lining": {}
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:snow_walker",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:gear_type",
+              "gear_type": "boots"
+            }
+          ]
+        },
+        {
+            "name": "silentgear:bastion",
+            "level": 1
+        }
+      ],
+      "grip": [
+        {
+          "name": "silentgear:flexible",
+          "level": 1
+        },
+        {
+            "name": "silentgear:soft",
+            "level": 1
+        }
+      ],
+      "lining": [
+        {
+          "name": "silentgear:flexible",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#e1f0f3"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#e1f0f3"
+        }
+      ],
+      "grip/all": [
+        {
+          "texture": "silentgear:grip_wool",
+          "color": "#e1f0f3"
+        }
+      ],
+      "grip/part": [
+        {
+          "texture": "silentgear:grip",
+          "color": "#e1f0f3"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#e1f0f3"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,95 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:cindershell_shard"
+      }
+    },
+    "name": {
+      "text": "Cindershell Shard"
+    },
+    "stats": {
+      "main": {
+        "durability": 800.0,
+        "enchantment_value": 5.0,
+        "rarity": 18.0,
+        "charging_value": 0.8,
+        "harvest_level": 2.0,
+        "harvest_speed": 6.0,
+        "melee_damage": 1.0,
+        "magic_damage": 1.0,
+        "ranged_damage": 1.0,
+        "ranged_speed": 0.0
+      },
+      "rod": {
+        "melee_damage": {
+          "add": 0.5
+        },
+        "repair_efficiency": {
+          "mul1": -0.1
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:chipping",
+          "level": 3
+        },
+        {
+            "name": "silentgear:fiery",
+            "level": 2
+        },
+        {
+          "name": "silentcompat:scorching",
+          "level": 1
+        }
+      ],
+      "rod": [
+        {
+            "name": "silentgear:chipping",
+            "level": 1
+        },
+        {
+            "name": "silentgear:fiery",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#470d0f"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#470d0f"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#470d0f"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#470d0f"
+        }
+      ]
+    }
+  }

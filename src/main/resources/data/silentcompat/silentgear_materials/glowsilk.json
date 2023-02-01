@@ -1,0 +1,87 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 2,
+    "categories": [
+      "organic",
+      "fiber"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "silentcompat:glowsilk"
+    }
+  },
+  "name": {
+    "text": "Glowsilk"
+  },
+  "stats": {
+    "binding": {
+      "magic_armor": {
+        "add": 3.0
+      }
+    },
+    "cord": {
+      "ranged_damage": {
+        "mul1": 0.06
+      }
+    }
+  },
+  "traits": {
+    "binding": [
+      {
+        "name": "silentgear:lustrous",
+        "level": 1
+      },
+      {
+        "name": "silentgear:flexible",
+        "level": 3
+      }
+    ],
+    "cord": [
+      {
+        "name": "silentgear:flexible",
+        "level": 2
+      }
+    ]
+  },
+  "model": {
+    "binding/all": [
+      {
+        "texture": "silentgear:binding_generic",
+        "color": "#ffe0cc"
+      }
+    ],
+    "binding/part": [
+      {
+        "texture": "silentgear:binding",
+        "color": "#ffe0cc"
+      }
+    ],
+    "cord/all": [
+      {
+        "texture": "silentgear:bowstring_string",
+        "color": "#ffe0cc"
+      },
+      {
+        "texture": "silentgear:arrow"
+      }
+    ],
+    "cord/part": [
+      {
+        "texture": "silentgear:bowstring",
+        "color": "#ffe0cc"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:cloth",
+        "color": "#ffe0cc"
+      }
+    ]
+  }
+}

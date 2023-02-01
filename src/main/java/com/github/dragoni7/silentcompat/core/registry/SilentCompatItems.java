@@ -35,6 +35,9 @@ public class SilentCompatItems {
 			() -> new Item(new Item.Properties().tab(SilentCompat.SilentCompatTab)
 					.food(new FoodProperties.Builder().nutrition(1).saturationMod(0.2F).build())));
 	
+	public static final RegistryObject<Item> CRYSTALLINE_ALLOY = ITEMS.register("crystalline_alloy",
+			() -> new Item(new Item.Properties().tab(SilentCompat.SilentCompatTab)));
+	
 	// Ore items
 	
 	public static final RegistryObject<Item> ARCMETAL_ORE_ITEM = ITEMS.register("arcmetal_ore",

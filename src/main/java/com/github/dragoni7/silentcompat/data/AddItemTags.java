@@ -42,6 +42,8 @@ public class AddItemTags extends ItemTagsProvider {
 		
 		tag(SilentCompatTags.WARDEN_INGOT).add(SilentCompatItems.WARDEN_INGOT.get());
 		
+		tag(SilentCompatTags.CRYSTALLINE_ALLOY).add(SilentCompatItems.CRYSTALLINE_ALLOY.get());
+		
 		// Other mod's items:
 		
 		tag(SilentCompatTags.BEE_STINGER).addOptional(new ResourceLocation("the_bumblezone:bee_stinger"));
@@ -107,6 +109,19 @@ public class AddItemTags extends ItemTagsProvider {
 		tag(SilentCompatTags.CONJURATION_ESSENCE).addOptional(new ResourceLocation("ars_nouveau:conjuration_essence"));
 		tag(SilentCompatTags.EARTH_ESSENCE).addOptional(new ResourceLocation("ars_nouveau:earth_essence"));
 		tag(SilentCompatTags.ROTTEN_FLESH).add(Items.ROTTEN_FLESH);
+		
+		// End's Phantasm
+		tag(SilentCompatTags.STELLIUM).addOptional(new ResourceLocation("phantasm:stellium_ingot"));
+		tag(SilentCompatTags.VOID_SHARD).addOptional(new ResourceLocation("phantasm:void_crystal_spike_tip"));
+		tag(SilentCompatTags.CRYSTAL_SHARD).addOptional(new ResourceLocation("phantasm:crystal_spike_tip"));
+		
+		tag(SilentCompatTags.GLOW_SILK).addOptional(new ResourceLocation("infernalexp:glow_silk"));
+		
+		tag(SilentCompatTags.ALLURITE).addOptional(new ResourceLocation("galosphere:allurite_shard"));
+		tag(SilentCompatTags.LUMIERE).addOptional(new ResourceLocation("galosphere:lumiere_shard"));
+		
+		tag(SilentCompatTags.CINDERSHELL_SHARD).addOptional(new ResourceLocation("cnb:cindershell_shell_shard"));
+		tag(SilentCompatTags.YETI_HIDE).addOptional(new ResourceLocation("cnb:yeti_hide"));
 	}
 	
 	private void addMaterialTags(MaterialSet set) {

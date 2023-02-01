@@ -31,6 +31,10 @@ public class SilentCompatItemModels extends ItemModelProvider {
 		blockItemModel(SilentCompatItems.PLASTEEL_ORE_ITEM, "block/plasteel_ore");
 		
 		singleTextureItemModel(SilentCompatItems.RAW_PLASTEEL, "item/raw_plasteel");
+		singleTextureItemModel(SilentCompatItems.RAW_ARCMETAL, "item/raw_arcmetal");
+		singleTextureItemModel(SilentCompatItems.RAW_VOIDMETAL, "item/raw_voidmetal");
+		singleTextureItemModel(SilentCompatItems.RAW_SOLARMETAL, "item/raw_solarmetal");
+		
 		singleTextureItemModel(SilentCompatItems.OUTBACK_LEATHER, "item/outback_leather");
 		singleTextureItemModel(SilentCompatItems.CHOCOLATECHIP, "item/chocolate_chip");
 		singleTextureItemModel(SilentCompatItems.WARDEN_INGOT, "item/warden_ingot");

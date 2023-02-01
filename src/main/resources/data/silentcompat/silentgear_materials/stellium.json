@@ -1,0 +1,159 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 5,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/stellium"
+      }
+    },
+    "name": {
+      "text": "Stellium"
+    },
+    "stats": {
+      "main": {
+        "durability": 1337.0,
+        "armor_durability": 79.0,
+        "enchantment_value": 16.0,
+        "rarity": 100.0,
+        "charging_value": 1.1,
+        "harvest_level": 5.0,
+        "harvest_speed": 8.0,
+        "melee_damage": 5.0,
+        "magic_damage": 1.0,
+        "attack_speed": 0.0,
+        "ranged_damage": 2.0,
+        "ranged_speed": -0.4,
+        "projectile_speed": 0.8,
+        "projectile_accuracy": 1.1,
+        "armor": 25.0,
+        "armor/helmet": 5.0,
+        "armor/chestplate": 9.0,
+        "armor/leggings": 7.0,
+        "armor/boots": 4.0,
+        "magic_armor": 12.0,
+        "knockback_resistance": 5.0
+      },
+      "rod": {
+        "durability": {
+          "add": 200
+        }
+      },
+      "tip": {
+        "durability": {
+          "add": 156.0
+        },
+        "armor_durability": {
+          "add": 8.0
+        },
+        "harvest_level": {
+          "max": 5.0
+        },
+        "harvest_speed": {
+          "add": 2.0
+        },
+        "magic_damage": {
+          "add": 1.0
+        },
+        "rarity": {
+          "add": 40.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentcompat:end_bound",
+          "level": 1
+        },
+        {
+          "name": "silentgear:floatstoner",
+          "level": 1
+        },
+        {
+          "name": "silentcompat:vigorous",
+          "level": 1
+        },
+        {
+          "name": "silentgear:stellar",
+          "level": 2
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentcompat:end_bound",
+          "level": 1
+        },
+        {
+          "name": "silentgear:reach",
+          "level": 2
+        }
+
+      ],
+      "tip": [
+        {
+          "name": "silentcompat:end_bound",
+          "level": 1
+        },
+        {
+          "name": "silentgear:stellar",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#fcfcfc"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#fcfcfc"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#fcfcfc"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#fcfcfc"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#fcfcfc"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#fcfcfc"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ]
+    }
+  }

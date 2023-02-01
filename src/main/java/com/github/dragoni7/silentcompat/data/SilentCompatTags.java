@@ -8,6 +8,9 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.Tags;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 public class SilentCompatTags {
 	
@@ -97,6 +100,21 @@ public class SilentCompatTags {
 	public static final TagKey<Item> FROSTSTALKER_HORN = createItemTag("froststalker_horn");
 	public static final TagKey<Item> BISON_FUR = createItemTag("bison_fur");
 	public static final TagKey<Item> FISH_BONES = createItemTag("fish_bones");
+	
+	public static final TagKey<Item> STELLIUM = forgeItemTag("ingots/stellium");
+	public static final TagKey<Item> VOID_SHARD = forgeItemTag("gems/void_crystal_shard");
+	public static final TagKey<Item> CRYSTAL_SHARD = forgeItemTag("gems/crystal_shard");
+	public static final TagKey<Item> CRYSTALLINE_ALLOY = createItemTag("crystalline_alloy");
+	
+	public static final TagKey<Item> GLOW_SILK = createItemTag("glowsilk");
+	
+	public static final TagKey<Item> ALLURITE = forgeItemTag("gems/allurite");
+	public static final TagKey<Item> LUMIERE = forgeItemTag("gems/lumiere");
+	
+	public static final TagKey<Item> CINDERSHELL_SHARD = createItemTag("cindershell_shard");
+	public static final TagKey<Item> YETI_HIDE = createItemTag("yeti_hide");
+	
+	public static final TagKey<Item> REINFORCED_ECHO_SHARD = ForgeRegistries.ITEMS.tags().createTagKey(new ResourceLocation("deeperdarker:reinforced_echo_shard"));
 	
 	private static TagKey<Item> createItemTag(String name) {
 		return ItemTags.create(new ResourceLocation(SilentCompat.MODID, name));

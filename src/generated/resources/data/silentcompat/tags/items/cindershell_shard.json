@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id": "cnb:cindershell_shell_shard",
+      "required": false
+    }
+  ]
+}

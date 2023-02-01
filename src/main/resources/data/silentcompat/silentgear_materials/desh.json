@@ -4,7 +4,7 @@
     "availability": {
       "tier": 3,
       "categories": [
-        "organic"
+        "metal"
       ],
       "visible": true,
       "gear_blacklist": [],
@@ -12,65 +12,54 @@
     },
     "crafting_items": {
       "main": {
-        "tag": "forge:ingots/dark_chocolate"
+        "tag": "forge:ingots/desh"
       }
     },
     "name": {
-      "translate": "material.silentcompat.dark_chocolate"
+      "text": "Desh"
     },
     "stats": {
       "main": {
-        "durability": 960.0,
-        "armor_durability": 19.0,
-        "repair_value": -0.15,
-        "enchantment_value": 11.0,
+        "durability": 1060.0,
+        "armor_durability": 26.0,
+        "enchantment_value": 14.0,
         "harvest_level": 3.0,
-        "harvest_speed": 7.0,
-        "melee_damage": 3.0,
-        "magic_damage": 1.5,
-        "attack_speed": 0.1,
+        "harvest_speed": 11.0,
+        "melee_damage": 2.5,
+        "magic_damage": 5.0,
         "attack_speed/axe": -0.1,
-        "armor": 18.0,
+        "attack_speed/dagger": 0.2,
+        "attack_speed/knife": 0.2,
+        "armor": 20.0,
         "armor/helmet": 3.0,
-        "armor/chestplate": 7.0,
-        "armor/leggings": 5.0,
+        "armor/chestplate": 8.0,
+        "armor/leggings": 6.0,
         "armor/boots": 3.0,
-        "armor_toughness": 0.0,
-        "magic_armor": 6.0,
-        "ranged_damage": 1.0,
-        "ranged_speed": 0.0,
-        "rarity": 40.0,
+        "magic_armor": 8.0,
+        "ranged_damage": 2.0,
+        "ranged_speed": 0.2,
+        "rarity": 60.0,
         "charging_value": 1.0
       },
       "rod": {
         "durability": {
-          "mul2": 0.2
+          "mul2": 0.25
         },
         "harvest_speed": {
-          "mul2": 0.05
+          "mul2": 0.16
         },
-        "rarity": 40.0
+        "rarity": 60.0
       }
     },
     "traits": {
       "main": [
         {
-            "name": "silentgear:organic",
-            "level": 3
+          "name": "silentgear:malleable",
+          "level": 4
         },
         {
-            "name": "silentcompat:chocolate_chipping",
-            "level": 1,
-            "conditions": [
-              {
-                "type": "silentgear:material_ratio",
-                "ratio": 0.5
-              }
-            ]
-        },
-        {
-          "name": "silentcompat:nocturnal",
-          "level": 1,
+          "name": "silentgear:moonwalker",
+          "level": 2,
           "conditions": [
             {
               "type": "silentgear:material_ratio",
@@ -81,12 +70,8 @@
       ],
       "rod": [
         {
-            "name": "silentgear:organic",
-            "level": 3
-        },
-        {
-            "name": "silentgear:soft",
-            "level": 3
+          "name": "silentgear:malleable",
+          "level": 3
         }
       ]
     },
@@ -94,7 +79,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#2e1405"
+          "color": "#d38b4c"
         },
         {
           "texture": "silentgear:_highlight"
@@ -103,21 +88,20 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#2e1405"
+          "color": "#d38b4c"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_hc",
-          "color": "#2e1405"
+          "color": "#d38b4c"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#2e1405"
+          "color": "#d38b4c"
         }
       ]
     }
   }
-  

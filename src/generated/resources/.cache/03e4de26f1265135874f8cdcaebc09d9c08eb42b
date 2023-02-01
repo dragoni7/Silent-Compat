@@ -1,9 +1,13 @@
-// 1.19.2	2023-01-29T12:38:17.9205543	Tags for minecraft:item
+// 1.19.2	2023-01-31T16:21:57.18825	Tags for minecraft:item
 49c12dc1066afdea5c89a385fae5130956cd34ae data/forge/tags/items/dragon_scale.json
 aca1bcde8c4f759ab4e8b77f33dfd0a742936a79 data/forge/tags/items/essence/abjuration.json
 3268af9fafa0d471c4c01b2b513e88b1ec09af9f data/forge/tags/items/essence/conjuration.json
 d15cfd3b6250e3f7d5d41520bd757565fccae5aa data/forge/tags/items/essence/earth.json
+6efe0639a6a4496f8338578d7aee7ac5d2614791 data/forge/tags/items/gems/allurite.json
+a709b501183b33373b975b40de5368468a67113a data/forge/tags/items/gems/crystal_shard.json
 0765e30f0871716da082290db89cd2789fe99514 data/forge/tags/items/gems/honey_crystal_shards.json
+d583150151dc564e667b2afe51e9585bc75be36b data/forge/tags/items/gems/lumiere.json
+8118ecad04598d23eef28892d35a9459b8ab299e data/forge/tags/items/gems/void_crystal_shard.json
 ac6fa567ded784aaf3ffeba0f34958cb08558e40 data/forge/tags/items/ingots.json
 5dedc4ce994a1eed4163f539b4867b63cee077d0 data/forge/tags/items/ingots/andesite_alloy.json
 b47de37c95d03814f83f71dae292ef501d9d0664 data/forge/tags/items/ingots/arcmetal.json
@@ -17,6 +21,7 @@ e30880267c5467648c97803789aed52eb4a72947 data/forge/tags/items/ingots/midnight_i
 fc5f5e375dc2f33fda2952c67e0f80c4aa91a5c8 data/forge/tags/items/ingots/solarmetal.json
 8b80964776f0c80a646e2e0f98a96923eed65892 data/forge/tags/items/ingots/soul_steel.json
 a747575198666543eaa78059b99b741db6405c73 data/forge/tags/items/ingots/source_steel.json
+60546f5e812ddae29839fef40c980053552565bc data/forge/tags/items/ingots/stellium.json
 c55e06f6896c13843a5bc5b74b7bcca29e58eeb0 data/forge/tags/items/ingots/voidmetal.json
 51d7df266966c87b55d3e571a2961e632642d246 data/forge/tags/items/ingots/warden.json
 dbd9150c302423f000b04c369fc6fe756541fab4 data/forge/tags/items/nuggets.json
@@ -61,10 +66,12 @@ a0ca476723aea556a0a0dfb700d1f5e0248edb67 data/forge/tags/items/storage_blocks/vo
 6ffe1f3dcaeea5aa21732807ff847631bc095e84 data/silentcompat/tags/items/brute_tusk.json
 15a6fed247836b070b0514289705caf66be491c9 data/silentcompat/tags/items/capsid.json
 a430b3db17ebcc92d0c87e21ead614a7581c8ff8 data/silentcompat/tags/items/centipede_leg.json
+dceddcacf5bb95175f51c3940d5100bc45d9c24b data/silentcompat/tags/items/cindershell_shard.json
 f42722d24c39cddbca8a4e8b239a72aad624525d data/silentcompat/tags/items/cloth.json
 f3cff41c6fae6534db4f77edbb5cb9f9db63a971 data/silentcompat/tags/items/cockroach_wing.json
 ffca15ab168b4a2245c836bbd1615662c2493151 data/silentcompat/tags/items/crocodile_scute.json
 4aeed6d0ef64272857b1266185eef827796184da data/silentcompat/tags/items/cryptic_end_rod.json
+d8e28861adc19f702e69b52360605b102c9fa411 data/silentcompat/tags/items/crystalline_alloy.json
 fcbfe31f8e72e115c500e8480e635d5d2dc5c7e7 data/silentcompat/tags/items/ditchbulb.json
 6ee90cdf53aaa5f961cdd98f399ac85a7372f7a1 data/silentcompat/tags/items/dropbear_claw.json
 d2f3153fa78109813ac4757612e36bdd7b60e246 data/silentcompat/tags/items/elastic_tendon.json
@@ -75,6 +82,7 @@ e367137c4d4cd9a82a406cda32b61454b4fe03dd data/silentcompat/tags/items/farseer_ar
 a5df22b20402426631ca3676500c820a2aa68480 data/silentcompat/tags/items/fortunes_favor.json
 eb76d82474a4842dcc80ec5c81c173270f633023 data/silentcompat/tags/items/froststalker_horn.json
 36b03a7da6164b4ac38ab6d6626adc1cc8178585 data/silentcompat/tags/items/gazelle_horn.json
+ed3f8bc370384987da63f8e34fa63848d6fed45d data/silentcompat/tags/items/glowsilk.json
 7b84b12e55ac56be3a8ae76f4eb7415a9c55f6d3 data/silentcompat/tags/items/goo.json
 855b899b8157bf475c0c3edd045241668d8ec2f7 data/silentcompat/tags/items/hemolymph_sac.json
 3903599a3b0230109713944d1b562575c9468ef6 data/silentcompat/tags/items/kangaroo_hide.json
@@ -106,3 +114,4 @@ cb1beeccd019caacbb1d5caaab829bdad9e58e91 data/silentcompat/tags/items/straddlite
 4bcc060315034021e731bf1f53ae55ea0f7c38e8 data/silentcompat/tags/items/tentacle.json
 aa028e5af983a34735f944a912eabf435b826482 data/silentcompat/tags/items/void_worm.json
 5a7dbd9ba4483a07cee8fa99a20764e47ae8ba6f data/silentcompat/tags/items/whale_tooth.json
+4993659ab9a8c432f58125b53f09c5caeb7ce467 data/silentcompat/tags/items/yeti_hide.json

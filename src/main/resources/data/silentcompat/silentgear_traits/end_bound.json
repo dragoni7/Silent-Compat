@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:wielder_effect",
+    "max_level": 2,
+    "name": {
+      "text": "End-Bound"
+    },
+    "description": {
+      "text": "Adds debilitating effects when outside of the End"
+    },
+    "potion_effects": {
+      "armor": [
+        {
+          "type": "trait_level",
+          "effect": "minecraft:slowness",
+          "level": [
+            1,
+            2
+          ]
+        },
+        {
+          "type": "trait_level",
+          "effect": "minecraft:unluck",
+          "level": [
+            3,
+            4
+          ]
+        }
+      ],
+      "tool": [
+        {
+          "type": "trait_level",
+          "effect": "minecraft:mining_fatigue",
+          "level": [
+            1,
+            3
+          ]
+        },
+        {
+          "type": "trait_level",
+          "effect": "minecraft:weakness",
+          "level": [
+            2,
+            2
+          ]
+        }
+      ]
+    }
+  }
