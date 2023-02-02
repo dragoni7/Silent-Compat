@@ -27,6 +27,12 @@
           "mul2": 0.2
         },
         "attack_speed": {
+          "add": 0.5
+        },
+        "attack_speed/knife": {
+          "add": 1.0
+        },
+        "attack_speed/dagger": {
           "add": 1.0
         },
         "attack_speed/axe": {

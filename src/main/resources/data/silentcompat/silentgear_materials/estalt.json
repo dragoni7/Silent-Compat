@@ -29,7 +29,7 @@
         "harvest_speed": 7.0,
         "melee_damage": 4.0,
         "magic_damage": 2.0,
-        "attack_speed": -0.1,
+        "attack_speed": -0.2,
         "ranged_damage": 1.0,
         "ranged_speed": -0.1,
         "projectile_speed": 1.0,
@@ -62,23 +62,35 @@
     "traits": {
       "main": [
         {
-          "name": "silentgear:malleable",
+          "name": "silentgear:brittle",
           "level": 2
         },
         {
           "name": "silentgear:hard",
           "level": 1
+        },
+        {
+          "name": "silentgear:fireproof",
+          "level": 1
+        },
+        {
+          "name": "silentgear:fiery",
+          "level": 1
         }
       ],
       "rod": [
         {
-          "name": "silentgear:flexible",
+          "name": "silentgear:brittle",
           "level": 1
         }
       ],
       "tip": [
         {
           "name": "silentgear:sharp",
+          "level": 1
+        },
+        {
+          "name": "silentgear:fiery",
           "level": 1
         }
       ]
@@ -87,7 +99,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#DC143C"
+          "color": "#156071"
         },
         {
           "texture": "silentgear:_highlight"
@@ -96,25 +108,25 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#DC143C"
+          "color": "#156071"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_lc",
-          "color": "#DC143C"
+          "color": "#156071"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#DC143C"
+          "color": "#156071"
         }
       ],
       "tip/all": [
         {
           "texture": "silentgear:tip_sharp",
-          "color": "#DC143C"
+          "color": "#156071"
         }
       ],
       "tip/part": [
@@ -123,7 +135,7 @@
         },
         {
           "texture": "silentgear:tip",
-          "color": "#DC143C"
+          "color": "#156071"
         },
         {
           "texture": "silentgear:tip_shine"

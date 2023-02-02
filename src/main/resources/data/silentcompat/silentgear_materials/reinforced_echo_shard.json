@@ -12,11 +12,11 @@
     },
     "crafting_items": {
       "main": {
-        "tag": "forge:ingots/warden"
+        "tag": "deeperdarker:reinforced_echo_shard"
       }
     },
     "name": {
-      "text": "Warden Ingot"
+      "text": "Reinforced Echo Shard"
     },
     "name_prefix": {
       "text": "Warden"
@@ -25,14 +25,14 @@
       "coating": {
         "durability": [
           {
-            "mul2": 0.34
+            "mul2": 0.21319547021
           },
           {
             "add": 2.0
           }
         ],
         "armor_durability": {
-          "mul2": 0.123
+          "mul2": 0.21621621622
         },
         "harvest_speed": {
           "mul2": 0.125
@@ -41,16 +41,10 @@
           "max": 4.0
         },
         "melee_damage": {
-          "mul2": 0.4
+          "mul2": 0.5
         },
         "magic_damage": {
-          "mul2": 0.4
-        },
-        "ranged_damage": {
-          "mul2": 0.4
-        },
-        "armor_toughness": {
-          "add": 4.0
+          "mul2": 0.5
         },
         "enchantment_value": {
           "add": 5.0
@@ -83,7 +77,7 @@
       "coating/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#083740"
+          "color": "#00232b"
         },
         {
           "texture": "silentgear:_highlight"
@@ -92,7 +86,7 @@
       "coating/part": [
         {
           "texture": "silentgear:coating_material",
-          "color": "#083740"
+          "color": "#00232b"
         },
         {
           "texture": "silentgear:coating_jar"
@@ -101,7 +95,7 @@
       "main/fragment": [
         {
           "texture": "silentgear:dust",
-          "color": "#083740"
+          "color": "#00232b"
         }
       ]
     }

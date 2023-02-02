@@ -32,11 +32,14 @@ public class lang extends LanguageProvider {
 		add(MaterialRegistry.SOLARMETAL_ORE.get(), "Solar Metal Ore");
 		add(MaterialRegistry.PLASTEEL_ORE.get(), "Plasteel Ore");
 		
+		add(SilentCompatItems.RAW_ARCMETAL.get(), "Raw Arcmetal");
+		add(SilentCompatItems.RAW_SOLARMETAL.get(), "Raw Solarmetal");
+		add(SilentCompatItems.RAW_VOIDMETAL.get(), "Raw Voidmetal");
+		add(SilentCompatItems.RAW_PLASTEEL.get(), "Raw Plasteel");
 		
 		add(SilentCompatItems.OUTBACK_LEATHER.get(), "Outback Leather");
-		add(SilentCompatItems.RAW_PLASTEEL.get(), "Raw Plasteel");
 		add(SilentCompatItems.CHOCOLATECHIP.get(), "Chocolate Chip");
-		add(SilentCompatItems.WARDEN_INGOT.get(), "Warden Ingot");
+		add(SilentCompatItems.CRYSTALLINE_ALLOY.get(), "Crystalline Alloy");
 		
 		add(SilentCompatEffects.AMPLIFIED.get(), "Amplified");
 		add(SilentCompatEffects.DEVOURING.get(), "Devouring");
@@ -112,6 +115,8 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.scorching.desc", "Consumes restoration, applying the scorch effect to the target hit.");
 		add("trait.silentcompat.sunspot", "Sun Spot");
 		add("trait.silentcompat.sunspot.desc", "Consumes restoration. Standing in fire puts it out, healing a large chunk of health and granting strength.");
+		add("trait.silentcompat.lava_vision", "Lava Vision");
+		add("trait.silentcompat.lava_vision.desc", "Provides the Lava Vision effect while in lava. (Requires: Alexs Mobs)");
 		
 		// JEED
 		add("effect.silentcompat.amplified.description", "Increases speed. Allows certain traits such as Jolt Hit to proc.");

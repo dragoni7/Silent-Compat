@@ -53,7 +53,7 @@
         },
       "tip": {
         "durability": {
-          "add": 400.0
+          "add": 300.0
         },
         "harvest_level": {
           "max": 6.0
@@ -75,7 +75,7 @@
             "level": 1
         },
         {
-          "name": "silentcompat:jolt_hit",
+          "name": "silentgear:bastion",
           "level": 1,
           "conditions": [
             {
@@ -102,7 +102,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#801a1f"
+          "color": "#f7d8f2"
         },
         {
           "texture": "silentgear:_highlight"
@@ -111,25 +111,25 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#801a1f"
+          "color": "#f7d8f2"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_lc",
-          "color": "#801a1f"
+          "color": "#f7d8f2"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#801a1f"
+          "color": "#f7d8f2"
         }
       ],
       "tip/all": [
         {
           "texture": "silentgear:tip_sharp",
-          "color": "#801a1f"
+          "color": "#f7d8f2"
         }
       ],
       "tip/part": [
@@ -138,7 +138,7 @@
         },
         {
           "texture": "silentgear:tip",
-          "color": "#801a1f"
+          "color": "#f7d8f2"
         },
         {
           "texture": "silentgear:tip_shine"

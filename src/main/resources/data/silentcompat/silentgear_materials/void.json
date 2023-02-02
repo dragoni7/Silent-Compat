@@ -40,7 +40,10 @@
         "armor/leggings": 11.0,
         "armor/boots": 9.0,
         "armor_toughness": 12.0,
-        "magic_armor": 13.0
+        "magic_armor": 13.0,
+        "knockback_resistance": {
+          "add": 4.0
+        }
       }
     },
     "traits": {
@@ -81,7 +84,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#74b7ed"
+          "color": "#9c0058"
         },
         {
           "texture": "silentgear:_highlight"
@@ -90,7 +93,7 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#74b7ed"
+          "color": "#9c0058"
         }
       ]
     }

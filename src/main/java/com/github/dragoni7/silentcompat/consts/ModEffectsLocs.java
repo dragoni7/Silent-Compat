@@ -10,6 +10,7 @@ public class ModEffectsLocs {
 	public static final ResourceLocation GOOEY = new ResourceLocation("undergarden", "gooey");
 	public static final ResourceLocation ENDER_FLU = new ResourceLocation("alexsmobs", "ender_flu");
 	public static final ResourceLocation SOUL_STEAL = new ResourceLocation("alexsmobs", "soulsteal");
+	public static final ResourceLocation LAVA_VISION = new ResourceLocation("alexsmobs", "lava_vision");
 	
 	public static final ResourceLocation MANAREGEN = new ResourceLocation("ars_nouveau", "mana_regen");
 	public static final ResourceLocation RECOVERY = new ResourceLocation("ars_nouveau", "recovery");

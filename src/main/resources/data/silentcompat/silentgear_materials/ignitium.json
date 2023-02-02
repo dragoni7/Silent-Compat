@@ -1,0 +1,117 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/ignitium"
+      }
+    },
+    "name": {
+      "text": "Ignitium"
+    },
+    "name_prefix": {
+      "translate": "Ignitium"
+    },
+    "stats": {
+      "coating": {
+        "durability": [
+          {
+            "mul2": 0.31
+          },
+          {
+            "add": 2.0
+          }
+        ],
+        "armor_durability": {
+          "mul2": 0.21621621622 
+        },
+        "harvest_speed": {
+          "mul2": 0.125
+        },
+        "harvest_level": {
+          "max": 4.0
+        },
+        "melee_damage": {
+          "mul2": 1.0
+        },
+        "attack_speed": {
+          "add": -0.5
+        },
+        "magic_damage": {
+          "mul2": 1.0
+        },
+        "armor/helmet": {
+            "add": 1
+        },
+        "armor/chestplate": {
+            "add": 2
+        },
+        "armor/leggings": {
+            "add": 1
+        },
+        "armor/boots": {
+            "add": 1
+        },
+        "armor_toughness": {
+          "add": 2
+        },
+        "knockback_resistance": {
+          "add": 1.5
+        },
+        "enchantment_value": {
+          "add": 5.0
+        }
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentgear:flame_ward",
+          "level": 1
+        },
+        {
+            "name": "silentcompat:lava_vision",
+            "level": 1
+        },
+        {
+            "name": "silentcompat:fire_react",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#723a44"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#723a44"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#723a44"
+        }
+      ]
+    }
+  }

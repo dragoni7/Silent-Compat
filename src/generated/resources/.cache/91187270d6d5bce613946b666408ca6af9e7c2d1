@@ -1,4 +1,4 @@
-// 1.19.2	2023-01-31T16:21:57.1912505	Item Models: silentcompat
+// 1.19.2	2023-02-01T18:23:58.6296189	Item Models: silentcompat
 331e8fe6d14bb1102328a412227e73e2e0805829 assets/silentcompat/models/item/arcmetal_block.json
 a1eaf5c4cb8019a9f245a2ee7d8285b267166b9f assets/silentcompat/models/item/arcmetal_ingot.json
 9f19b40ad0ca9ea8d8c40040971ff855627dbcf4 assets/silentcompat/models/item/arcmetal_nugget.json
@@ -10,6 +10,7 @@ f42b63669bf4cf12392d0c68512284d0e88d31dc assets/silentcompat/models/item/capsid_
 67fde8e04fc0e6c990828619db08c7a8cbb98b45 assets/silentcompat/models/item/capsid_alloy_ingot.json
 5c4b52ffb312a6f36e798a57dfc8b2f173a44168 assets/silentcompat/models/item/capsid_alloy_nugget.json
 8290a0085943fe4c9a58a55d84cd41ab8cf05c86 assets/silentcompat/models/item/chocolate_chip.json
+01678d919cb8da7ccb6be4067513f740b82e572e assets/silentcompat/models/item/crystalline_alloy.json
 c5f4390380d0e532efa565e1207f27044ac6a7c8 assets/silentcompat/models/item/dark_chocolate_block.json
 fee1a413b4f82a311148146fe9ef66aca4efaf00 assets/silentcompat/models/item/dark_chocolate_ingot.json
 b2627955c77558c8621234a2aecf324e0e392a67 assets/silentcompat/models/item/dark_chocolate_nugget.json
@@ -39,4 +40,3 @@ cef49d790a436405b27b8e46de8fe50da5b300c7 assets/silentcompat/models/item/source_
 39f03ce4798c0dd8d863ec69e94519a02e9dc0a8 assets/silentcompat/models/item/voidmetal_ingot.json
 3604174c42f16e4647b3ef20f658dbca5985979c assets/silentcompat/models/item/voidmetal_nugget.json
 75f31df007b38d5fc38e4e564d33a75f819732c6 assets/silentcompat/models/item/voidmetal_ore.json
-5a2ff69339b429bd50218bf5907e7707407fedfe assets/silentcompat/models/item/warden_ingot.json

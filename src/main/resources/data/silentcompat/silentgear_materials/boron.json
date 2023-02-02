@@ -31,6 +31,7 @@
         "magic_damage": 3.0,
         "attack_speed": 0.1,
         "attack_speed/axe": -0.1,
+        "attack_speed/sword": -0.1,
         "ranged_damage": 1.0,
         "ranged_speed": 0.2,
         "projectile_speed": 1.2,
@@ -57,7 +58,7 @@
           "add": 1.0
         },
         "melee_damage": {
-          "add": 1.0
+          "add": 0.5
         },
         "ranged_speed": {
           "add": 0.3
@@ -105,7 +106,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#547991"
+          "color": "#53788f"
         },
         {
           "texture": "silentgear:_highlight"
@@ -114,25 +115,25 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#547991"
+          "color": "#53788f"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_lc",
-          "color": "#547991"
+          "color": "#53788f"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#547991"
+          "color": "#53788f"
         }
       ],
       "tip/all": [
         {
           "texture": "silentgear:tip_sharp",
-          "color": "#547991"
+          "color": "#53788f"
         }
       ],
       "tip/part": [
@@ -141,7 +142,7 @@
         },
         {
           "texture": "silentgear:tip",
-          "color": "#547991"
+          "color": "#53788f"
         },
         {
           "texture": "silentgear:tip_shine"

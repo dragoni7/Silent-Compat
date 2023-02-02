@@ -67,8 +67,14 @@
             "level": 5
         },
         {
-          "name": "silentcompat:knockback",
-          "level": 3
+          "name": "silentcompat:amplifying",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
         }
       ]
     },
@@ -76,7 +82,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#74b7ed"
+          "color": "#a4662f"
         },
         {
           "texture": "silentgear:_highlight"
@@ -85,7 +91,7 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#74b7ed"
+          "color": "#a4662f"
         }
       ]
     }

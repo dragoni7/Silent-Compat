@@ -37,6 +37,12 @@
         "melee_damage": {
           "add": 2.0
         },
+        "attack_speed/knife": {
+          "add": 0.1
+        },
+        "attack_speed/dagger": {
+          "add": 0.1
+        },
         "ranged_damage": {
           "add": 2.0
         },

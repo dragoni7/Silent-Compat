@@ -14,7 +14,6 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
-import net.minecraft.data.recipes.UpgradeRecipeBuilder;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -91,8 +90,6 @@ public class SilentCompatRecipes extends RecipeProvider {
 		.requires(SilentCompatTags.CRYSTAL_SHARD)
 		.requires(SilentCompatTags.CRYSTAL_SHARD)
 		.group(SilentCompat.MODID).unlockedBy("has_crystal_shard", has(SilentCompatTags.CRYSTAL_SHARD)).save(consumer);
-		
-		UpgradeRecipeBuilder.smithing(Ingredient.of(Items.NETHERITE_INGOT), Ingredient.of(SilentCompatTags.REINFORCED_ECHO_SHARD), SilentCompatItems.WARDEN_INGOT.get()).unlocks("has_reinforced_echo_shard", has(SilentCompatTags.REINFORCED_ECHO_SHARD)).save(consumer, "warden_ingot_smithing");
 		
 		createOreSmeltingRecipe(consumer, SilentCompatItems.ARCMETAL_ORE_ITEM.get(), MaterialRegistry.MATERIAL_SETS.get("arcmetal").ingot.get(), 1.0F, 300, "arcmetal_ore_to_ingot");
 		createOreSmeltingRecipe(consumer, SilentCompatItems.VOIDMETAL_ORE_ITEM.get(), MaterialRegistry.MATERIAL_SETS.get("voidmetal").ingot.get(), 1.0F, 300, "voidmetal_ore_to_ingot");

@@ -116,7 +116,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#a6e0c1"
+          "color": "#a4ddbf"
         },
         {
           "texture": "silentgear:_highlight"
@@ -125,25 +125,25 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#a6e0c1"
+          "color": "#a4ddbf"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_lc",
-          "color": "#a6e0c1"
+          "color": "#a4ddbf"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#a6e0c1"
+          "color": "#a4ddbf"
         }
       ],
       "tip/all": [
         {
           "texture": "silentgear:tip_sharp",
-          "color": "#a6e0c1"
+          "color": "#a4ddbf"
         }
       ],
       "tip/part": [
@@ -152,7 +152,7 @@
         },
         {
           "texture": "silentgear:tip",
-          "color": "#a6e0c1"
+          "color": "#a4ddbf"
         },
         {
           "texture": "silentgear:tip_shine"

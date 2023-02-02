@@ -63,11 +63,19 @@
         {
             "name": "silentgear:terminus",
             "level": 1
+        },
+        {
+          "name": "silentgear:chilled",
+          "level": 2
         }
       ],
       "rod": [
         {
           "name": "silentgear:sturdy",
+          "level": 1
+        },
+        {
+          "name": "silentgear:chilled",
           "level": 1
         }
       ]
@@ -76,7 +84,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#B3B3FF"
+          "color": "#3d3752"
         },
         {
           "texture": "silentgear:_highlight"
@@ -85,19 +93,19 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#B3B3FF"
+          "color": "#3d3752"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_hc",
-          "color": "#B3B3FF"
+          "color": "#3d3752"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#B3B3FF"
+          "color": "#3d3752"
         }
       ]
     }

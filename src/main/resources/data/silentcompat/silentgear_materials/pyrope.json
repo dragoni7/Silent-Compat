@@ -1,0 +1,198 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "blue_skies:gems/pyrope"
+      }
+    },
+    "name": {
+      "text": "Pyrope"
+    },
+    "stats": {
+      "main": {
+        "durability": 200.0,
+        "armor_durability": 15.0,
+        "enchantment_value": 22.0,
+        "rarity": 25.0,
+        "charging_value": 0.8,
+        "harvest_level": 1.0,
+        "harvest_speed": 5.0,
+        "melee_damage": 1.5,
+        "magic_damage": 5.0,
+        "attack_speed/sword": 0.4,
+        "attack_speed/katana": 0.4,
+        "attack_speed/spear": 0.4,
+        "attack_speed/machete": 0.4,
+        "attack_speed/dagger": 0.4,
+        "attack_speed/knife": 0.4,
+        "attack_speed/sickle": 0.4,
+        "armor": 12.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 5.0,
+        "armor/leggings": 4.0,
+        "armor/boots": 1.0,
+        "magic_armor": 10.0
+      },
+      "rod": {
+        "harvest_level": {
+          "max": 1.0
+        },
+        "harvest_speed": {
+          "mul2": 0.1
+        },
+        "attack_speed": {
+            "add": 0.05
+        }
+      },
+      "tip": {
+        "durability": {
+          "add": 32.0
+        },
+        "armor_durability": {
+          "add": 3.0
+        },
+        "harvest_level": {
+          "max": 1.0
+        },
+        "attack_speed": {
+          "add": 0.05
+        },
+        "magic_damage": {
+          "add": 1.0
+        },
+        "rarity": {
+          "add": 14.0
+        }
+      },
+      "coating": {
+        "durability": {
+          "mul2": -0.05
+        },
+        "armor_durability": {
+          "mul2": -0.05
+        },
+        "rarity": {
+          "add": 20.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:lustrous",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.7
+            }
+          ]
+        },
+        {
+          "name": "silentgear:reach",
+          "level": 1
+        },
+        {
+          "name": "silentgear:brittle",
+          "level": 3
+        }
+      ],
+      "rod": [
+        {
+            "name": "silentgear:brittle",
+            "level": 2
+        }
+      ],
+      "tip": [
+        {
+            "name": "silentgear:brittle",
+            "level": 2
+        }
+      ],
+      "coating": [
+        {
+          "name": "silentgear:brilliant",
+          "level": 1
+        },
+        {
+          "name": "silentgear:soft",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#ef3f67"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#ef3f67"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_smooth",
+          "color": "#ef3f67"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#ef3f67"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ],
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#ef3f67"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#ef3f67"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#ef3f67"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#ef3f67"
+        }
+      ]
+    }
+  }

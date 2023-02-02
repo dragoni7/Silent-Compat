@@ -20,14 +20,17 @@
     },
     "stats": {
       "main": {
-        "durability": 3000.0,
+        "durability": 3500.0,
         "armor_durability": 38.0,
         "enchantment_value": 10.0,
         "harvest_level": 4.0,
         "harvest_speed": 7.0,
-        "melee_damage": 5.0,
+        "melee_damage": 5.5,
         "magic_damage": 2.0,
-        "attack_speed": 0.0,
+        "attack_speed": -0.1,
+        "attack_speed/axe": -0.2,
+        "attack_speed/knife": 0.0,
+        "attack_speed/dagger": 0.0,
         "armor": 25.0,
         "armor/helmet": 4.0,
         "armor/chestplate": 10.0,
@@ -98,7 +101,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#3b3c73"
+          "color": "#3a3d6e"
         },
         {
           "texture": "silentgear:_highlight"
@@ -107,19 +110,19 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#3b3c73"
+          "color": "#3a3d6e"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_hc",
-          "color": "#3b3c73"
+          "color": "#3a3d6e"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#3b3c73"
+          "color": "#3a3d6e"
         }
       ]
     }

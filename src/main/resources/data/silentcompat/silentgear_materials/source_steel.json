@@ -24,7 +24,7 @@
       "armor_durability": 24.0,
       "enchantment_value": 24.0,
       "harvest_level": 3.0,
-      "harvest_speed": 7.0,
+      "harvest_speed": 9.0,
       "melee_damage": 4.0,
       "magic_damage": 4.0,
       "attack_speed": 0.0,
@@ -171,7 +171,7 @@
     "main/all": [
       {
         "texture": "silentgear:main_generic_hc",
-        "color": "#eb6adc"
+        "color": "#ee9cc5"
       },
       {
         "texture": "silentgear:_highlight"
@@ -180,19 +180,19 @@
     "main/fragment": [
       {
         "texture": "silentgear:metal",
-        "color": "#eb6adc"
+        "color": "#ee9cc5"
       }
     ],
     "rod/all": [
       {
         "texture": "silentgear:rod_generic_lc",
-        "color": "#eb6adc"
+        "color": "#76b974"
       }
     ],
     "rod/part": [
       {
         "texture": "silentgear:rod",
-        "color": "#eb6adc"
+        "color": "#76b974"
       }
     ]
   }

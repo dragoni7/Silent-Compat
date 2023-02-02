@@ -23,14 +23,19 @@
         "durability": 1259.0,
         "armor_durability": 26.0,
         "enchantment_value": 40.0,
-        "rarity": 110.0,
+        "rarity": 100.0,
         "charging_value": 2.0,
         "repair_value": 0.5,
         "harvest_level": 5.0,
         "harvest_speed": 11.0,
         "melee_damage": 5.0,
         "magic_damage": 8.0,
-        "attack_speed": 0.2,
+        "attack_speed": 0.0,
+        "attack_speed/axe": -0.1,
+        "attack_speed/sword": -0.1,
+        "attack_speed/knife": 0.1,
+        "attack_speed/dagger": 0.1,
+        "attack_speed/katana": 0.1,
         "ranged_damage": 1.0,
         "ranged_speed": 0.3,
         "projectile_speed": 2.0,
@@ -57,7 +62,7 @@
         },
       "tip": {
         "durability": {
-          "add": 300.0
+          "add": 200.0
         },
         "armor_durability": {
           "add": 9.0
@@ -117,7 +122,7 @@
       "tip": [
         {
             "name": "silentgear:holy",
-            "level": 4
+            "level": 3
         }
       ],
       "coating": [
@@ -137,7 +142,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#74b7ed"
+          "color": "#53a9aa"
         },
         {
           "texture": "silentgear:_highlight"
@@ -146,25 +151,25 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#74b7ed"
+          "color": "#53a9aa"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_lc",
-          "color": "#74b7ed"
+          "color": "#53a9aa"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#74b7ed"
+          "color": "#53a9aa"
         }
       ],
       "tip/all": [
         {
           "texture": "silentgear:tip_sharp",
-          "color": "#74b7ed"
+          "color": "#53a9aa"
         }
       ],
       "tip/part": [
@@ -173,7 +178,7 @@
         },
         {
           "texture": "silentgear:tip",
-          "color": "#74b7ed"
+          "color": "#53a9aa"
         },
         {
           "texture": "silentgear:tip_shine"
@@ -182,7 +187,7 @@
       "coating/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#74b7ed"
+          "color": "#53a9aa"
         },
         {
           "texture": "silentgear:_highlight"
@@ -191,7 +196,7 @@
       "coating/part": [
         {
           "texture": "silentgear:coating_material",
-          "color": "#74b7ed"
+          "color": "#53a9aa"
         },
         {
           "texture": "silentgear:coating_jar"

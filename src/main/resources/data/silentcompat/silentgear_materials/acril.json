@@ -56,8 +56,8 @@
           ]
         },
         {
-            "name": "silentcompat:bludgeoning",
-            "level": 3
+            "name": "silentcompat:jolt_hit",
+            "level": 4
         },
         {
             "name": "silentgear:crushing",
@@ -69,7 +69,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#74b7ed"
+          "color": "#d8a027"
         },
         {
           "texture": "silentgear:_highlight"
@@ -78,7 +78,7 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#74b7ed"
+          "color": "#d8a027"
         }
       ]
     }

@@ -1,0 +1,16 @@
+{
+    "type": "silentcompat:lava_vision",
+    "max_level": 1,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "helmet"
+      }
+    ],
+    "name": {
+        "translate": "trait.silentcompat.lava_vision"
+      },
+      "description": {
+        "translate": "trait.silentcompat.lava_vision.desc"
+      }
+  }

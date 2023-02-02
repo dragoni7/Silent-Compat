@@ -118,25 +118,25 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#8772ea"
+          "color": "#ae92ea"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_lc",
-          "color": "#8772ea"
+          "color": "#ae92ea"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#8772ea"
+          "color": "#ae92ea"
         }
       ],
       "tip/all": [
         {
           "texture": "silentgear:tip_smooth",
-          "color": "#8772ea"
+          "color": "#ae92ea"
         }
       ],
       "tip/part": [
@@ -145,7 +145,7 @@
         },
         {
           "texture": "silentgear:tip",
-          "color": "#8772ea"
+          "color": "#ae92ea"
         },
         {
           "texture": "silentgear:tip_shine"
@@ -154,7 +154,7 @@
       "coating/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#8772ea"
+          "color": "#ae92ea"
         },
         {
           "texture": "silentgear:_highlight"
@@ -163,7 +163,7 @@
       "coating/part": [
         {
           "texture": "silentgear:coating_material",
-          "color": "#8772ea"
+          "color": "#ae92ea"
         },
         {
           "texture": "silentgear:coating_jar"

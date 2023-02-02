@@ -1,0 +1,84 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:crude_cladding"
+      }
+    },
+    "name": {
+      "text": "Crude Cladding"
+    },
+    "name_prefix": {
+      "translate": "Cladded"
+    },
+    "stats": {
+      "coating": {
+        "armor_durability": {
+          "mul2": 0.5
+        },
+        "repair_efficiency": {
+            "add": -0.5
+        },
+        "armor/helmet": {
+            "add": 1
+        },
+        "armor/chestplate": {
+            "add": 2
+        },
+        "armor/leggings": {
+            "add": 2
+        },
+        "knockback_resistance": {
+          "add": 0.7
+        }
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentgear:crude",
+          "level": 3
+        },
+        {
+            "name": "silentcompat:projectile_resistance",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#658583"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#658583"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#658583"
+        }
+      ]
+    }
+  }

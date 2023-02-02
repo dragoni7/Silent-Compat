@@ -39,17 +39,20 @@
         },
         "melee_damage": [
           {
-            "mul2": 0.5
+            "mul2": 0.33333334
           },
           {
             "add": 3.0
           }
         ],
+        "attack_speed": {
+          "add": -0.2
+        },
         "magic_damage": {
-          "add": 3
+          "add": 3.0
         },
         "ranged_damage": {
-          "add": 3
+          "add": 3.0
         },
         "armor_toughness": {
           "add": 8.0
@@ -63,7 +66,7 @@
       },
       "rod": {
         "melee_damage": {
-          "mul2": 0.4
+          "mul2": 0.2
         },
         "durability": [
           {
@@ -104,7 +107,7 @@
         },
         {
           "name": "silentcompat:spell_damage",
-          "level": 4
+          "level": 2
         }
       ],
       "rod": [

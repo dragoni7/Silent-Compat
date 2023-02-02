@@ -1,0 +1,25 @@
+{
+    "type": "silentgear:attribute",
+    "max_level": 5,
+    "name": {
+      "text": "Projectile Resistance"
+    },
+    "description": {
+      "translate": "Grants additional projectile resistance. (Requires: Biome Makeover)"
+    },
+    "attribute_modifiers": {
+      "all": [
+        {
+          "attribute": "biomemakeover:projectile_resistance",
+          "operation": 0,
+          "value": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0
+          ]
+        }
+      ]
+    }
+  }

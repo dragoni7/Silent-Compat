@@ -21,15 +21,19 @@
     },
     "stats": {
       "main": {
-        "durability": 2400.0,
-        "armor_durability": 48.0,
+        "durability": 2200.0,
+        "armor_durability": 38.0,
         "repair_value": -0.2,
         "enchantment_value": 10.0,
         "harvest_level": 3.0,
         "harvest_speed": 10.0,
         "melee_damage": 4.0,
         "magic_damage": 4.0,
-        "attack_speed": 0.1,
+        "attack_speed/sword": -0.1,
+        "attack_speed/axe": -0.2,
+        "attack_speed/katana": -0.1,
+        "attack_speed/spear": -0.1,
+        "attack_speed/machete": -0.1,
         "armor": 22.0,
         "armor/helmet": 4.0,
         "armor/chestplate": 8.0,
@@ -114,7 +118,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#05272e"
+          "color": "#062730"
         },
         {
           "texture": "silentgear:_highlight"
@@ -123,25 +127,25 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#05272e"
+          "color": "#062730"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_hc",
-          "color": "#05272e"
+          "color": "#044f4c"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#05272e"
+          "color": "#044f4c"
         }
       ],
       "tip/all": [
         {
           "texture": "silentgear:tip_sharp",
-          "color": "#05272e"
+          "color": "#044f4c"
         }
       ],
       "tip/part": [
@@ -150,7 +154,7 @@
         },
         {
           "texture": "silentgear:tip",
-          "color": "#05272e"
+          "color": "#044f4c"
         },
         {
           "texture": "silentgear:tip_shine"

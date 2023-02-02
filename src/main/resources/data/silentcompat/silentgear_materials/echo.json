@@ -75,7 +75,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#05272e"
+          "color": "#156071"
         },
         {
           "texture": "silentgear:_highlight"
@@ -84,7 +84,7 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#05272e"
+          "color": "#156071"
         }
       ]
     }

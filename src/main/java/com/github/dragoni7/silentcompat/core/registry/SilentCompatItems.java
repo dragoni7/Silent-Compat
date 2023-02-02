@@ -25,9 +25,6 @@ public class SilentCompatItems {
 	public static final RegistryObject<Item> RAW_SOLARMETAL = ITEMS.register("raw_solarmetal",
 			() -> new Item(new Item.Properties().tab(SilentCompat.SilentCompatTab)));
 
-	public static final RegistryObject<Item> WARDEN_INGOT = ITEMS.register("warden_ingot",
-			() -> new Item(new Item.Properties().tab(SilentCompat.SilentCompatTab)));
-
 	public static final RegistryObject<Item> OUTBACK_LEATHER = ITEMS.register("outback_leather",
 			() -> new Item(new Item.Properties().tab(SilentCompat.SilentCompatTab)));
 

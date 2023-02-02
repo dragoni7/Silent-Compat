@@ -1,0 +1,79 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "blue_skies:ingots/horizonite"
+      }
+    },
+    "name": {
+      "text": "Horizonite"
+    },
+    "stats": {
+      "main": {
+        "durability": 250.0,
+        "armor_durability": 15.0,
+        "enchantment_value": 22.0,
+        "rarity": 30.0,
+        "charging_value": 0.9,
+        "harvest_level": 3.0,
+        "harvest_speed": 12.0,
+        "melee_damage": 2.0,
+        "magic_damage": 5.0,
+        "armor": 12.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 5.0,
+        "armor/leggings": 4.0,
+        "armor/boots": 1.0,
+        "magic_armor": 10.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:magmatic",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.7
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:scorching",
+          "level": 2
+        },
+        {
+          "name": "silentgear:fiery",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#fcab39"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#fcab39"
+        }
+      ]
+    }
+  }

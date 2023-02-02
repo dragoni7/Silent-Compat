@@ -1,0 +1,88 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "blue_skies:gems/diopside"
+      }
+    },
+    "name": {
+      "text": "Diopside"
+    },
+    "stats": {
+      "main": {
+        "durability": 1661.0,
+        "armor_durability": 36.0,
+        "enchantment_value": 26.0,
+        "rarity": 40.0,
+        "charging_value": 1.0,
+        "harvest_level": 3.0,
+        "harvest_speed": 12.0,
+        "melee_damage": 5.0,
+        "magic_damage": 5.0,
+        "attack_speed/sword": -0.4,
+        "attack_speed/axe": -0.5,
+        "attack_speed/katana": -0.4,
+        "attack_speed/spear": -0.4,
+        "attack_speed/machete": -0.4,
+        "attack_speed/dagger": -0.4,
+        "attack_speed/knife": -0.4,
+        "attack_speed/sickle": -0.4,
+        "armor": 16.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 7.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 2.0,
+        "armor_toughness": 18.0,
+        "magic_armor": 10.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:reach",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.7
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:swiftness",
+          "level": 2
+        },
+        {
+          "name": "silentgear:brittle",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#00dc19"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#00dc19"
+        }
+      ]
+    }
+  }

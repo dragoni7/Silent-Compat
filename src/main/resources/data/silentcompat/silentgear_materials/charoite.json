@@ -1,0 +1,84 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "blue_skies:gems/charoite"
+      }
+    },
+    "name": {
+      "text": "Charoite"
+    },
+    "stats": {
+      "main": {
+        "durability": 1561.0,
+        "armor_durability": 33.0,
+        "enchantment_value": 26.0,
+        "rarity": 50.0,
+        "charging_value": 1.1,
+        "harvest_level": 3.0,
+        "harvest_speed": 14.0,
+        "melee_damage": 3.0,
+        "magic_damage": 5.0,
+        "armor": 16.0,
+        "armor/helmet": 3.0,
+        "armor/chestplate": 8.0,
+        "armor/leggings": 6.0,
+        "armor/boots": 3.0,
+        "armor_toughness": 8.0,
+        "magic_armor": 10.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:sharp",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.7
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:mana_regen",
+          "level": 1
+        },
+        {
+            "name": "silentcompat:blinding",
+            "level": 1
+        },
+        {
+          "name": "silentgear:soft",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#b587d6"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#b587d6"
+        }
+      ]
+    }
+  }

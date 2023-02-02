@@ -26,7 +26,7 @@
         "rarity": 120.0,
         "charging_value": 0.9,
         "harvest_level": 6.0,
-        "harvest_speed": 16.0,
+        "harvest_speed": 14.0,
         "melee_damage": 7.0,
         "magic_damage": 6.0,
         "attack_speed": 0.0,
@@ -113,7 +113,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#801a1f"
+          "color": "#c40b2d"
         },
         {
           "texture": "silentgear:_highlight"
@@ -122,25 +122,25 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#801a1f"
+          "color": "#c40b2d"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_lc",
-          "color": "#801a1f"
+          "color": "#c40b2d"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#801a1f"
+          "color": "#c40b2d"
         }
       ],
       "tip/all": [
         {
           "texture": "silentgear:tip_sharp",
-          "color": "#801a1f"
+          "color": "#c40b2d"
         }
       ],
       "tip/part": [
@@ -149,7 +149,7 @@
         },
         {
           "texture": "silentgear:tip",
-          "color": "#801a1f"
+          "color": "#c40b2d"
         },
         {
           "texture": "silentgear:tip_shine"

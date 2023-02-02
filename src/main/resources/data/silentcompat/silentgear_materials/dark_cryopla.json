@@ -29,7 +29,7 @@
         "harvest_speed": 14.0,
         "melee_damage": 12.0,
         "magic_damage": 7.0,
-        "attack_speed": -0.1,
+        "attack_speed": -0.15,
         "ranged_damage": 3.0,
         "ranged_speed": 1.0,
         "projectile_speed": 2.0,
@@ -87,6 +87,16 @@
           ]
         },
         {
+          "name": "silentcompat:devouring",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        },
+        {
             "name": "silentcompat:bulwark",
             "level": 3
         }
@@ -108,7 +118,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#74b7ed"
+          "color": "#5594a7"
         },
         {
           "texture": "silentgear:_highlight"
@@ -117,25 +127,25 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#74b7ed"
+          "color": "#5594a7"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_lc",
-          "color": "#74b7ed"
+          "color": "#1d5163"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#74b7ed"
+          "color": "#1d5163"
         }
       ],
       "tip/all": [
         {
           "texture": "silentgear:tip_sharp",
-          "color": "#74b7ed"
+          "color": "#1d5163"
         }
       ],
       "tip/part": [
@@ -144,7 +154,7 @@
         },
         {
           "texture": "silentgear:tip",
-          "color": "#74b7ed"
+          "color": "#1d5163"
         },
         {
           "texture": "silentgear:tip_shine"

@@ -13,6 +13,7 @@ import com.github.dragoni7.silentcompat.trait.BlindingTrait;
 import com.github.dragoni7.silentcompat.trait.ColdTrait;
 import com.github.dragoni7.silentcompat.trait.DecayTrait;
 import com.github.dragoni7.silentcompat.trait.DevouringTrait;
+import com.github.dragoni7.silentcompat.trait.DimensionalEffectTrait;
 import com.github.dragoni7.silentcompat.trait.DiurnalTrait;
 import com.github.dragoni7.silentcompat.trait.DodgingTrait;
 import com.github.dragoni7.silentcompat.trait.ChocolateChipping;
@@ -24,8 +25,10 @@ import com.github.dragoni7.silentcompat.trait.FleetFootedTrait;
 import com.github.dragoni7.silentcompat.trait.FreezingTrait;
 import com.github.dragoni7.silentcompat.trait.GooeyTrait;
 import com.github.dragoni7.silentcompat.trait.HungeringStrike;
+import com.github.dragoni7.silentcompat.trait.InverseDimensionalEffectTrait;
 import com.github.dragoni7.silentcompat.trait.KnightlyTrait;
 import com.github.dragoni7.silentcompat.trait.KnockoutTrait;
+import com.github.dragoni7.silentcompat.trait.LavaVisionTrait;
 import com.github.dragoni7.silentcompat.trait.LuckyBreak;
 import com.github.dragoni7.silentcompat.trait.NeptunesMightTrait;
 import com.github.dragoni7.silentcompat.trait.NocturnalTrait;
@@ -114,6 +117,9 @@ public class SilentCompat {
 		registerTrait(RestorationTrait.SERIALIZER);
 		registerTrait(ScorchingTrait.SERIALIZER);
 		registerTrait(SunSpotTrait.SERIALIZER);
+		registerTrait(LavaVisionTrait.SERIALIZER);
+		registerTrait(DimensionalEffectTrait.SERIALIZER);
+		registerTrait(InverseDimensionalEffectTrait.SERIALIZER);
 	}
 
 	private void registerTrait(ITraitSerializer<?> serializer) {

@@ -30,6 +30,9 @@
         "melee_damage": 5.5,
         "magic_damage": 5.0,
         "attack_speed": -0.2,
+        "attack_speed/axe": -0.3,
+        "attack_speed/knife": 0.0,
+        "attack_speed/dagger": 0.0,
         "ranged_damage": 1.0,
         "ranged_speed": 0.5,
         "projectile_speed": 0.5,
@@ -67,6 +70,16 @@
             {
               "type": "silentgear:material_ratio",
               "ratio": 0.5
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:dense",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
             }
           ]
         },

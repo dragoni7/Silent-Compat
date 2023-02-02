@@ -80,8 +80,18 @@
           "level": 4
         },
         {
-          "name": "silentcompat:jolt_hit",
+          "name": "silentcompat:blinding",
           "level": 3,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:amplifying",
+          "level": 1,
           "conditions": [
             {
               "type": "silentgear:material_ratio",
@@ -117,7 +127,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#74b7ed"
+          "color": "#eeca61"
         },
         {
           "texture": "silentgear:_highlight"
@@ -126,25 +136,25 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#74b7ed"
+          "color": "#eeca61"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_lc",
-          "color": "#74b7ed"
+          "color": "#ad490f"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#74b7ed"
+          "color": "#ad490f"
         }
       ],
       "tip/all": [
         {
           "texture": "silentgear:tip_sharp",
-          "color": "#74b7ed"
+          "color": "#f4fcad"
         }
       ],
       "tip/part": [
@@ -153,7 +163,7 @@
         },
         {
           "texture": "silentgear:tip",
-          "color": "#74b7ed"
+          "color": "#f4fcad"
         },
         {
           "texture": "silentgear:tip_shine"

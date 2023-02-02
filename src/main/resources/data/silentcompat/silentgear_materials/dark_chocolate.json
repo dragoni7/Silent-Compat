@@ -44,7 +44,7 @@
       },
       "rod": {
         "durability": {
-          "mul2": 0.2
+          "mul2": -0.1
         },
         "harvest_speed": {
           "mul2": 0.05

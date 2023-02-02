@@ -101,7 +101,7 @@
         "main/all": [
           {
             "texture": "silentgear:main_generic_hc",
-            "color": "#2E4CE6"
+            "color": "#0b3e50"
           },
           {
             "texture": "silentgear:_highlight"
@@ -110,19 +110,19 @@
         "main/fragment": [
           {
             "texture": "silentgear:metal",
-            "color": "#2E4CE6"
+            "color": "#0b3e50"
           }
         ],
         "rod/all": [
           {
             "texture": "silentgear:rod_generic_hc",
-            "color": "#2E4CE6"
+            "color": "#0b3e50"
           }
         ],
         "rod/part": [
           {
             "texture": "silentgear:rod",
-            "color": "#2E4CE6"
+            "color": "#0b3e50"
           }
         ]
       }

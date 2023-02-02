@@ -1,0 +1,189 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "blue_skies:gems/aquite"
+      }
+    },
+    "name": {
+      "text": "Aquite"
+    },
+    "stats": {
+      "main": {
+        "durability": 270.0,
+        "armor_durability": 15.0,
+        "enchantment_value": 22.0,
+        "rarity": 30.0,
+        "charging_value": 0.9,
+        "harvest_level": 2.0,
+        "harvest_speed": 9.0,
+        "melee_damage": 2,
+        "attack_speed/axe": -0.1,
+        "magic_damage": 5.0,
+        "armor": 15.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 6.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 2.0,
+        "magic_armor": 10.0
+      },
+      "rod": {
+        "harvest_level": {
+          "max": 2.0
+        },
+        "harvest_speed": {
+          "mul2": 0.15
+        }
+      },
+      "tip": {
+        "durability": {
+          "add": 33.0
+        },
+        "armor_durability": {
+          "add": 3.0
+        },
+        "harvest_level": {
+          "max": 2.0
+        },
+        "attack_damage": {
+          "add": 0.5
+        },
+        "magic_damage": {
+          "add": 1.0
+        },
+        "rarity": {
+          "add": 14.0
+        }
+      },
+      "coating": {
+        "durability": {
+          "mul2": -0.05
+        },
+        "armor_durability": {
+          "mul2": -0.05
+        },
+        "rarity": {
+          "add": 20.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:lustrous",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.7
+            }
+          ]
+        },
+        {
+          "name": "silentgear:aquatic",
+          "level": 1
+        },
+        {
+          "name": "silentgear:brittle",
+          "level": 3
+        }
+      ],
+      "rod": [
+        {
+            "name": "silentgear:brittle",
+            "level": 2
+        }
+      ],
+      "tip": [
+        {
+            "name": "silentgear:brittle",
+            "level": 2
+        }
+      ],
+      "coating": [
+        {
+          "name": "silentgear:brilliant",
+          "level": 1
+        },
+        {
+          "name": "silentgear:soft",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#4b92cf"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#4b92cf"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_smooth",
+          "color": "#4b92cf"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#4b92cf"
+        },
+        {
+          "texture": "silentgear:tip_shine"
+        }
+      ],
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#4b92cf"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#4b92cf"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#4b92cf"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#4b92cf"
+        }
+      ]
+    }
+  }

@@ -34,6 +34,9 @@
         "harvest_speed": {
           "add": 2.4
         },
+        "attack_speed/spear": {
+          "add": 0.1
+        },
         "melee_damage": {
           "add": 1.5
         },

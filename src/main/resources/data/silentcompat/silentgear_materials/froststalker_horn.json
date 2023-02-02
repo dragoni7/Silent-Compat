@@ -34,6 +34,9 @@
         "melee_damage": {
           "add": 1.0
         },
+        "attack_speed/spear": {
+          "add": 0.1
+        },
         "ranged_damage": {
           "add": 1.0
         },

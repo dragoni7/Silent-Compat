@@ -27,7 +27,6 @@
         "harvest_speed": 8.0,
         "melee_damage": 3.0,
         "magic_damage": 1.5,
-        "attack_speed": 0.1,
         "attack_speed/axe": -0.1,
         "armor": 18.0,
         "armor/helmet": 3.0,
@@ -80,7 +79,7 @@
       "main/all": [
         {
           "texture": "silentgear:main_generic_hc",
-          "color": "#9f9f9f"
+          "color": "#9d9d9d"
         },
         {
           "texture": "silentgear:_highlight"
@@ -89,19 +88,19 @@
       "main/fragment": [
         {
           "texture": "silentgear:metal",
-          "color": "#9f9f9f"
+          "color": "#9d9d9d"
         }
       ],
       "rod/all": [
         {
           "texture": "silentgear:rod_generic_hc",
-          "color": "#9f9f9f"
+          "color": "#9d9d9d"
         }
       ],
       "rod/part": [
         {
           "texture": "silentgear:rod",
-          "color": "#9f9f9f"
+          "color": "#9d9d9d"
         }
       ]
     }

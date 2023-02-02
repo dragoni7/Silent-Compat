@@ -1,54 +1,93 @@
 {
-    "type": "silentgear:standard",
-    "simple": true,
-    "availability": {
-      "tier": 1,
-      "categories": [
-        "metal"
-      ],
-      "visible": true,
-      "gear_blacklist": [],
-      "can_salvage": true
-    },
-    "crafting_items": {
-      "main": {
-        "item": "minecraft:chain"
-      }
-    },
-    "name": {
-      "translate": "Chain"
-    },
-    "stats": {
-      "binding": {
-        "durability": {
-            "add": 200
-        }
-      }
-    },
-    "traits": {
-        "binding": [
-          {
-            "name": "silentgear:crude",
-            "level": 3
-          },
-          {
-            "name": "silentcompat:dense",
-            "level": 1
-          }
-        ]
-    },
-    "model": {
-      "binding/all": [
-        {
-          "texture": "silentgear:binding_generic",
-          "color": "#27313d"
-        }
-      ],
-      "binding/part": [
-        {
-          "texture": "silentgear:binding",
-          "color": "#27313d"
-        }
-      ]
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 1,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "minecraft:chain"
     }
+  },
+  "name": {
+    "text": "Chainmail"
+  },
+  "stats": {
+    "main": {
+      "armor_durability": 15.0,
+      "enchantment_value": 12.0,
+      "armor": 12.0,
+      "armor/helmet": 2.0,
+      "armor/chestplate": 5.0,
+      "armor/leggings": 4.0,
+      "armor/boots": 1.0,
+      "magic_armor": 3.0,
+      "rarity": 15.0,
+      "charging_value": 0.9
+    },
+    "binding": {
+      "durability": {
+        "mul2": 0.2
+      },
+      "rarity": 10.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:light",
+        "level": 1
+      },
+      {
+        "name": "silentgear:crude",
+        "level": 2
+      }
+    ],
+    "binding": [
+      {
+        "name": "silentgear:crude",
+        "level": 2
+      },
+      {
+        "name": "silentgear:hard",
+        "level": 1
+      }
+    ]
+  },
+  "model": {
+    "main/armor": [
+      {
+        "texture": "minecraft:chainmail"
+      }
+    ],
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal"
+      }
+    ],
+    "binding/all": [
+      {
+        "texture": "silentgear:binding_generic"
+      }
+    ],
+    "binding/part": [
+      {
+        "texture": "silentgear:binding"
+      }
+    ]
   }
+}

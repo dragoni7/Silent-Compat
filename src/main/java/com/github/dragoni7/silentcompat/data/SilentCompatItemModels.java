@@ -37,7 +37,7 @@ public class SilentCompatItemModels extends ItemModelProvider {
 		
 		singleTextureItemModel(SilentCompatItems.OUTBACK_LEATHER, "item/outback_leather");
 		singleTextureItemModel(SilentCompatItems.CHOCOLATECHIP, "item/chocolate_chip");
-		singleTextureItemModel(SilentCompatItems.WARDEN_INGOT, "item/warden_ingot");
+		singleTextureItemModel(SilentCompatItems.CRYSTALLINE_ALLOY, "item/crystalline_alloy");
 	}
 	
 	private void registerMaterialSetItemModels(MaterialSet set) {
