@@ -19,51 +19,81 @@
       "text": "Antimatter"
     },
     "stats": {
-      "rod": {
+      "coating": {
         "durability": {
-            "mul1": 3.0
+          "mul2": -0.25
         },
         "harvest_speed": {
-          "mul2": 0.2
+          "mul2": 1.5
         },
         "melee_damage": {
-          "mul2": 0.2
+          "mul2": 9.0
         },
         "ranged_damage": {
-          "mul2": 0.25
+          "mul2": 9.0
+        }
+      },
+      "tip": {
+        "harvest_speed": {
+          "add": 16.0
         },
-        "rarity": 80.0
+        "melee_damage": {
+          "add": 24.0
+        },
+        "ranged_damage": {
+          "add": 24.0
+        },
+        "rarity": 400.0
       }
     },
     "traits": {
-      "rod": [
+      "coating": [
         {
-          "name": "silentgear:stellar",
+          "name": "silentgear:fireproof",
           "level": 1
         },
         {
-          "name": "silentcompat:umbral_blast",
-          "level": 2,
-          "conditions": [
-            {
-              "type": "silentgear:material_ratio",
-              "ratio": 0.5
-            }
-          ]
+          "name": "silentgear:stellar",
+          "level": 5
         }
       ]
     },
     "model": {
-      "rod/all": [
+      "coating/all": [
         {
-          "texture": "silentgear:rod_generic_lc",
+          "texture": "silentgear:main_generic_hc",
+          "color": "#7f4391"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#7f4391"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
           "color": "#7f4391"
         }
       ],
-      "rod/part": [
+      "tip/part": [
         {
-          "texture": "silentgear:rod",
+          "texture": "silentgear:tip_base",
           "color": "#7f4391"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#7f4391"
+        },
+        {
+          "texture": "silentgear:tip_shine"
         }
       ]
     }
