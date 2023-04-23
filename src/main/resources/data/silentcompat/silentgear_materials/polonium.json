@@ -18,46 +18,91 @@
     "name": {
       "text": "Polonium"
     },
+    
     "stats": {
-      "rod": {
-        "durability": {
-          "mul1": 2.0
-        },
+      "main": {
+        "durability": 225.0,
+        "repair_value": 0.25,
+        "enchantability": 25.0,
+        "harvest_level": 3.0,
+        "harvest_speed": 12.0,
+        "melee_damage": 12.0,
+        "magic_damage": 3.0,
+        "attack_speed": 0.1,
+        "ranged_damage": 2.5,
+        "ranged_speed": -0.3,
+        "rarity": 80.0
+      },
+      "tip": {
         "harvest_speed": {
-          "mul2": 0.2
+          "add": 0.1
+        },
+        "attack_speed": {
+          "add": 0.1
         },
         "melee_damage": {
-          "mul2": 0.3
+          "add": 5.0
         },
         "ranged_damage": {
-          "mul2": 0.2
+          "add": 5.0
         },
-        "rarity": 40.0
+        "rarity": {
+          "add": 40.0
+        }
       }
     },
     "traits": {
-      "rod": [
+      "main": [
         {
-          "name": "silentgear:soft",
-          "level": 3
+          "name": "silentgear:malleable",
+          "level": 2
         },
         {
-            "name": "silentgear:spoon",
-            "level": 1
+          "name": "silentgear:soft",
+          "level": 2
+        },
+        {
+          "name": "silentgear:venom",
+          "level": 3
+        }
+      ],
+      "tip": [
+        {
+          "name": "silentgear:venom",
+          "level": 3
         }
       ]
     },
     "model": {
-      "rod/all": [
+      "main/all": [
         {
-          "texture": "silentgear:rod_generic_lc",
+          "texture": "silentgear:main_generic_lc",
           "color": "#418a87"
         }
       ],
-      "rod/part": [
+      "main/fragment": [
         {
-          "texture": "silentgear:rod",
+          "texture": "silentgear:metal",
           "color": "#418a87"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_sharp",
+          "color": "#418a87"
+        }
+      ],
+      "tip/part": [
+        {
+          "texture": "silentgear:tip_base",
+          "color": "#418a87"
+        },
+        {
+          "texture": "silentgear:tip",
+          "color": "#418a87"
+        },
+        {
+          "texture": "silentgear:tip_shine"
         }
       ]
     }
