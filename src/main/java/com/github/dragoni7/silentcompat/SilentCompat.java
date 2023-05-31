@@ -8,9 +8,11 @@ import com.github.dragoni7.silentcompat.core.registry.SilentCompatSoundEvents;
 import com.github.dragoni7.silentcompat.event.ClientEventHandler;
 import com.github.dragoni7.silentcompat.networking.Networking;
 import com.github.dragoni7.silentcompat.trait.AbyssalSynergyTrait;
+import com.github.dragoni7.silentcompat.trait.AdrenalineTrait;
 import com.github.dragoni7.silentcompat.trait.AmplifyingTrait;
 import com.github.dragoni7.silentcompat.trait.BlindingTrait;
 import com.github.dragoni7.silentcompat.trait.ColdTrait;
+import com.github.dragoni7.silentcompat.trait.CorrosiveTrait;
 import com.github.dragoni7.silentcompat.trait.DecayTrait;
 import com.github.dragoni7.silentcompat.trait.DevouringTrait;
 import com.github.dragoni7.silentcompat.trait.DimensionalEffectTrait;
@@ -120,6 +122,8 @@ public class SilentCompat {
 		registerTrait(LavaVisionTrait.SERIALIZER);
 		registerTrait(DimensionalEffectTrait.SERIALIZER);
 		registerTrait(InverseDimensionalEffectTrait.SERIALIZER);
+		registerTrait(AdrenalineTrait.SERIALIZER);
+		registerTrait(CorrosiveTrait.SERIALIZER);
 	}
 
 	private void registerTrait(ITraitSerializer<?> serializer) {

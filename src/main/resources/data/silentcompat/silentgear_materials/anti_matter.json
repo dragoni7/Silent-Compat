@@ -21,13 +21,13 @@
     "stats": {
       "rod": {
         "durability": {
-            "mul1": 3.0
+          "mul1": 3.0
         },
         "harvest_speed": {
           "mul2": 0.2
         },
         "melee_damage": {
-          "mul2": 0.2
+          "mul2": 0.3
         },
         "ranged_damage": {
           "mul2": 0.25

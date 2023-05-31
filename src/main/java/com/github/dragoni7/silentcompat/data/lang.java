@@ -117,6 +117,10 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.sunspot.desc", "Consumes restoration. Standing in fire puts it out, healing a large chunk of health and granting strength.");
 		add("trait.silentcompat.lava_vision", "Lava Vision");
 		add("trait.silentcompat.lava_vision.desc", "Provides the Lava Vision effect while in lava. (Requires: Alexs Mobs)");
+		add("trait.silentcompat.adrenaline", "Adrenaline");
+		add("trait.silentcompat.adrenaline.desc", "Briefly applies adrenaline rush when under 15% max HP. (Requires: Biomancy)");
+		add("trait.silentcompat.corrosive", "Corrosive");
+		add("trait.silentcompat.corrosive.desc", "Briefly applies corrosive to hit targets. (Requires: Biomancy)");
 		
 		// JEED
 		add("effect.silentcompat.amplified.description", "Increases speed. Allows certain traits such as Jolt Hit to proc.");

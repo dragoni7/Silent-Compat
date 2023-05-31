@@ -1,0 +1,61 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:unstable_compound"
+      }
+    },
+    "name": {
+      "text": "Unstable Compound"
+    },
+    "name_prefix": {
+        "text": "Unstable"
+    },
+    "stats": {
+
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentcompat:scorching",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+        "coating/all": [
+            {
+              "texture": "silentgear:main_generic_hc",
+              "color": "#dc6529"
+            },
+            {
+              "texture": "silentgear:_highlight"
+            }
+          ],
+          "coating/part": [
+            {
+              "texture": "silentgear:coating_material",
+              "color": "#dc6529"
+            },
+            {
+              "texture": "silentgear:coating_jar"
+            }
+          ],
+          "main/fragment": [
+            {
+              "texture": "silentgear:dust",
+              "color": "#dc6529"
+            }
+          ]
+    }
+  }

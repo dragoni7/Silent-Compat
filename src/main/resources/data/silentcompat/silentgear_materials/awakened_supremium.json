@@ -1,0 +1,142 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 5,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:gems/awakened_supremium"
+      }
+    },
+    "name": {
+      "text": "Awakened Supremium"
+    },
+    "stats": {
+        "main": {
+            "durability": 10000.0,
+            "armor_durability": 320.0,
+            "enchantment_value": 20.0,
+            "rarity": 100.0,
+            "charging_value": 1.2,
+            "attack_speed/hoe": 1.1,
+            "harvest_level": 5.0,
+            "harvest_speed": 14.0,
+            "melee_damage": 25.0,
+            "magic_damage": 5.0,
+            "attack_speed": 0.0,
+            "ranged_damage": 6.0,
+            "ranged_speed": 2.0,
+            "projectile_speed": 2.0,
+            "projectile_accuracy": 1.5,
+            "armor": 27.0,
+            "armor/helmet": 8.0,
+            "armor/chestplate": 12.0,
+            "armor/leggings": 10.0,
+            "armor/boots": 6.0,
+            "armor_toughness": 14.0,
+            "magic_armor": 10.0
+          },
+          "rod": {
+            "harvest_speed": {
+              "mul2": 0.4
+            },
+            "melee_damage": {
+                "add": 6.0
+            }
+          }
+    },
+    "traits": {
+        "main": [
+            {
+              "name": "silentgear:sturdy",
+              "level": 5
+            },
+            {
+                "name": "silentcompat:devouring",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:volatile",
+                "level": 5
+            },
+            {
+                "name": "silentcompat:bulwark",
+                "level": 5
+            },
+            {
+                "name": "silentcompat:dodging",
+                "level": 3
+            },
+            {
+                "name": "silentgear:stellar",
+                "level": 5
+            },
+            {
+                "name": "silentgear:void_ward",
+                "level": 1
+            },
+            {
+              "name": "silentcompat:essence_harvest",
+              "level": 5,
+              "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.66
+                }
+              ]
+            }
+          ],
+          "rod": [
+            {
+              "name": "silentgear:sturdy",
+              "level": 4
+            },
+            {
+                "name": "silentcompat:essence_harvest",
+                "level": 5,
+                "conditions": [
+                  {
+                    "type": "silentgear:material_ratio",
+                    "ratio": 0.66
+                  }
+                ]
+              }
+          ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#d02a00"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#d02a00"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#d02a00"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#d02a00"
+        }
+      ]
+    }
+  }

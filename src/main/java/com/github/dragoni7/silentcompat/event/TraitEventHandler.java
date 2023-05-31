@@ -227,6 +227,16 @@ public class TraitEventHandler {
 							}
 						}
 					}
+					
+					// Adrenaline
+					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.ADRENALINE.get())) {
+						if (attacked.getHealth() <= attacked.getMaxHealth() * 0.15f) {
+							MobEffect adrenaline_rush = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.ADRENALINE_RUSH);
+							if (!attacked.hasEffect(adrenaline_rush)) {
+								attacked.addEffect(new MobEffectInstance(adrenaline_rush, 60));
+							}
+						}
+					}
 				}
 			}
 		}

@@ -1,0 +1,21 @@
+{
+    "type": "silentgear:bonus_drops",
+    "max_level": 5,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "harvest_tool"
+      }
+    ],
+    "name": {
+      "text": "Prospecting"
+    },
+    "description": {
+      "text": "Sometimes increases prosperity shard drops when mining."
+    },
+    "base_chance": 0.2,
+    "bonus_multiplier": 0.5,
+    "ingredient": {
+      "tag": "forge:shards/prosperity"
+    }
+  }

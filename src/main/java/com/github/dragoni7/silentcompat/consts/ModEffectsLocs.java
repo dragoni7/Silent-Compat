@@ -22,4 +22,7 @@ public class ModEffectsLocs {
 	public static final ResourceLocation BLASTING = new ResourceLocation("ars_nouveau", "blasting");
 	
 	public static final ResourceLocation FROSTED = new ResourceLocation("twilightforest", "frosted");
+	
+	public static final ResourceLocation ADRENALINE_RUSH = new ResourceLocation("biomancy", "adrenaline_rush");
+	public static final ResourceLocation CORROSIVE = new ResourceLocation("biomancy", "corrosive");
 }

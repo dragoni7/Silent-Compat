@@ -1,0 +1,138 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:gems/supremium"
+      }
+    },
+    "name": {
+      "text": "Supremium"
+    },
+    "stats": {
+        "main": {
+            "durability": 8000.0,
+            "armor_durability": 280.0,
+            "enchantment_value": 18.0,
+            "rarity": 95.0,
+            "charging_value": 1.1,
+            "attack_speed/hoe": 1.1,
+            "harvest_level": 4.0,
+            "harvest_speed": 14.0,
+            "melee_damage": 20.0,
+            "magic_damage": 5.0,
+            "attack_speed": 0.0,
+            "ranged_damage": 4.0,
+            "ranged_speed": 1.0,
+            "projectile_speed": 2.0,
+            "projectile_accuracy": 1.5,
+            "armor": 27.0,
+            "armor/helmet": 6.0,
+            "armor/chestplate": 10.0,
+            "armor/leggings": 8.0,
+            "armor/boots": 5.0,
+            "armor_toughness": 12.0,
+            "magic_armor": 8.0
+          },
+          "rod": {
+            "harvest_speed": {
+              "mul2": 0.4
+            },
+            "melee_damage": {
+                "add": 4.0
+            }
+          }
+    },
+    "traits": {
+        "main": [
+            {
+              "name": "silentgear:sturdy",
+              "level": 4
+            },
+            {
+                "name": "silentcompat:restoration",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:bulwark",
+                "level": 4
+            },
+            {
+                "name": "silentcompat:dodging",
+                "level": 2
+            },
+            {
+                "name": "silentgear:void_ward",
+                "level": 1
+            },
+            {
+              "name": "silentcompat:essence_harvest",
+              "level": 5,
+              "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.66
+                }
+              ]
+            }
+          ],
+          "rod": [
+            {
+              "name": "silentgear:flexible",
+              "level": 5
+            },
+            {
+                "name": "silentgear:hard",
+                "level": 1
+            },
+            {
+                "name": "silentcompat:essence_harvest",
+                "level": 4,
+                "conditions": [
+                  {
+                    "type": "silentgear:material_ratio",
+                    "ratio": 0.66
+                  }
+                ]
+              }
+          ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#0083da"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#0083da"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#0083da"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#0083da"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,119 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:gems/prudentium"
+      }
+    },
+    "name": {
+      "text": "Prudentium"
+    },
+    "stats": {
+        "main": {
+            "durability": 2800.0,
+            "armor_durability": 40.0,
+            "enchantment_value": 10.0,
+            "rarity": 80.0,
+            "charging_value": 0.85,
+            "attack_speed/hoe": 1.1,
+            "harvest_level": 3.0,
+            "harvest_speed": 8.5,
+            "melee_damage": 6.0,
+            "magic_damage": 1.0,
+            "attack_speed": 0.0,
+            "ranged_damage": 1.8,
+            "ranged_speed": -0.15,
+            "projectile_speed": 0.9,
+            "projectile_accuracy": 1.2,
+            "armor": 23.0,
+            "armor/helmet": 4.0,
+            "armor/chestplate": 8.0,
+            "armor/leggings": 7.0,
+            "armor/boots": 4.0,
+            "armor_toughness": 9.0,
+            "magic_armor": 4.0
+          },
+          "rod": {
+            "harvest_speed": {
+              "mul2": 0.2
+            }
+          }
+    },
+    "traits": {
+        "main": [
+            {
+              "name": "silentgear:malleable",
+              "level": 3
+            },
+            {
+                "name": "silentcompat:thorns",
+                "level": 2
+            },
+            {
+              "name": "silentcompat:prosperity",
+              "level": 3,
+              "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.66
+                }
+              ]
+            }
+          ],
+          "rod": [
+            {
+              "name": "silentgear:flexible",
+              "level": 2
+            },
+            {
+              "name": "silentcompat:prosperity",
+              "level": 2,
+              "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.5
+                }
+              ]
+            }
+          ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#00ab1a"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#00ab1a"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#00ab1a"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#00ab1a"
+        }
+      ]
+    }
+  }

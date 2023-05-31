@@ -110,6 +110,10 @@ public class SilentCompatTags {
 	public static final TagKey<Item> YETI_HIDE = createItemTag("yeti_hide");
 	public static final TagKey<Item> REINFORCED_ECHO_SHARD = ForgeRegistries.ITEMS.tags().createTagKey(new ResourceLocation("deeperdarker:reinforced_echo_shard"));
 	public static final TagKey<Item> CRUDE_CLADDING = createItemTag("crude_cladding");
+	public static final TagKey<Item> PROSPERITY_SHARD = forgeItemTag("shards/prosperity");
+	public static final TagKey<Item> EXOTIC_FLESH = createItemTag("exotic_flesh");
+	public static final TagKey<Item> UNSTABLE_COMPOUND = createItemTag("unstable_compound");
+	public static final TagKey<Item> CORROSIVE_ADDITIVE = createItemTag("corrosive_additive");
 	
 	private static TagKey<Item> createItemTag(String name) {
 		return ItemTags.create(new ResourceLocation(SilentCompat.MODID, name));

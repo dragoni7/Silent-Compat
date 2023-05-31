@@ -159,6 +159,14 @@ public class AddItemTags extends ItemTagsProvider {
 		
 		// Cataclysm
 		tag(SilentCompatTags.IGNITIUM).addOptional(new ResourceLocation("cataclysm:ignitium_ingot"));
+		
+		// Mystical Agriculture
+		tag(SilentCompatTags.PROSPERITY_SHARD).addOptional(new ResourceLocation("mysticalagriculture:prosperity_shard"));
+		
+		// Biomancy
+		tag(SilentCompatTags.EXOTIC_FLESH).addOptional(new ResourceLocation("biomancy:creator_mix"));
+		tag(SilentCompatTags.UNSTABLE_COMPOUND).addOptional(new ResourceLocation("biomancy:unstable_compound"));
+		tag(SilentCompatTags.CORROSIVE_ADDITIVE).addOptional(new ResourceLocation("biomancy:corrosive_additive"));
 	}
 	
 	private void addMaterialTags(MaterialSet set) {

@@ -1,4 +1,4 @@
-// 1.19.2	2023-02-01T19:31:49.2638481	Tags for minecraft:item
+// 1.19.2	2023-05-31T13:13:20.7404845	Tags for minecraft:item
 49c12dc1066afdea5c89a385fae5130956cd34ae data/forge/tags/items/dragon_scale.json
 aca1bcde8c4f759ab4e8b77f33dfd0a742936a79 data/forge/tags/items/essence/abjuration.json
 3268af9fafa0d471c4c01b2b513e88b1ec09af9f data/forge/tags/items/essence/conjuration.json
@@ -45,6 +45,7 @@ dc86066fdd600f81316e5482efcc15f73af01586 data/forge/tags/items/ores/voidmetal.js
 0ca7e1f32bf50d0a2d93c60e2478249a1e07afb3 data/forge/tags/items/raw_materials/plasteel.json
 f968a74ab127bc865dc8469cb58f78a880c05cb0 data/forge/tags/items/raw_materials/solarmetal.json
 296eb5dcd63c5836f5d13e709d11946cb0c6e14f data/forge/tags/items/raw_materials/voidmetal.json
+1f2f2f53ee568c2e9892ad86dff4dc52e8ec4aab data/forge/tags/items/shards/prosperity.json
 f614e216a73ef93b1109705578d5db4a9194ddae data/forge/tags/items/storage_blocks.json
 bec8e86f3ac34b808a1d72e6934f381716a6c2c9 data/forge/tags/items/storage_blocks/arcmetal.json
 959dc46856274767bfee466b0e11798a248ac8cf data/forge/tags/items/storage_blocks/bunny_steel.json
@@ -69,6 +70,7 @@ a430b3db17ebcc92d0c87e21ead614a7581c8ff8 data/silentcompat/tags/items/centipede_
 dceddcacf5bb95175f51c3940d5100bc45d9c24b data/silentcompat/tags/items/cindershell_shard.json
 f42722d24c39cddbca8a4e8b239a72aad624525d data/silentcompat/tags/items/cloth.json
 f3cff41c6fae6534db4f77edbb5cb9f9db63a971 data/silentcompat/tags/items/cockroach_wing.json
+072fa97632bb5927e518c27936f0a35bcb0cbd92 data/silentcompat/tags/items/corrosive_additive.json
 ffca15ab168b4a2245c836bbd1615662c2493151 data/silentcompat/tags/items/crocodile_scute.json
 ac1594cd1d8e3dba0830348b12ac6be68f8d9b8f data/silentcompat/tags/items/crude_cladding.json
 4aeed6d0ef64272857b1266185eef827796184da data/silentcompat/tags/items/cryptic_end_rod.json
@@ -78,6 +80,7 @@ fcbfe31f8e72e115c500e8480e635d5d2dc5c7e7 data/silentcompat/tags/items/ditchbulb.
 d2f3153fa78109813ac4757612e36bdd7b60e246 data/silentcompat/tags/items/elastic_tendon.json
 768db9b585bce4ebc78f87c9e8c8cab63c1d5a91 data/silentcompat/tags/items/emu_feather.json
 7efd2d6886ad18d5effe946e4ea680c09765d684 data/silentcompat/tags/items/end_fiber.json
+17c6d8f795a748a63ebaa62ce3070b3b8820db29 data/silentcompat/tags/items/exotic_flesh.json
 e367137c4d4cd9a82a406cda32b61454b4fe03dd data/silentcompat/tags/items/farseer_arm.json
 078391138bb4587642c605e55b4ff9a7eb5f750d data/silentcompat/tags/items/fish_bones.json
 a5df22b20402426631ca3676500c820a2aa68480 data/silentcompat/tags/items/fortunes_favor.json
@@ -113,6 +116,7 @@ a5d0c6dc811f5b7e9127c78deeb8e8baf250b6e0 data/silentcompat/tags/items/spiked_scu
 cb1beeccd019caacbb1d5caaab829bdad9e58e91 data/silentcompat/tags/items/straddlite.json
 4a11ff670b94a4dfb58f76c5152f7fc4c3b83d90 data/silentcompat/tags/items/tarantula_hawk_wing.json
 4bcc060315034021e731bf1f53ae55ea0f7c38e8 data/silentcompat/tags/items/tentacle.json
+5fd945daf457c3d0d3b595d2bd8060c3ac3d19f4 data/silentcompat/tags/items/unstable_compound.json
 aa028e5af983a34735f944a912eabf435b826482 data/silentcompat/tags/items/void_worm.json
 5a7dbd9ba4483a07cee8fa99a20764e47ae8ba6f data/silentcompat/tags/items/whale_tooth.json
 4993659ab9a8c432f58125b53f09c5caeb7ce467 data/silentcompat/tags/items/yeti_hide.json

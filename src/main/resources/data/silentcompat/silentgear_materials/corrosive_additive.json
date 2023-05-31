@@ -1,0 +1,61 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:corrosive_additive"
+      }
+    },
+    "name": {
+      "text": "Corrosive Additive"
+    },
+    "name_prefix": {
+        "text": "Corrosive"
+    },
+    "stats": {
+
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentcompat:corrosive",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+        "coating/all": [
+            {
+              "texture": "silentgear:main_generic_hc",
+              "color": "#47617b"
+            },
+            {
+              "texture": "silentgear:_highlight"
+            }
+          ],
+          "coating/part": [
+            {
+              "texture": "silentgear:coating_material",
+              "color": "#47617b"
+            },
+            {
+              "texture": "silentgear:coating_jar"
+            }
+          ],
+          "main/fragment": [
+            {
+              "texture": "silentgear:dust",
+              "color": "#47617b"
+            }
+          ]
+    }
+  }

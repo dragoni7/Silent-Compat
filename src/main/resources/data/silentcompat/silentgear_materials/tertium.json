@@ -1,0 +1,116 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:gems/tertium"
+      }
+    },
+    "name": {
+      "text": "Tertium"
+    },
+    "stats": {
+        "main": {
+            "durability": 4000.0,
+            "armor_durability": 80.0,
+            "enchantment_value": 12.0,
+            "rarity": 85.0,
+            "charging_value": 0.9,
+            "attack_speed/hoe": 1.1,
+            "harvest_level": 3.0,
+            "harvest_speed": 8.5,
+            "melee_damage": 9.0,
+            "magic_damage": 1.0,
+            "attack_speed": 0.0,
+            "ranged_damage": 3.0,
+            "ranged_speed": -0.1,
+            "projectile_speed": 1.1,
+            "projectile_accuracy": 1.2,
+            "armor": 26.0,
+            "armor/helmet": 5.0,
+            "armor/chestplate": 9.0,
+            "armor/leggings": 8.0,
+            "armor/boots": 4.0,
+            "armor_toughness": 10.0,
+            "magic_armor": 6.0
+          },
+          "rod": {
+            "harvest_speed": {
+              "mul2": 0.2
+            },
+            "melee_damage": {
+                "add": 1.0
+            }
+          }
+    },
+    "traits": {
+        "main": [
+            {
+              "name": "silentgear:malleable",
+              "level": 4
+            },
+            {
+                "name": "silentcompat:thorns",
+                "level": 3
+            },
+            {
+              "name": "silentcompat:essence_harvest",
+              "level": 1,
+              "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.66
+                }
+              ]
+            }
+          ],
+          "rod": [
+            {
+              "name": "silentgear:flexible",
+              "level": 3
+            },
+            {
+                "name": "silentgear:hard",
+                "level": 2
+            }
+          ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#d54700"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#d54700"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#d54700"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#d54700"
+        }
+      ]
+    }
+  }
