@@ -114,7 +114,7 @@
           ]
         },
         {
-          "name": "silentcompat:volitile",
+          "name": "silentcompat:volatile",
           "level": 1,
           "conditions": [
               {

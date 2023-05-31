@@ -1,7 +1,7 @@
 package com.github.dragoni7.silentcompat.effects;
 
 import com.github.dragoni7.silentcompat.networking.Networking;
-import com.github.dragoni7.silentcompat.networking.PacketVolitileParticles;
+import com.github.dragoni7.silentcompat.networking.PacketVolatileParticles;
 
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffect;
@@ -10,9 +10,9 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
-public class EffectVolitile extends MobEffect {
+public class EffectVolatile extends MobEffect {
 	
-	public EffectVolitile() {
+	public EffectVolatile() {
 		super(MobEffectCategory.HARMFUL, 0X890368);
 	}
 	
@@ -23,7 +23,7 @@ public class EffectVolitile extends MobEffect {
 			Level level = entity.level;
 			Player player = level.getNearestPlayer(entity, 24);
 			if (player instanceof ServerPlayer) {
-				Networking.sendToClient(new PacketVolitileParticles(entity.getId()), (ServerPlayer) player);
+				Networking.sendToClient(new PacketVolatileParticles(entity.getId()), (ServerPlayer) player);
 			}
 		}
 	}
@@ -34,6 +34,6 @@ public class EffectVolitile extends MobEffect {
 	}
 
 	public String getDescriptionId() {
-		return "silentcompat.effect.volitile";
+		return "silentcompat.effect.volatile";
 	}
 }

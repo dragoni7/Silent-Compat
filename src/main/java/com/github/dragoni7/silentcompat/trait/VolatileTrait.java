@@ -12,11 +12,11 @@ import net.minecraft.world.entity.player.Player;
 import net.silentchaos512.gear.api.traits.TraitActionContext;
 import net.silentchaos512.gear.gear.trait.SimpleTrait;
 
-public class VolitileTrait extends SimpleTrait {
+public class VolatileTrait extends SimpleTrait {
 	
-	public static final Serializer<VolitileTrait> SERIALIZER = new Serializer<VolitileTrait>(new ResourceLocation(SilentCompat.MODID, "volitile"), VolitileTrait::new);
+	public static final Serializer<VolatileTrait> SERIALIZER = new Serializer<VolatileTrait>(new ResourceLocation(SilentCompat.MODID, "volatile"), VolatileTrait::new);
 
-	public VolitileTrait(ResourceLocation id) {
+	public VolatileTrait(ResourceLocation id) {
 		super(id, SERIALIZER);
 	}
 	
@@ -27,7 +27,7 @@ public class VolitileTrait extends SimpleTrait {
     	
         if (player.hasEffect(SilentCompatEffects.DEVOURING.get())) {
         	
-        	MobEffect volitileEffect = SilentCompatEffects.VOLITILE.get();
+        	MobEffect volitileEffect = SilentCompatEffects.VOLATILE.get();
         	
         	if (!target.hasEffect(volitileEffect)) {
         		
@@ -47,7 +47,7 @@ public class VolitileTrait extends SimpleTrait {
 	@Override
     public Collection<String> getExtraWikiLines() {
         Collection<String> ret = super.getExtraWikiLines();
-        ret.add("Consumes devouring, applying the volitile effect on the target.");
+        ret.add("Consumes devouring, applying the volatile effect on the target.");
         return ret;
     }
 

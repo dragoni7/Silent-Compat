@@ -42,7 +42,7 @@ import com.github.dragoni7.silentcompat.trait.SunSpotTrait;
 import com.github.dragoni7.silentcompat.trait.UmbralBlastTrait;
 import com.github.dragoni7.silentcompat.trait.UnstableMagicTrait;
 import com.github.dragoni7.silentcompat.trait.VigorousTrait;
-import com.github.dragoni7.silentcompat.trait.VolitileTrait;
+import com.github.dragoni7.silentcompat.trait.VolatileTrait;
 import com.github.dragoni7.silentcompat.trait.VorpalTrait;
 import com.mojang.logging.LogUtils;
 
@@ -113,7 +113,7 @@ public class SilentCompat {
 		registerTrait(BlindingTrait.SERIALIZER);
 		registerTrait(DevouringTrait.SERIALIZER);
 		registerTrait(UmbralBlastTrait.SERIALIZER);
-		registerTrait(VolitileTrait.SERIALIZER);
+		registerTrait(VolatileTrait.SERIALIZER);
 		registerTrait(RestorationTrait.SERIALIZER);
 		registerTrait(ScorchingTrait.SERIALIZER);
 		registerTrait(SunSpotTrait.SERIALIZER);

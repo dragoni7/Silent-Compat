@@ -6,7 +6,7 @@ import com.github.dragoni7.silentcompat.core.registry.SilentCompatEffects;
 import com.github.dragoni7.silentcompat.networking.Networking;
 import com.github.dragoni7.silentcompat.networking.PacketImmuneParticles;
 import com.github.dragoni7.silentcompat.trait.LuckyBreak;
-import com.github.dragoni7.silentcompat.world.VolitileExplosion;
+import com.github.dragoni7.silentcompat.world.VolatileExplosion;
 
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -295,10 +295,10 @@ public class TraitEventHandler {
 		Player player = (Player) attacker;
 		
 		// Volitile Effect
-		if (attacked.hasEffect(SilentCompatEffects.VOLITILE.get())) {
-			int amp = attacked.getEffect(SilentCompatEffects.VOLITILE.get()).getAmplifier();
+		if (attacked.hasEffect(SilentCompatEffects.VOLATILE.get())) {
+			int amp = attacked.getEffect(SilentCompatEffects.VOLATILE.get()).getAmplifier();
 			// explode
-			VolitileExplosion explosion = new VolitileExplosion(player, attacked, DamageSource.MAGIC, null, attacked.getX(), attacked.getY(0.0625D), attacked.getZ(), (float)(2.0 + amp));
+			VolatileExplosion explosion = new VolatileExplosion(player, attacked, DamageSource.MAGIC, null, attacked.getX(), attacked.getY(0.0625D), attacked.getZ(), (float)(2.0 + amp));
 			explosion.explode();
 			explosion.finalizeExplosion(true);
 		}

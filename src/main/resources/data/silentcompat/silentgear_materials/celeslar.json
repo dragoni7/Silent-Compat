@@ -90,7 +90,7 @@
           ]
         },
         {
-          "name": "silentcompat:volitile",
+          "name": "silentcompat:volatile",
           "level": 2,
           "conditions": [
             {

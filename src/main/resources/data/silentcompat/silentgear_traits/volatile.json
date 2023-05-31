@@ -1,5 +1,5 @@
 {
-    "type": "silentcompat:volitile",
+    "type": "silentcompat:volatile",
     "max_level": 5,
     "cancels_with": ["silentcompat:umbral_blast"],
     "conditions": [
@@ -9,9 +9,9 @@
       }
     ],
     "name": {
-      "translate": "trait.silentcompat.volitile"
+      "translate": "trait.silentcompat.volatile"
     },
     "description": {
-      "translate": "trait.silentcompat.volitile.desc"
+      "translate": "trait.silentcompat.volatile.desc"
     }
   }

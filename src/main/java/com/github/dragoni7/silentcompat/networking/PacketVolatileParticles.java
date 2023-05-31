@@ -6,13 +6,13 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
-public class PacketVolitileParticles extends AbstractPacketDisplayHitParticle {
+public class PacketVolatileParticles extends AbstractPacketDisplayHitParticle {
 
-	public PacketVolitileParticles(int hitEntity) {
+	public PacketVolatileParticles(int hitEntity) {
 		super(hitEntity);
 	}
 
-	public PacketVolitileParticles(FriendlyByteBuf buf) {
+	public PacketVolatileParticles(FriendlyByteBuf buf) {
 		super(buf);
 	}
 

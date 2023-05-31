@@ -37,10 +37,10 @@ public class Networking {
 		.consumerMainThread(PacketJoltChain::handle)
 		.add();
 		
-		INSTANCE.messageBuilder(PacketVolitileExplosionParticles.class, nextID())
-		.encoder(PacketVolitileExplosionParticles::write)
-		.decoder(PacketVolitileExplosionParticles::new)
-		.consumerMainThread(PacketVolitileExplosionParticles::handle)
+		INSTANCE.messageBuilder(PacketVolatileExplosionParticles.class, nextID())
+		.encoder(PacketVolatileExplosionParticles::write)
+		.decoder(PacketVolatileExplosionParticles::new)
+		.consumerMainThread(PacketVolatileExplosionParticles::handle)
 		.add();
 		
 		INSTANCE.messageBuilder(PacketIgnitionParticles.class, nextID())
@@ -49,10 +49,10 @@ public class Networking {
 		.consumerMainThread(PacketIgnitionParticles::handle)
 		.add();
 		
-		INSTANCE.messageBuilder(PacketVolitileParticles.class, nextID())
-		.encoder(PacketVolitileParticles::write)
-		.decoder(PacketVolitileParticles::new)
-		.consumerMainThread(PacketVolitileParticles::handle)
+		INSTANCE.messageBuilder(PacketVolatileParticles.class, nextID())
+		.encoder(PacketVolatileParticles::write)
+		.decoder(PacketVolatileParticles::new)
+		.consumerMainThread(PacketVolatileParticles::handle)
 		.add();
 		
 		INSTANCE.messageBuilder(PacketScorchParticles.class, nextID())

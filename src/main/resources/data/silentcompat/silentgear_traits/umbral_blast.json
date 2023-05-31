@@ -1,7 +1,7 @@
 {
     "type": "silentcompat:umbral_blast",
     "max_level": 5,
-    "cancels_with": ["silentcompat:volitile"],
+    "cancels_with": ["silentcompat:volatile"],
     "conditions": [
       {
         "type": "silentgear:gear_type",

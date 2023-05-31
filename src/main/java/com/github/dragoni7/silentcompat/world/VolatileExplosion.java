@@ -2,7 +2,7 @@ package com.github.dragoni7.silentcompat.world;
 
 import java.util.List;
 import com.github.dragoni7.silentcompat.networking.Networking;
-import com.github.dragoni7.silentcompat.networking.PacketVolitileExplosionParticles;
+import com.github.dragoni7.silentcompat.networking.PacketVolatileExplosionParticles;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -20,7 +20,7 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
-public class VolitileExplosion extends Explosion {
+public class VolatileExplosion extends Explosion {
 	
 	private final Player player;
 	private final Entity attacked;
@@ -30,7 +30,7 @@ public class VolitileExplosion extends Explosion {
 	private final double y;
 	private final double z;
 
-	public VolitileExplosion(Player player, Entity entity, DamageSource source, ExplosionDamageCalculator damageCalculator,
+	public VolatileExplosion(Player player, Entity entity, DamageSource source, ExplosionDamageCalculator damageCalculator,
 			double x, double y, double z, float radius) {
 		
 		super(player.level, entity, source, damageCalculator, x, y, z, radius, false, Explosion.BlockInteraction.NONE);
@@ -97,7 +97,7 @@ public class VolitileExplosion extends Explosion {
 		this.level.playSound(null, this.x, this.y, this.z, SoundEvents.SHULKER_BULLET_HURT, SoundSource.NEUTRAL, 10.0F, (1.0F + (this.level.random.nextFloat() - this.level.random.nextFloat()) * 0.2F) * 0.7F);
 
 		if (player instanceof ServerPlayer) {
-			Networking.sendToClient(new PacketVolitileExplosionParticles(attacked.getId()), (ServerPlayer) player);
+			Networking.sendToClient(new PacketVolatileExplosionParticles(attacked.getId()), (ServerPlayer) player);
 		}
 	}
 }

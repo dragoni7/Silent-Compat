@@ -17,7 +17,7 @@
   "effect.silentcompat.devouring.description": "Grants absorption hearts on kills. Has a cap. Allows certain traits such as volitile to proc.",
   "effect.silentcompat.restoration.description": "Steadily restores hp over time. Allows certain traits such as scorch to proc.",
   "effect.silentcompat.scorch.description": "Sets the target on fire. When the effect ends, the target explodes, spreading scorch to nearby mobs.",
-  "effect.silentcompat.volitile.description": "Causes explosions when hit.",
+  "effect.silentcompat.volatile.description": "Causes explosions when hit.",
   "item.silentcompat.arcmetal_ingot": "Arcmetal Ingot",
   "item.silentcompat.arcmetal_nugget": "Arcmetal Nugget",
   "item.silentcompat.bunny_steel_ingot": "Bunny Steel Ingot",
@@ -60,7 +60,7 @@
   "silentcompat.effect.devouring": "Devouring",
   "silentcompat.effect.restoration": "Restoration",
   "silentcompat.effect.scorch": "Scorch",
-  "silentcompat.effect.volitile": "Volitile",
+  "silentcompat.effect.volatile": "Volatile",
   "trait.silentcompat.abyssal_synergy": "Abyssal Synergy",
   "trait.silentcompat.abyssal_synergy.desc": "Tools deal more damage the deeper you are. Less durability loss the deeper you are.",
   "trait.silentcompat.amplifying": "Amplifying",
@@ -127,8 +127,8 @@
   "trait.silentcompat.unstable_magic.desc": "Somtimes gain a random positive magic effect or apply random negative magic effect to targets. (Requires: Ars Nouveau)",
   "trait.silentcompat.vigorous": "Vigorous",
   "trait.silentcompat.vigorous.desc": "Deal more damage while at full health",
-  "trait.silentcompat.volitile": "Volitile",
-  "trait.silentcompat.volitile.desc": "Consumes devouring, applying the volitile effect on the target.",
+  "trait.silentcompat.volatile": "Volatile",
+  "trait.silentcompat.volatile.desc": "Consumes devouring, applying the volatile effect on the target.",
   "trait.silentcompat.vorpal": "Vorpal",
   "trait.silentcompat.vorpal.desc": "Deal more damage to targets with over 200 hearts"
 }

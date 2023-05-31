@@ -44,7 +44,7 @@ public class lang extends LanguageProvider {
 		add(SilentCompatEffects.AMPLIFIED.get(), "Amplified");
 		add(SilentCompatEffects.DEVOURING.get(), "Devouring");
 		add(SilentCompatEffects.RESTORATION.get(), "Restoration");
-		add(SilentCompatEffects.VOLITILE.get(), "Volitile");
+		add(SilentCompatEffects.VOLATILE.get(), "Volatile");
 		add(SilentCompatEffects.SCORCH.get(), "Scorch");
 		
 		add("trait.silentcompat.diurnal", "Diurnal");
@@ -107,8 +107,8 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.devouring.desc", "Getting a kill has a chance to grant the devouring effect. Requires full set.");
 		add("trait.silentcompat.umbral_blast", "Umbral Blast");
 		add("trait.silentcompat.umbral_blast.desc", "Consumes devouring on tool swing, launching a projectile that weakens, damages, and knocks back targets. Damage is equal to 3 times the trait level.");
-		add("trait.silentcompat.volitile", "Volitile");
-		add("trait.silentcompat.volitile.desc", "Consumes devouring, applying the volitile effect on the target.");
+		add("trait.silentcompat.volatile", "Volatile");
+		add("trait.silentcompat.volatile.desc", "Consumes devouring, applying the volatile effect on the target.");
 		add("trait.silentcompat.restoration", "Restoration");
 		add("trait.silentcompat.restoration.desc", "Getting a kill has a chance to grant the restoration effect. Requires full set.");
 		add("trait.silentcompat.scorching", "Scorching");
@@ -122,7 +122,7 @@ public class lang extends LanguageProvider {
 		add("effect.silentcompat.amplified.description", "Increases speed. Allows certain traits such as Jolt Hit to proc.");
 		add("effect.silentcompat.devouring.description", "Grants absorption hearts on kills. Has a cap. Allows certain traits such as volitile to proc.");
 		add("effect.silentcompat.restoration.description", "Steadily restores hp over time. Allows certain traits such as scorch to proc.");
-		add("effect.silentcompat.volitile.description", "Causes explosions when hit.");
+		add("effect.silentcompat.volatile.description", "Causes explosions when hit.");
 		add("effect.silentcompat.scorch.description", "Sets the target on fire. When the effect ends, the target explodes, spreading scorch to nearby mobs.");
 	}
 	
