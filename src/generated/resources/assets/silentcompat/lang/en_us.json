@@ -64,7 +64,7 @@
   "trait.silentcompat.abyssal_synergy": "Abyssal Synergy",
   "trait.silentcompat.abyssal_synergy.desc": "Tools deal more damage the deeper you are. Less durability loss the deeper you are.",
   "trait.silentcompat.adrenaline": "Adrenaline",
-  "trait.silentcompat.adrenaline.desc": "Briefly applies adrenaline rush when under 15% max HP. (Requires: Biomancy)",
+  "trait.silentcompat.adrenaline.desc": "Briefly applies adrenaline rush when at low health. (Requires: Biomancy)",
   "trait.silentcompat.amplifying": "Amplifying",
   "trait.silentcompat.amplifying.desc": "Getting a kill has a chance to grant the amplified effect. Requires full set",
   "trait.silentcompat.blinding": "Blinding",

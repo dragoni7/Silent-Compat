@@ -1,5 +1,6 @@
 package com.github.dragoni7.silentcompat.event;
 
+import com.github.dragoni7.silentcompat.SilentCompat;
 import com.github.dragoni7.silentcompat.consts.ModEffectsLocs;
 import com.github.dragoni7.silentcompat.consts.TraitConst;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatEffects;
@@ -224,16 +225,6 @@ public class TraitEventHandler {
 							MobEffect frosted = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.FROSTED);
 							if (!((LivingEntity) attacker).hasEffect(frosted)) {
 								((LivingEntity) attacker).addEffect(new MobEffectInstance(frosted, 20));
-							}
-						}
-					}
-					
-					// Adrenaline
-					if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.ADRENALINE.get())) {
-						if (attacked.getHealth() <= attacked.getMaxHealth() * 0.15f) {
-							MobEffect adrenaline_rush = ForgeRegistries.MOB_EFFECTS.getValue(ModEffectsLocs.ADRENALINE_RUSH);
-							if (!attacked.hasEffect(adrenaline_rush)) {
-								attacked.addEffect(new MobEffectInstance(adrenaline_rush, 60));
 							}
 						}
 					}

@@ -22,7 +22,11 @@
         "text": "Corrosive"
     },
     "stats": {
-
+      "coating": {
+        "repair_efficiency": {
+          "mul1": -0.1
+        }
+      }
     },
     "traits": {
       "coating": [

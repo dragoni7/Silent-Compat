@@ -11,10 +11,10 @@
       "text": "Essence Harvest"
     },
     "description": {
-      "text": "Sometimes increases mystical essence shard drops."
+      "text": "Sometimes increases mystical essence drops."
     },
     "base_chance": 0.15,
-    "bonus_multiplier": 0.5,
+    "bonus_multiplier": 0.66,
     "ingredient": {
       "tag": "mysticalagriculture:essences"
     }
