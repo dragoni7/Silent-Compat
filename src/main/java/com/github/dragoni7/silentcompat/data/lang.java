@@ -121,6 +121,16 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.adrenaline.desc", "Briefly applies adrenaline rush when at low health. (Requires: Biomancy)");
 		add("trait.silentcompat.corrosive", "Corrosive");
 		add("trait.silentcompat.corrosive.desc", "Briefly applies corrosive to hit targets. (Requires: Biomancy)");
+		add("trait.silentcompat.mana_repair", "Mana Repair");
+		add("trait.silentcompat.mana_repair.desc", "Uses 20 + ( 40 per trait level) mana to repair gear. (Requires: Botania)");
+		add("trait.silentcompat.mana_burst", "Mana Burst");
+		add("trait.silentcompat.mana_burst.desc", "The Mana Burst is identical to that of a default, unenchanted Terra Blade. Uses 100 mana per burst.");
+		add("trait.silentcompat.pixie", "Pixilate");
+		add("trait.silentcompat.pixie.desc", "Pixies may spawn when you are damaged.");
+		add("trait.silentcompat.gaia_burst", "Gaia Burst");
+		add("trait.silentcompat.gaia_burst.desc", "The Mana Burst is identical to that of a default, unenchanted Mana Stealing Blade.");
+		add("trait.silentcompat.alf_burst", "Alf Burst");
+		add("trait.silentcompat.alf_burst.desc", "The Mana Burst is identical to that of a default, unenchanted Alf Blade.");
 		
 		// JEED
 		add("effect.silentcompat.amplified.description", "Increases speed. Allows certain traits such as Jolt Hit to proc.");

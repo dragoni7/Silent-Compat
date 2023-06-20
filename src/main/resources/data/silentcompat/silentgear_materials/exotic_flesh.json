@@ -61,6 +61,10 @@
         {
             "name": "silentgear:renew",
             "level": 2
+        },
+        {
+          "name": "silentcompat:flesh_harvest",
+          "level": 1
         }
       ],
       "grip": [

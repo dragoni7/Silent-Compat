@@ -1,0 +1,20 @@
+{
+    "type": "silentcompat:on_hit_effect",
+    "max_level": 1,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "weapon"
+      }
+    ],
+    "name": {
+      "text": "Deadly Venom"
+    },
+    "description": {
+      "text": "Chance to inflicts targets with Deadly Venom"
+    },
+
+    "effect": "blue_skies:deadly_venom",
+    "duration": 60,
+    "chance": 3
+  }

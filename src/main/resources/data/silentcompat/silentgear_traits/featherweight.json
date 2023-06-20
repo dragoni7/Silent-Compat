@@ -1,10 +1,14 @@
 {
-    "type": "silentcompat:featherweight",
+    "type": "silentcompat:on_hit_effect",
     "max_level": 1,
     "name": {
       "translate": "trait.silentcompat.featherweight"
     },
     "description": {
       "translate": "trait.silentcompat.featherweight.desc"
-    }
+    },
+
+    "effect": "undergarden:featherweight",
+    "duration": 60,
+    "chance": 1
   }

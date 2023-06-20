@@ -58,7 +58,13 @@
         },
         {
           "name": "silentcompat:bludgeoning",
-          "level": 2
+          "level": 2,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         }
       ],
       "rod": [
@@ -69,10 +75,6 @@
         {
             "name": "silentcompat:bludgeoning",
             "level": 1
-        },
-        {
-          "name": "silentcompat:spell_damage",
-          "level": 1
         }
       ]
     },

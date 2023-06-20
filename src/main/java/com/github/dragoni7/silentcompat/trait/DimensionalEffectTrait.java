@@ -65,6 +65,7 @@ public class DimensionalEffectTrait extends SimpleTrait {
 	
     @Override
     public void onUpdate(TraitActionContext context, boolean isEquipped) {
+    	
         if (!isEquipped || context.getPlayer() == null || context.getPlayer().tickCount % 10 != 0) return;
         
         GearType gearType = ((ICoreItem) context.getGear().getItem()).getGearType();
@@ -295,7 +296,7 @@ public class DimensionalEffectTrait extends SimpleTrait {
         ResourceLocation getDimensionId() {
         	return dimensionId;
         }
-
+        
         int getEffectLevel(int traitLevel, int pieceCount, boolean hasFullSet) {
             switch (this.type) {
                 case TRAIT_LEVEL:

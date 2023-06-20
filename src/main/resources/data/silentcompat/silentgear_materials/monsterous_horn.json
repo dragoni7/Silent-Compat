@@ -1,0 +1,72 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "metal",
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:monstrous_horn"
+      }
+    },
+    "name": {
+      "text": "Monstrous Horn"
+    },
+    "name_prefix": {
+      "translate": "Monstrous"
+    },
+    "stats": {
+      "coating": {
+        "armor_toughness/helmet": {
+          "add": 1
+        }
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentcompat:monstrous",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:gear_type",
+              "gear_type": "helmet"
+            }
+        ]
+        }
+      ]
+    },
+    "model": {
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#4c484c"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#4c484c"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#4c484c"
+        }
+      ]
+    }
+  }

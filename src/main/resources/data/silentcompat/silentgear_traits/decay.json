@@ -1,5 +1,5 @@
 {
-    "type": "silentcompat:decay",
+    "type": "silentcompat:on_hit_effect",
     "max_level": 1,
     "conditions": [
       {
@@ -12,5 +12,9 @@
     },
     "description": {
       "translate": "trait.silentcompat.decay.desc"
-    }
+    },
+
+    "effect": "dreamland:decay",
+    "duration": 100,
+    "chance": 1
   }

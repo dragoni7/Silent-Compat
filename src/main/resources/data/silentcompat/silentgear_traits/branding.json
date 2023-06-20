@@ -1,0 +1,20 @@
+{
+    "type": "silentcompat:on_hit_effect",
+    "max_level": 1,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "weapon"
+      }
+    ],
+    "name": {
+      "text": "Branding"
+    },
+    "description": {
+      "text": "Chance to inflicts targets with Blazing Brand"
+    },
+
+    "effect": "cataclysm:blazing_brand",
+    "duration": 60,
+    "chance": 3
+  }

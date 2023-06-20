@@ -26,28 +26,10 @@ authors="dragoni7"
     versionRange="[3.1.3,)"
     ordering="AFTER"
     side="BOTH"
-[[dependencies.undergarden]]
-    modId="undergarden"
+[[dependencies.silentcompat]]
+    modId="botania"
     mandatory=false
-    versionRange="[0.8.3,)"
-    ordering="BEFORE"
-    side="BOTH"
-[[dependencies.ars_nouveau]]
-    modId="ars_nouveau"
-    mandatory=false
-    versionRange="[3.4.5,)"
-    ordering="BEFORE"
-    side="BOTH"
-[[dependencies.dreamland]]
-    modId="dreamland"
-    mandatory=false
-    versionRange="[1.2.0.4,)"
-    ordering="BEFORE"
-    side="BOTH"
-[[dependencies.alexsmobs]]
-    modId="alexsmobs"
-    mandatory=false
-    versionRange="[1.20.2,)"
+    versionRange="[1.19.2-440-FORGE,)"
     ordering="BEFORE"
     side="BOTH"
 [[dependencies.silentcompat]]

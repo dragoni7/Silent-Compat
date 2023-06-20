@@ -1,5 +1,5 @@
 {
-  "type": "silentcompat:freezing",
+  "type": "silentcompat:on_hit_effect",
   "max_level": 1,
   "conditions": [
     {
@@ -12,5 +12,9 @@
   },
   "description": {
     "translate": "trait.silentcompat.freezing.desc"
-  }
+  },
+
+  "effect": "ars_nouveau:freezing",
+  "duration": 60,
+  "chance": 1
 }

@@ -100,6 +100,8 @@ public class SilentCompatTags {
 	public static final TagKey<Item> FISH_BONES = createItemTag("fish_bones");
 	public static final TagKey<Item> STELLIUM = forgeItemTag("ingots/stellium");
 	public static final TagKey<Item> IGNITIUM = forgeItemTag("ingots/ignitium");
+	public static final TagKey<Item> MONSTEROUS_HORN = createItemTag("monstrous_horn");
+	public static final TagKey<Item> VOID_CORE = forgeItemTag("gems/void");
 	public static final TagKey<Item> VOID_SHARD = forgeItemTag("gems/void_crystal_shard");
 	public static final TagKey<Item> CRYSTAL_SHARD = forgeItemTag("gems/crystal_shard");
 	public static final TagKey<Item> CRYSTALLINE_ALLOY = createItemTag("crystalline_alloy");
@@ -112,11 +114,17 @@ public class SilentCompatTags {
 	public static final TagKey<Item> CRUDE_CLADDING = createItemTag("crude_cladding");
 	public static final TagKey<Item> PROSPERITY_SHARD = forgeItemTag("shards/prosperity");
 	public static final TagKey<Item> EXOTIC_FLESH = createItemTag("exotic_flesh");
+	public static final TagKey<Item> LIVING_FLESH = createItemTag("living_flesh");
 	public static final TagKey<Item> UNSTABLE_COMPOUND = createItemTag("unstable_compound");
 	public static final TagKey<Item> CORROSIVE_ADDITIVE = createItemTag("corrosive_additive");
+	public static final TagKey<Item> GAIA_INGOT = forgeItemTag("ingots/gaia");
+	public static final TagKey<Item> GAIA_STEEL_INGOT = forgeItemTag("ingots/gaiasteel");
+	public static final TagKey<Item> ALF_STEEL_INGOT = forgeItemTag("ingots/alfsteel");
+	public static final TagKey<Item> MANA_WEAVE = createItemTag("mana_weave");
+	public static final TagKey<Item> VENOM_SAC = createItemTag("venom_sac");
 	
 	private static TagKey<Item> createItemTag(String name) {
-		return ItemTags.create(new ResourceLocation(SilentCompat.MODID, name));
+		return ItemTags.create(SilentCompat.getId(name));
 	}
 	
 	private static TagKey<Item> forgeItemTag(String name) {
@@ -127,5 +135,3 @@ public class SilentCompatTags {
 		return BlockTags.create(new ResourceLocation("forge", name));
 	}
 }
-
-

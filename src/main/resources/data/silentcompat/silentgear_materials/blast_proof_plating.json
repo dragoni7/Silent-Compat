@@ -75,10 +75,6 @@
     "traits": {
       "main": [
         {
-          "name": "silentcompat:retaliating_blast",
-          "level": 1
-        },
-        {
           "name": "silentcompat:sunspot",
           "level": 1
         },

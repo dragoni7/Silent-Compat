@@ -1,0 +1,115 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/alfsteel"
+      }
+    },
+    "name": {
+      "text": "Alfsteel"
+    },
+    "model": 
+    {
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#fcb500"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#fcb500"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#fcb500"
+        }
+      ]
+    },
+    "stats": {
+    "coating": {
+      "durability": [
+        {
+          "mul2": 2.0
+        }
+      ],
+      "armor_durability": {
+        "mul2": 0.2
+      },
+      "harvest_speed": {
+        "mul2": 0.125
+      },
+      "harvest_level": {
+        "max": 4.0
+      },
+      "melee_damage": {
+        "mul2": 2.0
+      },
+      "magic_damage": {
+        "mul2": 2.0
+      },
+      "ranged_damage": {
+        "mul2": 2.0
+      },
+      "enchantment_value": {
+        "add": 5.0
+      },
+      "knockback_resistance/chestplate": {
+        "add": 6.0
+      }
+    }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentcompat:mana_repair",
+          "level": 4,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:alf_burst",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:alf_enhanced",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        }
+      ]
+    }
+  }

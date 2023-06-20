@@ -1,0 +1,43 @@
+{
+    "type": "silentgear:attribute",
+    "max_level": 1,
+    "conditions": [
+        {
+          "type": "silentgear:gear_type",
+          "gear_type": "armor"
+        }
+    ],
+    "name": {
+        "translate": "Alf Enhanced"
+      },
+      "description": {
+        "translate": "Buffs reach distance on helmet, move and swim speed on legs."
+      },
+    "attribute_modifiers": {
+      "armor/head": [
+        {
+          "attribute": "forge:reach_distance",
+          "value": [
+            2.0
+          ],
+          "operation": 0
+        }
+      ],
+      "armor/legs": [
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": [
+            0.05
+          ],
+          "operation": 0
+        },
+        {
+            "attribute": "forge:swim_speed",
+            "value": [
+              0.05
+            ],
+            "operation": 0
+          }
+      ]
+    }
+  }

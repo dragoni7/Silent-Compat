@@ -1,0 +1,103 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:gems/void"
+      }
+    },
+    "name": {
+      "text": "Void Core"
+    },
+    "name_prefix": {
+      "text": "Void"
+    },
+    "stats": {
+      "coating": {
+        "harvest_level": {
+          "max": 4.0
+        },
+        "melee_damage": {
+          "mul2": 1.0
+        },
+        "attack_speed": {
+          "add": -0.5
+        },
+        "magic_damage": {
+          "mul2": 1.0
+        },
+        "armor/helmet": {
+            "add": 1
+        },
+        "armor/chestplate": {
+            "add": 2
+        },
+        "armor/leggings": {
+            "add": 1
+        },
+        "armor/boots": {
+            "add": 1
+        },
+        "armor_toughness": {
+          "add": 2
+        },
+        "knockback_resistance": {
+          "add": 1.5
+        },
+        "enchantment_value": {
+          "add": 5.0
+        }
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentgear:void_ward",
+          "level": 1
+        },
+        {
+            "name": "silentcompat:devouring",
+            "level": 1
+        },
+        {
+            "name": "silentcompat:umbral_blast",
+            "level": 3
+        }
+      ]
+    },
+    "model": {
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#8019fc"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#8019fc"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#8019fc"
+        }
+      ]
+    }
+  }

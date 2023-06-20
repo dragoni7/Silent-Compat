@@ -19,6 +19,9 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            property 'mixin.env.disableRefMap', 'true'
 
             property 'forge.enabledGameTestNamespaces', 'silentcompat'
 
@@ -35,6 +38,9 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
 
             property 'forge.logging.console.level', 'debug'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            property 'mixin.env.disableRefMap', 'true'
 
             property 'forge.enabledGameTestNamespaces', 'silentcompat'
 
@@ -54,6 +60,9 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
 
             property 'forge.logging.console.level', 'debug'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            property 'mixin.env.disableRefMap', 'true'
 
             property 'forge.enabledGameTestNamespaces', 'silentcompat'
 
@@ -70,6 +79,9 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
 
             property 'forge.logging.console.level', 'debug'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            property 'mixin.env.disableRefMap', 'true'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             args '--mod', 'silentcompat', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
@@ -120,10 +132,33 @@ repositories {
         name = "ModMaven"
         url = "https://modmaven.dev"
     }
+    maven { url = 'https://www.cursemaven.com' }
+    //maven { url = 'https://maven.moddingx.org/' }
+    //maven { url = 'https://maven.melanx.de/' }
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:1.19.2-${forge_version}"
+
+    // botania
+    compileOnly fg.deobf("vazkii.botania:Botania:${botania_version}:api")
+    implementation fg.deobf("vazkii.botania:Botania:${botania_version}")
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli:${minecraft_version}-77:api")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${minecraft_version}-77")
+    
+    // botanic additions
+    //implementation "org.zeith.hammerlib:HammerLib-1.19.2:19.3.57:deobf"
+    //implementation fg.deobf("org.zeith.botanicadds:BotanicAdditions-1.19.2-19.3.5")
+    implementation fg.deobf("curse.maven:hammer-lib-247401:4558470")
+    implementation fg.deobf("curse.maven:botanic-additions-310637:4558483")
+
+    // mythic botany
+    //annotationProcessor fg.deobf('org.moddingx:LibX:1.19.2-4.2.8')
+    //implementation fg.deobf('org.moddingx:LibX:1.19.2-4.2.8')
+    //implementation fg.deobf('io.github.noeppi_noeppi.mods:SandBox:1.19.2-1.0.1')
+    implementation fg.deobf("curse.maven:libx-412525:4052778")
+    implementation fg.deobf("curse.maven:sand_box-653732:4029683")
+    implementation fg.deobf("curse.maven:mythicbotany-400058:4546050")
 
     // compile against the JEI API but do not include it at runtime
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
@@ -131,17 +166,22 @@ dependencies {
     // at runtime, use the full JEI jar for Forge
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
 
+    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:${minecraft_version}-5.1.4.1:api")
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${minecraft_version}-5.1.4.1")
+
     implementation fg.deobf("net.silentchaos512:silent-lib:${project.silentlib_version}") {
-        exclude module: "forge"
+        transitive false
+        //exclude module: "forge"
     }
 
     implementation fg.deobf("net.silentchaos512:silent-gear:${project.silentgear_version}") {
-        exclude module: 'forge'
-        exclude module: 'jei-1.19.2-forge'
-        exclude module: 'silent-lib'
-        exclude module: 'curios-forge'
-        exclude module: 'World-Stripper'
-        exclude module: 'Patchouli'
+        transitive false
+        //exclude module: 'forge'
+        //exclude module: 'jei-1.19.2-forge'
+        //exclude module: 'silent-lib'
+        //exclude module: 'curios-forge'
+        //exclude module: 'World-Stripper'
+        //exclude module: 'Patchouli'
     }
 }
 

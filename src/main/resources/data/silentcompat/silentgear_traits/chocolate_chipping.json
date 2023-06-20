@@ -1,10 +1,13 @@
 {
-    "type": "silentcompat:chocolate_chipping",
+    "type": "silentcompat:item_drop",
     "max_level": 1,
     "name": {
       "translate": "trait.silentcompat.chocolate_chipping"
     },
     "description": {
       "translate": "trait.silentcompat.chocolate_chipping.desc"
-    }
-  }
+    },
+
+    "item": "silentcompat:chocolate_chip",
+    "chance": 20
+}

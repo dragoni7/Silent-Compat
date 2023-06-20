@@ -1,0 +1,66 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:venom_sac"
+      }
+    },
+    "name": {
+      "text": "Venom Sac"
+    },
+    "name_prefix": {
+        "translate": "Envenomed"
+    },
+    "stats": {
+      "coating": {
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentgear:eroded",
+          "level": 1
+        },
+        {
+            "name": "silentcompat:deadly_venom",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#87417f"
+        }
+      ],
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#87417f"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#87417f"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ]
+    }
+  }

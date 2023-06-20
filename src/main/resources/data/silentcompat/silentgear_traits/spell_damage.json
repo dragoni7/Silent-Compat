@@ -5,7 +5,7 @@
       "text": "Spell Damage"
     },
     "description": {
-      "translate": "Grants additional spell damage. (Requires: Ars Nouveau)"
+      "translate": "Grants additional spell damage. (Applies to Ars Nouveau and Iron's Spellbooks)"
     },
     "attribute_modifiers": {
       "all": [
@@ -22,6 +22,21 @@
             8.0,
             9.0,
             10.0
+          ]
+        },
+        {
+          "attribute": "irons_spellbooks:spell_power",
+          "operation": 0,
+          "value": [
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.25,
+            0.3,
+            0.35,
+            0.4,
+            0.45
           ]
         }
       ]

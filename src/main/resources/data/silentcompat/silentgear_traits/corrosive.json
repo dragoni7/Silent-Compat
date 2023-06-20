@@ -1,5 +1,5 @@
 {
-    "type": "silentcompat:corrosive",
+    "type": "silentcompat:on_hit_effect",
     "max_level": 1,
     "conditions": [
       {
@@ -12,5 +12,9 @@
     },
     "description": {
       "translate": "trait.silentcompat.corrosive.desc"
-    }
+    },
+
+    "effect": "biomancy:corrosive",
+    "duration": 40,
+    "chance": 1
   }

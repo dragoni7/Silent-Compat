@@ -1,0 +1,152 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/terrasteel"
+      }
+    },
+    "name": {
+      "text": "Terrasteel"
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#57FF0D"
+        },
+        {
+          "texture": "silentgear:_highlight",
+          "color": "#57FF0D"
+        }
+      ],
+      "main/armor": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#57FF0D"
+        },
+        {
+          "texture": "silentgear:_highlight",
+          "color": "#57FF0D"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#57FF0D"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_iron"
+        }
+      ]
+    },
+    "stats": {
+      "main": {
+        "durability": 2300.0,
+        "armor_durability": 32.0,
+        "enchantment_value": 26.0,
+        "harvest_level": 4.0,
+        "harvest_speed": 9.0,
+        "melee_damage": 3.0,
+        "attack_speed/axe": -0.1,
+        "armor": 20.0,
+        "armor/helmet": 3.0,
+        "armor/chestplate": 8.0,
+        "armor/leggings": 6.0,
+        "armor/boots": 3.0,
+        "armor_toughness": 12.0,
+        "ranged_damage": 2.0,
+        "ranged_speed": 0.1,
+        "rarity": 50.0,
+        "charging_value": 1.5,
+        "projectile_speed": 1.0,
+        "projectile_accuracy": 1.1,
+        "magic_armor": 8.0,
+        "knockback_resistance": {
+          "add": 1.5
+        }
+      },
+      "tip": {
+        "durability": {
+          "add": 250.0
+        },
+        "harvest_level": {
+          "max": 3.0
+        },
+        "armor_durability": {
+          "add": 10.0
+        },
+        "harvest_speed": {
+          "add": 2.0
+        },
+        "melee_damage": {
+          "add": 2.0
+        },
+        "rarity": {
+          "add": 20.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:malleable",
+          "level": 2
+        },
+        {
+          "name": "silentgear:synergistic",
+          "level": 3
+        },
+        {
+          "name": "silentcompat:mana_repair",
+          "level": 2,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        },
+        {
+          "name": "silentgear:brilliant",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            },
+            {
+              "type": "silentgear:gear_type",
+              "gear_type": "armor"
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:mana_burst",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            },
+            {
+              "type": "silentgear:gear_type",
+              "gear_type": "weapon"
+            }
+          ]
+  
+        }
+      ]
+    }
+  }

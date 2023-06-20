@@ -1,5 +1,5 @@
 {
-    "type": "silentcompat:soul_steal",
+    "type": "silentcompat:on_hit_effect",
     "max_level": 1,
     "conditions": [
       {
@@ -12,5 +12,9 @@
     },
     "description": {
       "translate": "trait.silentcompat.soul_steal.desc"
-    }
+    },
+
+    "effect": "alexsmobs:soul_steal",
+    "duration": 100,
+    "chance": 4
   }

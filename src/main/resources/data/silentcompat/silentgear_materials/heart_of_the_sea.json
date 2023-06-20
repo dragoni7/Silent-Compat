@@ -33,11 +33,23 @@
         },
         {
           "name": "silentcompat:bulwark",
-          "level": 2
+          "level": 2,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         },
         {
           "name": "silentcompat:mana_regen",
-          "level": 2
+          "level": 2,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         }
       ]
     },

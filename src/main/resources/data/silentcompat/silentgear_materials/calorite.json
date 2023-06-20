@@ -85,6 +85,16 @@
                 "ratio": 0.5
               }
             ]
+        },
+        {
+          "name": "silentcompat:weakening",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         }
       ],
       "rod": [

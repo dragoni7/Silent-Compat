@@ -1,0 +1,126 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "cloth"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:mana_weave"
+      }
+    },
+    "name": {
+      "text": "Mana Weave"
+    },
+    "stats": {
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 5.0,
+        "enchantment_value": 15.0,
+        "rarity": 11.0,
+        "charging_value": 0.8,
+        "armor": 6.0,
+        "armor/helmet": 1.0,
+        "armor/chestplate": 2.0,
+        "armor/leggings": 2.0,
+        "armor/boots": 1.0,
+        "magic_armor": 8.0
+      },
+      "grip": {
+        "repair_efficiency": {
+          "mul1": 0.1
+        },
+        "harvest_speed": {
+          "mul1": 0.2
+        },
+        "attack_speed": {
+          "add": 0.1
+        }
+      },
+      "lining": {}
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentcompat:mana_repair",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        },
+        {
+          "name": "silentcompat:mana_harvest",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        }
+      ],
+      "grip": [
+        {
+          "name": "silentgear:flexible",
+          "level": 1
+        },
+        {
+          "name": "silentcompat:mana_harvest",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        }
+      ],
+      "lining": [
+        {
+          "name": "silentgear:flexible",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#37fcf7"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:cloth",
+          "color": "#37fcf7"
+        }
+      ],
+      "grip/all": [
+        {
+          "texture": "silentgear:grip_wool",
+          "color": "#37fcf7"
+        }
+      ],
+      "grip/part": [
+        {
+          "texture": "silentgear:grip",
+          "color": "#37fcf7"
+        }
+      ],
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_cloth",
+          "color": "#37fcf7"
+        }
+      ]
+    }
+  }

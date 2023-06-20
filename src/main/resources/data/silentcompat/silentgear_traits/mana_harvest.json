@@ -1,0 +1,13 @@
+{
+    "type": "silentcompat:item_drop",
+    "max_level": 1,
+    "name": {
+      "text": "Mana Harvest"
+    },
+    "description": {
+      "text": "Rarely drops black lotus on durability loss"
+    },
+
+    "item": "botania:black_lotus",
+    "chance": 80
+}

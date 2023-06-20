@@ -1,4 +1,4 @@
-// 1.19.2	2023-05-31T13:13:20.7404845	Tags for minecraft:item
+// 1.19.2	2023-06-20T13:55:46.9570175	Tags for minecraft:item
 49c12dc1066afdea5c89a385fae5130956cd34ae data/forge/tags/items/dragon_scale.json
 aca1bcde8c4f759ab4e8b77f33dfd0a742936a79 data/forge/tags/items/essence/abjuration.json
 3268af9fafa0d471c4c01b2b513e88b1ec09af9f data/forge/tags/items/essence/conjuration.json
@@ -7,14 +7,18 @@ d15cfd3b6250e3f7d5d41520bd757565fccae5aa data/forge/tags/items/essence/earth.jso
 a709b501183b33373b975b40de5368468a67113a data/forge/tags/items/gems/crystal_shard.json
 0765e30f0871716da082290db89cd2789fe99514 data/forge/tags/items/gems/honey_crystal_shards.json
 d583150151dc564e667b2afe51e9585bc75be36b data/forge/tags/items/gems/lumiere.json
+442b1a2ae22e9b03c430bd79f561e4b748943a43 data/forge/tags/items/gems/void.json
 8118ecad04598d23eef28892d35a9459b8ab299e data/forge/tags/items/gems/void_crystal_shard.json
 ac6fa567ded784aaf3ffeba0f34958cb08558e40 data/forge/tags/items/ingots.json
+1d56151bc106a5979925295ca4d9faeff01dbe6e data/forge/tags/items/ingots/alfsteel.json
 5dedc4ce994a1eed4163f539b4867b63cee077d0 data/forge/tags/items/ingots/andesite_alloy.json
 b47de37c95d03814f83f71dae292ef501d9d0664 data/forge/tags/items/ingots/arcmetal.json
 bbad18f5bc0090431cfbefa2d4e2b39f12ed61ea data/forge/tags/items/ingots/bunny_steel.json
 ef91d29103a5becf646e000aa558d686c6a24980 data/forge/tags/items/ingots/capsid_alloy.json
 7acbf6ec8bf3d77795fe00dc4f500db638b75961 data/forge/tags/items/ingots/cast_iron.json
 a1ebf436a20f4d3568d68d057f99de4dd0adcb75 data/forge/tags/items/ingots/dark_chocolate.json
+c40ca4035fb306cbcf3b83289d8506c8163d8015 data/forge/tags/items/ingots/gaia.json
+ad3d75a0cbdafaad9443268e1bbffa380cd2e66e data/forge/tags/items/ingots/gaiasteel.json
 ddd006a7d2106b661ecb69256722dc3150d6cbe1 data/forge/tags/items/ingots/ignitium.json
 e30880267c5467648c97803789aed52eb4a72947 data/forge/tags/items/ingots/midnight_iron.json
 8c46523104b2f9072144574c24f8826c8bea738d data/forge/tags/items/ingots/plasteel.json
@@ -91,10 +95,13 @@ ed3f8bc370384987da63f8e34fa63848d6fed45d data/silentcompat/tags/items/glowsilk.j
 855b899b8157bf475c0c3edd045241668d8ec2f7 data/silentcompat/tags/items/hemolymph_sac.json
 3903599a3b0230109713944d1b562575c9468ef6 data/silentcompat/tags/items/kangaroo_hide.json
 d2511063214e53df856788e940b1aee4b3f34383 data/silentcompat/tags/items/komodo_spit.json
+4f6cb850076f4cf063fdc5c332329502f68b94d4 data/silentcompat/tags/items/living_flesh.json
 30f21ef97c6cf8efce09fce76cfb776d9373fa10 data/silentcompat/tags/items/magebloom_fiber.json
+8e18863031529740340f02a3a3bb00dfa948c04a data/silentcompat/tags/items/mana_weave.json
 761895b28f1a9a5367e2ddda8db919cd12fe198c data/silentcompat/tags/items/masticator_scales.json
 252016a7c1e593d368d690c53d98fc8132c8a765 data/silentcompat/tags/items/mimicream.json
 a45b624949eaf942bcbf37d7b4d89ea9eb33b0d5 data/silentcompat/tags/items/mogmoss.json
+f717ea155abbc6ff46e8f9d69e381679b64b4d75 data/silentcompat/tags/items/monstrous_horn.json
 8f4499f26e75a9cafdd13f644393239ed5d7a991 data/silentcompat/tags/items/moose_antler.json
 35e74e0cda4a69db951e1f21fb6b5c2321f7f366 data/silentcompat/tags/items/mossy_tooth.json
 27b4a9b4b5bf2846567e5d62d15ca1ddc16bae25 data/silentcompat/tags/items/naga_scale.json
@@ -117,6 +124,7 @@ cb1beeccd019caacbb1d5caaab829bdad9e58e91 data/silentcompat/tags/items/straddlite
 4a11ff670b94a4dfb58f76c5152f7fc4c3b83d90 data/silentcompat/tags/items/tarantula_hawk_wing.json
 4bcc060315034021e731bf1f53ae55ea0f7c38e8 data/silentcompat/tags/items/tentacle.json
 5fd945daf457c3d0d3b595d2bd8060c3ac3d19f4 data/silentcompat/tags/items/unstable_compound.json
+87da6d22967bbcd51b54c5da5b097e6c0710d1f1 data/silentcompat/tags/items/venom_sac.json
 aa028e5af983a34735f944a912eabf435b826482 data/silentcompat/tags/items/void_worm.json
 5a7dbd9ba4483a07cee8fa99a20764e47ae8ba6f data/silentcompat/tags/items/whale_tooth.json
 4993659ab9a8c432f58125b53f09c5caeb7ce467 data/silentcompat/tags/items/yeti_hide.json

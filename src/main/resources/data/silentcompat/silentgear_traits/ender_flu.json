@@ -1,16 +1,20 @@
 {
-    "type": "silentcompat:enderflu",
-    "max_level": 1,
-    "conditions": [
-      {
-        "type": "silentgear:gear_type",
-        "gear_type": "weapon"
-      }
-    ],
-    "name": {
-      "translate": "trait.silentcompat.ender_flu"
-    },
-    "description": {
-      "translate": "trait.silentcompat.ender_flu.desc"
+  "type": "silentcompat:on_hit_effect",
+  "max_level": 1,
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "weapon"
     }
-  }
+  ],
+  "name": {
+    "translate": "trait.silentcompat.ender_flu"
+  },
+  "description": {
+    "translate": "trait.silentcompat.ender_flu.desc"
+  },
+
+  "effect": "alexsmobs:ender_flu",
+  "duration": 180,
+  "chance": 1
+}

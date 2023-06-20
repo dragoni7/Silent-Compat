@@ -1,0 +1,27 @@
+{
+    "type": "silentgear:wielder_effect",
+    "max_level": 1,
+    "name": {
+      "text": "Monstrous"
+    },
+    "description": {
+      "text": "Increase knockback resist, armor, and armor toughness"
+    },
+    "conditions": [
+        {
+          "type": "silentgear:gear_type",
+          "gear_type": "helmet"
+        }
+    ],
+    "potion_effects": {
+      "armor": [
+        {
+          "type": "trait_level",
+          "effect": "cataclysm:monstrous",
+          "level": [
+            1
+          ]
+        }
+      ]
+    }
+  }

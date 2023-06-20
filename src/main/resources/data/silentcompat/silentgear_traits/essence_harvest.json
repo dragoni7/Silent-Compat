@@ -1,21 +1,19 @@
 {
-    "type": "silentgear:bonus_drops",
-    "max_level": 5,
-    "conditions": [
-      {
-        "type": "silentgear:gear_type",
-        "gear_type": "tool"
-      }
-    ],
-    "name": {
-      "text": "Essence Harvest"
-    },
-    "description": {
-      "text": "Sometimes increases mystical essence drops."
-    },
-    "base_chance": 0.15,
-    "bonus_multiplier": 0.66,
-    "ingredient": {
-      "tag": "mysticalagriculture:essences"
+  "type": "silentcompat:item_drop",
+  "max_level": 1,
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "tool"
     }
-  }
+  ],
+  "name": {
+    "text": "Essence Harvest"
+  },
+  "description": {
+    "text": "Tools have a chance to drop inferium essence on durability loss"
+  },
+
+  "item": "mysticalagriculture:inferium_essence",
+  "chance": 25
+}

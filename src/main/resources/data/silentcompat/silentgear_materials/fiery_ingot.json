@@ -28,9 +28,12 @@
       "harvest_speed": 6.0,
       "melee_damage": 4.0,
       "magic_damage": 3.0,
-      "attack_speed": 0.1,
       "attack_speed/axe": 0.0,
       "armor": 24.0,
+      "armor/helmet": 4.0,
+      "armor/chestplate": 9.0,
+      "armor/leggings": 7.0,
+      "armor/boots": 4.0,
       "armor_toughness": 6.0,
       "magic_armor": 10.0,
       "ranged_damage": 2.5,
@@ -52,7 +55,13 @@
     "main": [
       {
         "name": "silentgear:fireproof",
-        "level": 1
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
       },
       {
         "name": "silentcompat:restoration",

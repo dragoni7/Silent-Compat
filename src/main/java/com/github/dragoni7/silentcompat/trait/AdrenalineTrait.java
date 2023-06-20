@@ -6,7 +6,6 @@ import com.github.dragoni7.silentcompat.SilentCompat;
 
 import net.minecraft.resources.ResourceLocation;
 import net.silentchaos512.gear.gear.trait.SimpleTrait;
-import net.silentchaos512.gear.gear.trait.SimpleTrait.Serializer;
 
 public class AdrenalineTrait extends SimpleTrait {
 

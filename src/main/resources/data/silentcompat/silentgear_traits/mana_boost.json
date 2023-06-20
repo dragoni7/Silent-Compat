@@ -5,7 +5,7 @@
       "text": "Mana Boost"
     },
     "description": {
-      "translate": "Grants additional max mana. (Requires: Ars Nouveau)"
+      "translate": "Grants additional max mana. (Applies to Ars Nouveau and Iron's Spellbooks)"
     },
     "attribute_modifiers": {
       "all": [
@@ -18,6 +18,17 @@
             30,
             40,
             50
+          ]
+        },
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "operation": 0,
+          "value": [
+            50,
+            100,
+            150,
+            200,
+            250
           ]
         }
       ]

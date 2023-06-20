@@ -159,14 +159,26 @@ public class AddItemTags extends ItemTagsProvider {
 		
 		// Cataclysm
 		tag(SilentCompatTags.IGNITIUM).addOptional(new ResourceLocation("cataclysm:ignitium_ingot"));
+		tag(SilentCompatTags.MONSTEROUS_HORN).addOptional(new ResourceLocation("cataclysm:monstrous_horn"));
+		tag(SilentCompatTags.VOID_CORE).addOptional(new ResourceLocation("cataclysm:void_core"));
 		
 		// Mystical Agriculture
 		tag(SilentCompatTags.PROSPERITY_SHARD).addOptional(new ResourceLocation("mysticalagriculture:prosperity_shard"));
 		
 		// Biomancy
 		tag(SilentCompatTags.EXOTIC_FLESH).addOptional(new ResourceLocation("biomancy:creator_mix"));
+		tag(SilentCompatTags.LIVING_FLESH).addOptional(new ResourceLocation("biomancy:living_flesh"));
 		tag(SilentCompatTags.UNSTABLE_COMPOUND).addOptional(new ResourceLocation("biomancy:unstable_compound"));
 		tag(SilentCompatTags.CORROSIVE_ADDITIVE).addOptional(new ResourceLocation("biomancy:corrosive_additive"));
+		
+		// Botania
+		tag(SilentCompatTags.GAIA_INGOT).addOptional(new ResourceLocation("botania:gaia_ingot"));
+		tag(SilentCompatTags.GAIA_STEEL_INGOT).addOptional(new ResourceLocation("botanicadds:gaiasteel_ingot"));
+		tag(SilentCompatTags.ALF_STEEL_INGOT).addOptional(new ResourceLocation("mythicbotany:alfsteel_ingot"));
+		tag(SilentCompatTags.MANA_WEAVE).addOptional(new ResourceLocation("botania:manaweave_cloth"));
+		
+		// Blue Skies
+		tag(SilentCompatTags.VENOM_SAC).addOptional(new ResourceLocation("blue_skies:venom_sac"));
 	}
 	
 	private void addMaterialTags(MaterialSet set) {

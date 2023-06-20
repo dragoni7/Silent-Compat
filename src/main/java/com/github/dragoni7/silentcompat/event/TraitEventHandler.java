@@ -1,6 +1,5 @@
 package com.github.dragoni7.silentcompat.event;
 
-import com.github.dragoni7.silentcompat.SilentCompat;
 import com.github.dragoni7.silentcompat.consts.ModEffectsLocs;
 import com.github.dragoni7.silentcompat.consts.TraitConst;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatEffects;

@@ -1,0 +1,122 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/manasteel"
+      }
+    },
+    "name": {
+      "text": "Manasteel"
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#68AFEE"
+        },
+        {
+          "texture": "silentgear:_highlight",
+          "color": "#68AFEE"
+        }
+      ],
+      "main/armor": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#68AFEE"
+        },
+        {
+          "texture": "silentgear:_highlight",
+          "color": "#68AFEE"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#68AFEE"
+        }
+      ],
+      "tip/all": [
+        {
+          "texture": "silentgear:tip_iron"
+        }
+      ]
+    },
+    "stats": {
+      "main": {
+        "durability": 300.0,
+        "armor_durability": 16.0,
+        "enchantment_value": 20.0,
+        "harvest_level": 3.0,
+        "harvest_speed": 6.0,
+        "melee_damage": 2.0,
+        "attack_speed": -0.1,
+        "armor": 15.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 6.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 2.0,
+        "armor_toughness": 0.0,
+        "ranged_damage": 1.0,
+        "ranged_speed": 0.1,
+        "rarity": 10.0,
+        "charging_value": 1.0,
+        "projectile_speed": 1.0,
+        "projectile_accuracy": 1.1,
+        "magic_armor": 7.0
+      },
+      "tip": {
+        "durability": {
+          "add": 150.0
+        },
+        "harvest_level": {
+          "max": 3.0
+        },
+        "armor_durability": {
+          "add": 4.0
+        },
+        "harvest_speed": {
+          "add": 1.0
+        },
+        "melee_damage": {
+          "add": 1.0
+        },
+        "rarity": {
+          "add": 10.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:malleable",
+          "level": 2
+        },
+        {
+          "name": "silentcompat:mana_repair",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        }
+      ],
+      "tip": [
+        {
+          "name": "silentcompat:mana_repair",
+          "level": 1
+        }
+      ]
+    }
+  }

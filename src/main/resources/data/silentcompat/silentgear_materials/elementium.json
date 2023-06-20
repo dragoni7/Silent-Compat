@@ -1,0 +1,138 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 3,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/elementium"
+    }
+  },
+  "name": {
+    "text": "Elementium"
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#EF8CBD"
+      },
+      {
+        "texture": "silentgear:_highlight",
+        "color": "#EF8CBD"
+      }
+    ],
+    "main/armor": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#EF8CBD"
+      },
+      {
+        "texture": "silentgear:_highlight",
+        "color": "#EF8CBD"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_lc",
+        "color": "#EF8CBD"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_iron"
+      }
+    ]
+  },
+  "stats": {
+    "main": {
+      "durability": 720.0,
+      "armor_durability": 18.0,
+      "enchantment_value": 20.0,
+      "harvest_level": 3.0,
+      "harvest_speed": 6.2,
+      "melee_damage": 2.0,
+      "attack_speed/axe": -0.1,
+      "armor": 15.0,
+      "armor/helmet": 2.0,
+      "armor/chestplate": 6.0,
+      "armor/leggings": 5.0,
+      "armor/boots": 2.0,
+      "armor_toughness": 0.0,
+      "ranged_damage": 1.5,
+      "ranged_speed": 0.1,
+      "rarity": 30.0,
+      "charging_value": 1.2,
+      "projectile_speed": 1.0,
+      "projectile_accuracy": 1.1,
+      "magic_armor": 8.0
+    },
+    "tip": {
+      "durability": {
+        "add": 200.0
+      },
+      "harvest_level": {
+        "max": 3.0
+      },
+      "armor_durability": {
+        "add": 6.0
+      },
+      "harvest_speed": {
+        "add": 1.0
+      },
+      "melee_damage": {
+        "add": 1.0
+      },
+      "rarity": {
+        "add": 15.0
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:malleable",
+        "level": 2
+      },
+      {
+        "name": "silentcompat:mana_repair",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      },
+      {
+        "name": "silentcompat:pixie",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.66
+          }
+        ]
+      }
+    ],
+    "tip": [
+      {
+        "name": "silentcompat:pixie",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.66
+          }
+        ]
+      }
+    ]
+  }
+}

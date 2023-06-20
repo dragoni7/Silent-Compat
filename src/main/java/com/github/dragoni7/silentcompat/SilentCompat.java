@@ -9,37 +9,35 @@ import com.github.dragoni7.silentcompat.event.ClientEventHandler;
 import com.github.dragoni7.silentcompat.networking.Networking;
 import com.github.dragoni7.silentcompat.trait.AbyssalSynergyTrait;
 import com.github.dragoni7.silentcompat.trait.AdrenalineTrait;
+import com.github.dragoni7.silentcompat.trait.AlfBurstTrait;
 import com.github.dragoni7.silentcompat.trait.AmplifyingTrait;
 import com.github.dragoni7.silentcompat.trait.BlindingTrait;
 import com.github.dragoni7.silentcompat.trait.ColdTrait;
-import com.github.dragoni7.silentcompat.trait.CorrosiveTrait;
-import com.github.dragoni7.silentcompat.trait.DecayTrait;
 import com.github.dragoni7.silentcompat.trait.DevouringTrait;
 import com.github.dragoni7.silentcompat.trait.DimensionalEffectTrait;
 import com.github.dragoni7.silentcompat.trait.DiurnalTrait;
 import com.github.dragoni7.silentcompat.trait.DodgingTrait;
-import com.github.dragoni7.silentcompat.trait.ChocolateChipping;
 import com.github.dragoni7.silentcompat.trait.EmuDodgeTrait;
-import com.github.dragoni7.silentcompat.trait.EnderFluTrait;
-import com.github.dragoni7.silentcompat.trait.FeatherWeightTrait;
 import com.github.dragoni7.silentcompat.trait.FireReactTrait;
 import com.github.dragoni7.silentcompat.trait.FleetFootedTrait;
-import com.github.dragoni7.silentcompat.trait.FreezingTrait;
-import com.github.dragoni7.silentcompat.trait.GooeyTrait;
+import com.github.dragoni7.silentcompat.trait.GaiaBurstTrait;
 import com.github.dragoni7.silentcompat.trait.HungeringStrike;
 import com.github.dragoni7.silentcompat.trait.InverseDimensionalEffectTrait;
+import com.github.dragoni7.silentcompat.trait.ItemDropTrait;
 import com.github.dragoni7.silentcompat.trait.KnightlyTrait;
 import com.github.dragoni7.silentcompat.trait.KnockoutTrait;
 import com.github.dragoni7.silentcompat.trait.LavaVisionTrait;
 import com.github.dragoni7.silentcompat.trait.LuckyBreak;
+import com.github.dragoni7.silentcompat.trait.ManaBurstTrait;
+import com.github.dragoni7.silentcompat.trait.ManaRepairTrait;
 import com.github.dragoni7.silentcompat.trait.NeptunesMightTrait;
 import com.github.dragoni7.silentcompat.trait.NocturnalTrait;
+import com.github.dragoni7.silentcompat.trait.OnHitEffect;
 import com.github.dragoni7.silentcompat.trait.PurifyingTrait;
 import com.github.dragoni7.silentcompat.trait.RestorationTrait;
 import com.github.dragoni7.silentcompat.trait.RetaliatingBlastTrait;
 import com.github.dragoni7.silentcompat.trait.ScorchingTrait;
 import com.github.dragoni7.silentcompat.trait.JoltHitTrait;
-import com.github.dragoni7.silentcompat.trait.SoulStealTrait;
 import com.github.dragoni7.silentcompat.trait.SunSpotTrait;
 import com.github.dragoni7.silentcompat.trait.UmbralBlastTrait;
 import com.github.dragoni7.silentcompat.trait.UnstableMagicTrait;
@@ -48,6 +46,7 @@ import com.github.dragoni7.silentcompat.trait.VolatileTrait;
 import com.github.dragoni7.silentcompat.trait.VorpalTrait;
 import com.mojang.logging.LogUtils;
 
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
@@ -59,6 +58,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 import net.silentchaos512.gear.api.GearApi;
 import net.silentchaos512.gear.api.traits.ITraitSerializer;
+import net.silentchaos512.gear.gear.trait.TargetEffectTrait;
 
 import org.slf4j.Logger;
 
@@ -68,7 +68,7 @@ public class SilentCompat {
 	public static final Logger LOGGER = LogUtils.getLogger();
 
 	public SilentCompat() {
-		
+
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		SilentCompatSoundEvents.SOUND_EVENTS.register(modEventBus);
 		SilentCompatParticles.PARTICLES.register(modEventBus);
@@ -87,22 +87,15 @@ public class SilentCompat {
 	public void registerTraits() {
 		registerTrait(DiurnalTrait.SERIALIZER);
 		registerTrait(NocturnalTrait.SERIALIZER);
-		registerTrait(DecayTrait.SERIALIZER);
-		registerTrait(EnderFluTrait.SERIALIZER);
 		registerTrait(DodgingTrait.SERIALIZER);
-		registerTrait(ChocolateChipping.SERIALIZER);
 		registerTrait(FleetFootedTrait.SERIALIZER);
-		registerTrait(FreezingTrait.SERIALIZER);
-		registerTrait(FeatherWeightTrait.SERIALIZER);
 		registerTrait(VorpalTrait.SERIALIZER);
 		registerTrait(HungeringStrike.SERIALIZER);
-		registerTrait(SoulStealTrait.SERIALIZER);
 		registerTrait(LuckyBreak.SERIALIZER);
 		registerTrait(RetaliatingBlastTrait.SERIALIZER);
 		registerTrait(KnockoutTrait.SERIALIZER);
 		registerTrait(AbyssalSynergyTrait.SERIALIZER);
 		registerTrait(VigorousTrait.SERIALIZER);
-		registerTrait(GooeyTrait.SERIALIZER);
 		registerTrait(UnstableMagicTrait.SERIALIZER);
 		registerTrait(KnightlyTrait.SERIALIZER);
 		registerTrait(FireReactTrait.SERIALIZER);
@@ -123,7 +116,12 @@ public class SilentCompat {
 		registerTrait(DimensionalEffectTrait.SERIALIZER);
 		registerTrait(InverseDimensionalEffectTrait.SERIALIZER);
 		registerTrait(AdrenalineTrait.SERIALIZER);
-		registerTrait(CorrosiveTrait.SERIALIZER);
+		registerTrait(ManaBurstTrait.SERIALIZER);
+		registerTrait(GaiaBurstTrait.SERIALIZER);
+		registerTrait(AlfBurstTrait.SERIALIZER);
+		registerTrait(ManaRepairTrait.SERIALIZER);
+		registerTrait(ItemDropTrait.SERIALIZER);
+		registerTrait(OnHitEffect.SERIALIZER);
 	}
 
 	private void registerTrait(ITraitSerializer<?> serializer) {
@@ -142,4 +140,8 @@ public class SilentCompat {
 			return new ItemStack(MaterialRegistry.MATERIAL_SETS.get("capsid_alloy").ingot.get());
 		}
 	});
+	
+    public static ResourceLocation getId(String path) {
+        return new ResourceLocation(SilentCompat.MODID, path);
+    }
 }

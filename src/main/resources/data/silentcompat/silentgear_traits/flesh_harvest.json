@@ -1,0 +1,13 @@
+{
+    "type": "silentcompat:item_drop",
+    "max_level": 1,
+    "name": {
+      "text": "Flesh Harvest"
+    },
+    "description": {
+      "text": "Chance to drop flesh bits on durability loss"
+    },
+
+    "item": "biomancy:flesh_bits",
+    "chance": 30
+}

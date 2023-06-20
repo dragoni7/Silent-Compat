@@ -85,6 +85,10 @@
         {
             "name": "silentcompat:fire_react",
             "level": 1
+        },
+        {
+          "name": "silentcompat:branding",
+          "level": 1
         }
       ]
     },

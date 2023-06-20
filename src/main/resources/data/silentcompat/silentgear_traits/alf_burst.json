@@ -1,0 +1,11 @@
+{
+    "type": "silentcompat:alf_burst",
+    "max_level": 1,
+    "cancels_with": ["gaia_burst", "mana_burst"],
+    "name": {
+      "translate": "trait.silentcompat.alf_burst"
+    },
+    "description": {
+      "translate": "trait.silentcompat.alf_burst.desc"
+    }
+  }
