@@ -44,6 +44,7 @@ import com.github.dragoni7.silentcompat.trait.UnstableMagicTrait;
 import com.github.dragoni7.silentcompat.trait.VigorousTrait;
 import com.github.dragoni7.silentcompat.trait.VolatileTrait;
 import com.github.dragoni7.silentcompat.trait.VorpalTrait;
+import com.github.dragoni7.silentcompat.trait.WitherSkullTrait;
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.resources.ResourceLocation;
@@ -58,8 +59,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 import net.silentchaos512.gear.api.GearApi;
 import net.silentchaos512.gear.api.traits.ITraitSerializer;
-import net.silentchaos512.gear.gear.trait.TargetEffectTrait;
-
 import org.slf4j.Logger;
 
 @Mod(SilentCompat.MODID)
@@ -122,6 +121,7 @@ public class SilentCompat {
 		registerTrait(ManaRepairTrait.SERIALIZER);
 		registerTrait(ItemDropTrait.SERIALIZER);
 		registerTrait(OnHitEffect.SERIALIZER);
+		registerTrait(WitherSkullTrait.SERIALIZER);
 	}
 
 	private void registerTrait(ITraitSerializer<?> serializer) {

@@ -11,7 +11,6 @@ import vazkii.botania.api.mana.ManaItemHandler;
 import vazkii.botania.common.entity.ManaBurstEntity;
 import vazkii.botania.common.handler.BotaniaSounds;
 import vazkii.botania.common.item.BotaniaItems;
-import vazkii.botania.common.item.equipment.armor.manaweave.ManaweaveArmorItem;
 import vazkii.botania.common.item.equipment.tool.terrasteel.TerraBladeItem;
 
 public class BotaniaCompat {

@@ -1,0 +1,20 @@
+{
+    "type": "silentcompat:on_hit_effect",
+    "max_level": 1,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "weapon"
+      }
+    ],
+    "name": {
+      "text": "Withering"
+    },
+    "description": {
+      "text": "Chance to inflicts targets with Wither"
+    },
+
+    "effect": "minecraft:wither",
+    "duration": 100,
+    "chance": 3
+  }

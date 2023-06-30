@@ -1,4 +1,4 @@
-// 1.19.2	2023-06-20T13:55:46.9570175	Tags for minecraft:item
+// 1.19.2	2023-06-24T16:37:34.1056586	Tags for minecraft:item
 49c12dc1066afdea5c89a385fae5130956cd34ae data/forge/tags/items/dragon_scale.json
 aca1bcde8c4f759ab4e8b77f33dfd0a742936a79 data/forge/tags/items/essence/abjuration.json
 3268af9fafa0d471c4c01b2b513e88b1ec09af9f data/forge/tags/items/essence/conjuration.json
@@ -28,6 +28,7 @@ fc5f5e375dc2f33fda2952c67e0f80c4aa91a5c8 data/forge/tags/items/ingots/solarmetal
 a747575198666543eaa78059b99b741db6405c73 data/forge/tags/items/ingots/source_steel.json
 60546f5e812ddae29839fef40c980053552565bc data/forge/tags/items/ingots/stellium.json
 c55e06f6896c13843a5bc5b74b7bcca29e58eeb0 data/forge/tags/items/ingots/voidmetal.json
+3b1f110d187e66c34dc02168f6f0536be2bd8677 data/forge/tags/items/ingots/witherite.json
 dbd9150c302423f000b04c369fc6fe756541fab4 data/forge/tags/items/nuggets.json
 a5b046ccd642842ba202cf1efc6b04ebdf83af5c data/forge/tags/items/nuggets/arcmetal.json
 abbd2077ef601ae6d4622a2cf6b2b7e3923a6f3e data/forge/tags/items/nuggets/bunny_steel.json
@@ -97,6 +98,7 @@ ed3f8bc370384987da63f8e34fa63848d6fed45d data/silentcompat/tags/items/glowsilk.j
 d2511063214e53df856788e940b1aee4b3f34383 data/silentcompat/tags/items/komodo_spit.json
 4f6cb850076f4cf063fdc5c332329502f68b94d4 data/silentcompat/tags/items/living_flesh.json
 30f21ef97c6cf8efce09fce76cfb776d9373fa10 data/silentcompat/tags/items/magebloom_fiber.json
+cf8efaa0475c430cc13a09833c11377a4440baa4 data/silentcompat/tags/items/maj_enderium.json
 8e18863031529740340f02a3a3bb00dfa948c04a data/silentcompat/tags/items/mana_weave.json
 761895b28f1a9a5367e2ddda8db919cd12fe198c data/silentcompat/tags/items/masticator_scales.json
 252016a7c1e593d368d690c53d98fc8132c8a765 data/silentcompat/tags/items/mimicream.json

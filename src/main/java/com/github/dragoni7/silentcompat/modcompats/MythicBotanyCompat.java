@@ -1,10 +1,6 @@
 package com.github.dragoni7.silentcompat.modcompats;
 
-import org.zeith.botanicadds.init.ItemsBA;
-
-import mythicbotany.alftools.AlfsteelSword;
 import mythicbotany.register.ModItems;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;

@@ -93,6 +93,10 @@
           "level": 1
         },
         {
+          "name": "silentcompat:iron_shed",
+          "level": 1
+        },
+        {
           "name": "silentgear:hard",
           "level": 1
         },

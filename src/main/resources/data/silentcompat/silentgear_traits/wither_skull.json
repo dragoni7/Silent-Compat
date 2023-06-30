@@ -1,0 +1,16 @@
+{
+    "type": "silentcompat:wither_skull",
+    "max_level": 1,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "tool"
+      }
+    ],
+    "name": {
+      "translate": "trait.silentcompat.wither_skull"
+    },
+    "description": {
+      "translate": "trait.silentcompat.wither_skull.desc"
+    }
+  }

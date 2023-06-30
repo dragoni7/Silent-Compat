@@ -1,14 +1,9 @@
 package com.github.dragoni7.silentcompat.trait;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
 import net.minecraftforge.fml.ModList;
 import net.silentchaos512.gear.api.traits.TraitActionContext;
 import net.silentchaos512.gear.gear.trait.SimpleTrait;
-import vazkii.botania.api.mana.ManaItemHandler;
-
 import java.util.Collection;
 
 import com.github.dragoni7.silentcompat.SilentCompat;

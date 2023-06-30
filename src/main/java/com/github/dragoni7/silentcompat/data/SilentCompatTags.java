@@ -100,6 +100,7 @@ public class SilentCompatTags {
 	public static final TagKey<Item> FISH_BONES = createItemTag("fish_bones");
 	public static final TagKey<Item> STELLIUM = forgeItemTag("ingots/stellium");
 	public static final TagKey<Item> IGNITIUM = forgeItemTag("ingots/ignitium");
+	public static final TagKey<Item> WITHERITE = forgeItemTag("ingots/witherite");
 	public static final TagKey<Item> MONSTEROUS_HORN = createItemTag("monstrous_horn");
 	public static final TagKey<Item> VOID_CORE = forgeItemTag("gems/void");
 	public static final TagKey<Item> VOID_SHARD = forgeItemTag("gems/void_crystal_shard");
@@ -122,6 +123,7 @@ public class SilentCompatTags {
 	public static final TagKey<Item> ALF_STEEL_INGOT = forgeItemTag("ingots/alfsteel");
 	public static final TagKey<Item> MANA_WEAVE = createItemTag("mana_weave");
 	public static final TagKey<Item> VENOM_SAC = createItemTag("venom_sac");
+	public static final TagKey<Item> MAJ_ENDERIUM = createItemTag("maj_enderium");
 	
 	private static TagKey<Item> createItemTag(String name) {
 		return ItemTags.create(SilentCompat.getId(name));

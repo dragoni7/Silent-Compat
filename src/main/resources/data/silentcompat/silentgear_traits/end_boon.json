@@ -1,0 +1,34 @@
+{
+    "type": "silentcompat:dimensional_effect",
+    "max_level": 2,
+    "name": {
+      "text": "End Boon"
+    },
+    "description": {
+      "text": "Grants luck while in the End"
+    },
+    "potion_effects": {
+      "armor": [
+        {
+          "type": "trait_level",
+          "effect": "minecraft:luck",
+          "dimension": "minecraft:the_end",
+          "level": [
+            1,
+            2
+          ]
+        }
+      ],
+      "tool": [
+        {
+          "type": "trait_level",
+          "effect": "minecraft:luck",
+          "dimension": "minecraft:the_end",
+          "level": [
+            1,
+            2
+          ]
+        }
+      ]
+    }
+  }

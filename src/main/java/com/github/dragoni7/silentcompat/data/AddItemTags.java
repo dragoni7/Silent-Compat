@@ -93,6 +93,7 @@ public class AddItemTags extends ItemTagsProvider {
 		
 		// Majr Progressive Difficulty
 		tag(SilentCompatTags.CLOTH).addOptional(new ResourceLocation("majruszsdifficulty:cloth"));
+		tag(SilentCompatTags.MAJ_ENDERIUM).addOptional(new ResourceLocation("majruszsdifficulty:enderium_ingot"));
 		
 		// BYG
 		tag(SilentCompatTags.CRYPTIC_END_ROD).addOptional(new ResourceLocation("byg:cryptic_end_rod"));
@@ -159,6 +160,7 @@ public class AddItemTags extends ItemTagsProvider {
 		
 		// Cataclysm
 		tag(SilentCompatTags.IGNITIUM).addOptional(new ResourceLocation("cataclysm:ignitium_ingot"));
+		tag(SilentCompatTags.WITHERITE).addOptional(new ResourceLocation("cataclysm:witherite_ingot"));
 		tag(SilentCompatTags.MONSTEROUS_HORN).addOptional(new ResourceLocation("cataclysm:monstrous_horn"));
 		tag(SilentCompatTags.VOID_CORE).addOptional(new ResourceLocation("cataclysm:void_core"));
 		

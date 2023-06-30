@@ -1,0 +1,19 @@
+{
+    "type": "silentcompat:item_drop",
+    "max_level": 1,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "tool"
+      }
+    ],
+    "name": {
+      "text": "Iron Shed"
+    },
+    "description": {
+      "text": "Tools have a chance to drop iron nuggets on durability loss"
+    },
+  
+    "item": "minecraft:iron_nugget",
+    "chance": 25
+  }

@@ -144,5 +144,7 @@
   "trait.silentcompat.volatile": "Volatile",
   "trait.silentcompat.volatile.desc": "Consumes devouring, applying the volatile effect on the target.",
   "trait.silentcompat.vorpal": "Vorpal",
-  "trait.silentcompat.vorpal.desc": "Deal more damage to targets with over 200 hearts"
+  "trait.silentcompat.vorpal.desc": "Deal more damage to targets with over 200 hearts",
+  "trait.silentcompat.wither_skull": "Wither Skull",
+  "trait.silentcompat.wither_skull.desc": "Summons a wither skull projectile on swing, costing durability."
 }

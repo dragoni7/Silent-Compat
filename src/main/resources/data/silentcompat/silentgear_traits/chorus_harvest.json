@@ -1,0 +1,13 @@
+{
+    "type": "silentcompat:item_drop",
+    "max_level": 1,
+    "name": {
+      "text": "Chorus Harvest"
+    },
+    "description": {
+      "text": "Chance to drop chorus fruit on durability loss"
+    },
+
+    "item": "minecraft:chorus_fruit",
+    "chance": 35
+}

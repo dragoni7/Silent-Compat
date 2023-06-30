@@ -131,6 +131,8 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.gaia_burst.desc", "The Mana Burst is identical to that of a default, unenchanted Mana Stealing Blade.");
 		add("trait.silentcompat.alf_burst", "Alf Burst");
 		add("trait.silentcompat.alf_burst.desc", "The Mana Burst is identical to that of a default, unenchanted Alf Blade.");
+		add("trait.silentcompat.wither_skull", "Wither Skull");
+		add("trait.silentcompat.wither_skull.desc", "Summons a wither skull projectile on swing, costing durability.");
 		
 		// JEED
 		add("effect.silentcompat.amplified.description", "Increases speed. Allows certain traits such as Jolt Hit to proc.");

@@ -1,0 +1,110 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "silentcompat:maj_enderium"
+      }
+    },
+    "name": {
+      "text": "Enderium"
+    },
+    "name_prefix": {
+      "text": "Enderium"
+    },
+    "stats": {
+      "coating": {
+        "durability": [
+          {
+            "mul2": 0.32
+          },
+          {
+            "add": 2.0
+          }
+        ],
+        "armor_durability": {
+          "mul2": 0.121212125
+        },
+        "harvest_speed": {
+          "mul2": 0.125
+        },
+        "attack_speed": {
+          "add": -0.2
+        },
+        "harvest_level": {
+          "max": 4.0
+        },
+        "melee_damage": {
+          "mul2": 0.5
+        },
+        "magic_damage": {
+          "mul2": 0.5
+        },
+        "ranged_damage": {
+          "mul2": 0.5
+        },
+        "armor_toughness": {
+          "add": 2.0
+        },
+        "enchantment_value": {
+          "add": 15.0
+        }
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentgear:void_ward",
+          "level": 1
+        },
+        {
+            "name": "silentcompat:end_boon",
+            "level": 1
+        },
+        {
+            "name": "silentcompat:chorus_harvest",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#4f3052"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#4f3052"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "coating/armor": [
+        {
+          "texture": "minecraft:netherite"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#4f3052"
+        }
+      ]
+    }
+  }
