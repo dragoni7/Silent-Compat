@@ -34,7 +34,7 @@
         "armor": 20.0,
         "armor_toughness": 8.0,
         "magic_armor": 12.0,
-        "ranged_damage": 1.0,
+        "ranged_damage": 2.0,
         "ranged_speed": 0.0,
         "rarity": 70.0,
         "charging_value": 1.2

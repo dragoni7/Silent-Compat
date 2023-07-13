@@ -1,0 +1,131 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/melodium"
+      }
+    },
+    "name": {
+      "text": "Melodium"
+    },
+    "stats": {
+      "main": {
+        "durability": 1300.0,
+        "armor_durability": 35.0,
+        "repair_value": 0.15,
+        "enchantment_value": 16.0,
+        "harvest_level": 4.0,
+        "harvest_speed": 17.0,
+        "melee_damage": 5.0,
+        "magic_damage": 4.0,
+        "attack_speed": 0.0,
+        "armor": 24.0,
+        "armor/helmet": 4.0,
+        "armor/chestplate": 9.0,
+        "armor/leggings": 7.0,
+        "armor/boots": 4.0,
+        "armor_toughness": 10.0,
+        "magic_armor": 14.0,
+        "ranged_damage": 3.0,
+        "ranged_speed": 1.7,
+        "rarity": 80.0,
+        "charging_value": 1.2
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.2
+        },
+        "harvest_speed": {
+          "mul2": 0.15
+        },
+        "rarity": 60.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:malleable",
+          "level": 3
+        },
+        {
+            "name": "silentgear:moonwalker",
+            "level": 3,
+            "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.5
+                }
+              ]
+        },
+        {
+            "name": "silentcompat:vorpal",
+            "level": 1,
+            "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.75
+                }
+              ]
+        },
+        {
+            "name": "silentcompat:chorus_harvest",
+            "level": 1,
+            "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.75
+                }
+              ]
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:malleable",
+          "level": 2
+        },
+        {
+            "name": "silentgear:moonwalker",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#fcc6e2"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#fcc6e2"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#ce9df2"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#ce9df2"
+        }
+      ]
+    }
+  }

@@ -29,8 +29,11 @@
         "repair_efficiency": {
           "mul1": -0.2
         },
+        "durability": {
+          "add": -400.0
+        },
         "rarity": {
-          "add": 10.0
+          "add": 40.0
         }
       },
       "adornment": {}
@@ -57,7 +60,7 @@
         },
         {
             "name": "silentgear:mighty",
-            "level": 3
+            "level": 2
         },
         {
           "name": "silentcompat:swiftness",

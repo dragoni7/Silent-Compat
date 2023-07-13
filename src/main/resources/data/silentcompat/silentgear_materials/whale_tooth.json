@@ -22,7 +22,7 @@
       "main": {
         "projectile_speed": 0.2,
         "projectile_accuracy": 0.5,
-        "ranged_damage": 3.0
+        "ranged_damage": 2.0
         },
       "tip": {
         "durability": {

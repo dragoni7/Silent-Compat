@@ -36,7 +36,7 @@
       "armor/boots": 4.0,
       "armor_toughness": 6.0,
       "magic_armor": 10.0,
-      "ranged_damage": 2.5,
+      "ranged_damage": 2.0,
       "ranged_speed": 0.15,
       "rarity": 60.0,
       "charging_value": 1.1
@@ -59,26 +59,17 @@
         "conditions": [
           {
             "type": "silentgear:material_ratio",
-            "ratio": 0.5
+            "ratio": 0.75
           }
         ]
       },
       {
-        "name": "silentcompat:restoration",
+        "name": "silentgear:magmatic",
         "level": 1,
         "conditions": [
           {
-            "type": "silentgear:or",
-            "values": [
-              {
-                "type": "silentgear:material_count",
-                "count": 2
-              },
-              {
-                "type": "silentgear:material_ratio",
-                "ratio": 0.35
-              }
-            ]
+            "type": "silentgear:material_ratio",
+            "ratio": 0.75
           }
         ]
       },
@@ -95,7 +86,7 @@
               },
               {
                 "type": "silentgear:material_ratio",
-                "ratio": 0.35
+                "ratio": 0.75
               }
             ]
           }
@@ -114,7 +105,7 @@
               },
               {
                 "type": "silentgear:material_ratio",
-                "ratio": 0.35
+                "ratio": 0.75
               }
             ]
           }

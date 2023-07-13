@@ -1,0 +1,134 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/stellarium"
+      }
+    },
+    "name": {
+      "text": "Stellarium"
+    },
+    "stats": {
+      "main": {
+        "durability": 3300.0,
+        "armor_durability": 39.0,
+        "repair_value": 0.15,
+        "enchantment_value": 18.0,
+        "harvest_level": 4.0,
+        "harvest_speed": 20.0,
+        "melee_damage": 7.0,
+        "magic_damage": 4.0,
+        "attack_speed": 0.1,
+        "armor": 26.0,
+        "armor/helmet": 4.0,
+        "armor/chestplate": 10.0,
+        "armor/leggings": 8.0,
+        "armor/boots": 4.0,
+        "armor_toughness": 10.0,
+        "magic_armor": 16.0,
+        "ranged_damage": 3.0,
+        "ranged_speed": 2.0,
+        "rarity": 100.0,
+        "charging_value": 1.2
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.3
+        },
+        "harvest_speed": {
+          "mul2": 0.22
+        },
+        "melee_damage": {
+          "add": 2.0
+        },
+        "rarity": 80.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:malleable",
+          "level": 5
+        },
+        {
+            "name": "silentgear:stellar",
+            "level": 4,
+            "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.75
+                }
+              ]
+        },
+        {
+            "name": "silentcompat:amplifying",
+            "level": 1,
+            "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.5
+                }
+              ]
+        },
+        {
+            "name": "silentcompat:dodging",
+            "level": 2,
+            "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 1.0
+                }
+              ]
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:malleable",
+          "level": 5
+        },
+        {
+            "name": "silentgear:stellar",
+            "level": 1
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#c9d3d3"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#c9d3d3"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#fafca6"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#fafca6"
+        }
+      ]
+    }
+  }

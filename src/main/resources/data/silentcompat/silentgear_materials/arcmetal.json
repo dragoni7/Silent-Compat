@@ -35,7 +35,7 @@
         "attack_speed/dagger": 0.3,
         "attack_speed/katana": 0.2,
         "attack_speed/spear": 0.2,
-        "ranged_damage": 1.0,
+        "ranged_damage": 2.0,
         "ranged_speed": 1.5,
         "projectile_speed": 2.0,
         "projectile_accuracy": 1.0,

@@ -31,7 +31,7 @@
         "magic_damage": 2.0,
         "attack_speed": 0.0,
         "attack_speed/axe": -0.1,
-        "ranged_damage": 3.0,
+        "ranged_damage": 2.0,
         "ranged_speed": -0.2,
         "projectile_speed": 1.1,
         "projectile_accuracy": 1.3,
