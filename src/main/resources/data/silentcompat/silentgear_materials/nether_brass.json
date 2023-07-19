@@ -1,0 +1,111 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/nether_brass"
+      }
+    },
+    "name": {
+      "translate": "Nether Brass"
+    },
+    "stats": {
+      "main": {
+        "durability": 240.0,
+        "armor_durability": 8.0,
+        "repair_value": 0.15,
+        "enchantment_value": 13.0,
+        "harvest_level": 2.0,
+        "harvest_speed": 6.0,
+        "melee_damage": 1.0,
+        "magic_damage": 1.0,
+        "attack_speed": 0.2,
+        "armor": 14.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 6.0,
+        "armor/leggings": 4.0,
+        "armor/boots": 2.0,
+        "armor_toughness": 1.0,
+        "magic_armor": 6.0,
+        "ranged_damage": 1.0,
+        "ranged_speed": 0.2,
+        "rarity": 25.0,
+        "charging_value": 1.2
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.025
+        },
+        "harvest_speed": {
+          "mul2": 0.025
+        },
+        "rarity": 20.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:malleable",
+          "level": 2
+        },
+        {
+            "name": "silentgear:brilliant",
+            "level": 1
+        },
+        {
+          "name": "silentgear:silky",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ]
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:malleable",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#af9e7d"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#af9e7d"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#af9e7d"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#af9e7d"
+        }
+      ]
+    }
+  }

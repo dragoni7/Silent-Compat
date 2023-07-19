@@ -56,12 +56,20 @@
         {
             "name": "silentgear:lustrous",
             "level": 1
+        },
+        {
+            "name": "silentcompat:anti_illager",
+            "level": 2
         }
       ],
       "adornment": [
         {
             "name": "silentcompat:dense",
             "level": 1
+        },
+        {
+            "name": "silentcompat:anti_illager",
+            "level": 2
         }
       ]
     },

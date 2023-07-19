@@ -1,0 +1,37 @@
+{
+    "type": "silentgear:attribute",
+    "max_level": 5,
+    "name": {
+      "text": "Cushion"
+    },
+    "description": {
+      "translate": "Gain health at the cost of less damage"
+    },
+    "attribute_modifiers": {
+      "all": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": 0,
+          "value": [
+            2.0,
+            4.0,
+            6.0,
+            8.0,
+            10.0
+          ]
+        },
+
+        {
+            "attribute": "minecraft:generic.attack_damage",
+            "operation": 0,
+            "value": [
+                -0.5,
+                -1.0,
+                -1.5,
+                -2.0,
+                -2.5
+            ]
+          }
+      ]
+    }
+  }

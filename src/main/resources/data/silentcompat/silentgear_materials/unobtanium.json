@@ -1,0 +1,106 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/unobtanium"
+      }
+    },
+    "name": {
+      "translate": "Unobtainium"
+    },
+    "name_prefix": {
+      "translate": "Unobtainium"
+    },
+    "stats": {
+      "coating": {
+        "durability": [
+          {
+            "mul2": 0.3
+          },
+          {
+            "add": 2.0
+          }
+        ],
+        "armor_durability": {
+          "mul2": 0.121212125
+        },
+        "harvest_speed": {
+          "mul2": 0.125
+        },
+        "harvest_level": {
+          "max": 4.0
+        },
+        "attack_speed": {
+          "mul2": 0.33333334
+        },
+        "melee_damage": {
+          "mul2": 0.1
+        },
+        "magic_damage": {
+          "mul2": 0.1
+        },
+        "ranged_damage": {
+          "mul2": 0.1
+        },
+        "armor_toughness": {
+          "add": 4.0
+        },
+        "knockback_resistance": {
+          "add": 1.0
+        },
+        "enchantment_value": {
+          "add": 5.0
+        }
+      }
+    },
+    "traits": {
+      "coating": [
+        {
+          "name": "silentcompat:devouring",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "coating/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#b238b2"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "coating/part": [
+        {
+          "texture": "silentgear:coating_material",
+          "color": "#b238b2"
+        },
+        {
+          "texture": "silentgear:coating_jar"
+        }
+      ],
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#b238b2"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#b238b2"
+        }
+      ]
+    }
+  }

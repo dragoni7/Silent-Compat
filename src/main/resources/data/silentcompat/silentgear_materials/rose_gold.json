@@ -32,7 +32,7 @@
         "attack_speed": 0.0,
         "attack_speed/hoe": -1.0,
         "ranged_damage": 0.0,
-        "ranged_speed": 0.6,
+        "ranged_speed": 0.4,
         "projectile_speed": 1.1,
         "projectile_accuracy": 1.0,
         "armor": 15.0,

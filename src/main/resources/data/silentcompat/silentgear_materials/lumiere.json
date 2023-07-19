@@ -31,7 +31,7 @@
         "melee_damage": 1.5,
         "attack_speed": 0.0,
         "ranged_damage": 1.0,
-        "ranged_speed": 1.0,
+        "ranged_speed": 0.5,
         "armor": 18.0,
         "armor/helmet": 3.0,
         "armor/chestplate": 8.0,
@@ -56,12 +56,20 @@
         {
             "name": "silentgear:lustrous",
             "level": 2
+        },
+        {
+            "name": "silentcompat:anti_illager",
+            "level": 2
         }
       ],
       "adornment": [
         {
           "name": "silentcompat:bulwark",
           "level": 1
+        },
+        {
+            "name": "silentcompat:anti_illager",
+            "level": 2
         }
       ]
     },

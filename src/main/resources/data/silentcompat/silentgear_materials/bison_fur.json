@@ -38,6 +38,10 @@
           "level": 1
         },
         {
+          "name": "silentcompat:cushion",
+          "level": 1
+        },
+        {
           "name": "silentgear:snow_walker",
           "level": 1,
           "conditions": [

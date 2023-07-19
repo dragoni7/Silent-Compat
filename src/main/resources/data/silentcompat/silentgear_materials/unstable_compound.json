@@ -2,7 +2,7 @@
     "type": "silentgear:standard",
     "simple": true,
     "availability": {
-      "tier": 1,
+      "tier": 3,
       "categories": [
         "organic"
       ],

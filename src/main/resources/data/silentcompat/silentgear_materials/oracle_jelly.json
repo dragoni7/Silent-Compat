@@ -1,0 +1,53 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/oracle_jelly"
+      }
+    },
+    "name": {
+      "translate": "Oracle Jelly"
+    },
+    "stats": {
+      "lining": {
+        "armor_toughness": {
+          "add": 0.5
+        }
+      }
+    },
+    "traits": {
+      "lining": [
+        {
+          "name": "silentcompat:cushion",
+          "level": 1
+        }
+      ]
+    },
+    "model": {
+      "lining/part": [
+        {
+          "texture": "silentgear:lining_slime",
+          "color": "#b26fad"
+        },
+        {
+          "texture": "silentgear:lining_slime_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:dust",
+          "color": "#b26fad"
+        }
+      ]
+    }
+  }

@@ -32,6 +32,10 @@
         "armor_durability": 15.0,
         "enchantment_value": 10.0,
         "armor": 15.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 6.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 2.0,
         "armor_toughness": 4.0,
         "magic_armor": 6.0,
         "rarity": 10.0,
@@ -39,10 +43,13 @@
       },
       "lining": {
         "armor_durability": {
-          "add": 10.0
+          "add": 2.0
         },
         "armor_toughness": {
           "add": 0.5
+        },
+        "repair_efficiency": {
+          "mul1": -0.2
         }
       },
       "grip": {
@@ -64,11 +71,11 @@
         },
         "melee_damage": [
           {
-            "add": 1
+            "add": -1.0
           }
         ],
         "repair_efficiency": {
-          "mul1": -0.1
+          "mul1": -0.2
         }
       }
     },
@@ -83,8 +90,8 @@
             "level": 1
         },
         {
-          "name": "silentcompat:blast_resistant",
-          "level": 2,
+          "name": "silentcompat:explosive_resistance",
+          "level": 1,
           "conditions": [
             {
               "type": "silentgear:material_ratio",
@@ -101,8 +108,8 @@
       ],
       "coating": [
         {
-          "name": "silentcompat:blast_resistant",
-          "level": 2,
+          "name": "silentcompat:explosive_resistance",
+          "level": 1,
           "conditions": [
             {
               "type": "silentgear:material_ratio",
@@ -113,14 +120,14 @@
       ],
       "lining": [
         {
-            "name": "silentcompat:blast_resistant",
-            "level": 1,
-            "conditions": [
-              {
-                "type": "silentgear:material_ratio",
-                "ratio": 0.5
-              }
-            ]
+          "name": "silentcompat:explosive_resistance",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
         }
       ]
     },

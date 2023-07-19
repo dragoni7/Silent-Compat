@@ -27,7 +27,6 @@ public class SilentCompatTags {
 	public static final TagKey<Item> RAW_MATERIAL_ARCMETAL = forgeItemTag("raw_materials/arcmetal");
 	public static final TagKey<Item> RAW_MATERIAL_PLASTEEL = forgeItemTag("raw_materials/plasteel");
 	
-	public static final TagKey<Item> WARDEN_INGOT = forgeItemTag("ingots/warden");
 	public static final TagKey<Item> OUTBACK_LEATHER = createItemTag("outback_leather");
 	
 	
@@ -61,6 +60,7 @@ public class SilentCompatTags {
 	public static final TagKey<Item> ROADRUNNER = createItemTag("roadrunner_feather");
 	public static final TagKey<Item> ROCKY_SHELL = createItemTag("rocky_shell");
 	public static final TagKey<Item> SCULK_VINE = createItemTag("sculk_vines");
+	public static final TagKey<Item> ECHO_SHARD = forgeItemTag("shards/echo");
 	public static final TagKey<Item> TARANTUAL_HAWK = createItemTag("tarantula_hawk_wing");
 	public static final TagKey<Item> VOID_WORM = createItemTag("void_worm");
 	public static final TagKey<Item> ROTTEN_FLESH = createItemTag("rotten_flesh");
@@ -124,6 +124,19 @@ public class SilentCompatTags {
 	public static final TagKey<Item> MANA_WEAVE = createItemTag("mana_weave");
 	public static final TagKey<Item> VENOM_SAC = createItemTag("venom_sac");
 	public static final TagKey<Item> MAJ_ENDERIUM = createItemTag("maj_enderium");
+	
+	public static final TagKey<Item> ALGAL_BRICK = forgeItemTag("ingots/algal_brick");
+	public static final TagKey<Item> ENTWINE_ROD = forgeItemTag("rods/entwine");
+	public static final TagKey<Item> SUNMETAL_BRICK = forgeItemTag("ingots/sunmetal");
+	public static final TagKey<Item> UNOBTANIUM = forgeItemTag("ingots/unobtanium");
+	public static final TagKey<Item> NETHER_BRASS = forgeItemTag("ingots/nether_brass");
+	public static final TagKey<Item> WARDSTONE = forgeItemTag("ingots/wardstone");
+	public static final TagKey<Item> CEREBRAL_PLATE = forgeItemTag("plates/cerebral");
+	public static final TagKey<Item> ORACLE_JELLY = forgeItemTag("ingots/oracle_jelly");
+	
+	public static final TagKey<Item> WILDFIRE_CROWN_FRAGMENT = forgeItemTag("fragments/wildfire_crown");
+	
+	public static final TagKey<Item> ARCANE_INGOT = forgeItemTag("ingots/arcane");
 	
 	private static TagKey<Item> createItemTag(String name) {
 		return ItemTags.create(SilentCompat.getId(name));

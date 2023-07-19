@@ -16,5 +16,5 @@
 
     "effect": "biomancy:corrosive",
     "duration": 40,
-    "chance": 1
+    "chance": 2
   }

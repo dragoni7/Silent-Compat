@@ -145,7 +145,7 @@ public class AddItemTags extends ItemTagsProvider {
 		tag(SilentCompatTags.CRYSTAL_SHARD).addOptional(new ResourceLocation("phantasm:crystal_spike_tip"));
 		
 		// Infernal Expansion
-		tag(SilentCompatTags.GLOW_SILK).addOptional(new ResourceLocation("infernalexp:glow_silk"));
+		tag(SilentCompatTags.GLOW_SILK).addOptional(new ResourceLocation("infernalexp:glowsilk"));
 		
 		// Galosphere
 		tag(SilentCompatTags.ALLURITE).addOptional(new ResourceLocation("galosphere:allurite_shard"));
@@ -181,6 +181,26 @@ public class AddItemTags extends ItemTagsProvider {
 		
 		// Blue Skies
 		tag(SilentCompatTags.VENOM_SAC).addOptional(new ResourceLocation("blue_skies:venom_sac"));
+		
+		// Minecraft
+		tag(SilentCompatTags.ECHO_SHARD).add(Items.ECHO_SHARD);
+		
+		// Architect's Pallete
+		tag(SilentCompatTags.ALGAL_BRICK).addOptional(new ResourceLocation("architects_palette:algal_brick"));
+		tag(SilentCompatTags.ENTWINE_ROD).addOptional(new ResourceLocation("architects_palette:entwine_rod"));
+		tag(SilentCompatTags.SUNMETAL_BRICK).addOptional(new ResourceLocation("architects_palette:sunmetal_brick"));
+		tag(SilentCompatTags.UNOBTANIUM).addOptional(new ResourceLocation("architects_palette:unobtanium"));
+		tag(SilentCompatTags.NETHER_BRASS).addOptional(new ResourceLocation("architects_palette:nether_brass_ingot"));
+		tag(SilentCompatTags.WARDSTONE).addOptional(new ResourceLocation("architects_palette:wardstone_brick"));
+		tag(SilentCompatTags.ORACLE_JELLY).addOptional(new ResourceLocation("architects_palette:oracle_jelly"));
+		tag(SilentCompatTags.CEREBRAL_PLATE).addOptional(new ResourceLocation("architects_palette:cerebral_plate"));
+		
+		// Friends and Foes
+		tag(SilentCompatTags.WILDFIRE_CROWN_FRAGMENT).addOptional(new ResourceLocation("friendsandfoes:wildfire_crown_fragment"));
+		
+		// Iron's Spells
+		tag(SilentCompatTags.ARCANE_INGOT).addOptional(new ResourceLocation("irons_spellbooks:arcane_ingot"));
+		
 	}
 	
 	private void addMaterialTags(MaterialSet set) {

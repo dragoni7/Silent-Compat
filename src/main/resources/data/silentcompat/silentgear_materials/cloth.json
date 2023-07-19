@@ -27,9 +27,9 @@
         "rarity": 10.0,
         "charging_value": 0.8,
         "armor_durability/elytra": 18.0,
-        "armor": 6.0,
+        "armor": 7.0,
         "armor/helmet": 1.0,
-        "armor/chestplate": 2.0,
+        "armor/chestplate": 3.0,
         "armor/leggings": 2.0,
         "armor/boots": 1.0,
         "magic_armor": 14.0
@@ -53,7 +53,7 @@
       ],
       "grip": [
         {
-          "name": "silentgear:accelerate",
+          "name": "silentgear:eroded",
           "level": 1
         }
       ],

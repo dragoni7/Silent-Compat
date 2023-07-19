@@ -41,8 +41,11 @@
         "melee_damage": {
           "mul2": -0.75
         },
+        "ranged_speed": {
+          "add": 0.5
+        },
         "ranged_damage": {
-          "add": 1.0
+          "mul2": -0.75
         },
         "rarity": 10.0
       }

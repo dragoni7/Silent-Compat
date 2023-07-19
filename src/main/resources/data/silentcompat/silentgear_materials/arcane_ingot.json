@@ -1,0 +1,108 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/arcane"
+      }
+    },
+    "name": {
+      "translate": "Arcane"
+    },
+    "stats": {
+      "main": {
+        "durability": 0.0,
+        "armor_durability": 24.0,
+        "enchantment_value": 18.0,
+        "rarity": 22.0,
+        "charging_value": 1.3,
+        "armor": 15.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 6.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 2.0,
+        "armor_toughness": 8.0,
+        "magic_armor": 15.0
+      },
+      "rod": {
+        "melee_damage": {
+          "add": -1.0
+        },
+        "enchantment_value": {
+          "add": 5.0
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentcompat:spell_damage",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.75
+            }
+          ]
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:bending",
+          "level": 1
+        },
+        {
+          "name": "silentgear:soft",
+          "level": 1
+        },
+        {
+            "name": "silentcompat:mana_boost",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.75
+              }
+            ]
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#b6e2f0"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#b6e2f0"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#b6e2f0"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#b6e2f0"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,108 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "rock"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/sunmetal"
+      }
+    },
+    "name": {
+      "text": "Sunmetal Brick"
+    },
+    "stats": {
+      "main": {
+        "durability": 141.0,
+        "armor_durability": 9.0,
+        "enchantment_value": 5.0,
+        "rarity": 4.0,
+        "charging_value": 0.6,
+        "harvest_level": 2.0,
+        "harvest_speed": 10.0,
+        "melee_damage": 1.0,
+        "attack_speed": 1.0,
+        "attack_speed/axe": -0.2,
+        "attack_speed/hoe": -1.0,
+        "ranged_damage": 0.0,
+        "ranged_speed": -0.2,
+        "projectile_speed": 1.0,
+        "projectile_accuracy": 0.8,
+        "armor": 9.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 3.0,
+        "armor/leggings": 2.0,
+        "armor/boots": 2.0
+      },
+      "rod": {
+        "harvest_speed": {
+          "mul2": 0.12
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:brilliant",
+          "level": 1
+        },
+        {
+          "name": "silentgear:soft",
+          "level": 1
+        },
+        {
+            "name": "silentcompat:restoration",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.75
+              }
+            ]
+        }
+      ],
+      "rod": [
+        {
+            "name": "silentgear:soft",
+            "level": 1
+        },
+        {
+          "name": "silentgear:crushing",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#7d5545"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#7d5545"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#7d5545"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#7d5545"
+        }
+      ]
+    }
+  }

@@ -21,16 +21,16 @@
     },
     "stats": {
       "main": {
-        "armor_durability": 13.0,
+        "armor_durability": 15.0,
         "enchantment_value": 10.0,
         "rarity": 10.0,
         "charging_value": 1.2,
-        "armor": 14.0,
-        "armor/helmet": 2.0,
-        "armor/chestplate": 6.0,
-        "armor/leggings": 4.0,
-        "armor/boots": 2.0,
-        "armor_toughness": 0.0,
+        "armor": 18.0,
+        "armor/helmet": 3.0,
+        "armor/chestplate": 7.0,
+        "armor/leggings": 5.0,
+        "armor/boots": 3.0,
+        "armor_toughness": 2.0,
         "magic_armor": 8.0,
         "projectile_speed": 1.5,
         "projectile_accuracy": 0.6

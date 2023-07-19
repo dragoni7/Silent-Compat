@@ -1,0 +1,87 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 4,
+      "categories": [
+        "organic"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "subs": {
+        "rod": {
+          "tag": "forge:shards/echo"
+        }
+      }
+    },
+    "name": {
+      "text": "Echo Shard"
+    },
+    "stats": {
+    "rod": {
+      "harvest_level": {
+        "max": 2.0
+      },
+      "harvest_speed": {
+        "mul2": 0.2
+      },
+      "attack_speed": {
+        "add": 0.2
+      },
+      "melee_damage": {
+        "mul2": 0.15
+      },
+      "ranged_damage": {
+        "mul2": 0.1
+      }
+    }
+  },
+  "traits": {
+    "rod": [
+      {
+        "name": "silentgear:malleable",
+        "level": 4
+      },
+      {
+        "name": "silentgear:flexible",
+        "level": 1
+      },
+      {
+        "name": "silentgear:ancient",
+        "level": 2
+      }
+    ]
+  },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#03404f"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#03404f"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#03404f"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#03404f"
+        }
+      ]
+    }
+  }

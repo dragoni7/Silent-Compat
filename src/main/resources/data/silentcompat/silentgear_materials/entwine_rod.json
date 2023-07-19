@@ -1,0 +1,65 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "subs": {
+        "rod": {
+          "tag": "forge:rods/entwine"
+        }
+      }
+    },
+    "name": {
+      "translate": "Entwine Rod"
+    },
+    "stats": {
+      "rod": {
+        "harvest_level": {
+          "max": 2.0
+        },
+        "harvest_speed": {
+          "mul2": 0.15
+        },
+        "melee_damage": {
+          "mul2": 0.1
+        },
+        "ranged_damage": {
+          "mul2": 0.1
+        }
+      }
+    },
+    "traits": {
+      "rod": [
+        {
+          "name": "silentgear:reach",
+          "level": 1
+        },
+        {
+          "name": "silentgear:brittle",
+          "level": 2
+        }
+      ]
+    },
+    "model": {
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#34a08e"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#34a08e"
+        }
+      ]
+    }
+  }

@@ -27,6 +27,8 @@
         "charging_value": 0.8,
         "armor": 20.0,
         "armor_toughness": 6.0,
+        "ranged_damage": 1.0,
+        "ranged_speed": 0.3,
         "magic_armor": 8.0
       },
       "lining": {

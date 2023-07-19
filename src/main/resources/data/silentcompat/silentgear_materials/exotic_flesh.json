@@ -27,7 +27,6 @@
         "armor/chestplate": 8.0,
         "armor/leggings": 6.0,
         "armor/boots": 3.0,
-        "armor_toughness": 10.0,
         "magic_armor": 6.0,
         "rarity": 40.0,
         "charging_value": 1.0
@@ -60,7 +59,7 @@
         },
         {
             "name": "silentgear:renew",
-            "level": 2
+            "level": 1
         },
         {
           "name": "silentcompat:flesh_harvest",

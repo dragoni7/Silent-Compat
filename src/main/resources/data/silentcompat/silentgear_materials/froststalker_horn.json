@@ -32,7 +32,7 @@
           "max": 2.0
         },
         "melee_damage": {
-          "add": 1.0
+          "add": 1.5
         },
         "attack_speed/spear": {
           "add": 0.1

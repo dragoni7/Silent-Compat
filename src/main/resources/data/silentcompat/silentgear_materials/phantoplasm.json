@@ -2,7 +2,7 @@
     "type": "silentgear:standard",
     "simple": true,
     "availability": {
-      "tier": 3,
+      "tier": 4,
       "categories": [
         "organic",
         "cloth",

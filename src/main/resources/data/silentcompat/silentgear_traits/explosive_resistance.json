@@ -1,0 +1,22 @@
+{
+    "type": "silentgear:attribute",
+    "max_level": 2,
+    "name": {
+      "text": "Explosive Resistance"
+    },
+    "description": {
+      "translate": "Grants 0.25 explosive resistance per level. (Requires Savage and Ravage)"
+    },
+    "attribute_modifiers": {
+      "all": [
+        {
+          "attribute": "savage_and_ravage:explosive_damage_reduction",
+          "operation": 0,
+          "value": [
+            0.25,
+            0.5
+          ]
+        }
+      ]
+    }
+  }

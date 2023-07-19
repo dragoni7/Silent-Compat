@@ -1,0 +1,102 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "availability": {
+      "tier": 1,
+      "categories": [
+        "rock"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:plates/cerebral"
+      }
+    },
+    "name": {
+      "text": "Cerebral Plate"
+    },
+    "stats": {
+      "main": {
+        "durability": 131.0,
+        "armor_durability": 10.0,
+        "enchantment_value": 5.0,
+        "rarity": 4.0,
+        "charging_value": 0.6,
+        "harvest_level": 2.0,
+        "harvest_speed": 5.0,
+        "melee_damage": 3.0,
+        "attack_speed": 0.0,
+        "attack_speed/axe": -0.2,
+        "attack_speed/hoe": -1.0,
+        "ranged_damage": 0.0,
+        "ranged_speed": -0.2,
+        "projectile_speed": 1.0,
+        "projectile_accuracy": 0.8,
+        "armor": 5.0,
+        "armor/helmet": 1.0,
+        "armor/chestplate": 2.0,
+        "armor/leggings": 1.0,
+        "armor/boots": 1.0
+      },
+      "rod": {
+        "harvest_speed": {
+          "mul2": 0.1
+        }
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:ancient",
+          "level": 2
+        },
+        {
+           "name": "silentgear:eroded",
+           "level": 2
+        },
+        {
+          "name": "silentcompat:weakening",
+          "level": 1
+        }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:brittle",
+          "level": 1
+        },
+        {
+            "name": "silentgear:eroded",
+            "level": 2
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_lc",
+          "color": "#878265"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#878265"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_lc",
+          "color": "#878265"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#878265"
+        }
+      ]
+    }
+  }
