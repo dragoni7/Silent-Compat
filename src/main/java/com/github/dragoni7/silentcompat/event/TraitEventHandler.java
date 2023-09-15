@@ -292,6 +292,10 @@ public class TraitEventHandler {
 			return;
 
 		Entity attacker = source.getEntity();
+
+		if (!(attacker instanceof Player))
+			return;
+
 		Player player = (Player) attacker;
 		
 		// Volitile Effect
