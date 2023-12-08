@@ -83,6 +83,10 @@
               "ratio": 0.66
             }
           ]
+        },
+        {
+          "name": "silentgear:light",
+          "level": 2
         }
       ],
 
