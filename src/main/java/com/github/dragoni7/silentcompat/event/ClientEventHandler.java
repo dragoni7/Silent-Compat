@@ -41,13 +41,13 @@ public class ClientEventHandler {
 	}
 	
 	private static void registerParticles(RegisterParticleProvidersEvent event) {
-		event.register(SilentCompatParticles.JOLT.get(), JoltParticle.Provider::new);
-		event.register(SilentCompatParticles.JOLT_CHAIN.get(), JoltChainParticle.Provider::new);
-		event.register(SilentCompatParticles.IMMUNE.get(), ImmuneParticle.ImmuneParticleProvider::new);
-		event.register(SilentCompatParticles.VOID.get(), VoidParticles.Provider::new);
-		event.register(SilentCompatParticles.VOLITILE.get(), ElementalExplosionParticle.Provider::new);
-		event.register(SilentCompatParticles.IGNITION.get(), ElementalExplosionParticle.Provider::new);
-		event.register(SilentCompatParticles.RESTORATION.get(), FlameParticle.Provider::new);
+		event.registerSpriteSet(SilentCompatParticles.JOLT.get(), JoltParticle.Provider::new);
+		event.registerSpriteSet(SilentCompatParticles.JOLT_CHAIN.get(), JoltChainParticle.Provider::new);
+		event.registerSpriteSet(SilentCompatParticles.IMMUNE.get(), ImmuneParticle.ImmuneParticleProvider::new);
+		event.registerSpriteSet(SilentCompatParticles.VOID.get(), VoidParticles.Provider::new);
+		event.registerSpriteSet(SilentCompatParticles.VOLITILE.get(), ElementalExplosionParticle.Provider::new);
+		event.registerSpriteSet(SilentCompatParticles.IGNITION.get(), ElementalExplosionParticle.Provider::new);
+		event.registerSpriteSet(SilentCompatParticles.RESTORATION.get(), FlameParticle.Provider::new);
 	}
 	
 	private static void registerEntityLayers(final EntityRenderersEvent.RegisterLayerDefinitions event) {

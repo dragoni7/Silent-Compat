@@ -5,7 +5,6 @@ import com.github.dragoni7.silentcompat.networking.PacketScorchParticles;
 import com.github.dragoni7.silentcompat.world.IgnitionExplosion;
 
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
@@ -23,7 +22,7 @@ public class EffectScorch extends MobEffect {
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		
 		if (entity.tickCount % 10 == 0) {
-			Level level = entity.level;
+			Level level = entity.level();
 			Player player = level.getNearestPlayer(entity, 24);
 			if (player instanceof ServerPlayer) {
 				Networking.sendToClient(new PacketScorchParticles(entity.getId()), (ServerPlayer) player);
@@ -41,7 +40,7 @@ public class EffectScorch extends MobEffect {
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amp) {
 		entity.clearFire();
 		// explode
-		IgnitionExplosion explosion = new IgnitionExplosion(entity.level, entity, amp, DamageSource.MAGIC, null, entity.getX(), entity.getY(0.0625D), entity.getZ(), (float)(2.0 + amp));
+		IgnitionExplosion explosion = new IgnitionExplosion(entity.level(), entity, amp, entity.damageSources().magic(), null, entity.getX(), entity.getY(0.0625D), entity.getZ(), (float)(2.0 + amp));
 		explosion.finalizeExplosion(true);
 		explosion.explode();
 		super.removeAttributeModifiers(entity, attributeMap, amp);

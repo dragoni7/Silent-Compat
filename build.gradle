@@ -13,7 +13,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft {
-    mappings channel: 'official', version: '1.19.2'
+    mappings channel: 'official', version: '1.20.1'
     runs {
         client {
             workingDirectory project.file('run')
@@ -138,27 +138,23 @@ repositories {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:1.19.2-${forge_version}"
+    minecraft "net.minecraftforge:forge:1.20.1-${forge_version}"
 
     // botania
     compileOnly fg.deobf("vazkii.botania:Botania:${botania_version}:api")
     implementation fg.deobf("vazkii.botania:Botania:${botania_version}")
-    compileOnly fg.deobf("vazkii.patchouli:Patchouli:${minecraft_version}-77:api")
-    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${minecraft_version}-77")
+    implementation fg.deobf("vazkii.patchouli:Patchouli:1.20.1-83-FORGE")
+    //compileOnly fg.deobf("vazkii.patchouli:Patchouli:${minecraft_version}-83:api")
+    //runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${minecraft_version}-83")
     
     // botanic additions
-    //implementation "org.zeith.hammerlib:HammerLib-1.19.2:19.3.57:deobf"
-    //implementation fg.deobf("org.zeith.botanicadds:BotanicAdditions-1.19.2-19.3.5")
-    implementation fg.deobf("curse.maven:hammer-lib-247401:4558470")
-    implementation fg.deobf("curse.maven:botanic-additions-310637:4558483")
+    //implementation fg.deobf("curse.maven:hammer-lib-247401:4558470")
+    //implementation fg.deobf("curse.maven:botanic-additions-310637:4558483")
 
     // mythic botany
-    //annotationProcessor fg.deobf('org.moddingx:LibX:1.19.2-4.2.8')
-    //implementation fg.deobf('org.moddingx:LibX:1.19.2-4.2.8')
-    //implementation fg.deobf('io.github.noeppi_noeppi.mods:SandBox:1.19.2-1.0.1')
-    implementation fg.deobf("curse.maven:libx-412525:4052778")
-    implementation fg.deobf("curse.maven:sand_box-653732:4029683")
-    implementation fg.deobf("curse.maven:mythicbotany-400058:4546050")
+    //implementation fg.deobf("curse.maven:libx-412525:4052778")
+    //implementation fg.deobf("curse.maven:sand_box-653732:4029683")
+    //implementation fg.deobf("curse.maven:mythicbotany-400058:4546050")
 
     // compile against the JEI API but do not include it at runtime
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
@@ -166,8 +162,8 @@ dependencies {
     // at runtime, use the full JEI jar for Forge
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
 
-    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:${minecraft_version}-5.1.4.1:api")
-    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${minecraft_version}-5.1.4.1")
+    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}:api")
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
 
     implementation fg.deobf("net.silentchaos512:silent-lib:${project.silentlib_version}") {
         transitive false

@@ -36,7 +36,7 @@ public class IgnitionExplosion extends Explosion {
 	public IgnitionExplosion(Level level, Entity entity, int amp, DamageSource source, ExplosionDamageCalculator damageCalculator,
 			double x, double y, double z, float radius) {
 		
-		super(level, entity, source, damageCalculator, x, y, z, radius, false, Explosion.BlockInteraction.NONE);
+		super(level, entity, source, damageCalculator, x, y, z, radius, false, Explosion.BlockInteraction.KEEP);
 
 		this.amp = amp;
 		this.level = level;

@@ -11,6 +11,7 @@ import com.github.dragoni7.silentcompat.world.VolatileExplosion;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
@@ -68,7 +69,7 @@ public class TraitEventHandler {
 				for (EquipmentSlot slot : ARMOR_ONLY) {
 					ItemStack stack = event.getEntity().getItemBySlot(slot);
 					// Emu dodge
-					if (source.isProjectile()) {
+					if (source.is(DamageTypeTags.IS_PROJECTILE)) {
 						if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.EMU_DODGE.get())) {
 
 							emuDodgeCount++;
@@ -80,7 +81,7 @@ public class TraitEventHandler {
 					}
 					// Dodging
 					else if (GearHelper.isGear(stack) && TraitHelper.hasTrait(stack, TraitConst.DODGING.get())
-							&& !source.isBypassArmor()) {
+							&& !source.is(DamageTypeTags.BYPASSES_ARMOR)) {
 
 						dodgeCount++;
 
@@ -237,7 +238,7 @@ public class TraitEventHandler {
 		LivingEntity attacked = event.getEntity();
 		DamageSource source = event.getSource();
 
-		if (source == null || !"player".equals(source.msgId))
+		if (source == null || !"player".equals(source.getMsgId()))
 			return;
 
 		Entity attacker = source.getEntity();
@@ -288,7 +289,7 @@ public class TraitEventHandler {
 		LivingEntity attacked = event.getEntity();
 		DamageSource source = event.getSource();
 
-		if (source == null || !"player".equals(source.msgId))
+		if (source == null || !"player".equals(source.getMsgId()))
 			return;
 
 		Entity attacker = source.getEntity();
@@ -302,7 +303,7 @@ public class TraitEventHandler {
 		if (attacked.hasEffect(SilentCompatEffects.VOLATILE.get())) {
 			int amp = attacked.getEffect(SilentCompatEffects.VOLATILE.get()).getAmplifier();
 			// explode
-			VolatileExplosion explosion = new VolatileExplosion(player, attacked, DamageSource.MAGIC, null, attacked.getX(), attacked.getY(0.0625D), attacked.getZ(), (float)(2.0 + amp));
+			VolatileExplosion explosion = new VolatileExplosion(player, attacked, attacked.damageSources().magic(), null, attacked.getX(), attacked.getY(0.0625D), attacked.getZ(), (float)(2.0 + amp));
 			explosion.explode();
 			explosion.finalizeExplosion(true);
 		}
@@ -346,7 +347,7 @@ public class TraitEventHandler {
 			
 			// Amplifying requires full set
 			if (amplifyingCount == 4 && !player.hasEffect(amplified) && player.getRandom().nextFloat() < 0.45f) {
-				player.level.playSound(null, player.blockPosition(), SoundEvents.LIGHTNING_BOLT_THUNDER, SoundSource.PLAYERS, 0.6f, 2.6f);
+				player.level().playSound(null, player.blockPosition(), SoundEvents.LIGHTNING_BOLT_THUNDER, SoundSource.PLAYERS, 0.6f, 2.6f);
 				player.addEffect(new MobEffectInstance(amplified, 280, 0, false, false, true));
 			}
 
@@ -362,7 +363,7 @@ public class TraitEventHandler {
 					
 					player.removeEffect(devouring);
 					player.addEffect(new MobEffectInstance(devouring, 100, 0, false, false, true));
-					player.level.playSound(null, player.blockPosition(), SoundEvents.END_PORTAL_FRAME_FILL, SoundSource.PLAYERS, 0.7f, 0.1f);
+					player.level().playSound(null, player.blockPosition(), SoundEvents.END_PORTAL_FRAME_FILL, SoundSource.PLAYERS, 0.7f, 0.1f);
 				}
 				// chance to gain devouring on kill.
 				else if (!player.hasEffect(devouring) && player.getRandom().nextFloat() < 0.45f) {
@@ -372,13 +373,13 @@ public class TraitEventHandler {
 					}
 					
 					player.addEffect(new MobEffectInstance(devouring, 100, 0, false, false, true));
-					player.level.playSound(null, player.blockPosition(), SoundEvents.END_PORTAL_FRAME_FILL, SoundSource.PLAYERS, 0.7f, 0.1f);
+					player.level().playSound(null, player.blockPosition(), SoundEvents.END_PORTAL_FRAME_FILL, SoundSource.PLAYERS, 0.7f, 0.1f);
 				}
 			}
 			
 			// Restoration requires full set
 			if (restorationCount == 4 && !player.hasEffect(restoration) && player.getRandom().nextFloat() < 0.45f) {
-				player.level.playSound(null, player.blockPosition(), SoundEvents.FIRE_EXTINGUISH, SoundSource.PLAYERS, 0.7f, 1.6f);
+				player.level().playSound(null, player.blockPosition(), SoundEvents.FIRE_EXTINGUISH, SoundSource.PLAYERS, 0.7f, 1.6f);
 				player.addEffect(new MobEffectInstance(restoration, 140, 0, false, false, true));
 			}
 		}
@@ -406,7 +407,7 @@ public class TraitEventHandler {
 			// SunSpot trait.
 			if (TraitHelper.hasTrait(weapon, TraitConst.SUNSPOT) && entity.hasEffect(SilentCompatEffects.RESTORATION.get()) && entity.getFeetBlockState().getBlock() instanceof BaseFireBlock) {
 				int level = TraitHelper.getTraitLevel(weapon, TraitConst.SUNSPOT);
-				entity.level.removeBlock(entity.blockPosition(), true);
+				entity.level().removeBlock(entity.blockPosition(), true);
 				entity.heal((entity.getMaxHealth() / (4-level)));
 				entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, level - 1));
 				entity.removeEffect(SilentCompatEffects.RESTORATION.get());
@@ -420,7 +421,7 @@ public class TraitEventHandler {
 			Networking.sendToClient(new PacketImmuneParticles(player.getId()), player);
 		}
 
-		attacker.level.playSound(null, player.blockPosition(), SoundEvents.SHIELD_BLOCK, SoundSource.PLAYERS, 0.4f, 1.5f);
+		attacker.level().playSound(null, player.blockPosition(), SoundEvents.SHIELD_BLOCK, SoundSource.PLAYERS, 0.4f, 1.5f);
 	}
 
 }

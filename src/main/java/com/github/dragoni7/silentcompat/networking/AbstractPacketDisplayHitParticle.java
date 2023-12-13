@@ -39,13 +39,13 @@ public abstract class AbstractPacketDisplayHitParticle {
 			}
 
 			if (player != null) {
-				if (player.level != null) {
-					Entity entity = player.level.getEntity(hitEntity);
+				if (player.level() != null) {
+					Entity entity = player.level().getEntity(hitEntity);
 					Vec3 pos = entity.position();
 					if (entity instanceof LivingEntity) {
-						double y = (entity.getBoundingBox().getYsize() / 2) + entity.level.random.nextDouble();
+						double y = (entity.getBoundingBox().getYsize() / 2) + entity.level().random.nextDouble();
 
-						addParticles(entity.level, pos, y);
+						addParticles(entity.level(), pos, y);
 					}
 				}
 			}

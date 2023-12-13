@@ -23,7 +23,7 @@ public class NocturnalTrait extends SimpleTrait {
 	
 	@Override
 	public void onUpdate(TraitActionContext context, boolean isEquipped) {
-		Level world = context.getPlayer().getLevel();
+		Level world = context.getPlayer().level();
 		
 		// repair at night
 		long time = world.getDayTime() % 24000;
@@ -42,7 +42,7 @@ public class NocturnalTrait extends SimpleTrait {
 	
 	@Override
 	public float onAttackEntity(TraitActionContext context, LivingEntity target, float baseValue) {
-		Level world = context.getPlayer().getLevel();
+		Level world = context.getPlayer().level();
 		
 		long time = world.getDayTime() % 24000;
 		if (time > 13000) {

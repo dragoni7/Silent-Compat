@@ -33,11 +33,11 @@ public class VolatileExplosion extends Explosion {
 	public VolatileExplosion(Player player, Entity entity, DamageSource source, ExplosionDamageCalculator damageCalculator,
 			double x, double y, double z, float radius) {
 		
-		super(player.level, entity, source, damageCalculator, x, y, z, radius, false, Explosion.BlockInteraction.NONE);
+		super(player.level(), entity, source, damageCalculator, x, y, z, radius, false, Explosion.BlockInteraction.KEEP);
 		
 		this.player = player;
 		this.attacked = entity;
-		this.level = player.level;
+		this.level = player.level();
 		this.radius = radius;
 		this.x = x;
 		this.y = y;

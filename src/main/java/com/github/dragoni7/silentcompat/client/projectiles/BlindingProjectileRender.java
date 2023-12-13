@@ -4,7 +4,7 @@ import com.github.dragoni7.silentcompat.SilentCompat;
 import com.github.dragoni7.silentcompat.projectiles.BlindingProjectile;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.math.Vector3f;
+import com.mojang.math.Axis;
 
 import net.minecraft.client.model.ShulkerBulletModel;
 import net.minecraft.client.model.geom.ModelLayers;
@@ -36,13 +36,13 @@ public class BlindingProjectileRender extends EntityRenderer<BlindingProjectile>
 	public void render(BlindingProjectile projectile, float p_115863_, float p_115375_, PoseStack poseStack, MultiBufferSource source, int p_115378_) {
 		poseStack.pushPose();
 		
-		float f = Mth.rotlerp(projectile.yRotO, projectile.getYRot(), p_115375_);
+		float f = Mth.rotLerp(projectile.yRotO, projectile.getYRot(), p_115375_);
 		float f1 = Mth.lerp(p_115375_, projectile.xRotO, projectile.getXRot());
 		float f2 = (float) projectile.tickCount + p_115375_;
 		poseStack.translate(0.0D, (double) 0.15F, 0.0D);
-		poseStack.mulPose(Vector3f.YP.rotationDegrees(Mth.sin(f2 * 0.1F) * 180.0F));
-		poseStack.mulPose(Vector3f.XP.rotationDegrees(Mth.cos(f2 * 0.1F) * 180.0F));
-		poseStack.mulPose(Vector3f.ZP.rotationDegrees(Mth.sin(f2 * 0.15F) * 360.0F));
+		poseStack.mulPose(Axis.YP.rotationDegrees(Mth.sin(f2 * 0.1F) * 180.0F));
+		poseStack.mulPose(Axis.XP.rotationDegrees(Mth.cos(f2 * 0.1F) * 180.0F));
+		poseStack.mulPose(Axis.ZP.rotationDegrees(Mth.sin(f2 * 0.15F) * 360.0F));
 		poseStack.scale(-0.5F, -0.5F, 0.5F);
 		this.model.setupAnim(projectile, 0.0F, 0.0F, 0.0F, f, f1);
 		

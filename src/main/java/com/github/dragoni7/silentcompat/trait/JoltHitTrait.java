@@ -12,7 +12,6 @@ import com.github.dragoni7.silentcompat.networking.PacketJoltParticles;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
@@ -40,12 +39,12 @@ public class JoltHitTrait extends SimpleTrait {
         	int joltHit = context.getTraitLevel();
         	
         	// get nearest target to target for jolt chain.
-        	Mob nearestEntity = target.level.getNearestEntity(Mob.class, TargetingConditions.forCombat(), target,
+        	Mob nearestEntity = target.level().getNearestEntity(Mob.class, TargetingConditions.forCombat(), target,
         			target.getX(), target.getY(), target.getZ(),
 					(new AABB(target.blockPosition())).inflate(10.0D, 10.0D, 10.0D));
         	
-        	if (!player.level.isClientSide) {
-        		target.level.playSound(null, target.blockPosition(), SilentCompatSoundEvents.ELECTRIC_ZAP.get(), SoundSource.PLAYERS, 0.5f, 1.0f);
+        	if (!player.level().isClientSide) {
+        		target.level().playSound(null, target.blockPosition(), SilentCompatSoundEvents.ELECTRIC_ZAP.get(), SoundSource.PLAYERS, 0.5f, 1.0f);
 
 				if (player instanceof ServerPlayer) {
 					Networking.sendToClient(new PacketJoltParticles(target.getId()), (ServerPlayer) player);
@@ -57,7 +56,7 @@ public class JoltHitTrait extends SimpleTrait {
 			}
 
 			if (nearestEntity != null) {
-				nearestEntity.hurt(DamageSource.LIGHTNING_BOLT, joltHit + (baseValue / 2f));
+				nearestEntity.hurt(nearestEntity.damageSources().lightningBolt(), joltHit + (baseValue / 2f));
 			}
 			
 			player.removeEffect(SilentCompatEffects.AMPLIFIED.get());

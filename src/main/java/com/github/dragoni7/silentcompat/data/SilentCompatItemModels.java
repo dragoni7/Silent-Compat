@@ -5,7 +5,7 @@ import com.github.dragoni7.silentcompat.core.registry.MaterialRegistry;
 import com.github.dragoni7.silentcompat.core.registry.MaterialSet;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatItems;
 
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -14,8 +14,8 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class SilentCompatItemModels extends ItemModelProvider {
 
-	public SilentCompatItemModels(DataGenerator generator, String modid, ExistingFileHelper existingFileHelper) {
-		super(generator, modid, existingFileHelper);
+	public SilentCompatItemModels(PackOutput output, ExistingFileHelper existingFileHelper) {
+		super(output, SilentCompat.MODID, existingFileHelper);
 	}
 
 	@Override

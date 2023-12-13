@@ -17,7 +17,7 @@ public class BotaniaCompat {
 	
 	public static void SpawnManaBurst(LivingEntity entity) {
         Player player = (Player) entity;
-        if(!entity.getLevel().isClientSide() && !player.isSpectator()) {
+        if(!entity.level().isClientSide() && !player.isSpectator()) {
             if (!player.getMainHandItem().isEmpty()) {
                 ItemStack gearItemStack = player.getMainHandItem();
 
@@ -26,11 +26,11 @@ public class BotaniaCompat {
                     // is not really possible with silent gear system because it is tied to the tool and not the trait
                     // (at least for now...)
                 	ManaBurstEntity burst = TerraBladeItem.getBurst(player, BotaniaItems.terraSword.getDefaultInstance());
-                    player.getLevel().addFreshEntity(burst);
+                    player.level().addFreshEntity(burst);
 
                     gearItemStack.hurtAndBreak(1, player, p -> p.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 
-                    player.getLevel().playSound(null, player.getX(), player.getY(), player.getZ(), BotaniaSounds.terraBlade, SoundSource.PLAYERS, 1F, 1F);
+                    player.level().playSound(null, player.getX(), player.getY(), player.getZ(), BotaniaSounds.terraBlade, SoundSource.PLAYERS, 1F, 1F);
                 }
             }
         }
@@ -38,7 +38,7 @@ public class BotaniaCompat {
 	
 	public static void ManaRepair(ItemStack thisGear, TraitActionContext context, boolean isEquipped, int manaPerDamageTier) {
         Player player = context.getPlayer();
-        Level world = player.getLevel();
+        Level world = player.level();
         
         int manaToUse = 20 + (manaPerDamageTier * context.getTraitLevel());
         

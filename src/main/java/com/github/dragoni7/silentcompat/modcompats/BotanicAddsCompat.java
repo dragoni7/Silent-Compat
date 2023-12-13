@@ -1,20 +1,8 @@
 package com.github.dragoni7.silentcompat.modcompats;
 
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import vazkii.botania.api.internal.ManaBurst;
-import vazkii.botania.common.entity.ManaBurstEntity;
-import vazkii.botania.common.handler.BotaniaSounds;
-
-import org.zeith.botanicadds.init.ItemsBA;
-
 public class BotanicAddsCompat {
 	
-	public static void SpawnManaBurst(LivingEntity entity) {
+	/*public static void SpawnManaBurst(LivingEntity entity) {
         Player player = (Player) entity;
         if(!entity.getLevel().isClientSide() && !player.isSpectator()) {
             if (!player.getMainHandItem().isEmpty()) {
@@ -49,5 +37,5 @@ public class BotanicAddsCompat {
 		
 		return burst;
 	}
-
+*/
 }

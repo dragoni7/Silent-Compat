@@ -5,6 +5,7 @@ import com.github.dragoni7.silentcompat.core.registry.SilentCompatEffects;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatEntities;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatParticles;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatSoundEvents;
+import com.github.dragoni7.silentcompat.core.registry.SilentCompatTab;
 import com.github.dragoni7.silentcompat.event.ClientEventHandler;
 import com.github.dragoni7.silentcompat.networking.Networking;
 import com.github.dragoni7.silentcompat.trait.AbyssalSynergyTrait;
@@ -48,8 +49,6 @@ import com.github.dragoni7.silentcompat.trait.WitherSkullTrait;
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -76,6 +75,7 @@ public class SilentCompat {
 		MaterialRegistry.register(modEventBus);
 		registerTraits();
 		MinecraftForge.EVENT_BUS.register(this);
+		SilentCompatTab.CREATIVE_TABS.register(modEventBus);
 		modEventBus.addListener(this::commonSetup);
 
 		if (FMLEnvironment.dist == Dist.CLIENT) {
@@ -133,13 +133,6 @@ public class SilentCompat {
 			Networking.registerMessages();
 		});
 	}
-
-	public static final CreativeModeTab SilentCompatTab = (new CreativeModeTab("silentcompat") {
-		@Override
-		public ItemStack makeIcon() {
-			return new ItemStack(MaterialRegistry.MATERIAL_SETS.get("capsid_alloy").ingot.get());
-		}
-	});
 	
     public static ResourceLocation getId(String path) {
         return new ResourceLocation(SilentCompat.MODID, path);

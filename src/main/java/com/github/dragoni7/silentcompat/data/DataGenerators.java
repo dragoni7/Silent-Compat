@@ -1,9 +1,12 @@
 package com.github.dragoni7.silentcompat.data;
 
-import com.github.dragoni7.silentcompat.SilentCompat;
+import java.util.Collections;
+import java.util.List;
 
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.tags.BlockTagsProvider;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -16,20 +19,21 @@ public class DataGenerators {
 	@SubscribeEvent(priority=EventPriority.NORMAL)
 	public static void gatherData(GatherDataEvent event) {
 		DataGenerator generator = event.getGenerator();
+		PackOutput packOutput = generator.getPackOutput();
 		ExistingFileHelper fileHelper = event.getExistingFileHelper();
 		
 		if (event.includeServer()) {
-			generator.addProvider(true, new SilentCompatRecipes(generator));
-			generator.addProvider(true, new SilentCompatLootTables(generator));
-			BlockTagsProvider blocks = new BlockTagsProvider(generator, SilentCompat.MODID, fileHelper);
-			generator.addProvider(true, new AddBlockTags(generator, fileHelper));
-			generator.addProvider(true, new AddItemTags(generator, blocks, fileHelper));
+			generator.addProvider(true, new SilentCompatRecipes(packOutput));
+			generator.addProvider(true, new LootTableProvider(packOutput, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(SilentCompatLootTables::new, LootContextParamSets.BLOCK))));
+			AddBlockTags blocks = new AddBlockTags(event);
+			generator.addProvider(true, blocks);
+			generator.addProvider(true, new AddItemTags(event, blocks));
 		}
 		
 		if (event.includeClient()) {
-			generator.addProvider(true, new SilentCompatBlockStates(generator, SilentCompat.MODID, fileHelper));
-			generator.addProvider(true, new SilentCompatItemModels(generator, SilentCompat.MODID, fileHelper));
-			generator.addProvider(true, new lang(generator, "en_us"));
+			generator.addProvider(true, new SilentCompatBlockStates(packOutput, fileHelper));
+			generator.addProvider(true, new SilentCompatItemModels(packOutput, fileHelper));
+			generator.addProvider(true, new lang(packOutput, "en_us"));
 		}
 	}
 }

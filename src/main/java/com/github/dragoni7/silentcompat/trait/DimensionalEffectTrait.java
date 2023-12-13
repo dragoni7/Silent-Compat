@@ -89,7 +89,7 @@ public class DimensionalEffectTrait extends SimpleTrait {
                 MobEffectInstance effect = potionData.getEffect(context.getTraitLevel(), setPieceCount, hasFullSet);
                 
                 // only apply effect in dimension
-                if (effect != null && player.level.dimension().location().equals(potionData.getDimensionId())) {
+                if (effect != null && player.level().dimension().location().equals(potionData.getDimensionId())) {
                     player.addEffect(effect);
                 }
             }

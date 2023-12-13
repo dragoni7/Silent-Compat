@@ -2,15 +2,16 @@ package com.github.dragoni7.silentcompat.data;
 
 import com.github.dragoni7.silentcompat.core.registry.MaterialRegistry;
 import com.github.dragoni7.silentcompat.core.registry.MaterialSet;
+import com.github.dragoni7.silentcompat.*;
 
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class SilentCompatBlockStates extends BlockStateProvider {
 
-	public SilentCompatBlockStates(DataGenerator gen, String modid, ExistingFileHelper exFileHelper) {
-		super(gen, modid, exFileHelper);
+	public SilentCompatBlockStates(PackOutput output, ExistingFileHelper exFileHelper) {
+		super(output, SilentCompat.MODID, exFileHelper);
 	}
 
 	@Override

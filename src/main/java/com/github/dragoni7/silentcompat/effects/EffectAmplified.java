@@ -20,7 +20,7 @@ public class EffectAmplified extends MobEffect {
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		Vec3 pos = entity.position();
 		if (entity.getRandom().nextFloat() < 0.15f) {
-			entity.level.addParticle(SilentCompatParticles.JOLT.get(), pos.x, pos.y + 1.5D, pos.z, 0, 0, 0);
+			entity.level().addParticle(SilentCompatParticles.JOLT.get(), pos.x, pos.y + 1.5D, pos.z, 0, 0, 0);
 		}
 	}
 	

@@ -31,9 +31,9 @@ public class BlindingTrait extends SimpleTrait {
         if (wielder instanceof Player && wielder.hasEffect(SilentCompatEffects.AMPLIFIED.get())) {
         	
         	Player player = (Player) wielder;
-        	Level level = player.level;
+        	Level level = player.level();
         	
-        	if (!player.level.isClientSide && stack.getDamageValue() < stack.getMaxDamage() - 10 - 1) {
+        	if (!player.level().isClientSide && stack.getDamageValue() < stack.getMaxDamage() - 10 - 1) {
         		
         		GearHelper.attemptDamage(stack, 10, player, stack.getEquipmentSlot());
         		

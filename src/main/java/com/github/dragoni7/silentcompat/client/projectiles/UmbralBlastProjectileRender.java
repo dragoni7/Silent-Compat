@@ -4,7 +4,7 @@ import com.github.dragoni7.silentcompat.SilentCompat;
 import com.github.dragoni7.silentcompat.projectiles.UmbralBlastProjectile;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.math.Vector3f;
+import com.mojang.math.Axis;
 
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
@@ -32,7 +32,7 @@ public class UmbralBlastProjectileRender extends EntityRenderer<UmbralBlastProje
 		float f1 = Mth.lerp(p_115375_, projectile.xRotO, projectile.getXRot());
 		float f2 = (float) projectile.tickCount + p_115375_;
 		poseStack.translate(0.0D, (double) 0.15F, 0.0D);
-		poseStack.mulPose(Vector3f.YP.rotationDegrees(Mth.sin(f2 * 0.1F) * 360.0F));
+		poseStack.mulPose(Axis.YP.rotationDegrees(Mth.sin(f2 * 0.1F) * 360.0F));
 		poseStack.scale(1.5F, 1.5F, 1.5F);
 		this.model.setupAnim(projectile, 0.0F, 0.0F, 0.0F, 0.0F, f1);
 		

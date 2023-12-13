@@ -8,13 +8,13 @@ import com.github.dragoni7.silentcompat.core.registry.MaterialSet;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatEffects;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatItems;
 
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.LanguageProvider;
 
 public class lang extends LanguageProvider {
 
-	public lang(DataGenerator gen, String locale) {
-		super(gen, SilentCompat.MODID, locale);
+	public lang(PackOutput output, String locale) {
+		super(output, SilentCompat.MODID, locale);
 	}
 	
 	@Override

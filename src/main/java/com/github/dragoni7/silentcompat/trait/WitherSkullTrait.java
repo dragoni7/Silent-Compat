@@ -49,9 +49,9 @@ public class WitherSkullTrait extends SimpleTrait {
         if (wielder instanceof Player) {
         	
         	Player player = (Player) wielder;
-        	Level level = player.level;
+        	Level level = player.level();
         	
-        	if (!player.level.isClientSide && stack.getDamageValue() < stack.getMaxDamage() - 50 - 1 && canFire) {
+        	if (!player.level().isClientSide && stack.getDamageValue() < stack.getMaxDamage() - 50 - 1 && canFire) {
         		
         		GearHelper.attemptDamage(stack, 50, player, stack.getEquipmentSlot());
         		

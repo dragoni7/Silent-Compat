@@ -4,23 +4,22 @@ import com.github.dragoni7.silentcompat.SilentCompat;
 import com.github.dragoni7.silentcompat.core.registry.MaterialRegistry;
 import com.github.dragoni7.silentcompat.core.registry.MaterialSet;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatItems;
-
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.tags.BlockTagsProvider;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.common.Tags;
-import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.common.data.BlockTagsProvider;
+import net.minecraftforge.data.event.GatherDataEvent;
 
 public class AddItemTags extends ItemTagsProvider {
 	
-	public AddItemTags(DataGenerator generator, BlockTagsProvider blockTags, ExistingFileHelper helper) {
-		super(generator, blockTags, SilentCompat.MODID, helper);
+	public AddItemTags(GatherDataEvent event, BlockTagsProvider blocks) {
+		super(event.getGenerator().getPackOutput(), event.getLookupProvider(), blocks.contentsGetter(), SilentCompat.MODID, event.getExistingFileHelper());
 	}
 
 	@Override
-	protected void addTags() {
+	protected void addTags(HolderLookup.Provider provider) {
 		
 		for (MaterialSet set : MaterialRegistry.MATERIAL_SETS.values()) {
 			addMaterialTags(set);

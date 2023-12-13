@@ -20,7 +20,7 @@ public class EffectRestoration extends MobEffect {
 		
 		if (entity.tickCount % 30 == 0) {
 			Vec3 pos = entity.position();
-			Level level = entity.level;
+			Level level = entity.level();
 			double d1 = level.random.nextDouble();
 			level.addParticle(SilentCompatParticles.RESTORATION.get(), pos.x() + 0.1D + d1, pos.y() + 0.3D + d1, pos.z() + 0.1D + d1, 0.0D, 0.2D, 0.0D);
 			level.addParticle(SilentCompatParticles.RESTORATION.get(), pos.x() + 0.1D + d1, pos.y() + 0.3D + d1, pos.z() - 0.1D - d1, 0.0D, 0.2D, 0.0D);

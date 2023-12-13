@@ -4,7 +4,6 @@ import com.github.dragoni7.silentcompat.core.registry.SilentCompatEntities;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatParticles;
 
 import net.minecraft.core.particles.ParticleOptions;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -35,12 +34,12 @@ public class BlindingProjectile extends AbstractHurtingProjectile {
 	protected void onHitEntity(EntityHitResult hitResult) {
 		super.onHitEntity(hitResult);
 		
-		if (!this.level.isClientSide) {
+		if (!this.level().isClientSide) {
 			Entity entity = hitResult.getEntity();
 			Entity owner = this.getOwner();
 			
 			if (owner instanceof LivingEntity) {
-				entity.hurt(DamageSource.indirectMagic(this, (LivingEntity) owner), damage);
+				entity.hurt(entity.damageSources().indirectMagic(this, (LivingEntity) owner), damage);
 				this.doEnchantDamageEffects((LivingEntity) owner, entity);
 				
 				if (entity instanceof LivingEntity) {

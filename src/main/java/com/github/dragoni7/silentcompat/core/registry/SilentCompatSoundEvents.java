@@ -15,7 +15,7 @@ public class SilentCompatSoundEvents {
 	public static final RegistryObject<SoundEvent> ELECTRIC_ZAP = register("electric_zap");
 	
 	private static RegistryObject<SoundEvent> register(String name) {
-		return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(SilentCompat.MODID, name)));
+		return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(SilentCompat.MODID, name)));
 	}
 
 }

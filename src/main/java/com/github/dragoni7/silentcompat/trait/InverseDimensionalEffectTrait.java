@@ -38,7 +38,7 @@ public class InverseDimensionalEffectTrait extends DimensionalEffectTrait {
                 MobEffectInstance effect = potionData.getEffect(context.getTraitLevel(), setPieceCount, hasFullSet);
                 
                 // only apply effect while not in dimension
-                if (effect != null && !player.level.dimension().location().equals(potionData.getDimensionId())) {
+                if (effect != null && !player.level().dimension().location().equals(potionData.getDimensionId())) {
                     player.addEffect(effect);
                 }
             }

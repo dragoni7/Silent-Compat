@@ -8,8 +8,9 @@ import com.github.dragoni7.silentcompat.core.registry.MaterialSet;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatItems;
 
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
+import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
@@ -21,18 +22,18 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class SilentCompatRecipes extends RecipeProvider {
 
-	public SilentCompatRecipes(DataGenerator genIn) {
-		super(genIn);
+	public SilentCompatRecipes(PackOutput packOutput) {
+		super(packOutput);
 	}
 	
 	@Override
-	protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
+	protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
 		
 		for (MaterialSet set : MaterialRegistry.MATERIAL_SETS.values()) {
 			materialSetRecipes(set, consumer);
 		}
 		
-		ShapedRecipeBuilder.shaped(MaterialRegistry.MATERIAL_SETS.get("bunny_steel").ingot.get())
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, MaterialRegistry.MATERIAL_SETS.get("bunny_steel").ingot.get())
 		.pattern(" L ")
 		.pattern("RSR")
 		.pattern(" L ")
@@ -41,7 +42,7 @@ public class SilentCompatRecipes extends RecipeProvider {
 		.define('S', SilentCompatTags.STEEL_INGOT)
 		.group(SilentCompat.MODID).unlockedBy("has_steel_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Items.RABBIT_FOOT)).save(consumer);
 		
-		ShapedRecipeBuilder.shaped(MaterialRegistry.MATERIAL_SETS.get("midnight_iron").ingot.get())
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, MaterialRegistry.MATERIAL_SETS.get("midnight_iron").ingot.get())
 		.pattern(" S ")
 		.pattern("SIS")
 		.pattern(" S ")
@@ -49,34 +50,34 @@ public class SilentCompatRecipes extends RecipeProvider {
 		.define('S', Items.BLACKSTONE)
 		.group(SilentCompat.MODID).unlockedBy("has_iron_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_INGOT)).save(consumer);
 		
-		ShapelessRecipeBuilder.shapeless(MaterialRegistry.MATERIAL_SETS.get("sculk_alloy").ingot.get())
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MaterialRegistry.MATERIAL_SETS.get("sculk_alloy").ingot.get())
 		.requires(Items.ECHO_SHARD)
 		.requires(SilentCompatTags.SKREECHER_SOUL)
 		.requires(Items.OBSIDIAN)
 		.requires(Items.OBSIDIAN)
 		.group(SilentCompat.MODID).unlockedBy("has_skreecher_soul", has(SilentCompatTags.SKREECHER_SOUL)).save(consumer);
 		
-		ShapelessRecipeBuilder.shapeless(MaterialRegistry.MATERIAL_SETS.get("dark_chocolate").ingot.get())
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MaterialRegistry.MATERIAL_SETS.get("dark_chocolate").ingot.get())
 		.requires(SilentCompatTags.CHOCOLATE)
 		.requires(Items.COCOA_BEANS)
 		.requires(Items.COCOA_BEANS)
 		.requires(Items.OBSIDIAN)
 		.group(SilentCompat.MODID).unlockedBy("has_coco_beans", InventoryChangeTrigger.TriggerInstance.hasItems(Items.COCOA_BEANS)).save(consumer);
 
-		ShapelessRecipeBuilder.shapeless(MaterialRegistry.MATERIAL_SETS.get("capsid_alloy").ingot.get())
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MaterialRegistry.MATERIAL_SETS.get("capsid_alloy").ingot.get())
 		.requires(SilentCompatTags.CAPSID)
 		.requires(SilentCompatTags.CAPSID)
 		.requires(Items.DIAMOND)
 		.requires(Items.DIAMOND)
 		.group(SilentCompat.MODID).unlockedBy("has_capsid", has(SilentCompatTags.CAPSID)).save(consumer);
 		
-		ShapelessRecipeBuilder.shapeless(SilentCompatItems.OUTBACK_LEATHER.get(), 3)
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, SilentCompatItems.OUTBACK_LEATHER.get(), 3)
 		.requires(SilentCompatTags.EMU_FEATHER)
 		.requires(SilentCompatTags.EMU_FEATHER)
 		.requires(SilentCompatTags.KANGAROO_HIDE)
 		.group(SilentCompat.MODID).unlockedBy("has_emu_feather", has(SilentCompatTags.EMU_FEATHER)).save(consumer);
 		
-		ShapelessRecipeBuilder.shapeless(MaterialRegistry.MATERIAL_SETS.get("source_steel").ingot.get())
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MaterialRegistry.MATERIAL_SETS.get("source_steel").ingot.get())
 		.requires(SilentCompatTags.STEEL_INGOT)
 		.requires(SilentCompatTags.CONJURATION_ESSENCE)
 		.requires(SilentCompatTags.ABJURATION_ESSENCE)
@@ -84,7 +85,7 @@ public class SilentCompatRecipes extends RecipeProvider {
 		.requires(SilentCompatTags.SOURCE_GEM)
 		.group(SilentCompat.MODID).unlockedBy("has_steel_ingot", has(SilentCompatTags.STEEL_INGOT)).save(consumer);
 		
-		ShapelessRecipeBuilder.shapeless(SilentCompatItems.CRYSTALLINE_ALLOY.get())
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, SilentCompatItems.CRYSTALLINE_ALLOY.get())
 		.requires(SilentCompatTags.VOID_SHARD)
 		.requires(SilentCompatTags.VOID_SHARD)
 		.requires(SilentCompatTags.CRYSTAL_SHARD)
@@ -111,7 +112,7 @@ public class SilentCompatRecipes extends RecipeProvider {
 	
 	private void unpackingRecipe(Item itemIn, Item itemOut, Consumer<FinishedRecipe> consumer) {
 		String itemName = ForgeRegistries.ITEMS.getKey(itemIn).getPath();
-		ShapelessRecipeBuilder.shapeless(itemOut, 9)
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, itemOut, 9)
 		.requires(itemIn)
 		.group(SilentCompat.MODID).unlockedBy(ForgeRegistries.ITEMS.getKey(itemIn).getPath(), InventoryChangeTrigger.TriggerInstance.hasItems(itemIn))
 		.save(consumer, itemName + "_unpacking");
@@ -119,7 +120,7 @@ public class SilentCompatRecipes extends RecipeProvider {
 	
 	private void packingRecipe(Item itemIn, Item itemOut, Consumer<FinishedRecipe> consumer) {
 		String itemName = ForgeRegistries.ITEMS.getKey(itemIn).getPath();
-		ShapelessRecipeBuilder.shapeless(itemOut)
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, itemOut)
 		.requires(itemIn, 9)
 		.group(SilentCompat.MODID).unlockedBy(itemName, InventoryChangeTrigger.TriggerInstance.hasItems(itemIn))
 		.save(consumer, itemName + "_packing");
@@ -127,11 +128,11 @@ public class SilentCompatRecipes extends RecipeProvider {
 	
 	private void createOreSmeltingRecipe(Consumer<FinishedRecipe> consumer, Item input, Item output, float xp, int time, String name) {
 		  SimpleCookingRecipeBuilder.smelting(Ingredient.of(input),
-				  output, xp, time) 
+				  RecipeCategory.MISC, output, xp, time) 
 		  .unlockedBy("has_ore", has(input))
 		  .save(consumer, name);
 		  SimpleCookingRecipeBuilder.blasting(Ingredient.of(input), 
-				  output, xp, time/2)
+				  RecipeCategory.MISC, output, xp, time/2)
 		  .unlockedBy("has_ore", has(input))
 		  .save(consumer, name + "_blasting");
 	}

@@ -20,7 +20,7 @@ public class EffectVolatile extends MobEffect {
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		
 		if (entity.tickCount % 5 == 0) {
-			Level level = entity.level;
+			Level level = entity.level();
 			Player player = level.getNearestPlayer(entity, 24);
 			if (player instanceof ServerPlayer) {
 				Networking.sendToClient(new PacketVolatileParticles(entity.getId()), (ServerPlayer) player);

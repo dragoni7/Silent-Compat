@@ -39,7 +39,7 @@ public class ItemDropTrait extends SimpleTrait {
 		Player player = context.getPlayer();
 		
 		if (player != null) {
-			Level level = player.getLevel();
+			Level level = player.level();
 			if (level.getRandom().nextInt(chance) % chance == 0) {
 				if (!level.isClientSide) {
 					Vec3 pos = player.position();
