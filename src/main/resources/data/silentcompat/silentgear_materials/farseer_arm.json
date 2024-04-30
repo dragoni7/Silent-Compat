@@ -1,6 +1,7 @@
 {
     "type": "silentgear:standard",
     "simple": true,
+    "harvest_tier": "minecraft:diamond",
     "availability": {
       "tier": 4,
       "categories": [
@@ -28,9 +29,6 @@
         },
         "repair_efficiency": {
           "mul1": -0.1
-        },
-        "harvest_level": {
-            "max": 3.0
         }
       }
     },

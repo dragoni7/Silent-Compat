@@ -1,6 +1,7 @@
 {
     "type": "silentgear:standard",
     "simple": true,
+    "harvest_tier": "minecraft:diamond",
     "availability": {
       "tier": 3,
       "categories": [
@@ -34,9 +35,6 @@
         },
         "harvest_speed": {
           "mul2": 0.08
-        },
-        "harvest_level": {
-          "max": 3.0
         },
         "melee_damage": {
           "mul2": 0.15

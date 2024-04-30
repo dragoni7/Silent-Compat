@@ -23,9 +23,6 @@
     },
     "stats": {
       "coating": {
-        "harvest_level": {
-          "max": 4.0
-        },
         "melee_damage": {
           "mul2": 1.0
         },

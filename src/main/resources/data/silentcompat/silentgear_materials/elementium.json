@@ -1,6 +1,7 @@
 {
   "type": "silentgear:standard",
   "simple": true,
+  "harvest_tier": "minecraft:diamond",
   "availability": {
     "tier": 3,
     "categories": [
@@ -78,9 +79,7 @@
       "durability": {
         "add": 200.0
       },
-      "harvest_level": {
-        "max": 3.0
-      },
+
       "armor_durability": {
         "add": 6.0
       },

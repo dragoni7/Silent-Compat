@@ -1,6 +1,7 @@
 {
     "type": "silentgear:standard",
     "simple": true,
+    "harvest_tier": "minecraft:stone",
     "availability": {
       "tier": 1,
       "categories": [
@@ -25,7 +26,6 @@
         "enchantment_value": 22.0,
         "rarity": 25.0,
         "charging_value": 0.8,
-        "harvest_level": 1.0,
         "harvest_speed": 5.0,
         "melee_damage": 1.5,
         "magic_damage": 5.0,
@@ -44,9 +44,6 @@
         "magic_armor": 10.0
       },
       "rod": {
-        "harvest_level": {
-          "max": 1.0
-        },
         "harvest_speed": {
           "mul2": 0.1
         },
@@ -60,9 +57,6 @@
         },
         "armor_durability": {
           "add": 3.0
-        },
-        "harvest_level": {
-          "max": 1.0
         },
         "attack_speed": {
           "add": 0.05

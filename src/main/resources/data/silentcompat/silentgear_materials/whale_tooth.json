@@ -28,9 +28,6 @@
         "durability": {
           "add": 256.0
         },
-        "harvest_level": {
-          "max": 2.0
-        },
         "melee_damage": {
           "add": 2.5
         },

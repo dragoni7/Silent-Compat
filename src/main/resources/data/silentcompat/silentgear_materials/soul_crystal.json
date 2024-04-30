@@ -1,6 +1,7 @@
 {
     "type": "silentgear:standard",
     "simple": true,
+    "harvest_tier": "minecraft:netherite",
     "availability": {
       "tier": 4,
       "categories": [
@@ -22,9 +23,6 @@
       "tip": {
         "durability": {
           "add": -356.0
-        },
-        "harvest_level": {
-          "max": 4.0
         },
         "harvest_speed": {
           "add": 3.0

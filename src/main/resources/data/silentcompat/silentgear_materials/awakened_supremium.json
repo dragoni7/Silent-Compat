@@ -1,6 +1,7 @@
 {
     "type": "silentgear:standard",
     "simple": true,
+    "harvest_tier": "minecraft:netherite",
     "availability": {
       "tier": 5,
       "categories": [
@@ -26,7 +27,6 @@
             "rarity": 100.0,
             "charging_value": 1.2,
             "attack_speed/hoe": 1.1,
-            "harvest_level": 5.0,
             "harvest_speed": 14.0,
             "melee_damage": 25.0,
             "magic_damage": 5.0,
