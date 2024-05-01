@@ -35,7 +35,7 @@ public class SilentCompatLootTables extends VanillaBlockLoot {
 	protected void addTables() {
 		
 		for (MaterialSet set : MaterialRegistry.MATERIAL_SETS.values()) {
-			basicBlockTable(set.block.get(), set.name + "_block");
+			dropSelf(set.block.get());
 		}
 		
 		rareOreTable(MaterialRegistry.ARCMETAL_ORE.get(), SilentCompatItems.RAW_ARCMETAL.get(), "arcmetal_ore");
@@ -47,7 +47,8 @@ public class SilentCompatLootTables extends VanillaBlockLoot {
 	@Override
 	protected void generate() {
 		for (MaterialSet set : MaterialRegistry.MATERIAL_SETS.values()) {
-			basicBlockTable(set.block.get(), set.name + "_block");
+			//basicBlockTable(set.block.get(), set.name + "_block");
+			dropSelf(set.block.get());
 		}
 		
 		rareOreTable(MaterialRegistry.ARCMETAL_ORE.get(), SilentCompatItems.RAW_ARCMETAL.get(), "arcmetal_ore");
@@ -64,12 +65,8 @@ public class SilentCompatLootTables extends VanillaBlockLoot {
                 .collect(Collectors.toList());
 	}
 	
-	private void basicBlockTable(Block block, String name) {
-		lootTables.put(block, simpleBlockTable(name, block));
-	}
-	
 	private void rareOreTable(Block block, Item item, String name) {
-		lootTables.put(block, createSilkTouchTable(name, block, item, 1, 1));
+		add(block, createSilkTouchTable(name, block, item, 1, 1));
 	}
 	
 	private LootTable.Builder createSilkTouchTable(String name, Block block, Item item, float min, float max) {
@@ -87,13 +84,5 @@ public class SilentCompatLootTables extends VanillaBlockLoot {
 					)
 				);
 		return LootTable.lootTable().withPool(builder);
-	}
-	
-	private LootTable.Builder simpleBlockTable(String name, Block block) {
-		LootPool.Builder builder = LootPool.lootPool()
-				.name(name)
-				.setRolls(ConstantValue.exactly(1))
-				.add(LootItem.lootTableItem(block));
-				return LootTable.lootTable().withPool(builder);
 	}
 }

@@ -7,6 +7,7 @@ import com.github.dragoni7.silentcompat.SilentCompat;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.silentchaos512.gear.api.traits.TraitActionContext;
 import net.silentchaos512.gear.gear.trait.SimpleTrait;
@@ -19,7 +20,12 @@ public class DiurnalTrait extends SimpleTrait {
 	
 	@Override
 	public void onUpdate(TraitActionContext context, boolean isEquipped) {
-		Level world = context.getPlayer().level();
+		Player player = context.getPlayer();
+		
+        if (player == null)
+        	return;
+        
+		Level world = player.level();
 		
 		// repair during day
 		long time = world.getDayTime() % 24000;
@@ -39,7 +45,12 @@ public class DiurnalTrait extends SimpleTrait {
 	
 	@Override
 	public float onAttackEntity(TraitActionContext context, LivingEntity target, float baseValue) {
-		Level world = context.getPlayer().level();
+		Player player = context.getPlayer();
+		
+        if (player == null)
+        	return baseValue;
+        
+		Level world = player.level();
 		
 		long time = world.getDayTime() % 24000;
 		if (time < 13000) {

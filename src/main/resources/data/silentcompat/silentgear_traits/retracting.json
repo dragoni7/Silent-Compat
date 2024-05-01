@@ -1,0 +1,22 @@
+{
+    "type": "silentgear:block_placer",
+    "max_level": 1,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "tool"
+      }
+    ],
+    "name": {
+      "translate": "Retracting"
+    },
+    "description": {
+      "translate": "Places a Azure Neodymium Node at the cost of durability"
+    },
+    "block": "alexscaves:azure_neodymium_node",
+    "damage_on_use": 10,
+    "cooldown": 6,
+    "sound": "minecraft:block.stone.place",
+    "sound_volume": 1.0,
+    "sound_pitch": 1.0
+  }

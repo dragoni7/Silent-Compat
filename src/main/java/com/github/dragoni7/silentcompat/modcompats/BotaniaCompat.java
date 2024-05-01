@@ -17,6 +17,10 @@ public class BotaniaCompat {
 	
 	public static void SpawnManaBurst(LivingEntity entity) {
         Player player = (Player) entity;
+        
+        if (player == null)
+        	return;
+        
         if(!entity.level().isClientSide() && !player.isSpectator()) {
             if (!player.getMainHandItem().isEmpty()) {
                 ItemStack gearItemStack = player.getMainHandItem();
@@ -38,6 +42,10 @@ public class BotaniaCompat {
 	
 	public static void ManaRepair(ItemStack thisGear, TraitActionContext context, boolean isEquipped, int manaPerDamageTier) {
         Player player = context.getPlayer();
+        
+        if (player == null)
+        	return;
+        
         Level world = player.level();
         
         int manaToUse = 20 + (manaPerDamageTier * context.getTraitLevel());

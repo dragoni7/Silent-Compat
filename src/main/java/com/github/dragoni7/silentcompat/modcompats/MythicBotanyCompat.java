@@ -14,6 +14,10 @@ public class MythicBotanyCompat {
 
 	public static void SpawnManaBurst(LivingEntity entity) {
         Player player = (Player) entity;
+        
+        if (player == null)
+        	return;
+        
         if(!entity.level().isClientSide() && !player.isSpectator()) {
             if (!player.getMainHandItem().isEmpty()) {
                 ItemStack gearItemStack = player.getMainHandItem();

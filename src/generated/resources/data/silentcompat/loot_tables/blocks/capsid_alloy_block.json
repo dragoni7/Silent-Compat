@@ -3,14 +3,19 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
           "name": "silentcompat:capsid_alloy_block"
         }
       ],
-      "name": "capsid_alloy_block",
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "silentcompat:blocks/capsid_alloy_block"
 }

@@ -58,5 +58,6 @@
       "name": "voidmetal_ore",
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "silentcompat:blocks/voidmetal_ore"
 }

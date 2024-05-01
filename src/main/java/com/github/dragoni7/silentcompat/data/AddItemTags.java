@@ -200,6 +200,12 @@ public class AddItemTags extends ItemTagsProvider {
 		// Iron's Spells
 		tag(SilentCompatTags.ARCANE_INGOT).addOptional(new ResourceLocation("irons_spellbooks:arcane_ingot"));
 		
+		// Alex's Caves
+		tag(SilentCompatTags.AZURE_NEODYMIUM_INGOT).addOptional(new ResourceLocation("alexscaves:azure_neodymium_ingot"));
+		tag(SilentCompatTags.SCARLET_NEODYMIUM_INGOT).addOptional(new ResourceLocation("alexscaves:scarlet_neodymium_ingot"));
+		tag(SilentCompatTags.TECTONIC_SHARD).addOptional(new ResourceLocation("alexscaves:tectonic_shard"));
+		tag(SilentCompatTags.URANIUM).addOptional(new ResourceLocation("alexscaves:uranium"));
+		
 	}
 	
 	private void addMaterialTags(MaterialSet set) {

@@ -19,6 +19,7 @@ public class AbyssalSynergyTrait extends SimpleTrait {
 	@Override
     public float onDurabilityDamage(TraitActionContext context, int damageTaken) {
 		Player player = context.getPlayer();
+        
 		double height = 0;
 		
 		if (player != null) {

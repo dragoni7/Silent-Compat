@@ -133,6 +133,12 @@ public class lang extends LanguageProvider {
 		add("trait.silentcompat.alf_burst.desc", "The Mana Burst is identical to that of a default, unenchanted Alf Blade.");
 		add("trait.silentcompat.wither_skull", "Wither Skull");
 		add("trait.silentcompat.wither_skull.desc", "Summons a wither skull projectile on swing, costing durability.");
+		add("trait.silentcompat.magnetizing", "Maganetizing");
+		add("trait.silentcompat.magnetizing.desc", "Magnetizes targets on hit. (Requires: Alex's Caves)");
+		add("trait.silentcompat.stunning", "Stunning");
+		add("trait.silentcompat.stunning.desc", "Rare chance to stun targets on hit. (Requires: Alex's Caves)");
+		add("trait.silentcompat.irradiating", "Irradiating");
+		add("trait.silentcompat.irradiating.desc", "Irradiates the user. (Requires: Alex's Caves)");
 		
 		// JEED
 		add("effect.silentcompat.amplified.description", "Increases speed. Allows certain traits such as Jolt Hit to proc.");

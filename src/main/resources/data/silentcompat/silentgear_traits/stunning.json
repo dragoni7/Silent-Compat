@@ -1,0 +1,20 @@
+{
+  "type": "silentcompat:on_hit_effect",
+  "max_level": 1,
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "weapon"
+    }
+  ],
+  "name": {
+    "translate": "trait.silentcompat.stunning"
+  },
+  "description": {
+    "translate": "trait.silentcompat.stunning.desc"
+  },
+
+  "effect": "alexscaves:stunned",
+  "duration": 40,
+  "chance": 5
+}

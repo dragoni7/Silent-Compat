@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "group": "silentcompat",
   "key": {
     "L": {
@@ -19,5 +20,6 @@
   ],
   "result": {
     "item": "silentcompat:bunny_steel_ingot"
-  }
+  },
+  "show_notification": true
 }

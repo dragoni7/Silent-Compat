@@ -138,6 +138,11 @@ public class SilentCompatTags {
 	
 	public static final TagKey<Item> ARCANE_INGOT = forgeItemTag("ingots/arcane");
 	
+	public static final TagKey<Item> AZURE_NEODYMIUM_INGOT = forgeItemTag("ingots/azure_neodymium");
+	public static final TagKey<Item> SCARLET_NEODYMIUM_INGOT = forgeItemTag("ingots/scarlet_neodymium");
+	public static final TagKey<Item> TECTONIC_SHARD = forgeItemTag("gems/tectonic");
+	public static final TagKey<Item> URANIUM = forgeItemTag("gems/uranium");
+	
 	private static TagKey<Item> createItemTag(String name) {
 		return ItemTags.create(SilentCompat.getId(name));
 	}

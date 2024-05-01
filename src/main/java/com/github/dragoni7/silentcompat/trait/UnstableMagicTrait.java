@@ -26,6 +26,10 @@ public class UnstableMagicTrait extends SimpleTrait {
 		@Override
 		public float onAttackEntity(TraitActionContext context, LivingEntity target, float baseValue) {
 			Player player = context.getPlayer();
+			
+			if (player == null)
+				return super.onAttackEntity(context, target, baseValue);
+			
 			RandomSource random = player.getRandom();
 			int effect = random.nextIntBetweenInclusive(1, 4);
 			

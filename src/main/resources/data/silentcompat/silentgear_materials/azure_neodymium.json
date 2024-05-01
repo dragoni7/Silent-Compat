@@ -1,0 +1,123 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:iron",
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:ingots/azure_neodymium"
+      }
+    },
+    "name": {
+      "text": "Azure Neodymium"
+    },
+    "stats": {
+      "main": {
+        "durability": 880.0,
+        "armor_durability": 20.0,
+        "enchantment_value": 13.0,
+        "harvest_speed": 7.0,
+        "melee_damage": 3.0,
+        "magic_damage": 1.0,
+        "attack_speed": 0.0,
+        "armor": 13.0,
+        "armor/helmet": 2.0,
+        "armor/chestplate": 5.0,
+        "armor/leggings": 4.0,
+        "armor/boots": 2.0,
+        "armor_toughness": 2.0,
+        "magic_armor": 6.0,
+        "ranged_damage": 0.5,
+        "ranged_speed": 0.1,
+        "rarity": 40.0,
+        "charging_value": 1.0
+      },
+      "rod": {
+        "durability": {
+          "mul2": 0.2
+        },
+        "rarity": 40.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:malleable",
+          "level": 3
+        },
+        {
+            "name": "silentcompat:magnetizing",
+            "level": 1,
+            "conditions": [
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.5
+                }
+            ]
+        },
+        {
+          "name": "silentcompat:retracting",
+          "level": 1,
+          "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.5
+              }
+          ]
+      }
+      ],
+      "rod": [
+        {
+          "name": "silentgear:malleable",
+          "level": 3
+        },
+        {
+          "name": "silentcompat:magnetizing",
+          "level": 1,
+          "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.5
+              }
+          ]
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#112682"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#112682"
+        }
+      ],
+      "rod/all": [
+        {
+          "texture": "silentgear:rod_generic_hc",
+          "color": "#0c1b5c"
+        }
+      ],
+      "rod/part": [
+        {
+          "texture": "silentgear:rod",
+          "color": "#0c1b5c"
+        }
+      ]
+    }
+  }

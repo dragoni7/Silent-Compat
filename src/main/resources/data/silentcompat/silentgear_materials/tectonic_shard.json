@@ -1,0 +1,85 @@
+{
+    "type": "silentgear:standard",
+    "simple": true,
+    "harvest_tier": "minecraft:diamond",
+    "availability": {
+      "tier": 3,
+      "categories": [
+        "gem"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "tag": "forge:gems/tectonic"
+      }
+    },
+    "name": {
+      "text": "Tectonic"
+    },
+    "stats": {
+      "main": {
+        "durability": 1384.0,
+        "armor_durability": 30.0,
+        "enchantment_value": 10.0,
+        "rarity": 50.0,
+        "charging_value": 0.9,
+        "harvest_speed": 7.0,
+        "melee_damage": 5,
+        "magic_damage": 4.0,
+        "attack_speed": -0.6,
+        "ranged_damage": 0.1,
+        "ranged_speed": 0.0,
+        "armor": 20.0,
+        "armor_toughness": 6.0,
+        "magic_armor": 10.0
+      }
+    },
+    "traits": {
+      "main": [
+        {
+          "name": "silentgear:brittle",
+          "level": 2
+        },
+        {
+            "name": "silentcompat:restoration",
+            "level": 1,
+            "conditions": [
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.5
+              }
+            ]
+        },
+        {
+          "name": "silentcompat:stunning",
+          "level": 1,
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    "model": {
+      "main/all": [
+        {
+          "texture": "silentgear:main_generic_hc",
+          "color": "#b40000"
+        },
+        {
+          "texture": "silentgear:_highlight"
+        }
+      ],
+      "main/fragment": [
+        {
+          "texture": "silentgear:metal",
+          "color": "#b40000"
+        }
+      ]
+    }
+  }

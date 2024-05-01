@@ -3,14 +3,19 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
           "name": "silentcompat:source_steel_block"
         }
       ],
-      "name": "source_steel_block",
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "silentcompat:blocks/source_steel_block"
 }

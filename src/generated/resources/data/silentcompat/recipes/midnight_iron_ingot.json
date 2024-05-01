@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "group": "silentcompat",
   "key": {
     "I": {
@@ -16,5 +17,6 @@
   ],
   "result": {
     "item": "silentcompat:midnight_iron_ingot"
-  }
+  },
+  "show_notification": true
 }

@@ -1,0 +1,21 @@
+{
+    "type": "silentgear:wielder_effect",
+    "max_level": 1,
+    "name": {
+      "translate": "trait.silentcompat.irradiating"
+    },
+    "description": {
+      "translate": "trait.silentcompat.irradiating.desc"
+    },
+    "potion_effects": {
+      "armor": [
+        {
+          "type": "trait_level",
+          "effect": "alexscaves:irradiated",
+          "level": [
+            1
+          ]
+        }
+      ]
+    }
+  }
