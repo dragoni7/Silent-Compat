@@ -1,0 +1,23 @@
+{
+  "type": "silentgear:compound_part",
+  "gear_type": "halberd",
+  "part_type": "silentgear:main",
+  "crafting_item": {
+    "item": "silentcompat:halberd_head"
+  },
+  "name": {
+    "translate": "part.silentcompat.halberd_head"
+  },
+  "stats": {
+    "melee_damage": {
+      "add": 4.0
+    },
+    "attack_speed": {
+      "add": -3.1
+    },
+    "attack_reach": {
+      "add": 1.0
+    },
+    "repair_efficiency": 1.0
+  }
+}

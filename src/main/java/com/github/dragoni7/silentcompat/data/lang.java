@@ -146,6 +146,16 @@ public class lang extends LanguageProvider {
 		add("effect.silentcompat.restoration.description", "Steadily restores hp over time. Allows certain traits such as scorch to proc.");
 		add("effect.silentcompat.volatile.description", "Causes explosions when hit.");
 		add("effect.silentcompat.scorch.description", "Sets the target on fire. When the effect ends, the target explodes, spreading scorch to nearby mobs.");
+		
+		// gear
+		
+		add("gearType.silentcompat.halberd", "Halberd");
+		add("item.silentcompat.blueprint.halberd.desc","Heavy stabbing stick");
+		add("item.silentcompat.halberd.nameProper", "%s Halberd");
+		add("item.silentcompat.halberd", "Halberd");
+		add("item.silentcompat.halberd_head", "Compound Halberd Head");
+		add("item.silentcompat.halberd_head.nameProper", "%s Halberd Head");
+		add("jei.silentcompat.halberd.desc", "Slower than a spear, but does more damage");
 	}
 	
 	private void translateMaterialSet(MaterialSet set, String name) {

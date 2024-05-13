@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-30T17:44:58.3461147	Item Models: silentcompat
+// 1.20.1	2024-05-13T11:02:26.9114016	Item Models: silentcompat
 331e8fe6d14bb1102328a412227e73e2e0805829 assets/silentcompat/models/item/arcmetal_block.json
 a1eaf5c4cb8019a9f245a2ee7d8285b267166b9f assets/silentcompat/models/item/arcmetal_ingot.json
 9f19b40ad0ca9ea8d8c40040971ff855627dbcf4 assets/silentcompat/models/item/arcmetal_nugget.json
@@ -14,6 +14,16 @@ f42b63669bf4cf12392d0c68512284d0e88d31dc assets/silentcompat/models/item/capsid_
 c5f4390380d0e532efa565e1207f27044ac6a7c8 assets/silentcompat/models/item/dark_chocolate_block.json
 fee1a413b4f82a311148146fe9ef66aca4efaf00 assets/silentcompat/models/item/dark_chocolate_ingot.json
 b2627955c77558c8621234a2aecf324e0e392a67 assets/silentcompat/models/item/dark_chocolate_nugget.json
+43ea4765eb261e619ac24ca93dd6f08dc5c41fd8 assets/silentcompat/models/item/halberd.json
+88514c6909aef75a2802078ad1837189c3d95ec7 assets/silentcompat/models/item/halberd_hc.json
+a4acf34d97707137bd4a3c1c5cf32538835f9cb4 assets/silentcompat/models/item/halberd_hc_grip.json
+9076014b0925a73e6c5d0147adc9e9f8a5603a45 assets/silentcompat/models/item/halberd_hc_tip.json
+45a18f5c88458c8366272ab0264d5f56f8eb523c assets/silentcompat/models/item/halberd_hc_tip_grip.json
+7e3b53c04a2cc77b547f3b5f9427963ad1c9f969 assets/silentcompat/models/item/halberd_head.json
+ba1ae078bf3b656077f9105a73f5123a1cbc971c assets/silentcompat/models/item/halberd_lc.json
+0998a3d56db6bfe5ef1cf16471add194f3157da1 assets/silentcompat/models/item/halberd_lc_grip.json
+7d2920191d0fcb5b1ff2e7a1b6163147125b02fc assets/silentcompat/models/item/halberd_lc_tip.json
+b09cd326fa2aa529cb3b1f46550137cff5ea576c assets/silentcompat/models/item/halberd_lc_tip_grip.json
 524aad38c3f33bfb543f589e5ed4bcf33fed5cd9 assets/silentcompat/models/item/midnight_iron_block.json
 79e3371fc4b25805e3a29edc645421c6aad06fab assets/silentcompat/models/item/midnight_iron_ingot.json
 abc5e73338c4d90561f6c8f96e5f08bb3a01f443 assets/silentcompat/models/item/midnight_iron_nugget.json

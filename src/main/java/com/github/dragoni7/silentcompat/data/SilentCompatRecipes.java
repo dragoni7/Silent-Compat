@@ -8,6 +8,7 @@ import com.github.dragoni7.silentcompat.core.registry.MaterialSet;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatItems;
 
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;
@@ -18,12 +19,24 @@ import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.silentchaos512.gear.api.item.GearType;
+import net.silentchaos512.gear.api.part.PartType;
+import net.silentchaos512.gear.crafting.ingredient.BlueprintIngredient;
+import net.silentchaos512.gear.crafting.ingredient.GearPartIngredient;
+import net.silentchaos512.gear.crafting.ingredient.PartMaterialIngredient;
+import net.silentchaos512.gear.item.blueprint.GearBlueprintItem;
+import net.silentchaos512.gear.setup.SgRecipes;
+import net.silentchaos512.gear.setup.SgTags;
+import net.silentchaos512.gear.util.ModResourceLocation;
+import net.silentchaos512.lib.data.recipe.LibRecipeProvider;
 
-public class SilentCompatRecipes extends RecipeProvider {
+public class SilentCompatRecipes extends LibRecipeProvider {
 
-	public SilentCompatRecipes(PackOutput packOutput) {
-		super(packOutput);
+	public SilentCompatRecipes(DataGenerator genIn) {
+		super(genIn, SilentCompat.MODID);
 	}
 	
 	@Override
@@ -101,7 +114,68 @@ public class SilentCompatRecipes extends RecipeProvider {
 		createOreSmeltingRecipe(consumer, SilentCompatItems.RAW_VOIDMETAL.get(), MaterialRegistry.MATERIAL_SETS.get("voidmetal").ingot.get(), 1.0F, 300, "raw_voidmetal_to_ingot");
 		createOreSmeltingRecipe(consumer, SilentCompatItems.RAW_SOLARMETAL.get(), MaterialRegistry.MATERIAL_SETS.get("solarmetal").ingot.get(), 1.0F, 300, "raw_solarmetal_to_ingot");
 		createOreSmeltingRecipe(consumer, SilentCompatItems.RAW_PLASTEEL.get(), MaterialRegistry.MATERIAL_SETS.get("plasteel").ingot.get(), 1.0F, 400, "raw_plasteel_to_ingot");
+		
+		registerBlueprints(consumer);
+		registerGear(consumer);
 	}
+	
+	private void registerBlueprints(Consumer<FinishedRecipe> consumer) {
+		toolBlueprint(consumer, "halberd", SilentCompatItems.HALBERD_BLUEPRINT, SilentCompatItems.HALBERD_TEMPLATE, "## ", "#/ ", "  /");
+	}
+	
+	 private void registerGear(Consumer<FinishedRecipe> consumer) {
+		 toolRecipes(consumer, "halberd", 3, SilentCompatItems.HALBERD, SilentCompatItems.HALBERD_HEAD, SilentCompatItems.HALBERD_BLUEPRINT.get());
+	 }
+	 
+    private void toolRecipes(Consumer<FinishedRecipe> consumer, String name, int mainCount, ItemLike tool, ItemLike toolHead, GearBlueprintItem blueprintItem) {
+        // Tool head
+        shapelessBuilder(SgRecipes.COMPOUND_PART.get(), RecipeCategory.TOOLS, toolHead)
+                .requires(BlueprintIngredient.of(blueprintItem))
+                .requires(PartMaterialIngredient.of(PartType.MAIN, GearType.TOOL), mainCount)
+                .save(consumer, new ModResourceLocation("silentcompat:gear/" + name + "_head"));
+        // Tool from head and rod
+        shapelessBuilder(SgRecipes.SHAPELESS_GEAR.get(), RecipeCategory.TOOLS, tool)
+                .requires(toolHead)
+                .requires(GearPartIngredient.of(PartType.ROD))
+                .save(consumer, new ModResourceLocation("silentcompat:gear/" + name));
+        // Quick tool (mains and rods, skipping head)
+        shapelessBuilder(SgRecipes.SHAPELESS_GEAR.get(), RecipeCategory.TOOLS, tool)
+                .requires(BlueprintIngredient.of(blueprintItem))
+                .requires(PartMaterialIngredient.of(PartType.MAIN, GearType.TOOL), mainCount)
+                .requires(GearPartIngredient.of(PartType.ROD))
+                .save(consumer, new ModResourceLocation("silentcompat:gear/" + name + "_quick"));
+    }
+	
+    private void toolBlueprint(Consumer<FinishedRecipe> consumer, String group, ItemLike blueprint, ItemLike template, String... pattern) {
+        toolBlueprint(consumer, group, blueprint, template, Ingredient.EMPTY, pattern);
+    }
+
+    private void toolBlueprint(Consumer<FinishedRecipe> consumer, String group, ItemLike blueprint, ItemLike template, Ingredient extra, String... pattern) {
+        ShapedRecipeBuilder builderBlueprint = ShapedRecipeBuilder.shaped(RecipeCategory.MISC, blueprint)
+                .group("silentgear:blueprints/" + group)
+                .define('#', SgTags.Items.BLUEPRINT_PAPER)
+                .define('/', Tags.Items.RODS_WOODEN)
+                .unlockedBy("has_item", has(SgTags.Items.BLUEPRINT_PAPER));
+
+        ShapedRecipeBuilder builderTemplate = ShapedRecipeBuilder.shaped(RecipeCategory.MISC, template)
+                .group("silentgear:blueprints/" + group)
+                .define('#', SgTags.Items.TEMPLATE_BOARDS)
+                .define('/', Tags.Items.RODS_WOODEN)
+                .unlockedBy("has_item", has(SgTags.Items.TEMPLATE_BOARDS));
+
+        if (extra != Ingredient.EMPTY) {
+            builderBlueprint.define('@', extra);
+            builderTemplate.define('@', extra);
+        }
+
+        for (String line : pattern) {
+            builderBlueprint.pattern(line);
+            builderTemplate.pattern(line);
+        }
+
+        builderBlueprint.save(consumer);
+        builderTemplate.save(consumer);
+    }
 	
 	private void materialSetRecipes(MaterialSet set, Consumer<FinishedRecipe> consumer) {
 		unpackingRecipe(set.ingot.get(), set.nugget.get(), consumer);

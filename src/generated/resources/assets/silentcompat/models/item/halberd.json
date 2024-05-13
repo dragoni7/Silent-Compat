@@ -1,0 +1,57 @@
+{
+  "parent": "minecraft:item/handheld",
+  "overrides": [
+    {
+      "model": "silentcompat:item/halberd_lc",
+      "predicate": {
+        "silentgear:model": 2.0
+      }
+    },
+    {
+      "model": "silentcompat:item/halberd_hc",
+      "predicate": {
+        "silentgear:model": 3.0
+      }
+    },
+    {
+      "model": "silentcompat:item/halberd_lc_tip",
+      "predicate": {
+        "silentgear:model": 6.0
+      }
+    },
+    {
+      "model": "silentcompat:item/halberd_hc_tip",
+      "predicate": {
+        "silentgear:model": 7.0
+      }
+    },
+    {
+      "model": "silentcompat:item/halberd_lc_grip",
+      "predicate": {
+        "silentgear:model": 10.0
+      }
+    },
+    {
+      "model": "silentcompat:item/halberd_hc_grip",
+      "predicate": {
+        "silentgear:model": 11.0
+      }
+    },
+    {
+      "model": "silentcompat:item/halberd_lc_tip_grip",
+      "predicate": {
+        "silentgear:model": 14.0
+      }
+    },
+    {
+      "model": "silentcompat:item/halberd_hc_tip_grip",
+      "predicate": {
+        "silentgear:model": 15.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "silentcompat:item/halberd/rod_generic_lc",
+    "layer1": "silentcompat:item/halberd/main_generic_lc"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "silentgear:blueprints/halberd",
+  "key": {
+    "#": {
+      "tag": "silentgear:template_boards"
+    },
+    "/": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "pattern": [
+    "## ",
+    "#/ ",
+    "  /"
+  ],
+  "result": {
+    "item": "silentcompat:halberd_template"
+  },
+  "show_notification": true
+}

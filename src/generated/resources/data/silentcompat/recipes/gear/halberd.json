@@ -1,0 +1,15 @@
+{
+  "type": "silentgear:gear_crafting",
+  "ingredients": [
+    {
+      "item": "silentcompat:halberd_head"
+    },
+    {
+      "type": "silentgear:part_type",
+      "part_type": "silentgear:rod"
+    }
+  ],
+  "result": {
+    "item": "silentcompat:halberd"
+  }
+}

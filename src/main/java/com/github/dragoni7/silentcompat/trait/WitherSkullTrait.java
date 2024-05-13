@@ -3,17 +3,22 @@ package com.github.dragoni7.silentcompat.trait;
 import java.util.Collection;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
+import com.github.dragoni7.silentcompat.consts.ModConsts;
 import com.github.dragoni7.silentcompat.core.registry.SilentCompatEffects;
+import com.github.dragoni7.silentcompat.modcompats.MythicBotanyCompat;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.WitherSkull;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.fml.ModList;
 import net.silentchaos512.gear.api.traits.TraitActionContext;
 import net.silentchaos512.gear.gear.trait.SimpleTrait;
 import net.silentchaos512.gear.util.GearHelper;
@@ -64,8 +69,6 @@ public class WitherSkullTrait extends SimpleTrait {
         		level.addFreshEntity(projectile);
         		canFire = false;
 			}
-    		
-        	player.removeEffect(SilentCompatEffects.AMPLIFIED.get());
         }
     }
 	

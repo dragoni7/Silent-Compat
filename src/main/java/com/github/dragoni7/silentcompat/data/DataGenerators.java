@@ -23,11 +23,12 @@ public class DataGenerators {
 		ExistingFileHelper fileHelper = event.getExistingFileHelper();
 		
 		if (event.includeServer()) {
-			generator.addProvider(true, new SilentCompatRecipes(packOutput));
+			generator.addProvider(true, new SilentCompatRecipes(generator));
 			AddBlockTags blocks = new AddBlockTags(event);
 			generator.addProvider(true, blocks);
 			generator.addProvider(true, new AddItemTags(event, blocks));
 			generator.addProvider(true, new LootTableProvider(packOutput, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(SilentCompatLootTables::new, LootContextParamSets.BLOCK))));
+			generator.addProvider(true, new SilentCompatParts(generator));
 		}
 		
 		if (event.includeClient()) {
