@@ -10,7 +10,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 public class MaterialSet {
 	
@@ -20,20 +21,20 @@ public class MaterialSet {
 	public final TagKey<Item> blockItemTag;
 	public final TagKey<Block> blockTag;
 	
-	public final RegistryObject<Item> ingot;
-	public final RegistryObject<Item> nugget;
-	public final RegistryObject<Item> blockItem;
-	public final RegistryObject<Block> block;
+	public final DeferredItem<Item> ingot;
+	public final DeferredItem<Item> nugget;
+	public final DeferredItem<Item> blockItem;
+	public final DeferredBlock<Block> block;
 	
 	public MaterialSet(String name, MapColor color) {
 		this.name = name;
 		
-		this.ingotTag = ItemTags.create(new ResourceLocation("forge", "ingots/" + name));
-		this.nuggetTag = ItemTags.create(new ResourceLocation("forge", "nuggets/" + name));
-		this.blockItemTag = ItemTags.create(new ResourceLocation("forge", "storage_blocks/" + name));
-		this.blockTag = BlockTags.create(new ResourceLocation("forge", "storage_blocks/" + name));
+		this.ingotTag = ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "ingots/" + name));
+		this.nuggetTag = ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "nuggets/" + name));
+		this.blockItemTag = ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "storage_blocks/" + name));
+		this.blockTag = BlockTags.create(ResourceLocation.fromNamespaceAndPath("forge", "storage_blocks/" + name));
 		
-		block = MaterialRegistry.BLOCKS.register(name + "_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(color)));
+		block = MaterialRegistry.BLOCKS.register(name + "_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).mapColor(color)));
 		ingot = SilentCompatItems.ITEMS.register(name + "_ingot", ()-> new Item(new Item.Properties()));
 		nugget = SilentCompatItems.ITEMS.register(name + "_nugget", ()-> new Item(new Item.Properties()));
 		blockItem = SilentCompatItems.ITEMS.register(name + "_block", ()-> new BlockItem(this.block.get(), new Item.Properties()));

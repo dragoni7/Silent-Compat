@@ -49,15 +49,13 @@ import com.github.dragoni7.silentcompat.trait.WitherSkullTrait;
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.loading.FMLEnvironment;
-import net.silentchaos512.gear.api.GearApi;
-import net.silentchaos512.gear.api.traits.ITraitSerializer;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.loading.FMLEnvironment;
+import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
 
 @Mod(SilentCompat.MODID)
@@ -65,16 +63,16 @@ public class SilentCompat {
 	public static final String MODID = "silentcompat";
 	public static final Logger LOGGER = LogUtils.getLogger();
 
-	public SilentCompat() {
+	public SilentCompat(IEventBus modEventBus, ModContainer modContainer, Dist dist) {
 
-		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+		
 		SilentCompatSoundEvents.SOUND_EVENTS.register(modEventBus);
 		SilentCompatParticles.PARTICLES.register(modEventBus);
 		SilentCompatEffects.MOB_EFFECTS.register(modEventBus);
 		SilentCompatEntities.ENTITY_TYPES.register(modEventBus);
 		MaterialRegistry.register(modEventBus);
 		registerTraits();
-		MinecraftForge.EVENT_BUS.register(this);
+		NeoForge.EVENT_BUS.register(this);
 		SilentCompatTab.CREATIVE_TABS.register(modEventBus);
 		modEventBus.addListener(this::commonSetup);
 
@@ -135,6 +133,6 @@ public class SilentCompat {
 	}
 	
     public static ResourceLocation getId(String path) {
-        return new ResourceLocation(SilentCompat.MODID, path);
+        return ResourceLocation.fromNamespaceAndPath(SilentCompat.MODID, path);
     }
 }

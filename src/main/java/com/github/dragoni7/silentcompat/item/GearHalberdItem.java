@@ -1,15 +1,16 @@
 package com.github.dragoni7.silentcompat.item;
 
-import net.minecraftforge.common.ToolActions;
+import java.util.function.Supplier;
+
 import net.silentchaos512.gear.api.item.GearType;
 import net.silentchaos512.gear.item.gear.GearSwordItem;
 
 public class GearHalberdItem extends GearSwordItem {
 	
-	public static final GearType GEAR_TYPE = GearType.getOrCreate("halberd",  GearType.MELEE_WEAPON, b -> 
-	b.toolActions(ToolActions.DEFAULT_SWORD_ACTIONS));
+	public final Supplier<GearType> gearType;
 
-	public GearHalberdItem() {
-		super(GEAR_TYPE);
+	public GearHalberdItem(Supplier<GearType> gearType) {
+		super(gearType);
+		this.gearType = gearType;
 	}
 }

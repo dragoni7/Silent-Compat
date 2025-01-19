@@ -10,21 +10,20 @@ import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class MaterialRegistry {
 	
-	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, SilentCompat.MODID);
+	public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SilentCompat.MODID);
 	
 	public static final HashMap<String, MaterialSet> MATERIAL_SETS = new HashMap<>();
 	
-	public static final RegistryObject<Block> SOLARMETAL_ORE = MaterialRegistry.BLOCKS.register("solarmetal_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.BASALT), UniformInt.of(3, 7)));
-	public static final RegistryObject<Block> VOIDMETAL_ORE = MaterialRegistry.BLOCKS.register("voidmetal_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
-	public static final RegistryObject<Block> ARCMETAL_ORE = MaterialRegistry.BLOCKS.register("arcmetal_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
-	public static final RegistryObject<Block> PLASTEEL_ORE = MaterialRegistry.BLOCKS.register("plasteel_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.ANCIENT_DEBRIS), UniformInt.of(3, 7)));
+	public static final DeferredBlock<Block> SOLARMETAL_ORE = BLOCKS.register("solarmetal_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.BASALT)));
+	public static final DeferredBlock<Block> VOIDMETAL_ORE = BLOCKS.register("voidmetal_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.DEEPSLATE)));
+	public static final DeferredBlock<Block> ARCMETAL_ORE = BLOCKS.register("arcmetal_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.STONE)));
+	public static final DeferredBlock<Block> PLASTEEL_ORE = BLOCKS.register("plasteel_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.ANCIENT_DEBRIS)));
 	
 	public static void register(IEventBus modEventBus) {
 		
