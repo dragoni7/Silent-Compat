@@ -42,7 +42,7 @@ public final class SilentCompatParts extends PartsProviderBase {
 		if (isMainPart(builder, SilentCompatItems.HALBERD_HEAD))
 			return builder
 					.stat(ItemStats.MELEE_DAMAGE, 4, StatInstance.Operation.ADD)
-					.stat(ItemStats.ATTACK_SPEED, -3.1f, StatInstance.Operation.ADD)
+					.stat(ItemStats.ATTACK_SPEED, -3f, StatInstance.Operation.ADD)
 					.stat(ItemStats.ATTACK_REACH, 1, StatInstance.Operation.ADD)
 					.stat(ItemStats.REPAIR_EFFICIENCY, 1f);
 		

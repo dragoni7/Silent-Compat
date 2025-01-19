@@ -124,7 +124,7 @@ public class SilentCompatRecipes extends LibRecipeProvider {
 	}
 	
 	 private void registerGear(Consumer<FinishedRecipe> consumer) {
-		 toolRecipes(consumer, "halberd", 3, SilentCompatItems.HALBERD, SilentCompatItems.HALBERD_HEAD, SilentCompatItems.HALBERD_BLUEPRINT.get());
+		 toolRecipes(consumer, "halberd", 4, SilentCompatItems.HALBERD, SilentCompatItems.HALBERD_HEAD, SilentCompatItems.HALBERD_BLUEPRINT.get());
 	 }
 	 
     private void toolRecipes(Consumer<FinishedRecipe> consumer, String name, int mainCount, ItemLike tool, ItemLike toolHead, GearBlueprintItem blueprintItem) {

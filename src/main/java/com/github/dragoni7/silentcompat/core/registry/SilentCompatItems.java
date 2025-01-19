@@ -6,7 +6,7 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
-import com.github.dragoni7.silentcompat.item.SilentCompatGearType;
+import com.github.dragoni7.silentcompat.item.GearHalberdItem;
 
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -64,14 +64,14 @@ public class SilentCompatItems {
 			() -> new BlockItem(MaterialRegistry.PLASTEEL_ORE.get(), new Item.Properties()));
 	
 	// Gear Items
-	public static final ItemRegistryObject<GearBlueprintItem> HALBERD_BLUEPRINT = registerGearBlueprint(SilentCompatGearType.HALBERD, false);
+	public static final ItemRegistryObject<GearBlueprintItem> HALBERD_BLUEPRINT = registerGearBlueprint(GearHalberdItem.GEAR_TYPE, false);
 	
-	public static final ItemRegistryObject<GearBlueprintItem> HALBERD_TEMPLATE = registerGearBlueprint(SilentCompatGearType.HALBERD, true);
+	public static final ItemRegistryObject<GearBlueprintItem> HALBERD_TEMPLATE = registerGearBlueprint(GearHalberdItem.GEAR_TYPE, true);
 	
 	public static final ItemRegistryObject<MainPartItem> HALBERD_HEAD = registerCompoundPart("halberd_head", () ->
-    new MainPartItem(SilentCompatGearType.HALBERD, unstackableProps()));
+    new MainPartItem(GearHalberdItem.GEAR_TYPE, unstackableProps()));
 	
-	public static final ItemRegistryObject<GearSwordItem> HALBERD = register("halberd", () -> new GearSwordItem(SilentCompatGearType.HALBERD));
+	public static final ItemRegistryObject<GearSwordItem> HALBERD = register("halberd", () -> new GearSwordItem(GearHalberdItem.GEAR_TYPE));
 	
     private static Item.Properties baseProps() {
         return new Item.Properties();
