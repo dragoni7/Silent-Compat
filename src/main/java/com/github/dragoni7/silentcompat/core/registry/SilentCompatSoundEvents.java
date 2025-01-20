@@ -2,20 +2,16 @@ package com.github.dragoni7.silentcompat.core.registry;
 
 import com.github.dragoni7.silentcompat.SilentCompat;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class SilentCompatSoundEvents {
 	
-	public static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, SilentCompat.MODID);
+	public static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(BuiltInRegistries.SOUND_EVENT, SilentCompat.MODID);
 	
-	public static final RegistryObject<SoundEvent> ELECTRIC_ZAP = register("electric_zap");
-	
-	private static RegistryObject<SoundEvent> register(String name) {
-		return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(SilentCompat.MODID, name)));
-	}
+	public static final DeferredHolder<SoundEvent, SoundEvent> ELECTRIC_ZAP = SOUND_EVENTS.register("electric_zap", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(SilentCompat.MODID, "electric_zap")));
 
 }

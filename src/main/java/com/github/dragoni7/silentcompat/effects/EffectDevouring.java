@@ -14,7 +14,7 @@ public class EffectDevouring extends MobEffect {
 	}
 
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
 		
 		if (entity.tickCount % 40 == 0) {
 			// add void particles
@@ -23,10 +23,12 @@ public class EffectDevouring extends MobEffect {
 			entity.level().addParticle(SilentCompatParticles.VOID.get(), pos.x + 0.1D, pos.y + 0.5D, pos.z, 0, 0, 0);
 			entity.level().addParticle(SilentCompatParticles.VOID.get(), pos.x, pos.y + 0.5D, pos.z + 0.1D, 0, 0, 0);
 		}
+		
+		return true;
 	}
 	
 	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
+	public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
 		return duration > 0;
 	}
 

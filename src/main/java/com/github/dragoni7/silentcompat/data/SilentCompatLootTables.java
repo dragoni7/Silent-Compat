@@ -12,6 +12,7 @@ import com.github.dragoni7.silentcompat.core.registry.SilentCompatItems;
 import net.minecraft.advancements.critereon.EnchantmentPredicate;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.advancements.critereon.MinMaxBounds;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.loot.packs.VanillaBlockLoot;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -59,7 +60,7 @@ public class SilentCompatLootTables extends VanillaBlockLoot {
 	
 	@Override
 	protected Iterable<Block> getKnownBlocks() {
-        return ForgeRegistries.BLOCKS.getEntries().stream()
+        return BuiltInRegistries.BLOCK.entrySet().stream()
                 .filter(e -> e.getKey().location().getNamespace().equals(SilentCompat.MODID))
                 .map(Map.Entry::getValue)
                 .collect(Collectors.toList());
@@ -79,7 +80,7 @@ public class SilentCompatLootTables extends VanillaBlockLoot {
 								.hasEnchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, MinMaxBounds.Ints.atLeast(1))))),
 						LootItem.lootTableItem(item)
 						.apply(SetItemCountFunction.setCount(UniformGenerator.between(min, max)))
-						.apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE, 1))
+						.apply(ApplyBonusCount.addUniformBonusCount(Enchantments.FORTUNE, 1))
 						.apply(ApplyExplosionDecay.explosionDecay())
 					)
 				);

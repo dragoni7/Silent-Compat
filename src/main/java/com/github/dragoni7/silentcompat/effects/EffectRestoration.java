@@ -16,7 +16,7 @@ public class EffectRestoration extends MobEffect {
 	}
 
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
 		
 		if (entity.tickCount % 30 == 0) {
 			Vec3 pos = entity.position();
@@ -31,10 +31,12 @@ public class EffectRestoration extends MobEffect {
 				entity.heal(2.0F);
 			}
 		}
+		
+		return true;
 	}
 	
 	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
+	public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
 		return duration > 0;
 	}
 

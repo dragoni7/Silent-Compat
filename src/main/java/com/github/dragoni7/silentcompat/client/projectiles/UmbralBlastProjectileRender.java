@@ -16,7 +16,7 @@ import net.minecraft.util.Mth;
 
 public class UmbralBlastProjectileRender extends EntityRenderer<UmbralBlastProjectile>{
 	
-	private static final ResourceLocation UMBRAL_BLAST_PROJECTILE_LOCATION = new ResourceLocation(SilentCompat.MODID, "textures/entity/umbral_blast_projectile.png");
+	private static final ResourceLocation UMBRAL_BLAST_PROJECTILE_LOCATION = ResourceLocation.fromNamespaceAndPath(SilentCompat.MODID, "textures/entity/umbral_blast_projectile.png");
 	private static final RenderType RENDER_TYPE = RenderType.entityTranslucent(UMBRAL_BLAST_PROJECTILE_LOCATION);
 	
 	private final UmbralBlastProjectileModel<UmbralBlastProjectile> model;
@@ -37,10 +37,10 @@ public class UmbralBlastProjectileRender extends EntityRenderer<UmbralBlastProje
 		this.model.setupAnim(projectile, 0.0F, 0.0F, 0.0F, 0.0F, f1);
 		
 		VertexConsumer vertexconsumer = source.getBuffer(RENDER_TYPE);
-		this.model.renderToBuffer(poseStack, vertexconsumer, p_115378_, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 0.8F);
+		this.model.renderToBuffer(poseStack, vertexconsumer, p_115378_, OverlayTexture.NO_OVERLAY);
 		poseStack.scale(2.5F, 2.0F, 2.5F);
 		VertexConsumer vertexconsumer1 = source.getBuffer(RENDER_TYPE);
-	    this.model.renderToBuffer(poseStack, vertexconsumer1, p_115378_, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 0.15F);
+	    this.model.renderToBuffer(poseStack, vertexconsumer1, p_115378_, OverlayTexture.NO_OVERLAY);
 		poseStack.popPose();
 		super.render(projectile, p_115374_, p_115375_, poseStack, source, p_115378_);
 	}

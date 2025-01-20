@@ -18,7 +18,7 @@ import net.minecraft.world.entity.Entity;
 
 public class UmbralBlastProjectileModel<T extends Entity> extends EntityModel<T> {
 	
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(SilentCompat.MODID, "umbral_blast_projectile"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(SilentCompat.MODID, "umbral_blast_projectile"), "main");
 	private final ModelPart main;
 
 	public UmbralBlastProjectileModel(ModelPart root) {
@@ -44,7 +44,8 @@ public class UmbralBlastProjectileModel<T extends Entity> extends EntityModel<T>
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-		main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+	public void renderToBuffer(PoseStack p_103111_, VertexConsumer p_103112_, int p_103113_, int p_103114_,
+			int p_350308_) {
+		main.render(p_103111_, p_103112_, p_103114_, p_350308_);
 	}
 }

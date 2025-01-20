@@ -19,7 +19,7 @@ public class EffectScorch extends MobEffect {
 	}
 	
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
 		
 		if (entity.tickCount % 10 == 0) {
 			Level level = entity.level();
@@ -28,12 +28,14 @@ public class EffectScorch extends MobEffect {
 				Networking.sendToClient(new PacketScorchParticles(entity.getId()), (ServerPlayer) player);
 			}
 		}
+		
+		return true;
 	}
 	
 	@Override
-	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amp) {
+	public void OnEffectAdded(LivingEntity entity, int amp) {
 		entity.setSecondsOnFire(9999);
-		super.addAttributeModifiers(entity, attributeMap, amp);
+		super.addAttributeModifiers(attributeMap, amp);
 	}
 
 	@Override
@@ -43,11 +45,11 @@ public class EffectScorch extends MobEffect {
 		IgnitionExplosion explosion = new IgnitionExplosion(entity.level(), entity, amp, entity.damageSources().magic(), null, entity.getX(), entity.getY(0.0625D), entity.getZ(), (float)(2.0 + amp));
 		explosion.finalizeExplosion(true);
 		explosion.explode();
-		super.removeAttributeModifiers(entity, attributeMap, amp);
+		super.removeAttributeModifiers(attributeMap);
 	}
 	
 	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
+	public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
 		return duration > 0;
 	}
 

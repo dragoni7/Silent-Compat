@@ -17,7 +17,7 @@ public class EffectVolatile extends MobEffect {
 	}
 	
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
 		
 		if (entity.tickCount % 5 == 0) {
 			Level level = entity.level();
@@ -26,10 +26,12 @@ public class EffectVolatile extends MobEffect {
 				Networking.sendToClient(new PacketVolatileParticles(entity.getId()), (ServerPlayer) player);
 			}
 		}
+		
+		return true;
 	}
 	
 	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
+	public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
 		return duration > 0;
 	}
 
